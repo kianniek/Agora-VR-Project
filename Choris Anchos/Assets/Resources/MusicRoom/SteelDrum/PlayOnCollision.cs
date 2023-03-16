@@ -1,19 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayOnCollision : MonoBehaviour
 {
-    AudioSource audioSource;
+    [SerializeField] UnityEvent events;
 
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+       
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        audioSource.Play();
+        events.Invoke();
     }
 }
