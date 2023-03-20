@@ -1,13 +1,17 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Pan : MonoBehaviour
 {
+    [Header("Note")]
+    [SerializeField] PanNotes note;
     // Start is called before the first frame update
     [SerializeField] private GameObject scannerPref;
     [SerializeField] private bool bong = false;
     [SerializeField] private float scannerLifeTime;
+
 
     [Header("pitch")]
 
@@ -23,14 +27,17 @@ public class Pan : MonoBehaviour
     {
         if (bong)
         {
-            playBong();
+            PlayBong();
             bong = false;
 
         }
     }
 
-    private void playBong()
+    private void PlayBong()
     {
+        //play audio
+        AudioManager.instance.PlayPanNote(note, this.transform.position);
+        //instatiate pulse
         GameObject scannerPulse = Instantiate(scannerPref, this.transform.position, this.transform.rotation);
         ScannerSphere myScanner = scannerPulse.GetComponent<ScannerSphere>();
         myScanner.setSpeed(Mathf.Pow(speed, Macht) / devide);
