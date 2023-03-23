@@ -1,17 +1,13 @@
-using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Pan : MonoBehaviour
 {
-    [Header("Note")]
-    [SerializeField] PanNotes note;
     // Start is called before the first frame update
     [SerializeField] private GameObject scannerPref;
     [SerializeField] private bool bong = false;
     [SerializeField] private float scannerLifeTime;
-
 
     [Header("pitch")]
 
@@ -20,32 +16,30 @@ public class Pan : MonoBehaviour
 
     [Header("Ping")]
 
-    [SerializeField] private float speed = 3;
     [SerializeField] private float Macht = 3;
     [SerializeField] private float devide = 10;
     void Update()
     {
         if (bong)
         {
-            PlayBong();
+            playBong();
             bong = false;
 
         }
     }
 
-    private void PlayBong()
+    private void OnCollisionEnter(Collision collision)
     {
-        //play audio
-        AudioManager.instance.PlayPanNote(note, this.transform.position);
-        //instatiate pulse
-        GameObject scannerPulse = Instantiate(scannerPref, this.transform.position, this.transform.rotation);
-        ScannerSphere myScanner = scannerPulse.GetComponent<ScannerSphere>();
-        myScanner.setSpeed(Mathf.Pow(speed, Macht) / devide);
-        Destroy(scannerPulse, scannerLifeTime);
+        playBong();
     }
 
-    public void DoesBong()
+    private void playBong()
     {
-        bong = true;
+        float speedPitch = Random.Range(min, max);
+        GameObject scannerPulse = Instantiate(scannerPref, this.transform.position, this.transform.rotation);
+        ScannerSphere myScanner = scannerPulse.GetComponent<ScannerSphere>();
+        scannerPulse.GetComponent<AudioSource>().pitch = speedPitch;
+        myScanner.setSpeed(Mathf.Pow(speedPitch, Macht) / devide);
+        Destroy(scannerPulse, scannerLifeTime);
     }
 }
