@@ -33,87 +33,6 @@ MonoBehaviour:
   - F4
   - Ding
   Exists: 1
---- !u!114 &-8628958766598499771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/E4
-  m_EditorClassIdentifier: 
-  Path: event:/E4
-  Guid:
-    Data1: 1144084244
-    Data2: 1125903411
-    Data3: -827913845
-    Data4: -1475311697
-  Banks:
-  - {fileID: 2941451297700484188}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3073
---- !u!114 &-8593161313564878952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ding
-  m_EditorClassIdentifier: 
-  Path: event:/Ding
-  Guid:
-    Data1: -767584420
-    Data2: 1210823541
-    Data3: 657495169
-    Data4: 472028637
-  Banks:
-  - {fileID: 2941451297700484188}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3000
---- !u!114 &-6278482027007083196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Bb3
-  m_EditorClassIdentifier: 
-  Path: event:/Bb3
-  Guid:
-    Data1: -585041239
-    Data2: 1123283560
-    Data3: -1482804304
-    Data4: 1107120903
-  Banks:
-  - {fileID: 2941451297700484188}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3073
 --- !u!114 &-4848373151543697593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,65 +48,11 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638149055615007601
+  lastModified: 638155335463456722
   FileSizes:
   - Name: Desktop
-    Value: 1144
+    Value: 1030
   Exists: 1
---- !u!114 &-1627493816625173643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/A4
-  m_EditorClassIdentifier: 
-  Path: event:/A4
-  Guid:
-    Data1: 908695516
-    Data2: 1108635089
-    Data3: 1455574436
-    Data4: 1295795647
-  Banks:
-  - {fileID: 2941451297700484188}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3073
---- !u!114 &-466805562280755411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/F4
-  m_EditorClassIdentifier: 
-  Path: event:/F4
-  Guid:
-    Data1: -1668680567
-    Data2: 1208164086
-    Data3: -355262832
-    Data4: 553801663
-  Banks:
-  - {fileID: 2941451297700484188}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3073
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,52 +68,19 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -4848373151543697593}
   - {fileID: 2941451297700484188}
+  - {fileID: 6791784972914434189}
   EditorEvents:
   - {fileID: 3052225713606765869}
-  - {fileID: 6189996363771975292}
-  - {fileID: -8628958766598499771}
-  - {fileID: 6403569083156541954}
-  - {fileID: 3093791677335854844}
-  - {fileID: 669419674299578526}
-  - {fileID: -8593161313564878952}
-  - {fileID: -466805562280755411}
-  - {fileID: -6278482027007083196}
-  - {fileID: -1627493816625173643}
+  - {fileID: 7925800110180532455}
+  - {fileID: 7007404991756938680}
   EditorParameters:
   - {fileID: -9098568677232299318}
   MasterBanks:
   - {fileID: 2941451297700484188}
   StringsBanks:
   - {fileID: -4848373151543697593}
-  cacheTime: 638149055615007601
+  cacheTime: 638155335464442899
   cacheVersion: 131601
---- !u!114 &669419674299578526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/A3
-  m_EditorClassIdentifier: 
-  Path: event:/A3
-  Guid:
-    Data1: 1764188491
-    Data2: 1192025551
-    Data3: 1632631980
-    Data4: -10707412
-  Banks:
-  - {fileID: 2941451297700484188}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3073
 --- !u!114 &2941451297700484188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,10 +96,10 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638149055614987057
+  lastModified: 638155335463419691
   FileSizes:
   - Name: Desktop
-    Value: 190240
+    Value: 182400
   Exists: 1
 --- !u!114 &3052225713606765869
 MonoBehaviour:
@@ -297,33 +129,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &3093791677335854844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/G4
-  m_EditorClassIdentifier: 
-  Path: event:/G4
-  Guid:
-    Data1: -1607555794
-    Data2: 1098349254
-    Data3: 1557854087
-    Data4: -84198968
-  Banks:
-  - {fileID: 2941451297700484188}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3073
 --- !u!114 &3192302771571934953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,7 +162,27 @@ MonoBehaviour:
   - F4
   - Ding
   Exists: 1
---- !u!114 &6189996363771975292
+--- !u!114 &6791784972914434189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/WorldSelect.bank
+  m_EditorClassIdentifier: 
+  Path: ../Choris_Anchos_Sound/Build/Desktop/WorldSelect.bank
+  Name: WorldSelect
+  StudioPath: bank:/WorldSelect
+  lastModified: 638155335464442899
+  FileSizes:
+  - Name: Desktop
+    Value: 3951040
+  Exists: 1
+--- !u!114 &7007404991756938680
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -367,24 +192,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/D4
+  m_Name: event:/Music/Flashback
   m_EditorClassIdentifier: 
-  Path: event:/D4
+  Path: event:/Music/Flashback
   Guid:
-    Data1: 1974923792
-    Data2: 1251859874
-    Data3: -1808235638
-    Data4: -648066715
+    Data1: 964077747
+    Data2: 1314001239
+    Data3: 832336567
+    Data4: -2139096767
   Banks:
-  - {fileID: 2941451297700484188}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
+  - {fileID: 6791784972914434189}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3073
---- !u!114 &6403569083156541954
+  Length: 162792
+--- !u!114 &7925800110180532455
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -394,20 +219,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/C4
+  m_Name: event:/Music/TheGreatBefore
   m_EditorClassIdentifier: 
-  Path: event:/C4
+  Path: event:/Music/TheGreatBefore
   Guid:
-    Data1: 1970923035
-    Data2: 1300599990
-    Data3: 2065171096
-    Data4: -467036288
+    Data1: 2118140776
+    Data2: 1282228727
+    Data3: 1195838889
+    Data4: -627145941
   Banks:
-  - {fileID: 2941451297700484188}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
+  - {fileID: 6791784972914434189}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3073
+  Length: 199080

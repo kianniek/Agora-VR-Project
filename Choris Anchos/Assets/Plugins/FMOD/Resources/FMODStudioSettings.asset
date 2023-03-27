@@ -219,8 +219,8 @@ MonoBehaviour:
   sourceProjectPath: ../Choris_Anchos_Sound/Choris_Anchos_Sound.fspro
   sourceBankPath: ../Choris_Anchos_Sound/Build
   sourceBankPathUnformatted: 
-  BankRefreshCooldown: 5
-  ShowBankRefreshWindow: 1
+  BankRefreshCooldown: 1
+  ShowBankRefreshWindow: 0
   AutomaticEventLoading: 1
   BankLoadType: 0
   AutomaticSampleLoading: 0
@@ -240,7 +240,8 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
-  Banks: []
+  Banks:
+  - WorldSelect
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

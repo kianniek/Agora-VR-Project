@@ -25,7 +25,6 @@ public class AudioManager : MonoBehaviour
     private List<StudioEventEmitter> eventEmitters;
 
     private EventInstance ambienceEventInstance;
-    private EventInstance musicEventInstance;
     private EventInstance handPanInstance;
 
     public static AudioManager instance { get; private set; }
@@ -42,7 +41,7 @@ public class AudioManager : MonoBehaviour
         eventEmitters = new List<StudioEventEmitter>();
 
         masterBus = RuntimeManager.GetBus("bus:/");
-        musicBus = RuntimeManager.GetBus("bus:/Music");
+        //musicBus = RuntimeManager.GetBus("bus:/Music");
         ambienceBus = RuntimeManager.GetBus("bus:/Ambience");
         sfxBus = RuntimeManager.GetBus("bus:/SFX");
     }
@@ -50,7 +49,6 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         InitializeAmbience(FMODEvents.instance.ambience);
-        InitializeMusic(FMODEvents.instance.music);
         InitializeHandPan(FMODEvents.instance.PanNotes);
     }
 
@@ -67,12 +65,6 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance = CreateInstance(ambienceEventReference);
         ambienceEventInstance.start();
     }
-
-    private void InitializeMusic(EventReference musicEventReference)
-    {
-        musicEventInstance = CreateInstance(musicEventReference);
-        musicEventInstance.start();
-    }
     private void InitializeHandPan(EventReference handPanEventReference)
     {
         handPanInstance = CreateInstance(handPanEventReference);
@@ -84,11 +76,6 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance.setParameterByName(parameterName, parameterValue);
     }
 
-    public void SetMusicArea(MusicArea area)
-    {
-        musicEventInstance.setParameterByName("area", (float)area);
-    }
-
     public void PlayPanNote(PanNotes note, Vector3 worldPos)
     {
         handPanInstance.setParameterByName("hand_pan", (float)note);
@@ -98,7 +85,10 @@ public class AudioManager : MonoBehaviour
         //Debug.Log(testValue + " " + (float)note);
         PlayOneShot(FMODEvents.instance.PanNotes, worldPos);
     }
-
+    public void PlayMusicFromPoint(EventReference sound, Vector3 worldPos)
+    {
+        PlayOneShot(sound, worldPos);
+    }
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
     {
         RuntimeManager.PlayOneShot(sound, worldPos);
