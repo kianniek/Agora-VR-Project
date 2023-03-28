@@ -48,16 +48,23 @@ public class RenameSelected : EditorWindow
         SerializedProperty serializedProperty = _serializedObject.FindProperty("objects");
 
         EditorGUILayout.PropertyField(serializedProperty, true);
+        RenameSelected window = GetWindow<RenameSelected>();
 
         if (GUILayout.Button("Rename Objects"))
         {
 
             for (int objectI = 0, i = _startIndex; objectI < serializedProperty.arraySize; objectI++)
             {
-                serializedProperty.GetArrayElementAtIndex(objectI).objectReferenceValue.name = $"{_gameObjectPrefix}{i++}";
+                serializedProperty.GetArrayElementAtIndex(objectI).objectReferenceValue.name = $"{_gameObjectPrefix}{"_"}{i++}";
             }
+
+            window.Close();
         }
 
-        _serializedObject.ApplyModifiedProperties();
+        if (window.hasFocus)
+        {
+
+            _serializedObject.ApplyModifiedProperties();
+        }
     }
 }
