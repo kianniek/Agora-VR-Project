@@ -21997,6 +21997,7 @@ GameObject:
   - component: {fileID: 2123001760505132789}
   - component: {fileID: 4208675183139117439}
   - component: {fileID: 6328820348807741588}
+  - component: {fileID: 8834765972416818472}
   m_Layer: 21
   m_Name: Physics RightHand
   m_TagString: Untagged
@@ -22903,6 +22904,7 @@ GameObject:
   - component: {fileID: 3634823585915754285}
   - component: {fileID: 4018894963791402024}
   - component: {fileID: 4392873852783738884}
+  - component: {fileID: 9015003508658098040}
   m_Layer: 21
   m_Name: Physics LeftHand
   m_TagString: Untagged
@@ -24650,6 +24652,19 @@ MonoBehaviour:
   Knuckles: {fileID: 3797424755952177677}
   Fallback: {fileID: 2463974410449462694}
   CenterOfMass: {fileID: 0}
+--- !u!114 &8834765972416818472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7419787820663761963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61f9054a5d910ac4788d1642b666a94f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 1
 --- !u!4 &8837922716347299643
 Transform:
   m_ObjectHideFlags: 0
@@ -25139,6 +25154,19 @@ MonoBehaviour:
   _triggerHoverTarget: {fileID: 0}
   HoveredSocket: {fileID: 0}
   _hoverTarget: {fileID: 0}
+--- !u!114 &9015003508658098040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7832480585039483906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61f9054a5d910ac4788d1642b666a94f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 0
 --- !u!114 &9017110629834476790
 MonoBehaviour:
   m_ObjectHideFlags: 0

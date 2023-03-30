@@ -44,20 +44,21 @@ public class TransportToWorld : MonoBehaviour
         //Don't let the Scene activate until you allow it to
         asyncOperation.allowSceneActivation = false;
 
+        Scene selfScene = gameObject.scene;
+        Scene otherScene = SceneManager.GetSceneByName(transportToScene);
+        this.gameObject.transform.SetParent(null, true);
+        SceneManager.MoveGameObjectToScene(this.gameObject, otherScene);
+
         yield return new WaitForSeconds(0.3f);
 
         asyncOperation.allowSceneActivation = true;
         StartCoroutine(ExpandShader());
 
-        yield return new WaitForSeconds(maxDiamiter / mps);
+        yield return new WaitForSeconds(0.3f);
 
-        Scene selfScene = gameObject.scene;
-        Scene otherScene = SceneManager.GetSceneByName(transportToScene);
         print("Name of Old Scene is: " + selfScene.name);
         if (selfScene.name != "ScenePlayer")
         {
-            this.gameObject.transform.SetParent(null, true);
-            SceneManager.MoveGameObjectToScene(this.gameObject, otherScene);
             SceneManager.UnloadSceneAsync(selfScene);
         }
     }
