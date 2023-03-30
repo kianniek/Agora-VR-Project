@@ -55,7 +55,15 @@ public class RenameSelected : EditorWindow
 
             for (int objectI = 0, i = _startIndex; objectI < serializedProperty.arraySize; objectI++)
             {
-                serializedProperty.GetArrayElementAtIndex(objectI).objectReferenceValue.name = $"{_gameObjectPrefix}{"_"}{i++}";
+                if (i == 0)
+                {
+                    serializedProperty.GetArrayElementAtIndex(objectI).objectReferenceValue.name = $"{_gameObjectPrefix}";
+                    i++;
+                }
+                else
+                {
+                    serializedProperty.GetArrayElementAtIndex(objectI).objectReferenceValue.name = $"{_gameObjectPrefix}{"_"}{i++}";
+                }
             }
 
             window.Close();

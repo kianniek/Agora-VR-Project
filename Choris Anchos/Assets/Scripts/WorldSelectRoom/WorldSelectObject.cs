@@ -27,11 +27,4 @@ public class WorldSelectObject : MonoBehaviour
         RuntimeManager.AttachInstanceToGameObject(instance, this.transform, rb);
     }
 
-    private void OnDrawGizmosSelected()
-    {
-        float min;
-        float max;
-        instance.getMinMaxDistance(out min, out max);
-        Gizmos.DrawWireSphere(this.transform.position, max);
-    }
 }

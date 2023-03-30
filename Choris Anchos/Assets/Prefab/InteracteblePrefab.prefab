@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 7a49c90525aa319499a6a25a1000f778, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -314,7 +314,19 @@ MonoBehaviour:
       m_Calls: []
   HoverEnter:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8981890449446714378}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   HoverExit:
     m_PersistentCalls:
       m_Calls: []
@@ -518,9 +530,9 @@ MonoBehaviour:
   LeftHandPreview: {fileID: 0}
   RightHandPreview: {fileID: 0}
   BodyPreview: {fileID: 0}
-  PreviewLeft: 0
+  PreviewLeft: 1
   PreviewRight: 0
-  LeftAutoPose: 0
+  LeftAutoPose: 1
   RightAutoPose: 0
   SelectionIndex: 0
   PoseNames:
