@@ -16,6 +16,7 @@ public class SlideInObject : MonoBehaviour
     private float value;
     void OnEnable()
     {
+        endPosition.transform.position = gameObject.transform.position;
         SceneManager.sceneLoaded += OnSceneLoaded;
         //mat.GetComponent<Material>();
     }

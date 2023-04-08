@@ -1,3 +1,4 @@
+using HurricaneVR.Framework.Core.Player;
 using HurricaneVR.Framework.Shared;
 using System.Collections;
 using System.Collections.Generic;
@@ -22,7 +23,10 @@ public class TransportToWorld : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        worldReveal.revealRadius = 0.01f;
+        if (worldReveal != null)
+        {
+            worldReveal.revealRadius = 0.01f;
+        }
     }
 
     // Update is called once per frame
@@ -33,14 +37,24 @@ public class TransportToWorld : MonoBehaviour
 
     public void LoadScene()
     {
-        StartCoroutine(SceneSwitch());
-
-        //SceneManager.LoadScene(transportToScene, LoadSceneMode.Additive);
+        //if (worldReveal == null)
+        //{
+        //    worldReveal = Object.FindObjectOfType<WorldRevealURP>();
+        //}
+        if (!SceneManager.GetSceneByName(transportToScene).isLoaded)
+        {
+            StartCoroutine(SceneSwitch());
+        }
     }
 
     IEnumerator SceneSwitch()
     {
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(transportToScene, LoadSceneMode.Additive);
+
+        while (!asyncOperation.isDone)
+        {
+            yield return null;
+        }
         //Don't let the Scene activate until you allow it to
         asyncOperation.allowSceneActivation = false;
 
@@ -52,9 +66,20 @@ public class TransportToWorld : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
 
         asyncOperation.allowSceneActivation = true;
+
+        if (worldReveal == null)
+        {
+            worldReveal = Object.FindObjectOfType<WorldRevealURP>();
+        }
+
         StartCoroutine(ExpandShader());
 
         yield return new WaitForSeconds(0.3f);
+        if (transportToScene == "WorldSelectRoom")
+        {
+            Destroy(this.gameObject);
+            ResetPlayerMessager.ResetPlayer = true;
+        }
 
         print("Name of Old Scene is: " + selfScene.name);
         if (selfScene.name != "ScenePlayer")
@@ -65,7 +90,7 @@ public class TransportToWorld : MonoBehaviour
 
     IEnumerator ExpandShader()
     {
-        
+
         // initialize timer
         float timer = 0f;
 

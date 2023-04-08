@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: globe
-  m_Shader: {fileID: -6465566751694194690, guid: 5ba6a4810734eb344b2b4fa90375a99f,
+  m_Shader: {fileID: -6465566751694194690, guid: a397e90dbdb15254a9c9364df80c72e1,
     type: 3}
   m_ValidKeywords:
   - _ALPHATEST_ON
@@ -16,7 +16,7 @@ Material:
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: 2450
+  m_CustomRenderQueue: -1
   stringTagMap:
     RenderType: TransparentCutout
   disabledShaderPasses: []
@@ -24,11 +24,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 2b5b872fe6181b8449af63e74254b235, type: 3}
+        m_Texture: {fileID: 8400000, guid: 3b973452d3f3b774ba632e3828fa9d0a, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CubemapAsset_4c6145c12c7f43d6b0b7cdaeb1230120_Out_0:
+        m_Texture: {fileID: 8900000, guid: eda4dc8252001ef48a9475f5f7629d45, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -48,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 2b5b872fe6181b8449af63e74254b235, type: 3}
+        m_Texture: {fileID: 8400000, guid: 3b973452d3f3b774ba632e3828fa9d0a, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -81,9 +85,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AO: 0
+    - BottemSmooth: 0
+    - TopSmooth: 0
+    - _AO: 1
     - _AlphaClip: 1
     - _Blend: 0
+    - _BlendOp: 0
     - _BumpScale: 1
     - _CastShadows: 1
     - _ClearCoatMask: 0
@@ -104,7 +111,8 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.357
+    - _SampleGI: 0
+    - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 0
     - _SrcBlend: 1
@@ -113,11 +121,18 @@ Material:
     - _ZTest: 4
     - _ZWrite: 1
     - _ZWriteControl: 0
+    - height: 0
+    - smoothness: 0
     m_Colors:
+    - BottomColor: {r: 0, g: 0, b: 0, a: 0}
+    - BottomEmmison: {r: 0, g: 0, b: 0, a: 0}
+    - TopColor: {r: 0, g: 0, b: 0, a: 0}
+    - TopEmmison: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
-    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _RevealPosition: {r: -1.5, g: 1, b: 0.53, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &52519763225576888

@@ -16,6 +16,7 @@ namespace HurricaneVR.Framework.Core.Player
     public class HVRPlayerController : MonoBehaviour
     {
         [Header("Settings")]
+        bool resetXZ;
         public bool CanJump = false;
 
         public bool CanSteerWhileJumping = true;
@@ -148,8 +149,8 @@ namespace HurricaneVR.Framework.Core.Player
 
         public HVRPlayerInputs Inputs { get; private set; }
 
-        public Vector3 PreviousPosition { get;  set; }
-        
+        public Vector3 PreviousPosition { get; set; }
+
         private Vector3 _previousLeftControllerPosition;
         private Vector3 _previousRightControllerPosition;
 
@@ -178,6 +179,7 @@ namespace HurricaneVR.Framework.Core.Player
 
         protected virtual void Awake()
         {
+            
             RigidBody = GetComponent<Rigidbody>();
             CharacterController = GetComponent<CharacterController>();
             Teleporter = GetComponent<HVRTeleporter>();
@@ -298,8 +300,8 @@ namespace HurricaneVR.Framework.Core.Player
 
             if (CharacterController.enabled)
             {
-               
-                HandleMovement(); 
+
+                HandleMovement();
 
                 if (CanRotate())
                 {
@@ -604,7 +606,7 @@ namespace HurricaneVR.Framework.Core.Player
             var v = (transform.position - PreviousPosition) / Time.deltaTime;
             var acceler = (v - _previousVelocity) / Time.deltaTime;
             _previousVelocity = v;
-            
+
             LeftJointHand.RigidBody.AddForce(acceler * LeftJointHand.RigidBody.mass, ForceMode.Force);
             RightJointHand.RigidBody.AddForce(acceler * RightJointHand.RigidBody.mass, ForceMode.Force);
 
@@ -875,4 +877,6 @@ namespace HurricaneVR.Framework.Core.Player
         Smooth,
         Snap
     }
+
+
 }

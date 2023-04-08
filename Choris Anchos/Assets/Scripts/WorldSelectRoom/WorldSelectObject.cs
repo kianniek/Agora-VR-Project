@@ -27,4 +27,9 @@ public class WorldSelectObject : MonoBehaviour
         RuntimeManager.AttachInstanceToGameObject(instance, this.transform, rb);
     }
 
+    private void OnDisable()
+    {
+        instance.stop(0);
+    }
+
 }
