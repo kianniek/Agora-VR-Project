@@ -11,7 +11,7 @@ public class ResetPlayerPos : MonoBehaviour
         if (ResetPlayerMessager.ResetPlayer)
         {
             playerController.transform.position = new Vector3(0, playerController.transform.position.y, 0);
-            playerController.transform.rotation = Quaternion.identity;
+            //playerController.transform.rotation = Quaternion.identity;
 
 
             playerController.PreviousPosition = transform.position;

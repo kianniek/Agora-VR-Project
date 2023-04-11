@@ -35,6 +35,7 @@ public class SnapToPlayerHead : MonoBehaviour
         if (other.CompareTag(tagToCompare))
         {
             transform.position = other.transform.position;
+            transform.localScale += Vector3.one;
         }
     }
     private void OnCollisionStay(Collision collision)
@@ -42,6 +43,7 @@ public class SnapToPlayerHead : MonoBehaviour
         if (collision.transform.CompareTag(tagToCompare))
         {
             transform.position = collision.transform.position;
+            transform.localScale += Vector3.one;
         }
     }
 }

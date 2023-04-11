@@ -16,7 +16,7 @@ Material:
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2451
   stringTagMap:
     RenderType: TransparentCutout
   disabledShaderPasses: []
@@ -108,8 +108,8 @@ Material:
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
-    - _QueueControl: 0
-    - _QueueOffset: 0
+    - _QueueControl: 1
+    - _QueueOffset: -16
     - _ReceiveShadows: 1
     - _SampleGI: 0
     - _Smoothness: 1
@@ -118,7 +118,7 @@ Material:
     - _SrcBlend: 1
     - _Surface: 0
     - _WorkflowMode: 1
-    - _ZTest: 4
+    - _ZTest: 8
     - _ZWrite: 1
     - _ZWriteControl: 0
     - height: 0

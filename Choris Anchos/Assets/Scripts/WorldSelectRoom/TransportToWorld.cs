@@ -13,6 +13,8 @@ public class TransportToWorld : MonoBehaviour
     [InspectorButton("LoadScene", 250)]
     public bool loadSceneWithoutInteraction;
 
+    public bool destroyObjOnLoaded = false;
+
     [Header("Shader Handler")]
     [SerializeField] WorldRevealURP worldReveal;
     [Tooltip("time it takes to move")]
@@ -27,6 +29,7 @@ public class TransportToWorld : MonoBehaviour
         {
             worldReveal.revealRadius = 0.01f;
         }
+
     }
 
     // Update is called once per frame
@@ -75,16 +78,18 @@ public class TransportToWorld : MonoBehaviour
         StartCoroutine(ExpandShader());
 
         yield return new WaitForSeconds(0.3f);
-        if (transportToScene == "WorldSelectRoom")
-        {
-            Destroy(this.gameObject);
-            ResetPlayerMessager.ResetPlayer = true;
-        }
-
+        
         print("Name of Old Scene is: " + selfScene.name);
         if (selfScene.name != "ScenePlayer")
         {
             SceneManager.UnloadSceneAsync(selfScene);
+        }
+
+        if (transportToScene == "WorldSelectRoom" || destroyObjOnLoaded)
+        {
+            ResetPlayerMessager.ResetPlayer = true;
+            yield return new WaitForSeconds(0.3f);
+            Destroy(this.gameObject);
         }
     }
 
