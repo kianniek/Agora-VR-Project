@@ -79,7 +79,7 @@ public class TransportToWorld : MonoBehaviour
 
         yield return new WaitForSeconds(0.3f);
         
-        print("Name of Old Scene is: " + selfScene.name);
+        //print("Name of Old Scene is: " + selfScene.name);
         if (selfScene.name != "ScenePlayer")
         {
             SceneManager.UnloadSceneAsync(selfScene);

@@ -6,23 +6,28 @@ using UnityEngine.SceneManagement;
 
 public class SkyboxManager : MonoBehaviour
 {
+    public Material SkyboxMaterial;
     [System.Serializable]
     public struct SkyboxColors
     {
+        [Range(0, 5)]
+        public float AtmosphereThickness;
         public string sceneName;
         public Color skyColor;
         public Color groundColor;
     }
     public SkyboxColors[] skyboxColors = {
         new SkyboxColors {
+            AtmosphereThickness = 1,
             sceneName = "SceneMusic",
-            skyColor = new Color(0.37f, 0.31f, 0.72f),
-            groundColor = new Color(0.14f, 0.19f, 0.36f)
+            skyColor = new Color(1,0,0.646297f),
+            groundColor = new Color(0,0.8231192f,1)
         },
         new SkyboxColors {
+            AtmosphereThickness = 0,
             sceneName = "WorldSelectRoom",
             skyColor = new Color(0,0,0),
-            groundColor = new Color(1,1,1)
+            groundColor = new Color(0,0,0)
         }
     };
 
@@ -45,7 +50,7 @@ public class SkyboxManager : MonoBehaviour
             if (scene.name.Equals(skyboxColors[i].sceneName))
             {
                 colorIndex = i;
-                print(scene.name);
+                print(scene.name + "|||" + colorIndex);
                 break;
             }
         }
@@ -53,10 +58,12 @@ public class SkyboxManager : MonoBehaviour
         // If we found a matching skybox color, apply it to the skybox
         if (colorIndex >= 0)
         {
-            Material skyboxMaterial = RenderSettings.skybox;
-            skyboxMaterial.SetColor("_SkyTint", skyboxColors[colorIndex].skyColor);
-            skyboxMaterial.SetColor("_GroundColor", skyboxColors[colorIndex].groundColor);
-            RenderSettings.skybox = skyboxMaterial;
+            //Material skyboxMaterial = RenderSettings.skybox;
+            SkyboxMaterial.SetColor("_SkyTint", skyboxColors[colorIndex].skyColor);
+            SkyboxMaterial.SetColor("_GroundColor", skyboxColors[colorIndex].groundColor);
+            SkyboxMaterial.SetFloat("_AtmosphereThickness", skyboxColors[colorIndex].AtmosphereThickness);
+            print(skyboxColors[colorIndex].skyColor);
+            //RenderSettings.skybox = skyboxMaterial;
         }
     }
 
@@ -76,10 +83,11 @@ public class SkyboxManager : MonoBehaviour
         // If we found a matching skybox color, apply it to the skybox
         if (colorIndex >= 0)
         {
-            Material skyboxMaterial = RenderSettings.skybox;
-            skyboxMaterial.SetColor("_SkyTint", skyboxColors[colorIndex].skyColor);
-            skyboxMaterial.SetColor("_GroundColor", skyboxColors[colorIndex].groundColor);
-            RenderSettings.skybox = skyboxMaterial;
+            //Material skyboxMaterial = RenderSettings.skybox;
+            SkyboxMaterial.SetColor("_SkyTint", skyboxColors[colorIndex].skyColor);
+            SkyboxMaterial.SetColor("_GroundColor", skyboxColors[colorIndex].groundColor);
+            SkyboxMaterial.SetFloat("_AtmosphereThickness", skyboxColors[colorIndex].AtmosphereThickness);
+            //RenderSettings.skybox = skyboxMaterial;
         }
     }
 

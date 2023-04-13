@@ -460,7 +460,7 @@ namespace HurricaneVR.Framework.ControllerInput
         {
             if (_applicationExiting)
                 return;
-            Debug.Log($"disconnected {device.name},{device.manufacturer}");
+            //Debug.Log($"disconnected {device.name},{device.manufacturer}");
             UpdateDeviceInformation(device);
         }
 
