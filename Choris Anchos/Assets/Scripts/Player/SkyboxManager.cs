@@ -1,33 +1,86 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+
 public class SkyboxManager : MonoBehaviour
 {
     [System.Serializable]
-    public struct SkyboxTypes
+    public struct SkyboxColors
     {
-        public string _Scene;
-        public Color _Sky;
-        public Color _Ground;
+        public string sceneName;
+        public Color skyColor;
+        public Color groundColor;
     }
-    public SkyboxTypes[] skyboxTypes;
-    // Start is called before the first frame update
-    void Start()
+    public SkyboxColors[] skyboxColors = {
+        new SkyboxColors {
+            sceneName = "SceneMusic",
+            skyColor = new Color(0.37f, 0.31f, 0.72f),
+            groundColor = new Color(0.14f, 0.19f, 0.36f)
+        },
+        new SkyboxColors {
+            sceneName = "WorldSelectRoom",
+            skyColor = new Color(0,0,0),
+            groundColor = new Color(1,1,1)
+        }
+    };
+
+    private void OnEnable()
     {
-        for (int i = 0; i < skyboxTypes.Length; i++)
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Find the index of the skybox color to use based on the scene name
+        int colorIndex = -1;
+        for (int i = 0; i < skyboxColors.Length; i++)
         {
-            if(SceneManager.GetSceneByName(skyboxTypes[i]._Scene).buildIndex == -1)
+            if (scene.name.Equals(skyboxColors[i].sceneName))
             {
-                Debug.LogWarning((skyboxTypes[i]._Scene + " is not a valid scene! /n Try to add a scene in the build or check if it is spelled the right way?")
+                colorIndex = i;
+                print(scene.name);
+                break;
             }
+        }
+
+        // If we found a matching skybox color, apply it to the skybox
+        if (colorIndex >= 0)
+        {
+            Material skyboxMaterial = RenderSettings.skybox;
+            skyboxMaterial.SetColor("_SkyTint", skyboxColors[colorIndex].skyColor);
+            skyboxMaterial.SetColor("_GroundColor", skyboxColors[colorIndex].groundColor);
+            RenderSettings.skybox = skyboxMaterial;
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateSkyboxColors()
     {
-        
+        // Find the index of the skybox color to use based on the scene name
+        int colorIndex = -1;
+        for (int i = 0; i < skyboxColors.Length; i++)
+        {
+            if (SceneManager.GetActiveScene().name.Equals(skyboxColors[i].sceneName))
+            {
+                colorIndex = i;
+                break;
+            }
+        }
+
+        // If we found a matching skybox color, apply it to the skybox
+        if (colorIndex >= 0)
+        {
+            Material skyboxMaterial = RenderSettings.skybox;
+            skyboxMaterial.SetColor("_SkyTint", skyboxColors[colorIndex].skyColor);
+            skyboxMaterial.SetColor("_GroundColor", skyboxColors[colorIndex].groundColor);
+            RenderSettings.skybox = skyboxMaterial;
+        }
     }
+
 }

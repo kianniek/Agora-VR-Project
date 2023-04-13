@@ -24,8 +24,7 @@ public class WorldRevealURP : MonoBehaviour
             materials[i].SetVector("_RevealPosition", transform.position);
             materials[i].SetFloat("_Amount", revealRadius);
 
-            //transform.position += Vector3.up;
-            //transform.position -= Vector3.up;
+            //transform.position = new Vector3(transform.position.x,Mathf.Sin(transform.position.y) , transform.position.z);
         }
     }
 

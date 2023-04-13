@@ -21,16 +21,17 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SpiritMaterial
-  m_Shader: {fileID: 10755, guid: 0000000000000000f000000000000000, type: 0}
-  m_ValidKeywords: []
-  m_InvalidKeywords:
+  m_Shader: {fileID: -6465566751694194690, guid: 442770128857c994185cbefb9409bd23,
+    type: 3}
+  m_ValidKeywords:
   - _ALPHATEST_ON
-  - _GLOSSYREFLECTIONS_OFF
+  m_InvalidKeywords: []
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -156,6 +157,7 @@ Material:
     - BottemSmooth: 0
     - TopSmooth: 0
     - _AlphaClip: 1
+    - _Angle: 0
     - _Blend: 0
     - _BumpScale: 1
     - _CastShadows: 1
@@ -199,6 +201,8 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
+    - _Threshold: 0.5
+    - _TopThreshold: 0.361
     - _UVSec: 0
     - _WindQuality: 0
     - _WorkflowMode: 1
@@ -215,8 +219,10 @@ Material:
     - TopEmmison: {r: 0, g: 0.96226406, b: 1, a: 1}
     - _BaseColor: {r: 0, g: 0.8085568, b: 1, a: 1}
     - _Color: {r: 0, g: 0.8085568, b: 1, a: 1}
+    - _ColorBottom: {r: 0, g: 0, b: 1, a: 1}
+    - _ColorTop: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
-    - _RevealPosition: {r: 1, g: 1, b: 2.53, a: 0}
+    - _RevealPosition: {r: -1.5, g: 1, b: 0.53, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

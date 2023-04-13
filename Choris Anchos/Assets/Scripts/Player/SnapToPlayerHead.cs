@@ -12,7 +12,7 @@ public class SnapToPlayerHead : MonoBehaviour
     {
         if (other.CompareTag(tagToCompare))
         {
-            transform.position = other.transform.position;
+            transform.position = Vector3.Lerp(transform.position, other.transform.position, 0.1f);
             if (transitionOnSnap && transportToWorld)
             {
                 transportToWorld.LoadScene();
@@ -23,7 +23,7 @@ public class SnapToPlayerHead : MonoBehaviour
     {
         if (collision.transform.CompareTag(tagToCompare))
         {
-            transform.position = collision.transform.position;
+            transform.position = Vector3.Lerp(transform.position, collision.transform.position ,0.1f);
             if (transitionOnSnap && transportToWorld)
             {
                 transportToWorld.LoadScene();
@@ -34,7 +34,7 @@ public class SnapToPlayerHead : MonoBehaviour
     {
         if (other.CompareTag(tagToCompare))
         {
-            transform.position = other.transform.position;
+            transform.position = Vector3.Lerp(transform.position, other.transform.position, 0.1f);
             transform.localScale += Vector3.one;
         }
     }
@@ -42,8 +42,13 @@ public class SnapToPlayerHead : MonoBehaviour
     {
         if (collision.transform.CompareTag(tagToCompare))
         {
-            transform.position = collision.transform.position;
+            transform.position = Vector3.Lerp(transform.position, collision.transform.position, 0.1f);
             transform.localScale += Vector3.one;
         }
+    }
+
+    void Transition(Vector3 pos)
+    {
+
     }
 }
