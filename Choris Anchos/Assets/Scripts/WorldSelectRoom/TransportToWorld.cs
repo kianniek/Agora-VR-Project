@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class TransportToWorld : MonoBehaviour
 {
     [Tooltip("Name of scene. (The scene must be in the list of scenes inside of the build settings)")]
-    [SerializeField] string transportToScene;
+    [SerializeField] public string transportToScene;
 
     [InspectorButton("LoadScene", 250)]
     public bool loadSceneWithoutInteraction;
@@ -16,7 +16,7 @@ public class TransportToWorld : MonoBehaviour
     public bool destroyObjOnLoaded = false;
 
     [Header("Shader Handler")]
-    [SerializeField] WorldRevealURP worldReveal;
+    [SerializeField] public WorldRevealURP worldReveal;
     [Tooltip("time it takes to move")]
     [SerializeField] float mps = 1f; // meter per second expand
     [SerializeField] float maxDiamiter = 10;

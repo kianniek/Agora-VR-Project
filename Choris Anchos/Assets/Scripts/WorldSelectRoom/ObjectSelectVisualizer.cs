@@ -11,7 +11,7 @@ public class ObjectSelectVisualizer : MonoBehaviour
     GameObject debugPoint;
     GameObject[] pillarsPosDupe = new GameObject[4];
     List<Vector3> pillarsPosStart;
-    GameObject closestPillars;
+    public GameObject closestPillars;
     Vector3 posOfHands = Vector3.zero;
 
     [SerializeField] bool debugMode = false;
