@@ -312,6 +312,10 @@ MonoBehaviour:
     sceneName: WorldSelectRoom
     skyColor: {r: 0, g: 0, b: 0, a: 1}
     groundColor: {r: 0, g: 0, b: 0, a: 1}
+  - AtmosphereThickness: 1
+    sceneName: SceneYoga
+    skyColor: {r: 0.7773585, g: 0.9935201, b: 1, a: 1}
+    groundColor: {r: 0.3679245, g: 0.22916389, b: 0, a: 1}
 --- !u!1 &1284616396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,7 +1111,7 @@ MonoBehaviour:
   IsLeftForceGrabActivated: 0
   IsRightForceGrabActivated: 0
   IsJumpActivated: 0
-  TeleportHandSide: 1
+  TeleportHandSide: 0
   SwapMovementAxis: 0
   UseWASD: 0
   IsMouseDown: 0
@@ -12799,8 +12803,8 @@ GameObject:
   - component: {fileID: 4144970921266190220}
   - component: {fileID: 286535464935934457}
   - component: {fileID: 5719880625602597668}
-  - component: {fileID: 5719880625602597669}
   - component: {fileID: 5719880625602597670}
+  - component: {fileID: 5719880625602597669}
   m_Layer: 8
   m_Name: PlayerController
   m_TagString: Untagged
@@ -13928,7 +13932,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f9712783fb5d42741a0836cba40871b1, type: 2}
@@ -14286,7 +14290,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f9712783fb5d42741a0836cba40871b1, type: 2}

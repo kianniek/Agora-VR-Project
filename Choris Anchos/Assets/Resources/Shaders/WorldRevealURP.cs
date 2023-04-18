@@ -6,7 +6,7 @@ using UnityEngine;
 public class WorldRevealURP : MonoBehaviour
 {
     [Header("References"), Tooltip("Materials related to the current type of shader")]
-    public Material[] materials = new Material[0];
+    public List<Material> materials = new();
     [Space(20)]
     [SerializeField]
     [Tooltip("Controls the radius of the revealed area")]
@@ -18,7 +18,7 @@ public class WorldRevealURP : MonoBehaviour
     /// </summary>
     public void UpdateValues()
     {
-        for (int i = 0; i < materials.Length; i++)
+        for (int i = 0; i < materials.Count; i++)
         {
             if (materials[i] == null) continue;
             materials[i].SetVector("_RevealPosition", transform.position);

@@ -18,6 +18,7 @@ public class GrowWhenSceneLoad : MonoBehaviour
 
     IEnumerator ScaleCoroutine()
     {
+        yield return new WaitForSeconds(3f);
         float elapsedTime = 0f;
 
         // Gradually scale up the object over time

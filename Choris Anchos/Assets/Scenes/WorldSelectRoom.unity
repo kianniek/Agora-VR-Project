@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.00011299972, g: 0.00011299972, b: 0.00011299972,
+  m_IndirectSpecularColor: {r: 0.00010842533, g: 0.00010842533, b: 0.00010842533,
     a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -1218,7 +1218,7 @@ MonoBehaviour:
   maxAmountDown: 50
   minDistance: 1.2
   closestPillars: {fileID: 0}
-  debugMode: 1
+  debugMode: 0
 --- !u!1 &1390083392
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,20 +1312,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   materialsWreckroom:
-  - {fileID: 2100000, guid: 3a94816e448d5894ba28660d6e60d8ad, type: 2}
-  - {fileID: 2100000, guid: 4105e74a48d50714fb54b0439eec5997, type: 2}
-  - {fileID: 2100000, guid: ba4b9cd0801a2794aafc5a1c162116fa, type: 2}
-  - {fileID: 2100000, guid: de495c98a2b9f724eb57e1a888d12d85, type: 2}
-  - {fileID: 2100000, guid: 661511a7965137b418469ff5d8025886, type: 2}
-  - {fileID: 2100000, guid: 54c4bcdab170a8d41ae3950947c614d4, type: 2}
-  - {fileID: 2100000, guid: 464da215bbba36d4b995c13a428f740b, type: 2}
-  - {fileID: 2100000, guid: 8cd159492c1df1c45bab0474c11a3f3b, type: 2}
-  - {fileID: 2100000, guid: ce71b8935beaffc47bd16208d077cdf3, type: 2}
-  - {fileID: 2100000, guid: 77b71a312d9a57146ab7b15cda084002, type: 2}
-  - {fileID: 2100000, guid: b307265344177b74d958c3ac0f556e47, type: 2}
-  - {fileID: 2100000, guid: f456fc9b66421c9449ab3e5c63b38db9, type: 2}
   - {fileID: 2100000, guid: b6bd17254059f964ab7ad92830393b27, type: 2}
   - {fileID: 2100000, guid: ae171bf6d58dae946882d48c69782a9f, type: 2}
+  - {fileID: 2100000, guid: c38434d3bf0768b4b9c5880e0e8eec2c, type: 2}
+  - {fileID: 2100000, guid: 4a1f17ecd8ea7774f934e71d85a45eba, type: 2}
+  - {fileID: 2100000, guid: 31c1aff630b8baa4daf5e84a38694814, type: 2}
+  - {fileID: 2100000, guid: b3cbc98aac041c54bb3a81fbdb16dfc2, type: 2}
+  - {fileID: 2100000, guid: f8a40d8cab2f1f548a2e6cd2d966c1f6, type: 2}
   materialsMusicRoom:
   - {fileID: 2100000, guid: 7e3aef3f271386c48ae1d8cde3474763, type: 2}
   - {fileID: 2100000, guid: ae171bf6d58dae946882d48c69782a9f, type: 2}
@@ -1335,7 +1328,19 @@ MonoBehaviour:
   - {fileID: 2100000, guid: d5d4006829bee5b4f8669c06546ce822, type: 2}
   - {fileID: 2100000, guid: e2f765356ad694547960e99fc3f84b12, type: 2}
   materialsWalkingWorld: []
-  materialsYoga: []
+  materialsYoga:
+  - {fileID: 2100000, guid: 28e6ed7a1563e574480796a830d24b9f, type: 2}
+  - {fileID: 2100000, guid: 479df9c9ce2c0a04b879d20783b9815e, type: 2}
+  - {fileID: 2100000, guid: afa889f757e7e5f4a81e89cae3330c58, type: 2}
+  - {fileID: 2100000, guid: 6b3226cf28ce6a04e873c63d3f8056f6, type: 2}
+  - {fileID: 2100000, guid: 01144f0260234b748ac94546cbe1d068, type: 2}
+  - {fileID: 2100000, guid: 9bac5e2271e77904d8f4b7d51a2abccd, type: 2}
+  - {fileID: 2100000, guid: 92c22c079a44abb46930e8784036f7cb, type: 2}
+  - {fileID: 2100000, guid: 14184fcdabf545d4a9647df52a92940e, type: 2}
+  - {fileID: 2100000, guid: 00a40a431d32de845bd2247955333bf1, type: 2}
+  - {fileID: 2100000, guid: b6bd17254059f964ab7ad92830393b27, type: 2}
+  - {fileID: 2100000, guid: ae171bf6d58dae946882d48c69782a9f, type: 2}
+  - {fileID: 2100000, guid: 7e3aef3f271386c48ae1d8cde3474763, type: 2}
   RevealPoint: {fileID: 8632377630273860270}
   ClosestRevealPedistal: {fileID: 1246141487}
 --- !u!4 &1496103407
@@ -5438,7 +5443,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 498b7545a39887b488c22ef14a193ac1, type: 2}
   - {fileID: 2100000, guid: d5d4006829bee5b4f8669c06546ce822, type: 2}
   - {fileID: 2100000, guid: e2f765356ad694547960e99fc3f84b12, type: 2}
-  revealRadius: 0.01
+  revealRadius: 36.27
 --- !u!4 &8632377630273860271
 Transform:
   m_ObjectHideFlags: 0
@@ -5447,8 +5452,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8632377630273860265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalPosition: {x: -0.43, y: 0, z: 0}
+  m_LocalScale: {x: 36.27, y: 36.27, z: 36.27}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1961317766903132959}
