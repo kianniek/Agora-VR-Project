@@ -1113,7 +1113,7 @@ MonoBehaviour:
   IsJumpActivated: 0
   TeleportHandSide: 0
   SwapMovementAxis: 0
-  UseWASD: 0
+  UseWASD: 1
   IsMouseDown: 0
   MouseAxis: {x: 0, y: 0}
 --- !u!137 &288828715279437033
@@ -12882,7 +12882,7 @@ MonoBehaviour:
   JumpVelocity: 2
   DoubleClickThreshold: 0.25
   RotationType: 0
-  SmoothTurnSpeed: 250
+  SmoothTurnSpeed: 100
   SmoothTurnThreshold: 0.1
   SnapAmount: 45
   SnapThreshold: 0.75
@@ -12908,7 +12908,7 @@ MonoBehaviour:
   LimitHeadDistance: 1
   MaxLean: 0.4
   FadeFromLean: 1
-  MouseTurning: 0
+  MouseTurning: 1
   MouseSensitivityX: 1
   IsGrounded: 0
   _actualVelocity: 0

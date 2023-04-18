@@ -76,13 +76,11 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance.setParameterByName(parameterName, parameterValue);
     }
 
-    public void PlayPanNote(PanNotes note, Vector3 worldPos)
+    public void PlayPanNote(PanNotes note, Vector3 worldPos, float pitch)
     {
         handPanInstance.setParameterByName("hand_pan", (float)note);
+        handPanInstance.setPitch(pitch);
         Debug.Log(handPanInstance.setParameterByName("hand_pan", (float)note));
-        float testValue = 1;
-        handPanInstance.getParameterByName("hand_pan", out testValue);
-        //Debug.Log(testValue + " " + (float)note);
         PlayOneShot(FMODEvents.instance.PanNotes, worldPos);
     }
     public void PlayMusicFromPoint(EventReference sound, Vector3 worldPos)

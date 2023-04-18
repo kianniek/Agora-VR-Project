@@ -81,6 +81,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3073
+--- !u!114 &-4862917851082264471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/NoteCPitchRegulator
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/NoteCPitchRegulator
+  Guid:
+    Data1: -1243622725
+    Data2: 1155460914
+    Data3: -1549215592
+    Data4: -27683310
+  Banks:
+  - {fileID: 2266109674660173364}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3073
 --- !u!114 &-4572614647487459570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,13 +251,14 @@ MonoBehaviour:
   - {fileID: 7813293582417515921}
   - {fileID: 5811844247609476975}
   - {fileID: -9109033845702479047}
+  - {fileID: -4862917851082264471}
   EditorParameters:
   - {fileID: -4079081939950833722}
   MasterBanks:
   - {fileID: 945724824160207066}
   StringsBanks:
   - {fileID: 1607179686751983810}
-  cacheTime: 638157063612472587
+  cacheTime: 638174307979027122
   cacheVersion: 131603
 --- !u!114 &215168984183701351
 MonoBehaviour:
@@ -274,7 +302,7 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638157063611666416
+  lastModified: 638174307938165037
   FileSizes:
   - Name: Desktop
     Value: 1278
@@ -294,7 +322,7 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/WorldSelect.bank
   Name: WorldSelect
   StudioPath: bank:/WorldSelect
-  lastModified: 638157063612101579
+  lastModified: 638174307979027122
   FileSizes:
   - Name: Desktop
     Value: 3951040
@@ -314,10 +342,10 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638157063611676274
+  lastModified: 638174307938185327
   FileSizes:
   - Name: Desktop
-    Value: 1364
+    Value: 1414
   Exists: 1
 --- !u!114 &2065166497493323867
 MonoBehaviour:
@@ -388,10 +416,10 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/HandPan.bank
   Name: HandPan
   StudioPath: bank:/HandPan
-  lastModified: 638157063612472587
+  lastModified: 638174307938123780
   FileSizes:
   - Name: Desktop
-    Value: 178272
+    Value: 179168
   Exists: 1
 --- !u!114 &5811844247609476975
 MonoBehaviour:
