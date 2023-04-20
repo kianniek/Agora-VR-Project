@@ -50,7 +50,7 @@ public class SkyboxManager : MonoBehaviour
             if (scene.name.Equals(skyboxColors[i].sceneName))
             {
                 colorIndex = i;
-                print(scene.name + "|||" + colorIndex);
+                //print(scene.name + "|||" + colorIndex);
                 break;
             }
         }
@@ -62,7 +62,7 @@ public class SkyboxManager : MonoBehaviour
             SkyboxMaterial.SetColor("_SkyTint", skyboxColors[colorIndex].skyColor);
             SkyboxMaterial.SetColor("_GroundColor", skyboxColors[colorIndex].groundColor);
             SkyboxMaterial.SetFloat("_AtmosphereThickness", skyboxColors[colorIndex].AtmosphereThickness);
-            print(skyboxColors[colorIndex].skyColor);
+            //print(skyboxColors[colorIndex].skyColor);
             //RenderSettings.skybox = skyboxMaterial;
         }
     }

@@ -21,7 +21,7 @@ namespace HurricaneVR.TechDemo.Scripts
         public List<Transform> Parents = new List<Transform>();
         public List<HVRGrabbable> Grabbables = new List<HVRGrabbable>();
 
-        [Header("Debug")] public bool ForceReset;
+        [Header("_debugMode")] public bool ForceReset;
 
         private readonly List<ResetState> _grabbableState = new List<ResetState>();
 
