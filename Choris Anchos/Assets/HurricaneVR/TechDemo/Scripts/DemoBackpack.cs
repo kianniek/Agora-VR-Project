@@ -37,7 +37,7 @@ namespace HurricaneVR.TechDemo.Scripts
                 IgnoreCollision(grabbable);
             }
             watch.Stop();
-            //Debug.Log($"Backpack colliders ignore took : {watch.ElapsedMilliseconds} ms.");
+            //_debugMode.Log($"Backpack colliders ignore took : {watch.ElapsedMilliseconds} ms.");
         }
 
         public void IgnoreCollision(HVRGrabbable grabbable)
