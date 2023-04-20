@@ -600,7 +600,7 @@ namespace HurricaneVR.Framework.ControllerInput
 
             if (wasNone && CurrentSDK != InputSDK.None)
             {
-                Debug.Log($"InputSDK : {CurrentSDK}");
+                //Debug.Log($"InputSDK : {CurrentSDK}");
             }
 
             switch (controllerType)
@@ -977,9 +977,9 @@ namespace HurricaneVR.Framework.ControllerInput
 #else
             loaders = string.Join(",", XRGeneralSettings.Instance.Manager.loaders.Select(e => e.name));
 #endif
-            Debug.Log($"{  XRGeneralSettings.Instance.Manager.automaticLoading}");
-            Debug.Log($"XRGeneralSettings.Instance.Manager.isInitializationComplete { XRGeneralSettings.Instance.Manager.isInitializationComplete}");
-            Debug.Log($"XRPlugin Detected | XRSettings.enabled {XRSettings.enabled} | Loader : {XRPluginLoader} | Loaders Enabled: {loaders}");
+            //Debug.Log($"{  XRGeneralSettings.Instance.Manager.automaticLoading}");
+            //Debug.Log($"XRGeneralSettings.Instance.Manager.isInitializationComplete { XRGeneralSettings.Instance.Manager.isInitializationComplete}");
+           // Debug.Log($"XRPlugin Detected | XRSettings.enabled {XRSettings.enabled} | Loader : {XRPluginLoader} | Loaders Enabled: {loaders}");
 
             XRPluginActive = XRSettings.enabled && XRGeneralSettings.Instance.Manager.isInitializationComplete;
 #elif !UNITY_2020_1_OR_NEWER
@@ -1029,7 +1029,7 @@ namespace HurricaneVR.Framework.ControllerInput
         public void StopXR()
         {
 #if USING_XR_MANAGEMENT
-            Debug.Log($"stopping xr plugin");
+            //Debug.Log($"stopping xr plugin");
             if (XRGeneralSettings.Instance && XRGeneralSettings.Instance.Manager &&
                 XRGeneralSettings.Instance.Manager.activeLoader != null && XRGeneralSettings.Instance.Manager.isInitializationComplete)
             {

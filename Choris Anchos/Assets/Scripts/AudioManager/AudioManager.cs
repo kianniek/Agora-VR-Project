@@ -76,20 +76,27 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance.setParameterByName(parameterName, parameterValue);
     }
 
-    public void PlayPanNote(PanNotes note, Vector3 worldPos, float pitch)
-    {
-        handPanInstance.setParameterByName("hand_pan", (float)note);
-        handPanInstance.setPitch(pitch);
-        Debug.Log(handPanInstance.setParameterByName("hand_pan", (float)note));
-        PlayOneShot(FMODEvents.instance.PanNotes, worldPos);
-    }
-    public void PlayMusicFromPoint(EventReference sound, Vector3 worldPos)
-    {
-        PlayOneShot(sound, worldPos);
-    }
+    //public void PlayPanNote(EventReference sound, Vector3 worldPos, float pitch)
+    //{
+    //    handPanInstance.setPitch(pitch);
+    //    PlayOneShot(handPanInstance, worldPos);
+    //}
+    //public void PlayMusicFromPoint(EventReference sound, Vector3 worldPos)
+    //{
+    //    PlayOneShot(sound, worldPos);
+    //}
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
     {
         RuntimeManager.PlayOneShot(sound, worldPos);
+    }
+
+    public void PlayOneShot3D(EventReference sound, Vector3 worldPos, float pitch = 1f)
+    {
+        var instance = RuntimeManager.CreateInstance(sound);
+        instance.set3DAttributes(RuntimeUtils.To3DAttributes(worldPos));
+        instance.setPitch(pitch);
+        instance.start();
+        instance.release(); // release the instance to avoid leaking FMOD resources
     }
 
     public EventInstance CreateInstance(EventReference eventReference)
