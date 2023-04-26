@@ -1,12 +1,12 @@
+using HurricaneVR.Framework.Shared;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-
 public class SkyboxManager : MonoBehaviour
 {
     public Material SkyboxMaterial;
+
     [System.Serializable]
     public struct SkyboxColors
     {

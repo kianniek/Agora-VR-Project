@@ -1,0 +1,40 @@
+#pragma kernel RaiseVertices
+
+struct Vertex
+{
+    float3 position;
+};
+
+RWStructuredBuffer<Vertex> vertices;
+StructuredBuffer<Vertex> originalVertices;
+
+float raiseAmount;
+
+[numthreads(64, 1, 1)]
+void RaiseVertices(uint3 id : SV_DispatchThreadID)
+{
+    Vertex v = vertices[id.x];
+
+    if (originalVertices[id.x].position.y <= 0)
+    {
+        vertices[id.x] = v;
+        return;
+    }
+
+    // Get original position
+    v.position = originalVertices[id.x].position;
+
+    // Calculate raise factor based on vertex height
+    float max_height = 0.0;
+    float height = originalVertices[id.x].position.y;
+    if (height > max_height)
+    {
+        max_height = height;
+    }
+    float height_factor = 1.0 + v.position.y / max_height;
+
+    // Raise vertex
+    v.position.y *= raiseAmount * height_factor;
+
+    vertices[id.x].position = v.position;
+}

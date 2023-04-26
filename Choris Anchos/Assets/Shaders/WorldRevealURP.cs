@@ -1,4 +1,3 @@
-using ExternalPropertyAttributes;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +9,7 @@ public class WorldRevealURP : MonoBehaviour
     [Space(20)]
     [SerializeField]
     [Tooltip("Controls the radius of the revealed area")]
-    [MinValue(0.01f)]
+    [Min(0.01f)]
     public float revealRadius = 0.01f;
 
     public bool invert;
