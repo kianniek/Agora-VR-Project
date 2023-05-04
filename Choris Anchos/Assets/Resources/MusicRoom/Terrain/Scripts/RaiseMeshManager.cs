@@ -8,13 +8,17 @@ public class RaiseMeshManager : MonoBehaviour
 {
     [SerializeField]
     [Min(0)]
-    public float childHeight = 1;
+    public float childHeight = 0.5f;
+    [SerializeField]
+    public Transform playerPos;
+    [SerializeField]
+    Vector3 posOld = new(0, 0, 0);
     [SerializeField]
     RaiseMesh[] raiseMeshes;
     // Start is called before the first frame update
     void Start()
     {
-        if(raiseMeshes.Length == 0)
+        if (raiseMeshes.Length == 0)
         {
             raiseMeshes = GetComponentsInChildren<RaiseMesh>();
         }
@@ -24,15 +28,24 @@ public class RaiseMeshManager : MonoBehaviour
     void Update()
     {
         bool updateHeight = false;
-
-        foreach (RaiseMesh raiseMesh in raiseMeshes)
+        if (posOld != playerPos.position)
         {
-            if (raiseMesh.raiseAmount != childHeight)
+            updateHeight = true;
+            print("posOld != playerPos.position");
+        }
+        else
+        {
+            foreach (RaiseMesh raiseMesh in raiseMeshes)
             {
-                updateHeight = true;
-                break;
+                if (raiseMesh.raiseAmount != childHeight)
+                {
+                    updateHeight = true;
+                    break;
+                }
             }
         }
+
+
 
         if (updateHeight)
         {
@@ -40,8 +53,11 @@ public class RaiseMeshManager : MonoBehaviour
             foreach (RaiseMesh raiseMesh in raiseMeshes)
             {
                 raiseMesh.raiseAmount = childHeight;
+                raiseMesh.playerPos = playerPos;
+                posOld = playerPos.position;
             }
         }
+
     }
 
 }
