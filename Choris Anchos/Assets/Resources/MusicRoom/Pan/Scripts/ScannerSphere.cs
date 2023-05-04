@@ -14,10 +14,10 @@ public class ScannerSphere : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.localScale += new Vector3(speed, speed, speed);
+        this.transform.localScale += speed * Vector3.one;
     }
 
-    public void setSpeed(float getSpeed)
+    public void SetSpeed(float getSpeed)
     {
         speed = getSpeed;
     }

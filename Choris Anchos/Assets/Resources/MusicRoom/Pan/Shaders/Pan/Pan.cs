@@ -44,7 +44,7 @@ public class Pan : MonoBehaviour
 
         AudioManager.instance.PlayOneShot(note, this.transform.position);
 
-        myScanner.setSpeed(Mathf.Pow(speedPitch, Macht) / devide);
+        myScanner.SetSpeed(Mathf.Pow(speedPitch, Macht) / devide);
         Destroy(scannerPulse, scannerLifeTime);
     }
 

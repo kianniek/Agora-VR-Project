@@ -2646,6 +2646,7 @@ GameObject:
   - component: {fileID: 1425378558}
   - component: {fileID: 1425378559}
   - component: {fileID: 1425378560}
+  - component: {fileID: 1425378561}
   m_Layer: 10
   m_Name: Collider
   m_TagString: Untagged
@@ -2745,6 +2746,23 @@ MonoBehaviour:
   minHitVelocity: 0.3
   maxHitVelocity: 3
   _debugMode: 0
+--- !u!114 &1425378561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425378556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4e3f25c9cd0c474eaacf309110d99d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scannerPref: {fileID: 730753971677211485, guid: c45805a492bbe80478b578dcc9267fdf,
+    type: 3}
+  bong: 0
+  scannerLifeTime: 0
+  pitchMultiplier: 2
 --- !u!64 &1425576145
 MeshCollider:
   m_ObjectHideFlags: 0
