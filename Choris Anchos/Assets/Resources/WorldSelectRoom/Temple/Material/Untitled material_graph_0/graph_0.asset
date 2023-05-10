@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eed5864476f84ce4b85454db09ca4eaa, type: 3}
   m_Name: graph_0
   m_EditorClassIdentifier: 
-  AssetPath: Assets/Resources/Temple_SelectWorldRoom/Material/Untitled material.sbsar
-  OutputPath: Assets\Resources\Temple_SelectWorldRoom\Material\Untitled material_graph_0
+  AssetPath: Assets/Resources/WorldSelectRoom/Temple/Material/Untitled material.sbsar
+  OutputPath: Assets\Resources\WorldSelectRoom\Temple\Material\Untitled material_graph_0
   RawData: {fileID: -244192453324840774, guid: e2b309acbdb641a42afe9401a1eae67b, type: 3}
   Name: graph_0
   IsRoot: 1
   FlagedForDelete: 0
-  GUID: bf97f4ac-ccc6-4d53-bfb0-1281b4055ed2
+  GUID: 63c7d54a-f8aa-46db-8968-1320addb431b
   Index: 0
   Input:
-  - rid: 993853420279169026
-  - rid: 993853420279169027
+  - rid: 3418958259109494784
+  - rid: 3418958259109494785
   Output:
   - Index: 0
     VirtualOutputIndex: 0
@@ -379,7 +379,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 993853420279169026
+    - rid: 3418958259109494784
       type: {class: SubstanceInputInt2, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 0
@@ -398,7 +398,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 993853420279169027
+    - rid: 3418958259109494785
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 1

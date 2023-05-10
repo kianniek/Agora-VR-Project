@@ -17,6 +17,7 @@ namespace HurricaneVR.Framework.ControllerInput
         [Header("Grab Settings")]
         public bool CanDistanceGrab = true;
 
+        public bool canLocomotion = true;
         public bool CanTriggerGrab;
 
         [Tooltip("For non flick style force grabber")]
@@ -323,33 +324,40 @@ namespace HurricaneVR.Framework.ControllerInput
 
         protected virtual Vector2 GetMovementAxis()
         {
-            if (UseWASD)
+            if (canLocomotion)
             {
-                var wasd = CheckWASD();
-                if (wasd.sqrMagnitude > 0f)
-                    return wasd;
-            }
-
-            if (SwapMovementAxis)
-            {
-                if (RightController.ControllerType == HVRControllerType.Vive)
+                if (UseWASD)
                 {
-                    if (RightController.TrackpadButtonState.Active)
-                        return RightController.TrackpadAxis;
+                    var wasd = CheckWASD();
+                    if (wasd.sqrMagnitude > 0f)
+                        return wasd;
+                }
+
+                if (SwapMovementAxis)
+                {
+                    if (RightController.ControllerType == HVRControllerType.Vive)
+                    {
+                        if (RightController.TrackpadButtonState.Active)
+                            return RightController.TrackpadAxis;
+                        return Vector2.zero;
+                    }
+
+                    return RightController.JoystickAxis;
+                }
+
+                if (LeftController.ControllerType == HVRControllerType.Vive)
+                {
+                    if (LeftController.TrackpadButtonState.Active)
+                        return LeftController.TrackpadAxis;
                     return Vector2.zero;
                 }
 
-                return RightController.JoystickAxis;
+                return LeftController.JoystickAxis;
             }
-
-            if (LeftController.ControllerType == HVRControllerType.Vive)
+            else
             {
-                if (LeftController.TrackpadButtonState.Active)
-                    return LeftController.TrackpadAxis;
-                return Vector2.zero;
+                return new Vector2(0, 0);
             }
-
-            return LeftController.JoystickAxis;
         }
 
         private Vector2 CheckWASD()
