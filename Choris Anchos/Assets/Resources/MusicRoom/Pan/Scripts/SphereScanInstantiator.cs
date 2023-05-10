@@ -8,7 +8,8 @@ public class SphereScanInstantiator : MonoBehaviour
     [SerializeField] private GameObject scannerPref; // Prefab for scanner sphere
     [SerializeField] private bool bong = false; // Unused variable
     [SerializeField] private float scannerLifeTime; // Lifetime of scanner sphere
-    [SerializeField] float pitchMultiplier; // Multiplier for scanner sphere speed
+    [SerializeField] float pitchPower; // Multiplier for scanner sphere speed
+    [SerializeField] float pitchDevider; // Multiplier for scanner sphere speed
 
     Renderer renderer;
     Material material;
@@ -24,7 +25,7 @@ public class SphereScanInstantiator : MonoBehaviour
         // Instantiate new scanner sphere and set its speed
         GameObject scannerPulse = Instantiate(scannerPref, this.transform.position, this.transform.rotation);
         ScannerSphere myScanner = scannerPulse.GetComponent<ScannerSphere>();
-        myScanner.SetSpeed(Mathf.Pow(pitch, pitchMultiplier));
+        myScanner.SetSpeed(Mathf.Pow(pitch/ pitchDevider, pitchPower));
 
         // Set up variables for fading out the scanner sphere
         renderer = scannerPulse.GetComponent<Renderer>();

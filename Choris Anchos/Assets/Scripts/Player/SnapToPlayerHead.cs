@@ -84,6 +84,7 @@ public class SnapToPlayerHead : MonoBehaviour
     void SetDepthTest(ZTestValue SetValue)
     {
         // Get the material of the object
+        TransporterMaterial = GetComponent<MeshRenderer>().material;
         Material material = TransporterMaterial;
 
         // Map the ZTest enum value to the corresponding CompareFunction value

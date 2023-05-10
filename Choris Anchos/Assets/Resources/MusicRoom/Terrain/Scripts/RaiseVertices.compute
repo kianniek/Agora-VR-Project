@@ -1,14 +1,8 @@
 #pragma kernel RaiseVertices
 //#pragma constant UNITY_MATRIX_MVP "_UnityMatrixMVP"
 
-
-struct Vertex
-{
-    float3 position;
-};
-
-RWStructuredBuffer<Vertex> vertices;
-StructuredBuffer<Vertex> originalVertices;
+RWStructuredBuffer<float3> vertices;
+StructuredBuffer<float3> originalVertices;
 
 float raiseAmount;
 float3 reverencePosition;
@@ -21,19 +15,17 @@ float length(float3 v, float3 w)
 {
     float a = v.x - w.x;
 
-    float b = v.y - w.y;
-
     float c = v.z - w.z;
     
-    return sqrt(pow(a, 2)/* + pow(b, 2)*/ + pow(c, 2));
+    return sqrt(pow(a, 2) + pow(c, 2));
 }
 
 [numthreads(64, 1, 1)]
 void RaiseVertices(uint3 id : SV_DispatchThreadID)
 {
-    Vertex v = vertices[id.x];
+    float3 v = vertices[id.x];
 
-    if (originalVertices[id.x].position.y <= 0)
+    if (originalVertices[id.x].y <= 0)
     {
         vertices[id.x] = v;
         return;
@@ -41,144 +33,27 @@ void RaiseVertices(uint3 id : SV_DispatchThreadID)
 
     
     // Get original position
-    v.position = originalVertices[id.x].position;
-    float4 vertexPosition = float4(v.position, 1.0f);
+    v = originalVertices[id.x];
+    float4 vertexPosition = float4(v, 1.0f);
     float4 worldPosition = mul(UNITY_MATRIX_MVP, vertexPosition);
     float distance = length(reverencePosition, worldPosition.xyz);
     float fadeDistance = 50.0f;
+    
     if (distance < fadeDistance) // Check distance and return immediately if less than 5
     {
-        vertices[id.x].position = originalVertices[id.x].position;
+        vertices[id.x] = originalVertices[id.x];
         return;
     }
     
     float max_height = 0.0;
-    float height = originalVertices[id.x].position.y;
+    float height = originalVertices[id.x].y;
     if (height > max_height)
     {
         max_height = height;
     }
-    float height_factor = 1.0 + v.position.y / max_height;
+    float height_factor = 1.0 + v.y / max_height;
     float raise_amount = (raiseAmount / fadeDistance) * height_factor * (distance - fadeDistance) / fadeDistance;
-    v.position.y *= 1 + raise_amount;
+    v.y *= 1 + raise_amount;
 
-    vertices[id.x].position = v.position;
+    vertices[id.x] = v;
 }
-
-
-//#pragma kernel RaiseVertices
-
-//struct Vertex
-//{
-//    float3 position;
-//};
-
-//RWStructuredBuffer<Vertex> vertices;
-//StructuredBuffer<Vertex> originalVertices;
-
-//float raiseAmount;
-//float3 reverencePosition;
-
-//// Custom length function for 3D vectors
-//float length(float3 v)
-//{
-//    return sqrt(v.x * v.x + v.y * v.y + v.z * v.z);
-//}
-//[numthreads(64, 1, 1)]
-//void RaiseVertices(uint3 id : SV_DispatchThreadID)
-//{
-//    Vertex v = vertices[id.x];
-
-//    if (originalVertices[id.x].position.y <= 0)
-//    {
-//        vertices[id.x] = v;
-//        return;
-//    }
-
-    
-    
-//    // Get original position
-//    v.position = originalVertices[id.x].position;
-//    float max_height = 0.0;
-//    float height = originalVertices[id.x].position.y;
-//    if (height > max_height)
-//    {
-//        max_height = height;
-//    }
-//    float distanceToCenter = length(v.position - reverencePosition);
-//    float height_factor = smoothstep(0.0, 5.0, distanceToCenter) * (1.0 + v.position.y / max_height);
-
-//    // Raise vertex
-//    v.position.y *= raiseAmount * height_factor;
-
-//    vertices[id.x].position = v.position;
-//}
-
-
-//#pragma kernel RaiseVertices
-//#pragma constant UNITY_MATRIX_MVP "_UnityMatrixMVP"
-
-
-//struct Vertex
-//{
-//    float3 position;
-//};
-
-//RWStructuredBuffer<Vertex> vertices;
-//StructuredBuffer<Vertex> originalVertices;
-
-//float raiseAmount;
-//float3 reverencePosition;
-
-//// Declare UNITY_MATRIX_MVP manually
-//float4x4 UNITY_MATRIX_MVP;
-
-//// Custom length function for 3D vectors
-//float length(float3 v, float3 w)
-//{
-//    float a = v.x - w.x;
-
-//    float b = v.y - w.y;
-
-//    float c = v.z - w.z;
-    
-//    return sqrt(pow(a, 2) /* + pow(b, 2)*/ + pow(c, 2));
-//}
-
-//[numthreads(64, 1, 1)]
-//void RaiseVertices(uint3 id : SV_DispatchThreadID)
-//{
-//    Vertex v = vertices[id.x];
-
-//    if (originalVertices[id.x].position.y <= 0)
-//    {
-//        vertices[id.x] = v;
-//        return;
-//    }
-
-    
-//    // Get original position
-//    v.position = originalVertices[id.x].position;
-//    float4 vertexPosition = float4(v.position, 1.0f);
-//    float4 worldPosition = mul(UNITY_MATRIX_MVP, vertexPosition);
-//    float distance = length(reverencePosition, worldPosition.xyz);
-    
-//    if (distance < 5.0f) // Check distance and return immediately if less than 5
-//    {
-//        vertices[id.x].position = originalVertices[id.x].position;
-//        return;
-//    }
-    
-//    float max_height = 0.0;
-//    float height = originalVertices[id.x].position.y;
-//    if (height > max_height)
-//    {
-//        max_height = height;
-//    }
-//    float height_factor = 1.0 + v.position.y / max_height;
-
-//    float raise_amount = raiseAmount * height_factor * ((distance - 5.0f) / 5.0f);
-//    v.position.y += raise_amount;
-
-//    vertices[id.x].position = v.position;
-//}

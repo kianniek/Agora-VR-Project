@@ -1,4 +1,5 @@
 using FMODUnity;
+using HurricaneVR.Framework.Shared;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,12 @@ using UnityEngine.UIElements;
 
 public class PlayPanOnMesh : MonoBehaviour
 {
+    const float PITCH_C4 = 261.63f;
+
+    [InspectorButton("DebugModeAudio")]
+    public int TestPitchButton;
+    [SerializeField] SphereScanInstantiator sphereScanInstantiatorScript;
+    [SerializeField] RaiseMeshManager raiseMeshManager;
     [SerializeField] EventReference note;  // Reference to the audio event to be played
     [SerializeField] Transform handpanRotation;  // Reference to the handpan's rotation transform
     [SerializeField] Transform[] notePositions;  // Array of note positions on the handpan
@@ -27,13 +34,19 @@ public class PlayPanOnMesh : MonoBehaviour
 
     [SerializeField] private bool _debugMode = false;  // Flag for enabling or disabling debug mode
 
-    const float PITCH_C4 = 261.63f;
+    float timeElapsed;
+    float lerpDuration = 3;
 
     private bool canPlay = true;
 
     // Called when the script instance is being loaded
     private void Awake()
     {
+        if (!sphereScanInstantiatorScript)
+        {
+            Debug.LogWarning("No SphereScanInstantiator Script, attach the SphereScanInstantiator Script to this object");
+        }
+
         notePositionsProjected = new Transform[notePositions.Length];
         // Loop through each note position on the handpan
         for (int i = 0; i < notePositions.Length; i++)
@@ -51,7 +64,7 @@ public class PlayPanOnMesh : MonoBehaviour
             notePositions[i].position = point = PlaneMath.PointCirleToPointPlane(handpanRotation.position, projectedPoint);
             notePositionsProjected[i] = notePositions[i];
             // Draw a debug marker at the projected point if debug mode is enabled
-            DebugMode(point, Color.red);
+            DebugModeVisual(point, Color.red);
         }
     }
 
@@ -96,7 +109,21 @@ public class PlayPanOnMesh : MonoBehaviour
         float pitch = CalculatePitchFromCollision(projectedPoint);
 
         // Play the sound with the calculated pitch
+        Debug.LogAssertion("Playing Handpan on frequency " + pitch);
         AudioManager.instance.PlayOneShot3D(note, transform.position, pitch);
+
+        if (sphereScanInstantiatorScript)
+        {
+            sphereScanInstantiatorScript.SetPitchAndPlay(pitch);
+        }
+
+        if (raiseMeshManager)
+        {
+            raiseMeshManager.childHeight += pitch;
+            StopCoroutine(StretchBack());
+            timeElapsed = 0;
+            StartCoroutine(StretchBack());
+        }
 
         StartCoroutine(WaitBeforeNextHit());
     }
@@ -107,11 +134,21 @@ public class PlayPanOnMesh : MonoBehaviour
         canPlay = true;
     }
 
+    IEnumerator StretchBack()
+    {
+        while (raiseMeshManager.childHeight != 1)
+        {
+            raiseMeshManager.childHeight = Mathf.Lerp(raiseMeshManager.childHeight, 1, timeElapsed / lerpDuration);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        raiseMeshManager.childHeight = 1;
+    }
     private float CalculatePitchFromCollision(Vector3 point)
     {
         point = PlaneMath.PointCirleToPointPlane(handpanRotation.position, point);
         Debug.Log(point);
-        DebugMode(point, Color.gray);
+        DebugModeVisual(point, Color.gray);
 
         float pitch = 0f;
         int noteCount = 0;
@@ -130,8 +167,9 @@ public class PlayPanOnMesh : MonoBehaviour
             weights[i] = 1f / Mathf.Max(distance, 0.0001f); // Avoid division by zero
             totalDistance += weights[i];
 
-            Note note = closestNotes[i].GetComponent<Note>();
-            if (note != null)
+            //Note note = closestNotes[i].GetComponent<Note>();
+            //if (note != null)
+            if (closestNotes[i].TryGetComponent<Note>(out var note))
             {
                 pitch += note.pitch;
                 noteCount++;
@@ -157,7 +195,7 @@ public class PlayPanOnMesh : MonoBehaviour
     }
 
 
-    void DebugMode(Vector3 point, UnityEngine.Color color)
+    void DebugModeVisual(Vector3 point, UnityEngine.Color color)
     {
         if (!_debugMode) { return; }
         GameObject prim;
@@ -172,6 +210,26 @@ public class PlayPanOnMesh : MonoBehaviour
         prim.transform.position = point;
         prim.transform.localScale = Vector3.one / 50;
         Destroy(prim.GetComponent<Collider>());
+    }
+
+    void DebugModeAudio()
+    {
+        float pitch = Mathf.Log(1 / PITCH_C4, 2f) + _pitchOffset;
+        // Play the sound with the calculated pitch
+        AudioManager.instance.PlayOneShot3D(note, transform.position, pitch);
+        Debug.LogAssertion("Playing Handpan on frequency " + pitch);
+        if (sphereScanInstantiatorScript)
+        {
+            sphereScanInstantiatorScript.SetPitchAndPlay(pitch);
+        }
+
+        if (raiseMeshManager)
+        {
+            raiseMeshManager.childHeight += Mathf.Abs(pitch);
+            StopCoroutine(StretchBack());
+            timeElapsed = 0;
+            StartCoroutine(StretchBack());
+        }
     }
 }
 public static class PlaneMath
