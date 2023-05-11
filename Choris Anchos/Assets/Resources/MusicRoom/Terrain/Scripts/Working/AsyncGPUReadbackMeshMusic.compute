@@ -1,0 +1,57 @@
+﻿#pragma kernel CSMainMusic
+
+RWStructuredBuffer<float3> vertexBuffer;
+StructuredBuffer<float3> originalVertexBuffer;
+
+float _RaiseAmount;
+float3 _ReverencePosition;
+//uint _VertexCount;
+
+// Declare UNITY_MATRIX_MVP manually
+float4x4 UNITY_MATRIX_MVP;
+
+// Custom length function for 3D vectors
+float length(float3 v, float3 w)
+{
+    float a = v.x - w.x;
+
+    float c = v.z - w.z;
+    
+    return sqrt(pow(a, 2) + pow(c, 2));
+}
+[numthreads(32,1,1)]
+void CSMainMusic (uint3 id : SV_DispatchThreadID)
+{
+    float3 pos = vertexBuffer[id.x];
+
+    if (originalVertexBuffer[id.x].y <= 0)
+    {
+        vertexBuffer[id.x] = pos;
+        return;
+    }
+
+    
+    pos = originalVertexBuffer[id.x];
+    float4 vertexPosition = float4(pos, 1.0f);
+    float4 worldPosition = mul(UNITY_MATRIX_MVP, vertexPosition);
+    float distance = length(_ReverencePosition, worldPosition.xyz);
+    float fadeDistance = 50.0f;
+    
+    if (distance < fadeDistance) // Check distance and return immediately if less than 5
+    {
+        vertexBuffer[id.x] = originalVertexBuffer[id.x];
+        return;
+    }
+    
+    float max_height = 0.0;
+    float height = originalVertexBuffer[id.x].y;
+    if (height > max_height)
+    {
+        max_height = height;
+    }
+    float height_factor = 1.0 + pos.y / max_height;
+    float raise_amount = (_RaiseAmount / fadeDistance) * height_factor * (distance - fadeDistance) / fadeDistance;
+    pos.y *= 1 + raise_amount;
+    
+    vertexBuffer[id.x] = pos;
+}

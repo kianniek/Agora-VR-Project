@@ -15,12 +15,13 @@ public class PlayPanOnMesh : MonoBehaviour
     [InspectorButton("DebugModeAudio")]
     public int TestPitchButton;
     [SerializeField] SphereScanInstantiator sphereScanInstantiatorScript;
-    [SerializeField] RaiseMeshManager raiseMeshManager;
+    [SerializeField] AsyncGPUReadbackMeshMusic raiseMeshManager;
+    [Space(10)]
     [SerializeField] EventReference note;  // Reference to the audio event to be played
     [SerializeField] Transform handpanRotation;  // Reference to the handpan's rotation transform
     [SerializeField] Transform[] notePositions;  // Array of note positions on the handpan
     [SerializeField] Transform[] notePositionsProjected;  // Array of note positions on a plane
-
+    [Space(10)]
     public float minPitch = 0f;  // Minimum pitch value for the audio event
     public float maxPitch = 10;  // Maximum pitch value for the audio event
     [Range(-10, 10)]
@@ -35,7 +36,8 @@ public class PlayPanOnMesh : MonoBehaviour
     [SerializeField] private bool _debugMode = false;  // Flag for enabling or disabling debug mode
 
     float timeElapsed;
-    float lerpDuration = 3;
+    float lerpDurationBegin = 0.01f;
+    float lerpDurationEnd = 3f;
 
     private bool canPlay = true;
 
@@ -119,10 +121,10 @@ public class PlayPanOnMesh : MonoBehaviour
 
         if (raiseMeshManager)
         {
-            raiseMeshManager.childHeight += pitch;
-            StopCoroutine(StretchBack());
+            float targetHeight = raiseMeshManager.raiseAmount + Mathf.Abs(pitch);
+            StopCoroutine(LerpHeightBegin(targetHeight));
             timeElapsed = 0;
-            StartCoroutine(StretchBack());
+            StartCoroutine(LerpHeightBegin(targetHeight));
         }
 
         StartCoroutine(WaitBeforeNextHit());
@@ -134,15 +136,30 @@ public class PlayPanOnMesh : MonoBehaviour
         canPlay = true;
     }
 
-    IEnumerator StretchBack()
+    IEnumerator LerpHeightBegin(float targetHeight)
     {
-        while (raiseMeshManager.childHeight != 1)
+        while (raiseMeshManager.raiseAmount != targetHeight)
         {
-            raiseMeshManager.childHeight = Mathf.Lerp(raiseMeshManager.childHeight, 1, timeElapsed / lerpDuration);
+            raiseMeshManager.raiseAmount = Mathf.Lerp(raiseMeshManager.raiseAmount, targetHeight, timeElapsed / lerpDurationBegin);
             timeElapsed += Time.deltaTime;
             yield return null;
         }
-        raiseMeshManager.childHeight = 1;
+        raiseMeshManager.raiseAmount = targetHeight;
+        timeElapsed = 0;
+        StopCoroutine(LerpHeightEnd());
+        StartCoroutine(LerpHeightEnd());
+    }
+
+    IEnumerator LerpHeightEnd()
+    {
+        while (raiseMeshManager.raiseAmount != 1)
+        {
+            raiseMeshManager.raiseAmount = Mathf.Lerp(raiseMeshManager.raiseAmount, 1, timeElapsed / lerpDurationEnd);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        timeElapsed = 0;
+        raiseMeshManager.raiseAmount = 1;
     }
     private float CalculatePitchFromCollision(Vector3 point)
     {
@@ -225,10 +242,10 @@ public class PlayPanOnMesh : MonoBehaviour
 
         if (raiseMeshManager)
         {
-            raiseMeshManager.childHeight += Mathf.Abs(pitch);
-            StopCoroutine(StretchBack());
+            float targetHeight = raiseMeshManager.raiseAmount + Mathf.Abs(pitch);
+            StopCoroutine(LerpHeightBegin(targetHeight));
             timeElapsed = 0;
-            StartCoroutine(StretchBack());
+            StartCoroutine(LerpHeightBegin(targetHeight));
         }
     }
 }
