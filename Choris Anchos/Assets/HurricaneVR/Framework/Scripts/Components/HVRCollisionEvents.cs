@@ -39,6 +39,7 @@ namespace HurricaneVR.Framework.Components
             var forceMet = LastImpulse > ForceThreshold;
             var velocityMet = LastVelocity > VelocityThreshold;
 
+            SendMessage("PlayOneShot");
 
             if (CollisionType == CollisionEventType.Impulse && forceMet ||
                 CollisionType == CollisionEventType.Velocity && velocityMet ||

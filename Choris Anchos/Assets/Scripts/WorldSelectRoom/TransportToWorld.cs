@@ -1,7 +1,5 @@
-using HurricaneVR.Framework.Core.Player;
 using HurricaneVR.Framework.Shared;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,9 +12,12 @@ public class TransportToWorld : MonoBehaviour
     public bool loadSceneWithoutInteraction;
 
     public bool destroyObjOnLoaded = false;
+    public bool destroyScriptOnLoaded = false;
+    public MonoBehaviour[] scriptsTodiable;
 
     [Header("Shader Handler")]
     [SerializeField] public WorldRevealURP worldReveal;
+    [SerializeField] public RevealPointManager revealPointManager;
     [Tooltip("time it takes to move")]
     [SerializeField] float mps = 1f; // meter per second expand
     [SerializeField] float maxDiamiter = 10;
@@ -52,6 +53,8 @@ public class TransportToWorld : MonoBehaviour
 
     IEnumerator SceneSwitch()
     {
+        //prevent the worldReveal point to switch in the middle of the transition
+        revealPointManager.ClosestRevealPedistal.stopEffect = true;
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(transportToScene, LoadSceneMode.Additive);
 
         while (!asyncOperation.isDone)
@@ -72,18 +75,16 @@ public class TransportToWorld : MonoBehaviour
 
         if (worldReveal == null)
         {
-            worldReveal = Object.FindObjectOfType<WorldRevealURP>();
+            worldReveal = FindObjectOfType<WorldRevealURP>();
         }
 
-        StartCoroutine(ExpandShader());
+        worldReveal.ExpandShaderStart(maxDiamiter, mps);
 
-        yield return new WaitForSeconds(0.3f);
-        
+        //yield return new WaitWhile(() => worldReveal.revealRadius < 100);
+
         //print("Name of Old Scene is: " + selfScene.name);
-        if (selfScene.name != "ScenePlayer")
-        {
-            SceneManager.UnloadSceneAsync(selfScene);
-        }
+        
+        //UnloadAllScenesExcept(transportToScene);
 
         if (transportToScene == "WorldSelectRoom" || destroyObjOnLoaded)
         {
@@ -91,41 +92,30 @@ public class TransportToWorld : MonoBehaviour
             yield return new WaitForSeconds(0.3f);
             Destroy(this.gameObject);
         }
-    }
 
-    IEnumerator ExpandShader()
-    {
-
-        // initialize timer
-        float timer = 0f;
-
-        while (timer < (maxDiamiter / mps))
+        if (destroyScriptOnLoaded)
         {
-            // increase timer
-            timer += Time.deltaTime;
-
-            // calculate the percentage of time elapsed
-            float percentageComplete = timer / (maxDiamiter / mps);
-            //animCurve = AnimationCurve.EaseInOut(0.0f, 0.0f, 1.0f, 1.0f);
-            // move the object based on percentage complete
-            worldReveal.revealRadius = Mathf.Lerp(worldReveal.revealRadius, maxDiamiter, percentageComplete);
-
-            // wait for the next frame
-            yield return null;
-        }
-        worldReveal.revealRadius = maxDiamiter;
-        ///yield return true;
-    }
-
-    void OnGUI()
-    {
-        //Whereas pressing this Button loads the Additive Scene.
-        if (GUI.Button(new Rect(20, 60, 150, 30), "Other Scene Additive"))
-        {
-            LoadScene();
+            yield return new WaitForSeconds(0.3f);
+            foreach (MonoBehaviour script in scriptsTodiable)
+            {
+                Destroy(script);
+            }
         }
     }
 
+    void UnloadAllScenesExcept(string transportToScene)
+    {
+        int c = SceneManager.sceneCount;
+        for (int i = 0; i < c; i++)
+        {
+            Scene scene = SceneManager.GetSceneAt(i);
+            if (scene.name != "ScenePlayer" && scene.name != transportToScene)
+            {
+                SceneManager.UnloadSceneAsync(scene);
+                Debug.Log($"Unloaded scene: "+   scene.name);
+            }
+        }
+    }
     //public bool loadSceneWithoutInteraction = false;
     //void OnValidate()
     //{

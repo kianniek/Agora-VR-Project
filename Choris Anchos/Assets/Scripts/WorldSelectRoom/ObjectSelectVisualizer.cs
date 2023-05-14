@@ -15,6 +15,8 @@ public class ObjectSelectVisualizer : MonoBehaviour
     Vector3 posOfHands = Vector3.zero;
 
     [SerializeField] bool debugMode = false;
+    //this isused to prefent the closets pillar from changing when we switch scenes
+    public bool stopEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +46,7 @@ public class ObjectSelectVisualizer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (stopEffect) { return; }
         WorldPosAverage();
         closestPillars = GetClosest(pillars);
         float dist = debugMode ? Vector3.Distance(debugPoint.transform.position, closestPillars.transform.position) : Vector3.Distance(posOfHands, closestPillars.transform.position);

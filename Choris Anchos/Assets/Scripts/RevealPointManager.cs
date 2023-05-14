@@ -21,20 +21,19 @@ public class RevealPointManager : MonoBehaviour
 
 
     [SerializeField] WorldRevealURP RevealPoint;
-    GameObject RevealPointObj;
-    [SerializeField] ObjectSelectVisualizer ClosestRevealPedistal;
-    // Start is called before the first frame update
-    void Start()
-    {
-        RevealPointObj = RevealPoint.gameObject;
-    }
+    public ObjectSelectVisualizer ClosestRevealPedistal;
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        RevealPointObj.transform.SetParent(GetChildByDepth(ClosestRevealPedistal.closestPillars.transform, 2));
-        GetChildByDepth(ClosestRevealPedistal.closestPillars.transform, 1).GetComponent<TransportToWorld>().worldReveal = RevealPoint;
-        switch (GetChildByDepth(ClosestRevealPedistal.closestPillars.transform, 1).GetComponent<TransportToWorld>().transportToScene)
+        RevealPoint.gameObject.transform.SetParent(GetChildByDepth(ClosestRevealPedistal.closestPillars.transform, 2), false);
+        RevealPoint.gameObject.transform.localPosition = Vector3.zero;
+
+        TransportToWorld transportToWorld = GetChildByDepth(ClosestRevealPedistal.closestPillars.transform, 1).GetComponent<TransportToWorld>();
+
+        transportToWorld.worldReveal = RevealPoint;
+
+        switch (transportToWorld.transportToScene)
         {
             case WreckroomSceneName:
                 RevealPoint.materials.Clear();
@@ -75,7 +74,17 @@ public class RevealPointManager : MonoBehaviour
         for (int i = 0; i < childDown && child != null; i++)
         {
             child = child.GetChild(0);
+
+            if (!child.gameObject.activeSelf)
+            {
+
+            }
         }
         return child;
+    }
+
+    void AttachToClosest()
+    {
+
     }
 }

@@ -19,8 +19,8 @@ public class PlayPanOnMesh : MonoBehaviour
     [Space(10)]
     [SerializeField] EventReference note;  // Reference to the audio event to be played
     [SerializeField] Transform handpanRotation;  // Reference to the handpan's rotation transform
-    [SerializeField] Transform[] notePositions;  // Array of note positions on the handpan
-    [SerializeField] Transform[] notePositionsProjected;  // Array of note positions on a plane
+    [SerializeField] Transform[] notePositions;  // Array of sound positions on the handpan
+    [SerializeField] Transform[] notePositionsProjected;  // Array of sound positions on a plane
     [Space(10)]
     public float minPitch = 0f;  // Minimum pitch value for the audio event
     public float maxPitch = 10;  // Maximum pitch value for the audio event
@@ -40,6 +40,7 @@ public class PlayPanOnMesh : MonoBehaviour
     float lerpDurationEnd = 3f;
 
     private bool canPlay = true;
+    private bool upDownSwitch;
 
     // Called when the script instance is being loaded
     private void Awake()
@@ -50,7 +51,7 @@ public class PlayPanOnMesh : MonoBehaviour
         }
 
         notePositionsProjected = new Transform[notePositions.Length];
-        // Loop through each note position on the handpan
+        // Loop through each sound position on the handpan
         for (int i = 0; i < notePositions.Length; i++)
         {
             // Create a plane with dimensions width=1 and height=1
@@ -62,7 +63,7 @@ public class PlayPanOnMesh : MonoBehaviour
             // Project the collision point onto the plane
             Vector3 projectedPoint = PlaneMath.ProjectPointOnPlane(point, plane);
 
-            // Set the note position to the projected point on the plane
+            // Set the sound position to the projected point on the plane
             notePositions[i].position = point = PlaneMath.PointCirleToPointPlane(handpanRotation.position, projectedPoint);
             notePositionsProjected[i] = notePositions[i];
             // Draw a debug marker at the projected point if debug mode is enabled
@@ -92,7 +93,7 @@ public class PlayPanOnMesh : MonoBehaviour
 
         if (collision.relativeVelocity.magnitude < minHitVelocity)
         {
-            //AudioManager.instance.PlayOneShot3D(note, transform.position, 100f);
+            //AudioManager.instance.PlayOneShot3D(sound, transform.position, 100f);
             yield break;
         }
 
@@ -121,10 +122,14 @@ public class PlayPanOnMesh : MonoBehaviour
 
         if (raiseMeshManager)
         {
-            float targetHeight = raiseMeshManager.raiseAmount + Mathf.Abs(pitch);
-            StopCoroutine(LerpHeightBegin(targetHeight));
-            timeElapsed = 0;
-            StartCoroutine(LerpHeightBegin(targetHeight));
+            upDownSwitch = !upDownSwitch;
+
+            int _switch = upDownSwitch ? Random.Range(1, 5) : 1;
+            float targetHeight = Mathf.Abs(pitch) * _switch;
+            raiseMeshManager.raiseAmount = targetHeight;
+            //StopCoroutine(LerpHeightBegin(targetHeight));
+            //timeElapsed = 0;
+            //StartCoroutine(LerpHeightBegin(targetHeight));
         }
 
         StartCoroutine(WaitBeforeNextHit());
@@ -170,12 +175,12 @@ public class PlayPanOnMesh : MonoBehaviour
         float pitch = 0f;
         int noteCount = 0;
 
-        // Find the 3 closest note positions to the given point
+        // Find the 3 closest sound positions to the given point
         Transform[] closestNotes = notePositionsProjected.OrderBy(n => Vector3.Distance(n.position, point)).Take(3).ToArray();
 
         //if(closestNotes)
 
-        // Calculate the weights for each note based on their distance to the point
+        // Calculate the weights for each sound based on their distance to the point
         float totalDistance = 0f;
         float[] weights = new float[3];
         for (int i = 0; i < closestNotes.Length; i++)
@@ -184,8 +189,8 @@ public class PlayPanOnMesh : MonoBehaviour
             weights[i] = 1f / Mathf.Max(distance, 0.0001f); // Avoid division by zero
             totalDistance += weights[i];
 
-            //Note note = closestNotes[i].GetComponent<Note>();
-            //if (note != null)
+            //Note sound = closestNotes[i].GetComponent<Note>();
+            //if (sound != null)
             if (closestNotes[i].TryGetComponent<Note>(out var note))
             {
                 pitch += note.pitch;
@@ -199,7 +204,7 @@ public class PlayPanOnMesh : MonoBehaviour
         {
             float distance = Vector3.Distance(closestNotes[i].position, point);
             float normalizedDistance = Mathf.Clamp01(distance / maxPitch); // Normalize the distance between 0 and 1
-            float notePitch = Mathf.Lerp(minPitch, maxPitch, normalizedDistance); // Calculate the pitch for the note
+            float notePitch = Mathf.Lerp(minPitch, maxPitch, normalizedDistance); // Calculate the pitch for the sound
             pitchSum += notePitch; // Add the pitch value to the sum
         }
 
@@ -242,10 +247,14 @@ public class PlayPanOnMesh : MonoBehaviour
 
         if (raiseMeshManager)
         {
-            float targetHeight = raiseMeshManager.raiseAmount + Mathf.Abs(pitch);
-            StopCoroutine(LerpHeightBegin(targetHeight));
-            timeElapsed = 0;
-            StartCoroutine(LerpHeightBegin(targetHeight));
+            upDownSwitch = !upDownSwitch;
+
+            int _switch = upDownSwitch ? Random.Range(1,5) : 1;
+            float targetHeight = Mathf.Abs(pitch) * _switch;
+            raiseMeshManager.raiseAmount = targetHeight;
+            //StopCoroutine(LerpHeightBegin(targetHeight));
+            //timeElapsed = 0;
+            //StartCoroutine(LerpHeightBegin(targetHeight));
         }
     }
 }

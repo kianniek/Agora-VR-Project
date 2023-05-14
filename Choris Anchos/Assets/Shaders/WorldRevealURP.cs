@@ -11,7 +11,6 @@ public class WorldRevealURP : MonoBehaviour
     [Tooltip("Controls the radius of the revealed area")]
     [Min(0.01f)]
     public float revealRadius = 0.01f;
-
     public bool invert;
 
     /// <summary>
@@ -47,6 +46,33 @@ public class WorldRevealURP : MonoBehaviour
     private void OnApplicationQuit()
     {
         revealRadius = 0;
+    }
+    public void ExpandShaderStart(float maxDiamiter, float mps)
+    {
+        StartCoroutine(ExpandShader(maxDiamiter, mps));
+    }
+    IEnumerator ExpandShader(float maxDiamiter, float mps)
+    {
+
+        // initialize timer
+        float timer = 0f;
+
+        while (timer < (maxDiamiter / mps))
+        {
+            // increase timer
+            timer += Time.deltaTime;
+
+            // calculate the percentage of time elapsed
+            float percentageComplete = timer / (maxDiamiter / mps);
+            //animCurve = AnimationCurve.EaseInOut(0.0f, 0.0f, 1.0f, 1.0f);
+            // move the object based on percentage complete
+            revealRadius = Mathf.Lerp(revealRadius, maxDiamiter, percentageComplete);
+
+            // wait for the next frame
+            yield return null;
+        }
+        revealRadius = maxDiamiter;
+        ///yield return true;
     }
 }
 

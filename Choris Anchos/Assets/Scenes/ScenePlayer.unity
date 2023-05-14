@@ -16,7 +16,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogColor: {r: 0.6603774, g: 0, b: 0.51604456, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
@@ -1183,8 +1183,8 @@ MonoBehaviour:
   IsLeftForceGrabActivated: 0
   IsRightForceGrabActivated: 0
   IsJumpActivated: 0
-  TeleportHandSide: 0
-  SwapMovementAxis: 1
+  TeleportHandSide: 1
+  SwapMovementAxis: 0
   UseWASD: 1
   IsMouseDown: 0
   MouseAxis: {x: 0, y: 0}
@@ -19880,7 +19880,7 @@ GameObject:
   - component: {fileID: 6211340354393009604}
   - component: {fileID: 8975906994197146975}
   - component: {fileID: 667549383223075404}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BackPack
   m_TagString: Untagged
   m_Icon: {fileID: 0}

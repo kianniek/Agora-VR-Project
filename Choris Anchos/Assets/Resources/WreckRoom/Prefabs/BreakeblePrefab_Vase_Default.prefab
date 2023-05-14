@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 4356232066059769363}
   - component: {fileID: 973598131642930976}
   - component: {fileID: 3646941374056180307}
+  - component: {fileID: 6096636365258710038}
   m_Layer: 0
   m_Name: BreakeblePrefab_Vase_Default
   m_TagString: Untagged
@@ -369,3 +370,22 @@ MonoBehaviour:
   LiveUpdate: 0
   ShowCOMGizmo: 0
   Rigidbody: {fileID: 3512379129360312570}
+--- !u!114 &6096636365258710038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4359224838490888579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8982bce554e754a42835e7d6ab8cb6f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
