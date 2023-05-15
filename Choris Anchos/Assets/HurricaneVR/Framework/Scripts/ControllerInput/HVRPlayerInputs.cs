@@ -423,7 +423,7 @@ namespace HurricaneVR.Framework.ControllerInput
                 return HVRController.GetButtonState(HVRHandSide.Right, HVRButtons.Menu).JustDeactivated;
             }
 
-            return !TeleportController.SecondaryButton;
+            return TeleportController.JoystickAxis.y > -.25f;
         }
 
         protected virtual bool GetTeleportActivated()
@@ -433,7 +433,7 @@ namespace HurricaneVR.Framework.ControllerInput
                 return HVRController.GetButtonState(HVRHandSide.Right, HVRButtons.Menu).Active;
             }
 
-            return TeleportController.SecondaryButton /*&& Mathf.Abs(TeleportController.JoystickAxis.x) < .30*/;
+            return TeleportController.JoystickAxis.y < -.5f && Mathf.Abs(TeleportController.JoystickAxis.x) < .30;
         }
 
         protected virtual bool GetSprinting()
