@@ -1,7 +1,11 @@
-using HurricaneVR.Framework.Shared;
+﻿using HurricaneVR.Framework.Shared;
 using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEngine.GraphicsBuffer;
 
 public class TransportToWorld : MonoBehaviour
 {
@@ -14,6 +18,13 @@ public class TransportToWorld : MonoBehaviour
     public bool destroyObjOnLoaded = false;
     public bool destroyScriptOnLoaded = false;
     public MonoBehaviour[] scriptsTodiable;
+
+    [Header("Collider Handler")]
+    [Tooltip("Input: Parent Collider | Output: Parent And Children Collider")]
+    [SerializeField] GameObject[] ParentCollider;
+    [InspectorButton("GetAllChildrenCollidersFromParent", 250)]
+    public bool getAllColliders;
+    [SerializeField] Collider[] ColliderChildren;
 
     [Header("Shader Handler")]
     [SerializeField] public WorldRevealURP worldReveal;
@@ -54,7 +65,7 @@ public class TransportToWorld : MonoBehaviour
     IEnumerator SceneSwitch()
     {
         //prevent the worldReveal point to switch in the middle of the transition
-        revealPointManager.ClosestRevealPedistal.stopEffect = true;
+        if (revealPointManager) { revealPointManager.ClosestRevealPedistal.stopEffect = true; }
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(transportToScene, LoadSceneMode.Additive);
 
         while (!asyncOperation.isDone)
@@ -66,8 +77,8 @@ public class TransportToWorld : MonoBehaviour
 
         Scene selfScene = gameObject.scene;
         Scene otherScene = SceneManager.GetSceneByName(transportToScene);
-        this.gameObject.transform.SetParent(null, true);
-        SceneManager.MoveGameObjectToScene(this.gameObject, otherScene);
+        gameObject.transform.SetParent(null, true);
+        SceneManager.MoveGameObjectToScene(gameObject, otherScene);
 
         yield return new WaitForSeconds(0.3f);
 
@@ -80,11 +91,17 @@ public class TransportToWorld : MonoBehaviour
 
         worldReveal.ExpandShaderStart(maxDiamiter, mps);
 
+        if (revealPointManager) { revealPointManager.ClosestRevealPedistal.stopEffect = false; }
+
+        for (int i = 0; i < ColliderChildren.Length; i++)
+        {
+            ColliderChildren[i].enabled = false;
+        }
         //yield return new WaitWhile(() => worldReveal.revealRadius < 100);
 
         //print("Name of Old Scene is: " + selfScene.name);
-        
-        //UnloadAllScenesExcept(transportToScene);
+
+        UnloadAllScenesExcept(transportToScene);
 
         if (transportToScene == "WorldSelectRoom" || destroyObjOnLoaded)
         {
@@ -112,18 +129,30 @@ public class TransportToWorld : MonoBehaviour
             if (scene.name != "ScenePlayer" && scene.name != transportToScene)
             {
                 SceneManager.UnloadSceneAsync(scene);
-                Debug.Log($"Unloaded scene: "+   scene.name);
+                Debug.Log($"Unloaded scene: " + scene.name);
             }
         }
     }
-    //public bool loadSceneWithoutInteraction = false;
-    //void OnValidate()
-    //{
-    //    if (pseudoButton)
-    //    {
-    //        ExampleMethod();
+    public void RemoveScripts()
+    {
+        foreach (MonoBehaviour script in scriptsTodiable)
+        {
+            Destroy(script);
+        }
+    }
+    /// <summary>
+    /// DONT USE IN RUNTIME | EDITOR ONLY
+    /// </summary>
+    void GetAllChildrenCollidersFromParent()
+    {
+        List<Collider> allChildColliders = new List<Collider>();
 
-    //        pseudoButton = false;
-    //    }
-    //}
+        foreach (GameObject parentGameObject in ParentCollider)
+        {
+            Collider[] childColliders = parentGameObject.GetComponentsInChildren<Collider>();
+            allChildColliders.AddRange(childColliders);
+        }
+
+        ColliderChildren = allChildColliders.ToArray();
+    }
 }
