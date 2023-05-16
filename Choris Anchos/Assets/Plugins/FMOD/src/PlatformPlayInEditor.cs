@@ -85,15 +85,7 @@ namespace FMODUnity
 #elif UNITY_EDITOR_WIN
             return string.Format("{0}/win/lib/x86/{1}.dll", platformsFolder, pluginName);
 #elif UNITY_EDITOR_OSX
-            string pluginPath = string.Format("{0}/mac/lib/{1}.bundle", platformsFolder, pluginName);
-            if (System.IO.Directory.Exists(pluginPath))
-            {
-                return pluginPath;
-            }
-            else
-            {
-                return string.Format("{0}/mac/lib/{1}.dylib", platformsFolder, pluginName);
-            }
+            return string.Format("{0}/mac/lib/{1}.bundle", platformsFolder, pluginName);
 #elif UNITY_EDITOR_LINUX && UNITY_EDITOR_64
             return string.Format("{0}/linux/lib/x86_64/lib{1}.so", platformsFolder, pluginName);
 #elif UNITY_EDITOR_LINUX

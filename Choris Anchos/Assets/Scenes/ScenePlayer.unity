@@ -318,6 +318,10 @@ MonoBehaviour:
     sceneName: SceneYoga
     skyColor: {r: 0.7773585, g: 0.9935201, b: 1, a: 1}
     groundColor: {r: 0.3679245, g: 0.22916389, b: 0, a: 1}
+  - AtmosphereThickness: 1
+    sceneName: SceneWalking
+    skyColor: {r: 0.7773585, g: 0.9935201, b: 1, a: 1}
+    groundColor: {r: 0.34117648, g: 0.3529412, b: 0.19607845, a: 1}
 --- !u!1 &1284616396
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,7 +479,6 @@ MonoBehaviour:
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
-  AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: -1
@@ -11210,7 +11213,6 @@ MonoBehaviour:
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
-  AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: -1
@@ -17076,12 +17078,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1a91361c5fef404ab502a048deeef5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderFromPosition: {fileID: 3924027509419240641}
-  cubemap: {fileID: 8900000, guid: eda4dc8252001ef48a9475f5f7629d45, type: 2}
-  maskout:
-    serializedVersion: 2
-    m_Bits: 1050175
-  timeLimit: 1.6
 --- !u!114 &5719880625602597671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17095,6 +17091,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 286535464935934457}
+  thisPosition: {x: 0, y: 0, z: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
 --- !u!4 &5721459784241518969
 Transform:
   m_ObjectHideFlags: 0

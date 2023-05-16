@@ -100,7 +100,10 @@ namespace FMODUnity
                     addDropdown.ShowAsDropDown(windowRect, new Vector2(windowRect.width, 500));
 
                 }
-                if (GUI.Button(openRect, new GUIContent(openIcon, "Open In Browser"), buttonStyle))
+                if (GUI.Button(openRect, new GUIContent(openIcon, "Open In Browser"), buttonStyle) &&
+                    !string.IsNullOrEmpty(pathProperty.stringValue) &&
+                    EventManager.EventFromPath(pathProperty.stringValue) != null
+                    )
                 {
                     EventBrowser.ShowWindow();
                     EventBrowser eventBrowser = EditorWindow.GetWindow<EventBrowser>();
@@ -475,13 +478,6 @@ namespace FMODUnity
             }
             else
             {
-                int parentPathLength = property.propertyPath.LastIndexOf('.');
-
-                if (parentPathLength >= 0)
-                {
-                    migrationTarget = string.Format("{0}.{1}", property.propertyPath.Remove(parentPathLength), migrationTarget);
-                }
-
                 SerializedProperty targetProperty = property.serializedObject.FindProperty(migrationTarget);
 
                 if (targetProperty != null)
