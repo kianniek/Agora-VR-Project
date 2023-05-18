@@ -32,7 +32,7 @@ public class RevealPointManager : MonoBehaviour
     {
         if (closestRevealPedistal.stopEffect || !closestRevealPedistal.closestPillars || !revealPoint) { return; }
 
-        revealPoint.gameObject.transform.SetParent(GetChildByDepth(closestRevealPedistal.closestPillars.transform, 2), false);
+        revealPoint.gameObject.transform.SetParent(GetChildByDepth(closestRevealPedistal.closestPillars.transform, 1), false);
         revealPoint.gameObject.transform.localPosition = Vector3.zero;
 
         TransportToWorld transportToWorld = GetChildByDepth(closestRevealPedistal.closestPillars.transform, 1).GetComponent<TransportToWorld>();
