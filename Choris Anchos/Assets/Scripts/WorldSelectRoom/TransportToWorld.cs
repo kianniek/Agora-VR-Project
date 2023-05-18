@@ -65,7 +65,7 @@ public class TransportToWorld : MonoBehaviour
     IEnumerator SceneSwitch()
     {
         //prevent the worldReveal point to switch in the middle of the transition
-        if (revealPointManager) { revealPointManager.ClosestRevealPedistal.stopEffect = true; }
+        if (revealPointManager) { revealPointManager.closestRevealPedistal.stopEffect = true; }
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(transportToScene, LoadSceneMode.Additive);
 
         while (!asyncOperation.isDone)
@@ -91,7 +91,7 @@ public class TransportToWorld : MonoBehaviour
 
         worldReveal.ExpandShaderStart(maxDiamiter, mps);
 
-        if (revealPointManager) { revealPointManager.ClosestRevealPedistal.stopEffect = false; }
+        if (revealPointManager) { revealPointManager.closestRevealPedistal.stopEffect = false; }
 
         for (int i = 0; i < ColliderChildren.Length; i++)
         {

@@ -7,10 +7,8 @@ using UnityEngine;
 
 public class WorldSelectObject : MonoBehaviour
 {
-
     private EventInstance instance;
     [SerializeField] private EventReference WorldMusic;
-
 
     Rigidbody rb;
     // Start is called before the first frame update
@@ -19,17 +17,12 @@ public class WorldSelectObject : MonoBehaviour
         instance = RuntimeManager.CreateInstance(WorldMusic);
         instance.start();
         rb = GetComponent<Rigidbody>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         RuntimeManager.AttachInstanceToGameObject(instance, this.transform, rb);
     }
 
     private void OnDisable()
     {
-        instance.stop(0);
+        instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
 }

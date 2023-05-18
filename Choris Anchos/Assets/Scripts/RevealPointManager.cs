@@ -20,47 +20,53 @@ public class RevealPointManager : MonoBehaviour
 
 
 
-    [SerializeField] WorldRevealURP RevealPoint;
-    public ObjectSelectVisualizer ClosestRevealPedistal;
-
+    [SerializeField] WorldRevealURP revealPoint;
+    [SerializeField] GameObject revealPointPrefab;
+    public ObjectSelectVisualizer closestRevealPedistal;
+    private void OnEnable()
+    {
+        if (!revealPoint) { Instantiate(revealPointPrefab); }
+    }
     // Update is called once per frame
     void FixedUpdate()
     {
-        RevealPoint.gameObject.transform.SetParent(GetChildByDepth(ClosestRevealPedistal.closestPillars.transform, 2), false);
-        RevealPoint.gameObject.transform.localPosition = Vector3.zero;
+        if (closestRevealPedistal.stopEffect || !closestRevealPedistal.closestPillars || !revealPoint) { return; }
 
-        TransportToWorld transportToWorld = GetChildByDepth(ClosestRevealPedistal.closestPillars.transform, 1).GetComponent<TransportToWorld>();
+        revealPoint.gameObject.transform.SetParent(GetChildByDepth(closestRevealPedistal.closestPillars.transform, 2), false);
+        revealPoint.gameObject.transform.localPosition = Vector3.zero;
 
-        transportToWorld.worldReveal = RevealPoint;
+        TransportToWorld transportToWorld = GetChildByDepth(closestRevealPedistal.closestPillars.transform, 1).GetComponent<TransportToWorld>();
+
+        transportToWorld.worldReveal = revealPoint;
 
         switch (transportToWorld.transportToScene)
         {
             case WreckroomSceneName:
-                RevealPoint.materials.Clear();
+                revealPoint.materials.Clear();
                 for (int i = 0; i < materialsWreckroom.Length; i++)
                 {
-                    RevealPoint.materials.Add(materialsWreckroom[i]);
+                    revealPoint.materials.Add(materialsWreckroom[i]);
                 }
                 break;
             case MusicRoomSceneName:
-                RevealPoint.materials.Clear();
+                revealPoint.materials.Clear();
                 for (int i = 0; i < materialsMusicRoom.Length; i++)
                 {
-                    RevealPoint.materials.Add(materialsMusicRoom[i]);
+                    revealPoint.materials.Add(materialsMusicRoom[i]);
                 }
                 break;
             case WalkingWorldSceneName:
-                RevealPoint.materials.Clear();
+                revealPoint.materials.Clear();
                 for (int i = 0; i < materialsWalkingWorld.Length; i++)
                 {
-                    RevealPoint.materials.Add(materialsWalkingWorld[i]);
+                    revealPoint.materials.Add(materialsWalkingWorld[i]);
                 }
                 break;
             case YogaSceneName:
-                RevealPoint.materials.Clear();
+                revealPoint.materials.Clear();
                 for (int i = 0; i < materialsYoga.Length; i++)
                 {
-                    RevealPoint.materials.Add(materialsYoga[i]);
+                    revealPoint.materials.Add(materialsYoga[i]);
                 }
                 break;
             default:
@@ -71,20 +77,10 @@ public class RevealPointManager : MonoBehaviour
     public Transform GetChildByDepth(Transform parent, int childDown)
     {
         Transform child = parent;
-        for (int i = 0; i < childDown && child != null; i++)
+        for (int i = 0; i < childDown && child != null && child.childCount > 0; i++)
         {
             child = child.GetChild(0);
-
-            if (!child.gameObject.activeSelf)
-            {
-
-            }
         }
         return child;
-    }
-
-    void AttachToClosest()
-    {
-
     }
 }

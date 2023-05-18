@@ -108,7 +108,7 @@ public class PlayPanOnMesh : MonoBehaviour
         float pitch = CalculatePitchFromCollision(projectedPoint);
 
         // Play the sound with the calculated pitch
-        Debug.LogAssertion("Playing Handpan on frequency " + pitch);
+        Debug.Log("Playing Handpan on frequency " + pitch);
         AudioManager.instance.PlayOneShot3D(note, transform.position, pitch);
 
         if (sphereScanInstantiatorScript)
