@@ -1187,7 +1187,7 @@ MonoBehaviour:
   IsRightForceGrabActivated: 0
   IsJumpActivated: 0
   TeleportHandSide: 0
-  SwapMovementAxis: 1
+  SwapMovementAxis: 0
   UseWASD: 1
   IsMouseDown: 0
   MouseAxis: {x: 0, y: 0}
@@ -12880,6 +12880,7 @@ GameObject:
   - component: {fileID: 5719880625602597670}
   - component: {fileID: 5719880625602597669}
   - component: {fileID: 5719880625602597671}
+  - component: {fileID: 5719880625602597672}
   m_Layer: 8
   m_Name: PlayerController
   m_TagString: Untagged
@@ -17093,6 +17094,79 @@ MonoBehaviour:
   playerInput: {fileID: 286535464935934457}
   thisPosition: {x: 0, y: 0, z: 0}
   targetPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &5719880625602597672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3924027508971428610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c41469a7fc0b6843a4cac2fd4ab4c69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanDistanceGrab: 1
+  CanTriggerGrab: 0
+  ForceGrabActivation: 0
+  TriggerGrabThreshold: 0.7
+  MovementAxis: {x: 0, y: 0}
+  TurnAxis: {x: 0, y: 0}
+  IsTeleportActivated: 0
+  IsTeleportDeactivated: 0
+  IsSprintingActivated: 0
+  SprintRequiresDoubleClick: 0
+  IsCrouchActivated: 0
+  IsStandActivated: 0
+  JumpState:
+    Active: 0
+    JustActivated: 0
+    JustDeactivated: 0
+    Value: 0
+  CrouchState:
+    Active: 0
+    JustActivated: 0
+    JustDeactivated: 0
+    Value: 0
+  StandState:
+    Active: 0
+    JustActivated: 0
+    JustDeactivated: 0
+    Value: 0
+  LeftTriggerGrabState:
+    Active: 0
+    JustActivated: 0
+    JustDeactivated: 0
+    Value: 0
+  RightTriggerGrabState:
+    Active: 0
+    JustActivated: 0
+    JustDeactivated: 0
+    Value: 0
+  IsLeftGrabActivated: 0
+  IsLeftHoldActive: 0
+  IsLeftGripHoldActive: 0
+  IsLeftTriggerHoldActive: 0
+  IsRightGrabActivated: 0
+  IsRightHoldActive: 0
+  IsRightGripHoldActive: 0
+  IsRightTriggerHoldActive: 0
+  IsLeftForceGrabActive: 0
+  IsRightForceGrabActive: 0
+  IsLeftForceGrabActivated: 0
+  IsRightForceGrabActivated: 0
+  IsJumpActivated: 0
+  TeleportHandSide: 1
+  SwapMovementAxis: 0
+  UseWASD: 0
+  IsMouseDown: 0
+  MouseAxis: {x: 0, y: 0}
+  StartWorldSphere: {fileID: 6362953297448363003, guid: cd37c05c6687c7e47b3a8fcdff196c66,
+    type: 3}
+  leftHand: {fileID: 3399697951163200230}
+  rightHand: {fileID: 3058767126121674945}
+  playerInputs: {fileID: 286535464935934457}
+  stretchThreshold: 0.5
 --- !u!4 &5721459784241518969
 Transform:
   m_ObjectHideFlags: 0
