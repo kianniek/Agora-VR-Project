@@ -255,11 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8ad7ccc485fb7d4689a486a5a8a18ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsToCheckIfDisabled:
-  - {fileID: 8721718482662895416}
-  - {fileID: 4424360833688165623}
-  - {fileID: 5345755031945745150}
-  - {fileID: 4232293017760480419}
+  ObjectsToCheckIfDisabled: []
   delay: 1
   onObjectsDisabled:
     m_PersistentCalls:
@@ -8729,7 +8725,6 @@ MonoBehaviour:
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
-  AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
