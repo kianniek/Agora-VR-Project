@@ -39,7 +39,8 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18263802, g: 0.22834924, b: 0.30714586, a: 1}
+  m_IndirectSpecularColor: {r: 0.00011299972, g: 0.00011299972, b: 0.00011299972,
+    a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +99,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000004, guid: 38905561a25e7594a97c4fa689c31f80,
+  m_LightingDataAsset: {fileID: 112000004, guid: f07ae379e2264a2498ef8386c36ec6c6,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 4c95e7e9a2beb0b48a5e77c47189f34d,
     type: 2}
@@ -1123,7 +1124,6 @@ MonoBehaviour:
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
-  AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: -1
@@ -1831,7 +1831,7 @@ MonoBehaviour:
   IsLeftForceGrabActivated: 0
   IsRightForceGrabActivated: 0
   IsJumpActivated: 0
-  TeleportHandSide: 1
+  TeleportHandSide: 0
   SwapMovementAxis: 0
   UseWASD: 1
   IsMouseDown: 0
@@ -11797,7 +11797,6 @@ MonoBehaviour:
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
-  AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: -1
@@ -13464,6 +13463,8 @@ GameObject:
   - component: {fileID: 5719880625602597668}
   - component: {fileID: 5719880625602597670}
   - component: {fileID: 5719880625602597669}
+  - component: {fileID: 5719880625602597671}
+  - component: {fileID: 5719880625602597672}
   m_Layer: 8
   m_Name: PlayerController
   m_TagString: Untagged
@@ -17614,12 +17615,94 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1a91361c5fef404ab502a048deeef5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderFromPosition: {fileID: 3924027509419240641}
-  cubemap: {fileID: 8900000, guid: eda4dc8252001ef48a9475f5f7629d45, type: 2}
-  maskout:
-    serializedVersion: 2
-    m_Bits: 63
-  timeLimit: 1.6
+--- !u!114 &5719880625602597671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3924027508971428610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e46a49fcc07e894580491b34aeac8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInput: {fileID: 286535464935934457}
+  thisPosition: {x: 0, y: 0, z: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &5719880625602597672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3924027508971428610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c41469a7fc0b6843a4cac2fd4ab4c69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanDistanceGrab: 1
+  CanTriggerGrab: 0
+  ForceGrabActivation: 0
+  TriggerGrabThreshold: 0.7
+  MovementAxis: {x: 0, y: 0}
+  TurnAxis: {x: 0, y: 0}
+  IsTeleportActivated: 0
+  IsTeleportDeactivated: 0
+  IsSprintingActivated: 0
+  SprintRequiresDoubleClick: 0
+  IsCrouchActivated: 0
+  IsStandActivated: 0
+  JumpState:
+    Active: 0
+    JustActivated: 0
+    JustDeactivated: 0
+    Value: 0
+  CrouchState:
+    Active: 0
+    JustActivated: 0
+    JustDeactivated: 0
+    Value: 0
+  StandState:
+    Active: 0
+    JustActivated: 0
+    JustDeactivated: 0
+    Value: 0
+  LeftTriggerGrabState:
+    Active: 0
+    JustActivated: 0
+    JustDeactivated: 0
+    Value: 0
+  RightTriggerGrabState:
+    Active: 0
+    JustActivated: 0
+    JustDeactivated: 0
+    Value: 0
+  IsLeftGrabActivated: 0
+  IsLeftHoldActive: 0
+  IsLeftGripHoldActive: 0
+  IsLeftTriggerHoldActive: 0
+  IsRightGrabActivated: 0
+  IsRightHoldActive: 0
+  IsRightGripHoldActive: 0
+  IsRightTriggerHoldActive: 0
+  IsLeftForceGrabActive: 0
+  IsRightForceGrabActive: 0
+  IsLeftForceGrabActivated: 0
+  IsRightForceGrabActivated: 0
+  IsJumpActivated: 0
+  TeleportHandSide: 1
+  SwapMovementAxis: 0
+  UseWASD: 0
+  IsMouseDown: 0
+  MouseAxis: {x: 0, y: 0}
+  StartWorldSphere: {fileID: 6362953297448363003, guid: cd37c05c6687c7e47b3a8fcdff196c66,
+    type: 3}
+  leftHand: {fileID: 3399697951163200230}
+  rightHand: {fileID: 3058767126121674945}
+  playerInputs: {fileID: 286535464935934457}
+  stretchThreshold: 0.5
 --- !u!4 &5721459784241518969
 Transform:
   m_ObjectHideFlags: 0
