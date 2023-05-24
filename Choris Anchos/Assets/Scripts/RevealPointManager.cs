@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class RevealPointManager : MonoBehaviour
 {
+    private static RevealPointManager instance; // Singleton instance
+
     [SerializeField]
     private const string WreckroomSceneName = "SceneWreckRoom";
     [SerializeField] private Material[] materialsWreckroom;
@@ -18,11 +20,27 @@ public class RevealPointManager : MonoBehaviour
     private const string YogaSceneName = "SceneYoga";
     [SerializeField] private Material[] materialsYoga;
 
-
     bool expandWRP = false;
     [SerializeField] WorldRevealURP revealPoint;
     [SerializeField] GameObject revealPointPrefab;
     public ObjectSelectVisualizer closestRevealPedistal;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject); // Destroy duplicate instances
+        }
+    }
+
+    public static RevealPointManager Instance
+    {
+        get { return instance; }
+    }
     private void OnEnable()
     {
         if (!revealPoint) { Instantiate(revealPointPrefab); }

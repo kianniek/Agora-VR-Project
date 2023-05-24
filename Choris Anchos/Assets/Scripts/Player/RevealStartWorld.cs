@@ -63,7 +63,7 @@ public class RevealStartWorld : HVRPlayerInputs
         // Define angle in which the arms are considered stretched to the front
         float angleDownThreshold = 150f;
         float angleUpThreshold = 180f;
-        float distanceThreshold = 0.6f;
+        float distanceThreshold = stretchThreshold;
 
         // Calculate distance from hands to camera
         Vector3 leftToCamera = (cameraPosition - leftPosition);

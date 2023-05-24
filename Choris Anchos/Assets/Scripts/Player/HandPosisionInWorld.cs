@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HandPosisionInWorld : MonoBehaviour
 {
-    enum Hand
+    public enum Hand
     {
         Left,
         Right
@@ -30,5 +30,10 @@ public class HandPosisionInWorld : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public Hand GetHandType()
+    {
+        return handType;
     }
 }

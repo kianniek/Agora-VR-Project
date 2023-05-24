@@ -1,5 +1,4 @@
-﻿using CodingJar.MultiScene;
-using HurricaneVR.Framework.Shared;
+﻿using HurricaneVR.Framework.Shared;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,7 +28,13 @@ public class TransportToWorld : MonoBehaviour
     [Tooltip("time it takes to move")]
     [SerializeField] private float mps = 1f; // meter per second expand
     [SerializeField] private float maxDiamiter = 10;
-
+    private void Start()
+    {
+        if (RevealPointManager.Instance == null)
+        {
+            Debug.LogWarning("RevealPointManager instance is missing or not initialized. Ensure that the RevealPointManager script is attached to a game object in the scene.");
+        }
+    }
     public void LoadScene()
     {
         if (!SceneManager.GetSceneByName(transportToScene).isLoaded)
@@ -41,7 +46,7 @@ public class TransportToWorld : MonoBehaviour
     private IEnumerator SceneSwitch()
     {
         //prevent the worldReveal point to switch in the middle of the transition
-        if (revealPointManager) { revealPointManager.closestRevealPedistal.stopEffect = true; }
+        if (RevealPointManager.Instance) { RevealPointManager.Instance.closestRevealPedistal.stopEffect = true; }
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(transportToScene, LoadSceneMode.Additive);
 
         while (!asyncOperation.isDone)
@@ -59,10 +64,10 @@ public class TransportToWorld : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
 
         asyncOperation.allowSceneActivation = true;
-        revealPointManager.StopAllCoroutines();
-        revealPointManager.ExpandShaderStart(maxDiamiter, mps);
+        RevealPointManager.Instance.StopAllCoroutines();
+        RevealPointManager.Instance.ExpandShaderStart(maxDiamiter, mps);
 
-        if (revealPointManager) { revealPointManager.closestRevealPedistal.stopEffect = false; }
+        if (RevealPointManager.Instance) { RevealPointManager.Instance.closestRevealPedistal.stopEffect = false; }
 
         for (int i = 0; i < ColliderChildren.Length; i++)
         {

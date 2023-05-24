@@ -7,10 +7,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2102792667722222068, guid: cbf9a70226cc1ee40b81789e84700726,
+        type: 3}
+      propertyPath: destroyObjOnLoaded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2102792667722222070, guid: cbf9a70226cc1ee40b81789e84700726,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354134194909532557, guid: cbf9a70226cc1ee40b81789e84700726,
+        type: 3}
+      propertyPath: Collided.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354134194909532557, guid: cbf9a70226cc1ee40b81789e84700726,
+        type: 3}
+      propertyPath: Collided.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354134194909532557, guid: cbf9a70226cc1ee40b81789e84700726,
+        type: 3}
+      propertyPath: Collided.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6362953297448363003}
+    - target: {fileID: 3354134194909532557, guid: cbf9a70226cc1ee40b81789e84700726,
+        type: 3}
+      propertyPath: Collided.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3459595820790564543, guid: cbf9a70226cc1ee40b81789e84700726,
         type: 3}
       propertyPath: m_Name
-      value: InteracteblePrefabTransportBack Variant
+      value: InteracteblePrefabTransportBackWalkingWorld
       objectReference: {fileID: 0}
     - target: {fileID: 3459595820790564543, guid: cbf9a70226cc1ee40b81789e84700726,
         type: 3}
@@ -100,3 +130,9 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2102792667722222025, guid: cbf9a70226cc1ee40b81789e84700726, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cbf9a70226cc1ee40b81789e84700726, type: 3}
+--- !u!1 &6362953297448363003 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3459595820790564543, guid: cbf9a70226cc1ee40b81789e84700726,
+    type: 3}
+  m_PrefabInstance: {fileID: 7516283883389363524}
+  m_PrefabAsset: {fileID: 0}

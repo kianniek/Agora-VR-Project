@@ -39,7 +39,8 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18263802, g: 0.22834924, b: 0.30714586, a: 1}
+  m_IndirectSpecularColor: {r: 0.00011299972, g: 0.00011299972, b: 0.00011299972,
+    a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4363,6 +4364,9 @@ MonoBehaviour:
   collisionLayer:
     serializedVersion: 2
     m_Bits: 2097152
+  leftHand: 0
+  rightHand: 1
+  allowNoHandCollision: 1
 --- !u!114 &1874803476302935707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6425,6 +6429,9 @@ MonoBehaviour:
   collisionLayer:
     serializedVersion: 2
     m_Bits: 2097152
+  leftHand: 1
+  rightHand: 0
+  allowNoHandCollision: 1
 --- !u!114 &4549216666564228029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8639,7 +8646,10 @@ MonoBehaviour:
   canInvoke: 1
   collisionLayer:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 2097153
+  leftHand: 0
+  rightHand: 0
+  allowNoHandCollision: 1
 --- !u!114 &8533545038211909731
 MonoBehaviour:
   m_ObjectHideFlags: 0
