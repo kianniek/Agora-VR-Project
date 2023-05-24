@@ -1,27 +1,26 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SlideInObject : MonoBehaviour
 {
-    [SerializeField] Transform startPosition; // starting position
-    [SerializeField] Transform endPosition; // ending position
-    [SerializeField] float timeToMove = 1f; // time it takes to move
-    private float timer = 0f; // timer to keep track of time
+    [SerializeField] private Transform startPosition; // starting position
+    [SerializeField] private Transform endPosition; // ending position
+    [SerializeField] private float timeToMove = 1f; // time it takes to move
+    private readonly float timer = 0f; // timer to keep track of time
     [Tooltip("Slide Object in when scene gets loaded in")]
-    [SerializeField] bool slideOnLoad;
-    [SerializeField] AnimationCurve animCurve;
+    [SerializeField] private bool slideOnLoad;
+    [SerializeField] private AnimationCurve animCurve;
     private float value;
-    void OnEnable()
+
+    private void OnEnable()
     {
         endPosition.transform.position = gameObject.transform.position;
         SceneManager.sceneLoaded += OnSceneLoaded;
         //mat.GetComponent<Material>();
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         // start the movement coroutine if slideOnLoad is true
         if (slideOnLoad)
@@ -30,7 +29,7 @@ public class SlideInObject : MonoBehaviour
         }
     }
 
-    void Update()
+    private void Update()
     {
         // manually trigger the coroutine if slideOnLoad is false
         if (!slideOnLoad)
@@ -39,7 +38,7 @@ public class SlideInObject : MonoBehaviour
         }
     }
 
-    IEnumerator SlideInEffect()
+    private IEnumerator SlideInEffect()
     {
         // move the object to the starting position
         transform.position = startPosition.position;

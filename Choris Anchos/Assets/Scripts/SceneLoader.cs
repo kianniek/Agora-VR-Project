@@ -10,12 +10,17 @@ public class SceneLoader : MonoBehaviour
 
     [SerializeField] GameObject[] objectsToDiableAfterLoad;
 
-    private void Update()
+    private void Start()
     {
         if (!SceneManager.GetSceneByName(SceneToLoadOnStart).isLoaded)
         {
             async = SceneManager.LoadSceneAsync(SceneToLoadOnStart, LoadSceneMode.Additive);
         }
+        
+    }
+
+    private void Update()
+    {
         if (async != null)
         {
             if (async.isDone)

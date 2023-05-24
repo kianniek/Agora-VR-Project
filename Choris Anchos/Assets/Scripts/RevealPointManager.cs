@@ -19,7 +19,7 @@ public class RevealPointManager : MonoBehaviour
     [SerializeField] private Material[] materialsYoga;
 
 
-
+    bool expandWRP = false;
     [SerializeField] WorldRevealURP revealPoint;
     [SerializeField] GameObject revealPointPrefab;
     public ObjectSelectVisualizer closestRevealPedistal;
@@ -28,7 +28,7 @@ public class RevealPointManager : MonoBehaviour
         if (!revealPoint) { Instantiate(revealPointPrefab); }
     }
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (closestRevealPedistal.stopEffect || !closestRevealPedistal.closestPillars || !revealPoint) { return; }
 
@@ -36,8 +36,6 @@ public class RevealPointManager : MonoBehaviour
         revealPoint.gameObject.transform.localPosition = Vector3.zero;
 
         TransportToWorld transportToWorld = GetChildByDepth(closestRevealPedistal.closestPillars.transform, 1).GetComponent<TransportToWorld>();
-
-        transportToWorld.worldReveal = revealPoint;
 
         switch (transportToWorld.transportToScene)
         {
@@ -73,7 +71,34 @@ public class RevealPointManager : MonoBehaviour
                 break;
         }
     }
+    public void ExpandShaderStart(float maxDiamiter, float mps)
+    {
+        print("ExpandStart");
+        StartCoroutine(ExpandShader(maxDiamiter, mps));
+    }
+    IEnumerator ExpandShader(float maxDiamiter, float mps)
+    {
 
+        // initialize timer
+        float timer = 0f;
+        print("1 " + revealPoint.revealRadius);
+        while (timer < (maxDiamiter * mps))
+        {
+            // increase timer
+            timer += Time.deltaTime;
+
+            // calculate the percentage of time elapsed
+            float percentageComplete = timer / (maxDiamiter / mps);
+            //animCurve = AnimationCurve.EaseInOut(0.0f, 0.0f, 1.0f, 1.0f);
+            // move the object based on percentage complete
+            revealPoint.revealRadius = Mathf.Lerp(revealPoint.revealRadius, maxDiamiter, percentageComplete);
+            print("2 " + revealPoint.revealRadius);
+            // wait for the next frame
+            yield return null;
+        }
+        revealPoint.revealRadius = maxDiamiter;
+        ///yield return true;
+    }
     public Transform GetChildByDepth(Transform parent, int childDown)
     {
         Transform child = parent;

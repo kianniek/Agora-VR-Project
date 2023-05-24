@@ -178,9 +178,14 @@ MonoBehaviour:
   transportToScene: WorldSelectRoom
   loadSceneWithoutInteraction: 0
   destroyObjOnLoaded: 0
-  worldReveal: {fileID: 0}
-  mps: 1
-  maxDiamiter: 50
+  destroyScriptOnLoaded: 0
+  scriptsTodiable: []
+  ParentCollider: []
+  getAllColliders: 0
+  ColliderChildren: []
+  revealPointManager: {fileID: 0}
+  mps: 100
+  maxDiamiter: 0.01
 --- !u!114 &2102792667722222069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,7 +290,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3459595820790564543}
-  m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.70710784}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -297,7 +302,7 @@ Transform:
   - {fileID: 8470303883056889622}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &3354134194909532557
 MonoBehaviour:
   m_ObjectHideFlags: 0
