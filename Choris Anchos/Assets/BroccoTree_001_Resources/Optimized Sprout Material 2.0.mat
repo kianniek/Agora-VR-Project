@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4841104036491701079
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -33,40 +46,27 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 2b8c4fa1870854014a8b1953536487be, type: 3}
+        m_Texture: {fileID: 2800000, guid: bf90f9ba0e7e242129386f2a94f92673, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SubsurfaceTex:
-        m_Texture: {fileID: 2800000, guid: 2b8c4fa1870854014a8b1953536487be, type: 3}
+        m_Texture: {fileID: 2800000, guid: bf90f9ba0e7e242129386f2a94f92673, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _BillboardKwToggle: 0
     - _BillboardShadowFade: 0.5
-    - _Glossiness: 0
+    - _Glossiness: 0.2
     - _HueVariationKwToggle: 0
-    - _Metallic: 0.2
+    - _Metallic: 0.75
     - _NormalMapKwToggle: 0
-    - _SubsurfaceIndirect: 0.9
+    - _SubsurfaceIndirect: 0.4
     - _SubsurfaceKwToggle: 1
     - _TwoSided: 0
     - _WindQuality: 4
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 0.9}
+    - _Color: {r: 1, g: 1, b: 1, a: 0.775}
     - _HueVariationColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SubsurfaceColor: {r: 0.5377358, g: 0.23843002, b: 0.23843002, a: 1}
+    - _SubsurfaceColor: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &3573073911775336284
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 5
