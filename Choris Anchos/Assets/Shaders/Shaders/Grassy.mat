@@ -23,7 +23,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: f121c2fe2d561984c8f660a7ebb8a0ad, type: 3}
+        m_Texture: {fileID: 2800000, guid: b3f0b6bda58f2e6489c79ccd2ffc7223, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D_Array:
@@ -44,10 +44,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ColorDencity: 0
-    - _ColorSpeed: 0
+    - _ColorDencity: 0.1
+    - _ColorSpeed: 0.1
     - _IF: 0
-    - _Interaction_distance: 2.65
+    - _Interaction_distance: 1.11
     - _Noize: 0
     - _Offset: 0
     - _Offset_1: 0.2
@@ -55,7 +55,7 @@ Material:
     - _QueueOffset: 0
     - _Smoothness: 0
     - _Speed: 1
-    - _Strength: 2.67
+    - _Strength: -0.19
     - _TrampleFalloff: 0
     - _TrampleMaxDistance: 100
     - _TramplePushstrength: 10
@@ -65,7 +65,7 @@ Material:
     - _scale: 0.1
     m_Colors:
     - _ColorSPeed: {r: 0, g: 1, b: 0, a: 0}
-    - _GrassColor: {r: 1, g: 0.13333334, b: 0, a: 0}
+    - _GrassColor: {r: 0, g: 0.4339623, b: 0.09643611, a: 0}
     - _Interactor0: {r: 0, g: 0, b: 0, a: 0}
     - _Interactor1: {r: 0, g: 0, b: 0, a: 0}
     - _Interactor2: {r: 0, g: 0, b: 0, a: 0}
@@ -76,7 +76,7 @@ Material:
     - _Interactor7: {r: 0, g: 0, b: 0, a: 0}
     - _Interactor8: {r: 0, g: 0, b: 0, a: 0}
     - _InteractorOne: {r: 0, g: 0, b: 0, a: 0}
-    - _TopColor: {r: 0, g: 0.8310704, b: 1, a: 0}
+    - _TopColor: {r: 0.3254902, g: 0.3372549, b: 0.23529413, a: 1}
     - _Vector4: {r: 1, g: 1, b: 1, a: 1}
     - _player: {r: 10, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
