@@ -17,9 +17,6 @@ public class ShaderInteractor : MonoBehaviour
     public int index;
     private float tempDistance;
 
-
-
-
     // Update is called once per frame
     void Update()
     {
