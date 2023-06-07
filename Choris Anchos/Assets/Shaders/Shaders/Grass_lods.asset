@@ -31,25 +31,25 @@ MonoBehaviour:
   lod5: []
   lod6: []
   lod7: []
---- !u!43 &509505337735377275
+--- !u!43 &8359871028040443350
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Plane LOD2
+  m_Name: Plane LOD1
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
-    indexCount: 6
+    indexCount: 0
     topology: 0
     baseVertex: 0
     firstVertex: 0
-    vertexCount: 6
+    vertexCount: 0
     localAABB:
-      m_Center: {x: 0.0007569669, y: 0.0065367105, z: 0.0056548095}
-      m_Extent: {x: 0.008754974, y: 0.0065367105, z: 0.008688961}
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
@@ -66,31 +66,23 @@ Mesh:
   m_KeepVertices: 0
   m_KeepIndices: 0
   m_IndexFormat: 1
-  m_IndexBuffer: 000000000100000002000000030000000400000005000000
+  m_IndexBuffer: 
   m_VertexData:
     serializedVersion: 3
-    m_VertexCount: 6
+    m_VertexCount: 0
     m_Channels:
     - stream: 0
       offset: 0
       format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 4
+      dimension: 0
     - stream: 0
       offset: 0
       format: 0
       dimension: 0
     - stream: 0
-      offset: 40
+      offset: 0
       format: 0
-      dimension: 2
+      dimension: 0
     - stream: 0
       offset: 0
       format: 0
@@ -127,8 +119,16 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 288
-    _typelessdata: 6f1283bbee0626304260e53bbdeb5b3f9463f4bd8adafebe0b5800bf00000000ec805dbf0000803f0000003f00000000130a03bce731563c9dd846bbbdeb5b3f9463f4bd8adafebe0a5800bf00000000eb805dbf0000803f0000803f0000803fa4f6043be731563c25d0693cbdeb5b3f9463f4bd8adafebe0b5800bf00000000eb805dbf0000803f000000000000803f592cc6baa117a83022026b3caf3254bfcf4eeabddf2d0cbf111b0d3f00000000bb9955bf000080bf0000000000000000038dfe3bb01a3f3c5d550cbbaf3254bfcf4eeabddf2d0cbf101b0d3f00000000bc9955bf000080bf0000803f0000803ff9d71b3ceb49e1aef19919bbaf3254bfce4eeabddf2d0cbf101b0d3f00000000bc9955bf000080bf0000803f00000000
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -182,8 +182,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 0.0007569669, y: 0.0065367105, z: 0.0056548095}
-    m_Extent: {x: 0.008754974, y: 0.0065367105, z: 0.008688961}
+    m_Center: {x: -0.00048720837, y: 0.006697461, z: 0.006309167}
+    m_Extent: {x: 0.010487208, y: 0.006697461, z: 0.009343319}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -195,25 +195,25 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &9174881070133652407
+--- !u!43 &8977753228849962176
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Plane LOD1
+  m_Name: Plane LOD2
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
-    indexCount: 9
+    indexCount: 0
     topology: 0
     baseVertex: 0
     firstVertex: 0
-    vertexCount: 9
+    vertexCount: 0
     localAABB:
-      m_Center: {x: -0.0007312377, y: 0.006697461, z: 0.0056548095}
-      m_Extent: {x: 0.010243179, y: 0.006697461, z: 0.008688961}
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
@@ -230,31 +230,23 @@ Mesh:
   m_KeepVertices: 0
   m_KeepIndices: 0
   m_IndexFormat: 1
-  m_IndexBuffer: 000000000100000002000000030000000400000005000000060000000700000008000000
+  m_IndexBuffer: 
   m_VertexData:
     serializedVersion: 3
-    m_VertexCount: 9
+    m_VertexCount: 0
     m_Channels:
     - stream: 0
       offset: 0
       format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 4
+      dimension: 0
     - stream: 0
       offset: 0
       format: 0
       dimension: 0
     - stream: 0
-      offset: 40
+      offset: 0
       format: 0
-      dimension: 2
+      dimension: 0
     - stream: 0
       offset: 0
       format: 0
@@ -291,8 +283,16 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 432
-    _typelessdata: 0ae0133c60765b3ca4454c3b00000000891468bea656793f000080bf0000000000000000000080bf000000000000803f0ace33bc60765b3ca4454c3b00000000891468bea656793f000080bf0000000000000000000080bf0000803f0000803f0ad723bcc93ab0a34f4ef0af00000000891468bea656793f000080bf0000000000000000000080bf0000803f000000006f1283bbee0626304260e53bbdeb5b3f9463f4bd8adafebe0b5800bf00000000ec805dbf0000803f0000003f00000000130a03bce731563c9dd846bbbdeb5b3f9463f4bd8adafebe0a5800bf00000000eb805dbf0000803f0000803f0000803fa4f6043be731563c25d0693cbdeb5b3f9463f4bd8adafebe0b5800bf00000000eb805dbf0000803f000000000000803f592cc6baa117a83022026b3caf3254bfcf4eeabddf2d0cbf111b0d3f00000000bb9955bf000080bf0000000000000000038dfe3bb01a3f3c5d550cbbaf3254bfcf4eeabddf2d0cbf101b0d3f00000000bc9955bf000080bf0000803f0000803ff9d71b3ceb49e1aef19919bbaf3254bfce4eeabddf2d0cbf101b0d3f00000000bc9955bf000080bf0000803f00000000
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -346,8 +346,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: -0.0007312377, y: 0.006697461, z: 0.0056548095}
-    m_Extent: {x: 0.010243179, y: 0.006697461, z: 0.008688961}
+    m_Center: {x: -0.00048720837, y: 0.006697461, z: 0.006309167}
+    m_Extent: {x: 0.010487208, y: 0.006697461, z: 0.009343319}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
