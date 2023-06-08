@@ -42,6 +42,10 @@ public class DistanceAngle : MonoBehaviour
                 // Set the positions for the line renderer
             }
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            setPress = true;
+        }
     }
 
     public void LineTrigger()
