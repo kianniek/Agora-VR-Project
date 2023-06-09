@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &-6625933823838347466
+--- !u!43 &-8795554757234296409
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,13 +164,13 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &-6370064941438760698
+--- !u!43 &-7370272016726576526
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hammer LOD2
+  m_Name: Stok LOD1
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -315,8 +315,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: -0.00026399316, y: 0, z: 0.011624499}
-    m_Extent: {x: 0.011936244, y: 0.042588554, z: 0.021624498}
+    m_Center: {x: 0, y: -0.0017081094, z: -0.013237122}
+    m_Extent: {x: 0.012054195, y: 0.011988161, z: 0.09724024}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -328,13 +328,13 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &-2776114832183111819
+--- !u!43 &-4218595164832264247
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Stok LOD1
+  m_Name: Stok LOD2
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -526,13 +526,13 @@ MonoBehaviour:
   lod5: []
   lod6: []
   lod7: []
---- !u!43 &365548599616689837
+--- !u!43 &5025241896421860693
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Stok LOD2
+  m_Name: Hammer LOD2
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -677,8 +677,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 0, y: -0.0017081094, z: -0.013237122}
-    m_Extent: {x: 0.012054195, y: 0.011988161, z: 0.09724024}
+    m_Center: {x: -0.00026399316, y: 0, z: 0.011624499}
+    m_Extent: {x: 0.011936244, y: 0.042588554, z: 0.021624498}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
