@@ -1,11 +1,8 @@
 ﻿using HurricaneVR.Framework.Shared;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static UnityEngine.GraphicsBuffer;
 
 public class TransportToWorld : MonoBehaviour
 {
@@ -21,51 +18,35 @@ public class TransportToWorld : MonoBehaviour
 
     [Header("Collider Handler")]
     [Tooltip("Input: Parent Collider | Output: Parent And Children Collider")]
-    [SerializeField] GameObject[] ParentCollider;
+    [SerializeField] private GameObject[] ParentCollider;
     [InspectorButton("GetAllChildrenCollidersFromParent", 250)]
     public bool getAllColliders;
-    [SerializeField] Collider[] ColliderChildren;
+    [SerializeField] private Collider[] ColliderChildren;
 
     [Header("Shader Handler")]
-    [SerializeField] public WorldRevealURP worldReveal;
     [SerializeField] public RevealPointManager revealPointManager;
     [Tooltip("time it takes to move")]
-    [SerializeField] float mps = 1f; // meter per second expand
-    [SerializeField] float maxDiamiter = 10;
-    private float timer = 0f; // timer to keep track of time
-    private float value;
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float mps = 1f; // meter per second expand
+    [SerializeField] private float maxDiamiter = 10;
+    private void Start()
     {
-        if (worldReveal != null)
+        if (RevealPointManager.Instance == null)
         {
-            worldReveal.revealRadius = 0.01f;
+            Debug.LogWarning("RevealPointManager instance is missing or not initialized. Ensure that the RevealPointManager script is attached to a game object in the scene.");
         }
-
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void LoadScene()
     {
-        //if (worldReveal == null)
-        //{
-        //    worldReveal = Object.FindObjectOfType<WorldRevealURP>();
-        //}
         if (!SceneManager.GetSceneByName(transportToScene).isLoaded)
         {
             StartCoroutine(SceneSwitch());
         }
     }
 
-    IEnumerator SceneSwitch()
+    private IEnumerator SceneSwitch()
     {
         //prevent the worldReveal point to switch in the middle of the transition
-        if (revealPointManager) { revealPointManager.closestRevealPedistal.stopEffect = true; }
+        if (RevealPointManager.Instance) { RevealPointManager.Instance.closestRevealPedistal.stopEffect = true; }
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(transportToScene, LoadSceneMode.Additive);
 
         while (!asyncOperation.isDone)
@@ -83,15 +64,10 @@ public class TransportToWorld : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
 
         asyncOperation.allowSceneActivation = true;
+        RevealPointManager.Instance.StopAllCoroutines();
+        RevealPointManager.Instance.ExpandShaderStart(maxDiamiter, mps);
 
-        if (worldReveal == null)
-        {
-            worldReveal = FindObjectOfType<WorldRevealURP>();
-        }
-
-        worldReveal.ExpandShaderStart(maxDiamiter, mps);
-
-        if (revealPointManager) { revealPointManager.closestRevealPedistal.stopEffect = false; }
+        if (RevealPointManager.Instance) { RevealPointManager.Instance.closestRevealPedistal.stopEffect = false; }
 
         for (int i = 0; i < ColliderChildren.Length; i++)
         {
@@ -120,7 +96,7 @@ public class TransportToWorld : MonoBehaviour
         }
     }
 
-    void UnloadAllScenesExcept(string transportToScene)
+    private void UnloadAllScenesExcept(string transportToScene)
     {
         int c = SceneManager.sceneCount;
         for (int i = 0; i < c; i++)
@@ -140,10 +116,11 @@ public class TransportToWorld : MonoBehaviour
             Destroy(script);
         }
     }
+
     /// <summary>
     /// DONT USE IN RUNTIME | EDITOR ONLY
     /// </summary>
-    void GetAllChildrenCollidersFromParent()
+    private void GetAllChildrenCollidersFromParent()
     {
         List<Collider> allChildColliders = new List<Collider>();
 

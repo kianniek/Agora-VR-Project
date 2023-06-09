@@ -17,11 +17,36 @@ public class PlayOnCollision : MonoBehaviour
     public float cooldownTime = 30.0f;
     public bool canInvoke = true;
     public LayerMask collisionLayer;
+    [Header("Which hand can be collided with")]
+    public bool leftHand = true;
+    public bool rightHand = true;
+    public bool allowNoHandCollision = true;
 
     private void OnCollisionEnter(Collision collision)
     {
+        bool canExecuteCollision = false;
+        HandPosisionInWorld.Hand handCollided;
+        var handPosition = collision.collider.GetComponentInParent<HandPosisionInWorld>();
+
+        if (handPosition != null)
+        {
+            handCollided = handPosition.GetHandType();
+
+            if (handCollided == HandPosisionInWorld.Hand.Left && leftHand)
+            {
+                canExecuteCollision = true;
+            }
+            else if (handCollided == HandPosisionInWorld.Hand.Right && rightHand)
+            {
+                canExecuteCollision = true;
+            }
+        }
+        else if (allowNoHandCollision)
+        {
+            canExecuteCollision = true;
+        }
         // Check if the collision object's layer is included in the specified layer mask
-        if (canInvoke && collisionLayer.ContainsLayer(collision.gameObject.layer))
+        if (canInvoke && collisionLayer.ContainsLayer(collision.gameObject.layer) && canExecuteCollision)
         {
             canInvoke = false;
             StartCoroutine(InvokeEventWithCooldown());

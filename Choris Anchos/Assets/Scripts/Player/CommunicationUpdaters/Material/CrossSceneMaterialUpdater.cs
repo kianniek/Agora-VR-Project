@@ -8,6 +8,7 @@ using UnityEngine;
 public class CrossSceneMaterialUpdater : MonoBehaviour
 {
     [SerializeField] CrossSceneMaterialCopier.Models modelType;
+    public Texture OldTexture;
     public Texture2D replacementTexture;
     Renderer meshRenderer;
     [Tooltip("Leave This Blank to use the Default '_BaseMap' property name")]
@@ -30,6 +31,8 @@ public class CrossSceneMaterialUpdater : MonoBehaviour
                 enabled = false;
             }
         }
+
+        OldTexture = meshRenderer.material.GetTexture("_BaseMap");
     }
 
     // Update is called once per frame
@@ -42,6 +45,11 @@ public class CrossSceneMaterialUpdater : MonoBehaviour
                 string basemapName = materialAlbedoProperty == "" ? "_BaseMap" : materialAlbedoProperty;
                 meshRenderer.material.SetTexture(basemapName, replacementTexture);
             }
+        }
+
+        if(CrossSceneMaterialCopier.Models.ResetTexture == CrossSceneMaterialCopier.modelToChange)
+        {
+            meshRenderer.material.SetTexture("_BaseMap", OldTexture);
         }
     }
 
@@ -56,7 +64,8 @@ public static class CrossSceneMaterialCopier
     {
         None,
         Left_Hand,
-        Right_Hand
+        Right_Hand,
+        ResetTexture
     }
 
     //To use this script you got to read the 'modelToChange' string to check if the right model gets changed

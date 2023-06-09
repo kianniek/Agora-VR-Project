@@ -12,7 +12,7 @@ public class ResetPlayerPos : MonoBehaviour
         {
             playerController.transform.position = new Vector3(0, playerController.transform.position.y, 0);
             //playerController.transform.rotation = Quaternion.identity;
-
+            CrossSceneMaterialCopier.modelToChange = CrossSceneMaterialCopier.Models.ResetTexture;
 
             playerController.PreviousPosition = transform.position;
             ResetPlayerMessager.ResetPlayer = !ResetPlayerMessager.ResetPlayer;

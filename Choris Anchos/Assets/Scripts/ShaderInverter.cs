@@ -32,7 +32,7 @@ public class ShaderInverter : MonoBehaviour
                 continue; 
             }
 
-            if (RevealShaderMaterials[i].shader.name != "Shader Graphs/RevealShader" && RevealShaderMaterials[i].shader.name != "Shader Graphs/TerrainMusicWorldShader")
+            if (RevealShaderMaterials[i].shader.name != "Shader Graphs/RevealShader" && RevealShaderMaterials[i].shader.name != "Shader Graphs/TerrainMusicWorldShader" && RevealShaderMaterials[i].shader.name != "Shader Graphs/RevealShaderGlass")
             {
                 RevealShaderMaterials.RemoveAt(i);
                 continue;
