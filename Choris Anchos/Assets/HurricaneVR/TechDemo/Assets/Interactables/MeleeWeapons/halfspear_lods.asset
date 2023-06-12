@@ -1,12 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &-6317650773803561367
+--- !u!43 &-7679223240653632171
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Tip LOD2
+  m_Name: Shaft LOD1
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -151,8 +151,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: -9.313226e-10, y: 0.00006850157, z: 0.83373475}
-    m_Extent: {x: 0.021759793, y: 0.017829005, z: 0.08664346}
+    m_Center: {x: 0, y: 0.00000006100163, z: 0.37584868}
+    m_Extent: {x: 0.0130135, y: 0.013013316, z: 0.37415132}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -164,13 +164,13 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &-2058840336968126705
+--- !u!43 &-6296941028787993464
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Tip LOD1
+  m_Name: Tip LOD2
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -349,26 +349,26 @@ MonoBehaviour:
     maxLODGenerated: 2
     initialLODMaxPolyCount: 500000
   lod0:
-  - {fileID: -6754601244351112018, guid: c0ee4d32c23f4fd45854c25711eb3587, type: 3}
-  - {fileID: 6921506484877681077, guid: c0ee4d32c23f4fd45854c25711eb3587, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   lod1:
-  - {fileID: 3108964974039688254, guid: c0ee4d32c23f4fd45854c25711eb3587, type: 3}
-  - {fileID: 8238834596722643543, guid: c0ee4d32c23f4fd45854c25711eb3587, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   lod2:
-  - {fileID: 7736278777864754014, guid: c0ee4d32c23f4fd45854c25711eb3587, type: 3}
-  - {fileID: 8458692303815399173, guid: c0ee4d32c23f4fd45854c25711eb3587, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   lod3: []
   lod4: []
   lod5: []
   lod6: []
   lod7: []
---- !u!43 &5523238314154480775
+--- !u!43 &2598179087550126992
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shaft LOD2
+  m_Name: Tip LOD1
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -513,8 +513,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 0, y: 0.00000006100163, z: 0.37584868}
-    m_Extent: {x: 0.0130135, y: 0.013013316, z: 0.37415132}
+    m_Center: {x: -9.313226e-10, y: 0.00006850157, z: 0.83373475}
+    m_Extent: {x: 0.021759793, y: 0.017829005, z: 0.08664346}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -526,13 +526,13 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &6091956292268601788
+--- !u!43 &8581585553915206191
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shaft LOD1
+  m_Name: Shaft LOD2
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

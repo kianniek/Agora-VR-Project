@@ -1,12 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &-5034805383956426739
+--- !u!43 &-8955779020759345235
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: small_case_window LOD1
+  m_Name: small_case_frame LOD1
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -151,8 +151,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 0.0019767284, y: -0.0005280785, z: 0.48175052}
-    m_Extent: {x: 0.47062322, y: 0.01198726, z: 0.49239066}
+    m_Center: {x: 0.0019768775, y: -0.00000032782555, z: -0.99591035}
+    m_Extent: {x: 0.49716765, y: 0.49866065, z: 0.99732083}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -164,7 +164,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &-1681533800250503142
+--- !u!43 &-8121424569019738471
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -328,41 +328,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e927627221206e04dba83232f13d1949, type: 3}
-  m_Name: small_case_lods
-  m_EditorClassIdentifier: 
-  overrideDefaults: 0
-  importSettings:
-    generateOnImport: 1
-    meshSimplifier: Unity.AutoLOD.QuadricMeshSimplifier, Unity.AutoLOD.Editor, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    batcher: 
-    maxLODGenerated: 2
-    initialLODMaxPolyCount: 500000
-  lod0:
-  - {fileID: 873554220561146232, guid: 3031ce474e555a6469fabb8f550ec1b9, type: 3}
-  - {fileID: -4727834262625138795, guid: 3031ce474e555a6469fabb8f550ec1b9, type: 3}
-  lod1:
-  - {fileID: 6734601264752788430, guid: 3031ce474e555a6469fabb8f550ec1b9, type: 3}
-  - {fileID: 4205168751710433662, guid: 3031ce474e555a6469fabb8f550ec1b9, type: 3}
-  lod2:
-  - {fileID: -9220175900676011242, guid: 3031ce474e555a6469fabb8f550ec1b9, type: 3}
-  - {fileID: 3002108687187608703, guid: 3031ce474e555a6469fabb8f550ec1b9, type: 3}
-  lod3: []
-  lod4: []
-  lod5: []
-  lod6: []
-  lod7: []
---- !u!43 &4497522436116243131
+--- !u!43 &-998617803036068781
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -526,13 +492,47 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &6718243396619832798
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e927627221206e04dba83232f13d1949, type: 3}
+  m_Name: small_case_lods
+  m_EditorClassIdentifier: 
+  overrideDefaults: 0
+  importSettings:
+    generateOnImport: 1
+    meshSimplifier: Unity.AutoLOD.QuadricMeshSimplifier, Unity.AutoLOD.Editor, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    batcher: 
+    maxLODGenerated: 2
+    initialLODMaxPolyCount: 500000
+  lod0:
+  - {fileID: 0}
+  - {fileID: 0}
+  lod1:
+  - {fileID: 0}
+  - {fileID: 0}
+  lod2:
+  - {fileID: 0}
+  - {fileID: 0}
+  lod3: []
+  lod4: []
+  lod5: []
+  lod6: []
+  lod7: []
+--- !u!43 &1761110635350337694
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: small_case_frame LOD1
+  m_Name: small_case_window LOD1
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -677,8 +677,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 0.0019768775, y: -0.00000032782555, z: -0.99591035}
-    m_Extent: {x: 0.49716765, y: 0.49866065, z: 0.99732083}
+    m_Center: {x: 0.0019767284, y: -0.0005280785, z: 0.48175052}
+    m_Extent: {x: 0.47062322, y: 0.01198726, z: 0.49239066}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
