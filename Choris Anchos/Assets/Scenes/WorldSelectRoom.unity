@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 41469039}
   - component: {fileID: 41469041}
   - component: {fileID: 41469040}
+  - component: {fileID: 41469042}
   m_Layer: 3
   m_Name: Rotating Object
   m_TagString: Untagged
@@ -274,6 +275,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &41469042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41469037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d20167ce973b74abe51b5ea423637f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WorldMusic:
+    Guid:
+      Data1: -2012194236
+      Data2: 1280267618
+      Data3: 378191526
+      Data4: 850698484
+    Path: event:/Music/YogaRoomAmbience
 --- !u!65 &56917639
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6877,17 +6897,20 @@ MonoBehaviour:
   scriptsTodiable:
   - {fileID: 5413168167755286821}
   - {fileID: 5413168167755286809}
+  - {fileID: 8533545038211909731}
   ParentCollider:
   - {fileID: 919132147958074596}
   - {fileID: 919132147534777551}
   - {fileID: 919132149595539133}
   - {fileID: 919132148121513933}
+  - {fileID: 3886153550537260559}
   getAllColliders: 0
   ColliderChildren:
   - {fileID: 3469287837605665276}
   - {fileID: 1994143509}
   - {fileID: 3469287838138014161}
-  - {fileID: 1818752989}
+  - {fileID: 1874803476302935703}
+  - {fileID: 4549216666564228025}
   - {fileID: 3469287837117436835}
   - {fileID: 7981635148072483600}
   - {fileID: 4247502741451637}
@@ -6916,6 +6939,14 @@ MonoBehaviour:
   - {fileID: 508930324}
   - {fileID: 592655071}
   - {fileID: 520615171}
+  - {fileID: 8533545038211909728}
+  - {fileID: 8533545038211909727}
+  - {fileID: 8533545038211909726}
+  - {fileID: 8533545038211909725}
+  - {fileID: 8533545038211909724}
+  - {fileID: 8533545038211909723}
+  - {fileID: 8533545038211909722}
+  - {fileID: 8533545038211909729}
   revealPointManager: {fileID: 0}
   mps: 0.1
   maxDiamiter: 1000

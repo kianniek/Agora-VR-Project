@@ -73,18 +73,16 @@ public class TransportToWorld : MonoBehaviour
         {
             ColliderChildren[i].enabled = false;
         }
-        //yield return new WaitWhile(() => worldReveal.revealRadius < 100);
-
         //print("Name of Old Scene is: " + selfScene.name);
-
-        UnloadAllScenesExcept(transportToScene);
-
         if (transportToScene == "WorldSelectRoom" || destroyObjOnLoaded)
         {
             ResetPlayerMessager.ResetPlayer = true;
             yield return new WaitForSeconds(0.3f);
             Destroy(this.gameObject);
         }
+
+        UnloadAllScenesExcept(transportToScene);
+
 
         if (destroyScriptOnLoaded)
         {
