@@ -37,6 +37,7 @@ public class RotatingHandsWSR : MonoBehaviour
     {
         // Calculate the rotation towards the player
         Quaternion targetRotation = Quaternion.LookRotation(directionToPlayer.normalized, Vector3.up);
+        //Quaternion targetRotation = Quaternion.LookRotation(new Vector3(directionToPlayer.normalized.x, 0, directionToPlayer.normalized.z), Vector3.up);
 
         // Smoothly rotate the object towards the player
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
