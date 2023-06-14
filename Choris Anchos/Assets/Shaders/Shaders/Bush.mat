@@ -10,13 +10,15 @@ Material:
   m_Name: Bush
   m_Shader: {fileID: -6465566751694194690, guid: 0a2a7a7dad20f1a41aaec215eb287cca,
     type: 3}
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _ALPHATEST_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
+  stringTagMap:
+    RenderType: TransparentCutout
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -39,19 +41,32 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlphaClip: 1
+    - _Blend: 0
+    - _CastShadows: 1
     - _ColorDencity: 1.93
     - _ColorSpeed: 1
+    - _Cull: 0
+    - _DstBlend: 0
     - _Interaction_distance: 10
     - _Noize: 10
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _ReceiveShadows: 1
     - _Smoothness: 0
     - _Speed: 0.1
+    - _SrcBlend: 1
     - _Strength: 1
+    - _Surface: 0
+    - _WorkflowMode: 1
+    - _ZTest: 4
+    - _ZWrite: 1
+    - _ZWriteControl: 0
     - _noizeSpeed: 0
     - _scale: 0.1
     m_Colors:
     - _GrassColor: {r: 0.03545683, g: 0.4339623, b: 0.0102349585, a: 1}
+    - _OffsetLocalSpace: {r: 0, g: 0, b: 0, a: 0}
     - _TopColor: {r: 0.013757849, g: 0.3301887, b: 0, a: 0}
     - _Vector4: {r: 0, g: 0, b: 0, a: 0}
     - _player: {r: 0, g: 0, b: 0, a: 0}

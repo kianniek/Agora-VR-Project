@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3496020695966629424}
   - component: {fileID: 516655950901162389}
   - component: {fileID: 2364232095093409119}
-  - component: {fileID: 6727417269691426604}
   m_Layer: 0
   m_Name: GrassWalking
   m_TagString: Untagged
@@ -59,7 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 4b151b3141e4eab41998f24a0a5cfe20, type: 2}
@@ -84,23 +83,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!205 &6727417269691426604
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4309818263261504650}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.00048720837, y: 0.006697461, z: 0.0063091666}
-  m_Size: 0.020974416
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.0023652818
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: -7511558181221131132, guid: 97de954ba8d27eb4db5483a6d1d7eedf,
-        type: 3}
-  m_Enabled: 1

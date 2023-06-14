@@ -34,6 +34,10 @@ public class TransportToWorld : MonoBehaviour
         {
             Debug.LogWarning("RevealPointManager instance is missing or not initialized. Ensure that the RevealPointManager script is attached to a game object in the scene.");
         }
+        if (SkyboxManager.Instance == null)
+        {
+            Debug.LogWarning("SkyboxManager instance is missing or not initialized. Ensure that the SkyboxManager script is attached to a game object in the scene.");
+        }
     }
     public void LoadScene()
     {
@@ -64,6 +68,7 @@ public class TransportToWorld : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
 
         asyncOperation.allowSceneActivation = true;
+        SkyboxManager.Instance.UpdateSkyboxColors(otherScene);
         RevealPointManager.Instance.StopAllCoroutines();
         RevealPointManager.Instance.ExpandShaderStart(maxDiamiter, mps);
 

@@ -43,9 +43,11 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 5666838927057064088}
+  - {fileID: 759378969766472060}
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 9.400001
   Length: 1371600
 --- !u!114 &-7612288615878779398
 MonoBehaviour:
@@ -74,6 +76,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3073
+--- !u!114 &-7399285207495043495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bank A.bank
+  m_EditorClassIdentifier: 
+  Path: ../Choris_Anchos_Sound/Build/Desktop/Bank A.bank
+  Name: Bank A
+  StudioPath: bank:/Bank A
+  lastModified: 638223604170751142
+  FileSizes:
+  - Name: Desktop
+    Value: 494
+  Exists: 1
 --- !u!114 &-6395466691647844804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,10 +252,10 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638219041628747247
+  lastModified: 638223604172560015
   FileSizes:
   - Name: Desktop
-    Value: 16358784
+    Value: 16359776
   Exists: 1
 --- !u!114 &-4593088260275351962
 MonoBehaviour:
@@ -595,6 +617,7 @@ MonoBehaviour:
   - {fileID: 4591627043512437715}
   - {fileID: -4756535564674837944}
   - {fileID: 2985876070361266388}
+  - {fileID: -7399285207495043495}
   EditorEvents:
   - {fileID: 4059231775381970569}
   - {fileID: -6103017926148881540}
@@ -615,7 +638,7 @@ MonoBehaviour:
   - {fileID: -4756535564674837944}
   StringsBanks:
   - {fileID: 6834390697356701667}
-  cacheTime: 638219041629157729
+  cacheTime: 638223604173028322
   cacheVersion: 131601
 --- !u!114 &471663611046041294
 MonoBehaviour:
@@ -644,6 +667,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3073
+--- !u!114 &759378969766472060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/YogaRoomAmbience/MinDistance
+  m_EditorClassIdentifier: 
+  Name: MinDistance
+  StudioPath: 
+  Min: 0
+  Max: 100
+  Default: 0.01
+  ID:
+    data1: 2742026993
+    data2: 1155255812
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &833939375544743645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -767,7 +814,7 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/WorldSelect.bank
   Name: WorldSelect
   StudioPath: bank:/WorldSelect
-  lastModified: 638219041629157729
+  lastModified: 638223604173028322
   FileSizes:
   - Name: Desktop
     Value: 3951040
@@ -895,10 +942,34 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/HandPan.bank
   Name: HandPan
   StudioPath: bank:/HandPan
-  lastModified: 638219041322104693
+  lastModified: 638223604171156119
   FileSizes:
   - Name: Desktop
-    Value: 179168
+    Value: 179456
+  Exists: 1
+--- !u!114 &5666838927057064088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/YogaRoomAmbience/MaxDistance
+  m_EditorClassIdentifier: 
+  Name: MaxDistance
+  StudioPath: 
+  Min: 0
+  Max: 10000
+  Default: 10
+  ID:
+    data1: 3242497829
+    data2: 3669675896
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &6834390697356701667
 MonoBehaviour:
@@ -915,10 +986,10 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638219041628768014
+  lastModified: 638223604172580832
   FileSizes:
   - Name: Desktop
-    Value: 1462
+    Value: 1594
   Exists: 1
 --- !u!114 &8932479307017839654
 MonoBehaviour:

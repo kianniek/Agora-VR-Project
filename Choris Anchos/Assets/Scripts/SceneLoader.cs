@@ -16,6 +16,14 @@ public class SceneLoader : MonoBehaviour
         {
             async = SceneManager.LoadSceneAsync(SceneToLoadOnStart, LoadSceneMode.Additive);
         }
+        else
+        {
+            foreach (GameObject item in objectsToDiableAfterLoad)
+            {
+                item.SetActive(false);
+            }
+            Destroy(gameObject);
+        }
         
     }
 
@@ -25,10 +33,12 @@ public class SceneLoader : MonoBehaviour
         {
             if (async.isDone)
             {
+                SkyboxManager.Instance.UpdateSkyboxColors(SceneManager.GetSceneByName(SceneToLoadOnStart));
                 foreach (GameObject item in objectsToDiableAfterLoad)
                 {
                     item.SetActive(false);
                 }
+                Destroy(gameObject);
             }
         }
     }

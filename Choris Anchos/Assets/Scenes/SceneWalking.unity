@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14805558, g: 0.21986051, b: 0.38488394, a: 1}
+  m_IndirectSpecularColor: {r: 0.49296752, g: 0.58169115, b: 0.6818212, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1384,6 +1384,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493949267}
     m_Modifications:
+    - target: {fileID: 8912984652575019608, guid: b56108fcf2ccf884697f3b58c77f0e9d,
+        type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8912984652575019609, guid: b56108fcf2ccf884697f3b58c77f0e9d,
         type: 3}
       propertyPath: m_RootOrder
@@ -8537,7 +8542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 085c2289556c08443b40563cfe8016e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneSetupMode: 0
+  _sceneSetupMode: 2
   _sceneSetup: []
   _isMainScene: 0
   _version: 1
@@ -8570,7 +8575,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _version: 2
-  _crossSceneReferences: []
+  _crossSceneReferences:
+  - _sourceObject: {fileID: 1011422013}
+    _sourceField: player
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: 81635697f9f63d944825aa063cf1169c
+        name: ScenePlayer
+        _path: Assets/Scenes/ScenePlayer.unity
+      fullPath: /XRRig/PlayerController
+      componentName: 
+      componentIndex: 0
+      editorLocalId: -1592108286
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
   _realSceneRootsForPostBuild: []
   _mergedScenes: []
 --- !u!1001 &440526589
@@ -18298,7 +18329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd989da2a0d0164eac5797f57845c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1963756203}
+  player: {fileID: 0}
   playerSize: 1
   playerInteractionRange: 10
   objectList:
@@ -43621,6 +43652,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &1930612386066047077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43633,6 +43675,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!4 &1943884135721965485
 Transform:
   m_ObjectHideFlags: 0
@@ -47179,6 +47232,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &4629689947307646590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47191,6 +47255,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!1 &4663129032279386010
 GameObject:
   m_ObjectHideFlags: 0
@@ -47421,6 +47496,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &5085085343069114602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47433,6 +47519,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!33 &5108846361129543271
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -50469,11 +50566,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9082789347782751174, guid: 4c8af7ce3b317744884e13384ea363ca,
         type: 3}
-      propertyPath: m_RenderingLayerMask
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 9082789347782751174, guid: 4c8af7ce3b317744884e13384ea363ca,
-        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 96b833efdfcde3347ac4cdfb947010ae, type: 2}
@@ -50506,6 +50598,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373506506219948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50518,6 +50621,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373506740515202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50530,6 +50644,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373506767298544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50542,6 +50667,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373506962547235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50554,6 +50690,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373506997650074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50566,6 +50713,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373507126011474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50578,6 +50736,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373507347678829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50590,6 +50759,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373507393415236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50602,6 +50782,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373507568554648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50614,6 +50805,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373507691027955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50626,6 +50828,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373507809810022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50638,6 +50851,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373507924905298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50650,6 +50874,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373508006838602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50662,6 +50897,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373508066095330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50674,6 +50920,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373508107733621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50686,6 +50943,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373508138494188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50698,6 +50966,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373508194997217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50710,6 +50989,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373508281683664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50722,6 +51012,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373508288408621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50734,6 +51035,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373508555688894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50746,6 +51058,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373508558870112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50758,6 +51081,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!114 &6775373508566638548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50770,6 +51104,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02487952360245784bf87f8a7a3743c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  version: 
+  shaderType: 0
+  editorWindAlways: 0
+  editorWindEnabled: 0
+  windType: 0
+  windQuality: 3
+  localWindAmplitude: 1
+  sproutTurbulance: 1
+  sproutSway: 1
+  trunkBending: 1
+  windScale: 1
 --- !u!4 &6808567635961523384
 Transform:
   m_ObjectHideFlags: 0

@@ -110,7 +110,6 @@ public class RevealPointManager : MonoBehaviour
             //animCurve = AnimationCurve.EaseInOut(0.0f, 0.0f, 1.0f, 1.0f);
             // move the object based on percentage complete
             revealPoint.revealRadius = Mathf.Lerp(revealPoint.revealRadius, maxDiamiter, percentageComplete);
-            print("2 " + revealPoint.revealRadius);
             // wait for the next frame
             yield return null;
         }

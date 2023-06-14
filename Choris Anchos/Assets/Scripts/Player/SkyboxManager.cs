@@ -1,15 +1,18 @@
-using HurricaneVR.Framework.Shared;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+[ExecuteInEditMode]
 public class SkyboxManager : MonoBehaviour
 {
+    // Singleton instance
+    public static SkyboxManager Instance { get; private set; }
     public Material SkyboxMaterial;
 
     [System.Serializable]
     public struct SkyboxColors
     {
+        [Tooltip("If used only this will be used")]
+        public Material skyMaterial;
+        [Space(10)]
         [Range(0, 5)]
         public float AtmosphereThickness;
         public string sceneName;
@@ -30,19 +33,37 @@ public class SkyboxManager : MonoBehaviour
             groundColor = new Color(0,0,0)
         }
     };
-
-    private void OnEnable()
+    private void Awake()
     {
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        if (Instance == null)
+        {
+            Instance = this;
+            //DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
+    //private void OnEnable()
+    //{
+    //    SceneManager.sceneLoaded += OnSceneLoaded;
+    //}
 
-    private void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
+    //private void OnDisable()
+    //{
+    //    SceneManager.sceneLoaded -= OnSceneLoaded;
+    //}
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        // Ignore the PlayerScene
+        if (scene.name.Equals("ScenePlayer"))
+        {
+            return;
+        }
+
+        SceneManager.SetActiveScene(scene);
         // Find the index of the skybox color to use based on the scene name
         int colorIndex = -1;
         for (int i = 0; i < skyboxColors.Length; i++)
@@ -58,24 +79,37 @@ public class SkyboxManager : MonoBehaviour
         // If we found a matching skybox color, apply it to the skybox
         if (colorIndex >= 0)
         {
-            //Material skyboxMaterial = RenderSettings.skybox;
-            SkyboxMaterial.SetColor("_SkyTint", skyboxColors[colorIndex].skyColor);
-            SkyboxMaterial.SetColor("_GroundColor", skyboxColors[colorIndex].groundColor);
-            SkyboxMaterial.SetFloat("_AtmosphereThickness", skyboxColors[colorIndex].AtmosphereThickness);
-            //print(skyboxColors[colorIndex].skyColor);
-            //RenderSettings.skybox = skyboxMaterial;
+            if (skyboxColors[colorIndex].skyMaterial == null)
+            {
+                RenderSettings.skybox = SkyboxMaterial;
+                //Material skyboxMaterial = RenderSettings.skybox;
+                SkyboxMaterial.SetColor("_SkyTint", skyboxColors[colorIndex].skyColor);
+                SkyboxMaterial.SetColor("_GroundColor", skyboxColors[colorIndex].groundColor);
+                SkyboxMaterial.SetFloat("_AtmosphereThickness", skyboxColors[colorIndex].AtmosphereThickness);
+            }
+            else
+            {
+                RenderSettings.skybox = skyboxColors[colorIndex].skyMaterial;
+            }
         }
     }
 
-    public void UpdateSkyboxColors()
+    public void UpdateSkyboxColors(Scene scene)
     {
+        // Ignore the PlayerScene
+        if (scene.name.Equals("ScenePlayer"))
+        {
+            return;
+        }
+        SceneManager.SetActiveScene(scene);
         // Find the index of the skybox color to use based on the scene name
         int colorIndex = -1;
         for (int i = 0; i < skyboxColors.Length; i++)
         {
-            if (SceneManager.GetActiveScene().name.Equals(skyboxColors[i].sceneName))
+            if (scene.name.Equals(skyboxColors[i].sceneName))
             {
                 colorIndex = i;
+                //print(scene.name + "|||" + colorIndex);
                 break;
             }
         }
@@ -83,11 +117,18 @@ public class SkyboxManager : MonoBehaviour
         // If we found a matching skybox color, apply it to the skybox
         if (colorIndex >= 0)
         {
-            //Material skyboxMaterial = RenderSettings.skybox;
-            SkyboxMaterial.SetColor("_SkyTint", skyboxColors[colorIndex].skyColor);
-            SkyboxMaterial.SetColor("_GroundColor", skyboxColors[colorIndex].groundColor);
-            SkyboxMaterial.SetFloat("_AtmosphereThickness", skyboxColors[colorIndex].AtmosphereThickness);
-            //RenderSettings.skybox = skyboxMaterial;
+            if (skyboxColors[colorIndex].skyMaterial == null)
+            {
+                RenderSettings.skybox = SkyboxMaterial;
+                //Material skyboxMaterial = RenderSettings.skybox;
+                SkyboxMaterial.SetColor("_SkyTint", skyboxColors[colorIndex].skyColor);
+                SkyboxMaterial.SetColor("_GroundColor", skyboxColors[colorIndex].groundColor);
+                SkyboxMaterial.SetFloat("_AtmosphereThickness", skyboxColors[colorIndex].AtmosphereThickness);
+            }
+            else
+            {
+                RenderSettings.skybox = skyboxColors[colorIndex].skyMaterial;
+            }
         }
     }
 

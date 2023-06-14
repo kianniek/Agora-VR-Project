@@ -27,7 +27,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 71f14a2d79f732f4d9893ef1b911f4ff, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0441417, g: 0.06409548, b: 0.1018178, a: 1}
+  m_IndirectSpecularColor: {r: 0.49296752, g: 0.58169115, b: 0.6818212, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -294,6 +294,8 @@ MonoBehaviour:
       Data3: 378191526
       Data4: 850698484
     Path: event:/Music/YogaRoomAmbience
+  minDistance: 0
+  maxDistance: 1.4
 --- !u!65 &56917639
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1725,7 +1727,7 @@ Light:
     serializedVersion: 2
     m_Bits: 2147483647
   m_RenderingLayerMask: 2
-  m_Lightmapping: 1
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -2082,7 +2084,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577118443}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 1500, z: -2500}
+  m_LocalPosition: {x: -0, y: 1500, z: -2913}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2803,6 +2805,8 @@ MonoBehaviour:
       Data3: 378191526
       Data4: 850698484
     Path: event:/Music/YogaRoomAmbience
+  minDistance: 0
+  maxDistance: 1.4
 --- !u!65 &1994143509
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6878,6 +6882,8 @@ MonoBehaviour:
       Data3: 1195838889
       Data4: -627145941
     Path: event:/Music/TheGreatBefore
+  minDistance: 0
+  maxDistance: 1.4
 --- !u!114 &5413168167755286821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9148,6 +9154,8 @@ MonoBehaviour:
       Data3: 1195838889
       Data4: -627145941
     Path: event:/Music/TheGreatBefore
+  minDistance: 0
+  maxDistance: 1.4
 --- !u!4 &8801735892159917725
 Transform:
   m_ObjectHideFlags: 0

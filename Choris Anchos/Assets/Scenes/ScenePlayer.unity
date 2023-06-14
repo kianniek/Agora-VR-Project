@@ -25,10 +25,10 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientGroundColor: {r: 0.62396055, g: 0.5332766, b: 0.4125427, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 3
-  m_SubtractiveShadowColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 77a51ae873906d748b9507d00d2054cc, type: 2}
-  m_HaloStrength: 0
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.41960785, g: 0.47843137, b: 0.627451, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 71f14a2d79f732f4d9893ef1b911f4ff, type: 2}
+  m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18194117, g: 0.36279517, b: 0.57565707, a: 1}
+  m_IndirectSpecularColor: {r: 0.49296752, g: 0.58169115, b: 0.6818212, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -676,38 +676,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 085c2289556c08443b40563cfe8016e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneSetupMode: 0
-  _sceneSetup:
-  - scene:
-      editorAssetGUID: cea5a204c41fe2e46b076cfd29984ab7
-      name: WorldSelectRoom
-      _path: Assets/Scenes/WorldSelectRoom.unity
-    loadInEditor: 1
-    loadMethod: 3
-  - scene:
-      editorAssetGUID: 9cca277578a7e7c4f81c1f01a9001658
-      name: SceneMusic
-      _path: Assets/Scenes/SceneMusic.unity
-    loadInEditor: 0
-    loadMethod: 3
-  - scene:
-      editorAssetGUID: b794e0ad59117e544ac9bd3e3d4408e8
-      name: SceneWalking
-      _path: Assets/Scenes/SceneWalking.unity
-    loadInEditor: 0
-    loadMethod: 3
-  - scene:
-      editorAssetGUID: e5b05dd1b4784e645ad0a6510db751d0
-      name: SceneWreckRoom
-      _path: Assets/Scenes/SceneWreckRoom.unity
-    loadInEditor: 0
-    loadMethod: 3
-  - scene:
-      editorAssetGUID: e0affc992c1c0bc438d272b7be69136a
-      name: SceneYoga
-      _path: Assets/Scenes/SceneYoga.unity
-    loadInEditor: 0
-    loadMethod: 3
+  _sceneSetupMode: 2
+  _sceneSetup: []
   _isMainScene: 0
   _version: 1
   _thisScenePath: Assets/Scenes/ScenePlayer.unity
@@ -772,16 +742,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SkyboxMaterial: {fileID: 2100000, guid: 77a51ae873906d748b9507d00d2054cc, type: 2}
   skyboxColors:
-  - AtmosphereThickness: 1
+  - skyMaterial: {fileID: 0}
+    AtmosphereThickness: 1
     sceneName: SceneMusic
     skyColor: {r: 1, g: 0, b: 0.646297, a: 1}
     groundColor: {r: 0, g: 0.8231192, b: 1, a: 1}
-  - AtmosphereThickness: 0
+  - skyMaterial: {fileID: 2100000, guid: 71f14a2d79f732f4d9893ef1b911f4ff, type: 2}
+    AtmosphereThickness: 0
     sceneName: WorldSelectRoom
-    skyColor: {r: 0, g: 0, b: 0, a: 1}
-    groundColor: {r: 0, g: 0, b: 0, a: 1}
-  - AtmosphereThickness: 1
+    skyColor: {r: 0, g: 0.031111736, b: 0.3773585, a: 1}
+    groundColor: {r: 0, g: 0.35338515, b: 0.4528302, a: 1}
+  - skyMaterial: {fileID: 0}
+    AtmosphereThickness: 1
     sceneName: SceneYoga
+    skyColor: {r: 0.7773585, g: 0.9935201, b: 1, a: 1}
+    groundColor: {r: 0.3679245, g: 0.22916389, b: 0, a: 1}
+  - skyMaterial: {fileID: 2100000, guid: 71f14a2d79f732f4d9893ef1b911f4ff, type: 2}
+    AtmosphereThickness: 1
+    sceneName: SceneWalking
     skyColor: {r: 0.7773585, g: 0.9935201, b: 1, a: 1}
     groundColor: {r: 0.3679245, g: 0.22916389, b: 0, a: 1}
 --- !u!1 &1284616396
@@ -9021,7 +8999,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.01490994, y: 0.0003300109, z: -0.00019000121}
+  m_ConnectedAnchor: {x: -0.014909998, y: 0.00032999762, z: -0.00019000075}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -17549,7 +17527,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.051489804, y: 0.082274914, z: 0.17282625}
+  m_ConnectedAnchor: {x: -0.051489804, y: 0.08227503, z: 0.17282625}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
