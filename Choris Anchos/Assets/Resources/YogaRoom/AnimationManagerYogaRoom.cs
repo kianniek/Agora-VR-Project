@@ -35,7 +35,7 @@ public class AnimationManagerYogaRoom : MonoBehaviour
 
     private void Update()
     {
-        playSequence = true;
+        
         if (playSequence && !isPlaying)
         {
             PlayNextAnimation();
@@ -111,5 +111,8 @@ public class AnimationManagerYogaRoom : MonoBehaviour
             j++;
         }
     }
-
+    public void Play()
+    {
+        playSequence = true;
+    }
 }
