@@ -22,7 +22,7 @@ public class PlayOnCollision : MonoBehaviour
     public bool rightHand = true;
     public bool allowNoHandCollision = true;
 
-    private void OnCollisionEnter(Collision collision)
+    virtual public void OnCollisionEnter(Collision collision)
     {
         bool canExecuteCollision = false;
         HandPosisionInWorld.Hand handCollided;
@@ -52,38 +52,9 @@ public class PlayOnCollision : MonoBehaviour
             StartCoroutine(InvokeEventWithCooldown());
         }
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        bool canExecuteCollision = false;
-        HandPosisionInWorld.Hand handCollided;
-        var handPosition = other.GetComponentInParent<HandPosisionInWorld>();
 
-        if (handPosition != null)
-        {
-            handCollided = handPosition.GetHandType();
 
-            if (handCollided == HandPosisionInWorld.Hand.Left && leftHand)
-            {
-                canExecuteCollision = true;
-            }
-            else if (handCollided == HandPosisionInWorld.Hand.Right && rightHand)
-            {
-                canExecuteCollision = true;
-            }
-        }
-        else if (allowNoHandCollision)
-        {
-            canExecuteCollision = true;
-        }
-        // Check if the collision object's layer is included in the specified layer mask
-        if (canInvoke && collisionLayer.ContainsLayer(other.gameObject.layer) && canExecuteCollision)
-        {
-            canInvoke = false;
-            StartCoroutine(InvokeEventWithCooldown());
-        }
-    } 
-
-    IEnumerator InvokeEventWithCooldown()
+    virtual public IEnumerator InvokeEventWithCooldown()
     {
         events.Invoke();
         for (int i = 0; i < eventsDelayed.Length; i++)
@@ -94,13 +65,13 @@ public class PlayOnCollision : MonoBehaviour
         yield return null;
     }
 
-    IEnumerator ResetInvokeCooldown()
+    virtual public IEnumerator ResetInvokeCooldown()
     {
         yield return new WaitForSeconds(cooldownTime);
         canInvoke = true;
     }
 
-    IEnumerator InvokeDelayedEvent(DelayedUnityEvent delayedUnityEvent)
+    virtual public IEnumerator InvokeDelayedEvent(DelayedUnityEvent delayedUnityEvent)
     {
         yield return new WaitForSeconds(delayedUnityEvent.Delay);
         delayedUnityEvent.eventsDelay.Invoke();

@@ -15,6 +15,7 @@ public class SceneLoader : MonoBehaviour
         if (!SceneManager.GetSceneByName(SceneToLoadOnStart).isLoaded)
         {
             async = SceneManager.LoadSceneAsync(SceneToLoadOnStart, LoadSceneMode.Additive);
+            print(string.Format("loading {0}...", SceneToLoadOnStart));
         }
         else
         {
@@ -26,6 +27,7 @@ public class SceneLoader : MonoBehaviour
         }
         
     }
+
 
     private void Update()
     {

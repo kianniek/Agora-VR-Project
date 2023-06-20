@@ -1,3 +1,4 @@
+using ExternalPropertyAttributes;
 using HurricaneVR.Framework.Shared;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ public class BreatingVisualManager : MonoBehaviour
     }
 
     public bool doBreating;
+    [SerializeField][MinMaxSlider(-1, 1)] Vector2 intensitySliderRange;
     [Range(-1f, 1f)]
     public float intensitySlider = 0f;  // Slider to control the intensity of the visualization
 
@@ -47,8 +49,10 @@ public class BreatingVisualManager : MonoBehaviour
 
     private void Update()
     {
-        if (!doBreating) 
+        if (doBreating)
         {
+            // Calculate the current intensity based on the slider value and multipliers
+            intensitySlider = CalculateBreathingValue();
             // Update the breathing rings
             for (int i = 0; i < breathingRings.Length; i++)
             {
@@ -65,12 +69,8 @@ public class BreatingVisualManager : MonoBehaviour
                 float currentIntensity = lightSavedIntencity[i];
                 breathingLights[i].breathingLight.intensity = currentIntensity + intensitySlider * breathingLights[i].lightMultiplier;
             }
-            return; 
+            return;
         }
-        // Calculate the current intensity based on the slider value and multipliers
-        intensitySlider = CalculateBreathingValue();
-
-        
     }
 
     public float breathingSpeed = 1f; // Speed of the breathing exercise
@@ -82,15 +82,17 @@ public class BreatingVisualManager : MonoBehaviour
         timer += Time.deltaTime * breathingSpeed;
 
         // Calculate the value ranging from -1 to 1 using a sine wave
-        float breathingValue = Mathf.Sin(timer);
+        float evenwichtstand = (intensitySliderRange.x + intensitySliderRange.y) / 2;
+        float amplitude = Mathf.Abs(evenwichtstand - intensitySliderRange.y);
+        float breathingValue = Mathf.Sin(timer) * amplitude + evenwichtstand;
 
         // Clamp the value between -1 and 1
-        breathingValue = Mathf.Clamp(breathingValue, -1f, 1f);
+        breathingValue = Mathf.Clamp(breathingValue, intensitySliderRange.x, intensitySliderRange.y);
 
         // Calculate the value ranging from -1 to 1 using an easing function
         float breathingValueEased = EasingFunctions.EaseInCubic(breathingValue);
 
-        return breathingValueEased;
+        return breathingValue;
     }
 
     public void BreathingEnabled(bool enabled) { doBreating = enabled; }
