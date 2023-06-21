@@ -9,7 +9,7 @@ OcclusionCullingSettings:
     smallestHole: 0.25
     backfaceThreshold: 100
   m_SceneGUID: 81635697f9f63d944825aa063cf1169c
-  m_OcclusionCullingData: {fileID: 36300000, guid: a5e8db3bd6fec3a40be370f9b7a97982,
+  m_OcclusionCullingData: {fileID: 36300000, guid: bd3b4ec48cdb5264f848dd2ba680f22f,
     type: 2}
 --- !u!104 &2
 RenderSettings:
@@ -240,7 +240,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412002756}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 322a2151ab13f054d914bcc60d6ed71e, type: 3}
   m_Name: 
@@ -267,7 +267,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &448634623
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1454,7 +1454,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: Row1Left
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -1822,7 +1822,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: Row3Left
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -1874,7 +1874,7 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8863363864653239092}
   m_RootOrder: 0
@@ -2864,7 +2864,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: LargeRightSocket
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -4961,7 +4961,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: Row1Middle
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -7939,7 +7939,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: LargeBottomSocket
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -9349,7 +9349,7 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6050273924636624494}
   m_RootOrder: 0
@@ -11767,7 +11767,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: LargeLeftSocket
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -13852,7 +13852,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 50
+  far clip plane: 5000
   field of view: 83.57738
   orthographic: 0
   orthographic size: 5
@@ -14132,7 +14132,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: Row4Right
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -15277,7 +15277,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: Row3Right
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -15400,7 +15400,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: Row1Right
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -18659,7 +18659,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: Row2Middle
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -18895,7 +18895,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: Row2Right
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -19521,7 +19521,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: RightHolster
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -20057,7 +20057,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: Row2Left
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -23268,7 +23268,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: Row3Middle
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -23527,7 +23527,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: Row4Left
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -24285,7 +24285,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: LeftHolster
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -25296,7 +25296,7 @@ MonoBehaviour:
   SocketFilters: []
   FilterCondition: 0
   DistanceSource: {fileID: 0}
-  PoseTag: 
+  PoseTag: Row1Middle
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
@@ -25325,7 +25325,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3937918703539677029}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0

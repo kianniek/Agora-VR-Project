@@ -417,6 +417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7693506015061820311}
   - component: {fileID: 2358268438641826064}
+  - component: {fileID: -4412695039417037529}
   m_Layer: 0
   m_Name: Willow_000
   m_TagString: Untagged
@@ -457,20 +458,26 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.5021086
+  - screenRelativeHeight: 0.12169377
     fadeTransitionWidth: 0.4
     renderers:
     - renderer: {fileID: 192086086044552886}
-  - screenRelativeHeight: 0.25079632
-    fadeTransitionWidth: 0.4
-    renderers:
-    - renderer: {fileID: 5132688691284782785}
-  - screenRelativeHeight: 0.10184515
-    fadeTransitionWidth: 0.4
-    renderers:
-    - renderer: {fileID: 3733477465923852048}
   - screenRelativeHeight: 0.015088558
     fadeTransitionWidth: 0.4
     renderers:
     - renderer: {fileID: 7843013420545275045}
   m_Enabled: 1
+--- !u!64 &-4412695039417037529
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7877303709296015960}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
