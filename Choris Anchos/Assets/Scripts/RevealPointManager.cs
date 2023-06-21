@@ -125,4 +125,14 @@ public class RevealPointManager : MonoBehaviour
         }
         return child;
     }
+
+    public float GetRevealRadius()
+    {
+        return revealPoint.revealRadius;
+    }
+
+    public GameObject GetRevealPoint()
+    {
+        return revealPoint.gameObject;
+    }
 }

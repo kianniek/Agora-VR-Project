@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScale: 500
-  duration: 0.3
+  duration: 10
   speed: 1
 --- !u!64 &40750533
 MeshCollider:
@@ -824,7 +824,7 @@ MonoBehaviour:
   musicSource: {fileID: 1379354185}
   playerReference: {fileID: 0}
   handpanReference: {fileID: 7509787520868025530}
-  stopPlayingDistances: 0.5
+  stopPlayingDistance: 1.5
   volume: 0
 --- !u!114 &1379354185
 MonoBehaviour:
@@ -847,8 +847,8 @@ MonoBehaviour:
       Data4: -1420579251
     Path: event:/Music/MusicWorldAmbience
   Event: 
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 1
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -863,7 +863,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1379354183}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -1.7763566e-15, y: 3.076999e-24, z: -1.4078708e-16, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -1003,7 +1003,7 @@ MonoBehaviour:
   bong: 0
   scannerLifeTime: 100
   pitchPower: 1
-  pitchDevider: 100
+  pitchDevider: 1
 --- !u!1 &1495274520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1326,6 +1326,32 @@ MonoBehaviour:
       version: 1
     _data:
       data: []
+  - _sourceObject: {fileID: 1379354184}
+    _sourceField: playerReference
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: 81635697f9f63d944825aa063cf1169c
+        name: ScenePlayer
+        _path: Assets/Scenes/ScenePlayer.unity
+      fullPath: /XRRig/PlayerController
+      componentName: 
+      componentIndex: 0
+      editorLocalId: -1592108286
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
   - _sourceObject: {fileID: 716913010}
     _sourceField: revealPointManager
     DEPRECATED_fromObject:
@@ -1349,32 +1375,6 @@ MonoBehaviour:
         PublicKeyToken=null
       componentIndex: 0
       editorLocalId: 1496103406
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
-  - _sourceObject: {fileID: 1379354184}
-    _sourceField: playerReference
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: 81635697f9f63d944825aa063cf1169c
-        name: ScenePlayer
-        _path: Assets/Scenes/ScenePlayer.unity
-      fullPath: /XRRig/PlayerController
-      componentName: 
-      componentIndex: 0
-      editorLocalId: -1592108286
       editorPrefabRelativePath: 
       version: 1
     _data:
@@ -1417,10 +1417,10 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.8
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2

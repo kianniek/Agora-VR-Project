@@ -230,6 +230,8 @@ MonoBehaviour:
   - {fileID: 8770766057870180436}
   - {fileID: 3469287837605665276}
   - {fileID: 1994143509}
+  - {fileID: 1994143515}
+  - {fileID: 8572855063286943802}
   - {fileID: 3469287837470509209}
   - {fileID: 8533545038211909728}
   - {fileID: 8533545038211909727}
@@ -241,7 +243,7 @@ MonoBehaviour:
   - {fileID: 8533545038211909729}
   revealPointManager: {fileID: 0}
   mps: 1
-  maxDiamiter: 100
+  maxDiamiter: 500
 --- !u!114 &41469041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,7 +611,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1994143506}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &256217338
 MeshCollider:
@@ -638,37 +640,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 422.69794, y: 2293.0942, z: 457.2298}
   m_Center: {x: -2.1423874, y: 92.244385, z: -4.9403687}
---- !u!1 &409926076
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 409926077}
-  m_Layer: 0
-  m_Name: bottom
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &409926077
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409926076}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -0.052, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1994143506}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &480502804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -978,6 +949,32 @@ MonoBehaviour:
       version: 1
     _data:
       data: []
+  - _sourceObject: {fileID: 39936833685036648}
+    _sourceField: camera
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: 81635697f9f63d944825aa063cf1169c
+        name: ScenePlayer
+        _path: Assets/Scenes/ScenePlayer.unity
+      fullPath: /XRRig/PlayerController/CameraRig/FloorOffset/CameraScale/Camera
+      componentName: 
+      componentIndex: 0
+      editorLocalId: -1144296256
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
   - _sourceObject: {fileID: 1994143507}
     _sourceField: revealPointManager
     DEPRECATED_fromObject:
@@ -1028,32 +1025,6 @@ MonoBehaviour:
         PublicKeyToken=null
       componentIndex: 0
       editorLocalId: 1496103406
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
-  - _sourceObject: {fileID: 39936833685036648}
-    _sourceField: camera
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: 81635697f9f63d944825aa063cf1169c
-        name: ScenePlayer
-        _path: Assets/Scenes/ScenePlayer.unity
-      fullPath: /XRRig/PlayerController/CameraRig/FloorOffset/CameraScale/Camera
-      componentName: 
-      componentIndex: 0
-      editorLocalId: -1144296256
       editorPrefabRelativePath: 
       version: 1
     _data:
@@ -1128,7 +1099,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9c2b473e51197ee4b85eec641f0d4788,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c2b473e51197ee4b85eec641f0d4788,
         type: 3}
@@ -1723,7 +1694,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.9
+    m_Strength: 0.8
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.1
@@ -2001,37 +1972,6 @@ Transform:
   - {fileID: 1019888277}
   m_Father: {fileID: 1175260935}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1433584634
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1433584635}
-  m_Layer: 0
-  m_Name: top
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1433584635
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1433584634}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.028, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1994143506}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1474097895
 BoxCollider:
@@ -2424,7 +2364,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823381423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0008, y: -0.0001, z: 0.0034}
+  m_LocalPosition: {x: 0.0004, y: -0.0474, z: -0.0001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2459,9 +2399,9 @@ MonoBehaviour:
   VisualGrabPoint: {fileID: 0}
   HandPoser: {fileID: 1823381426}
   Grabbable: {fileID: 0}
-  IsLineGrab: 1
-  LineStart: {fileID: 409926077}
-  LineEnd: {fileID: 1433584635}
+  IsLineGrab: 0
+  LineStart: {fileID: 0}
+  LineEnd: {fileID: 0}
   CanLineFlip: 1
   LooseDamper: 100
   LooseAngularDamper: 1
@@ -2636,6 +2576,7 @@ GameObject:
   - component: {fileID: 1994143515}
   - component: {fileID: 1994143508}
   - component: {fileID: 1994143507}
+  - component: {fileID: 1994143516}
   m_Layer: 0
   m_Name: InteracteblePrefabTransporter
   m_TagString: Untagged
@@ -2657,8 +2598,6 @@ Transform:
   m_Children:
   - {fileID: 2800908772653028008}
   - {fileID: 1119162159}
-  - {fileID: 1433584635}
-  - {fileID: 409926077}
   - {fileID: 238293029}
   m_Father: {fileID: 543450651676284510}
   m_RootOrder: 0
@@ -2729,7 +2668,7 @@ MonoBehaviour:
   - {fileID: 8533545038211909729}
   revealPointManager: {fileID: 0}
   mps: 0.1
-  maxDiamiter: 1000
+  maxDiamiter: 50
 --- !u!114 &1994143508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2840,7 +2779,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 3.5
   m_Drag: 0.1
-  m_AngularDrag: 0.1
+  m_AngularDrag: 3.5
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
@@ -2858,7 +2797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ebc937e678155e4d86feeb9248cca97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GrabBehaviour: 2
+  GrabBehaviour: 1
   PoseType: 0
   TrackingType: 0
   HoldType: 1
@@ -2947,6 +2886,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1994143516}
+        m_TargetAssemblyTypeName: MagneticSnapBack, Assembly-CSharp
+        m_MethodName: DisableAndRemove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   Released:
     m_PersistentCalls:
       m_Calls:
@@ -2969,6 +2920,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
         m_MethodName: set_isKinematic
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1994143516}
+        m_TargetAssemblyTypeName: MagneticSnapBack, Assembly-CSharp
+        m_MethodName: SetOriginalPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3019,6 +2982,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.000060598628
   m_Center: {x: -5.0251033e-11, y: 9.740699e-10, z: 0.0005035594}
+--- !u!114 &1994143516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994143505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1bad4556947c354faa093951df90196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapSpeed: 5
+  snapDistance: 1
 --- !u!65 &2034843877
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3109,7 +3086,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39936833685036644}
-  m_LocalRotation: {x: -0.4641178, y: -0.29683152, z: -0.118289575, w: 0.8261315}
+  m_LocalRotation: {x: -0.484511, y: -0.30987373, z: -0.12348721, w: 0.80868924}
   m_LocalPosition: {x: 0.000000015366822, y: 0.049999923, z: -0.000000014901161}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5435,7 +5412,19 @@ MonoBehaviour:
       m_Calls: []
   Grabbed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8533545038211909732}
+        m_TargetAssemblyTypeName: MagneticSnapBack, Assembly-CSharp
+        m_MethodName: DisableAndRemove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Released:
     m_PersistentCalls:
       m_Calls: []
@@ -5446,6 +5435,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
         m_MethodName: set_isKinematic
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8533545038211909732}
+        m_TargetAssemblyTypeName: MagneticSnapBack, Assembly-CSharp
+        m_MethodName: SetOriginalPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6022,6 +6023,7 @@ GameObject:
   - component: {fileID: 8533545038211909729}
   - component: {fileID: 8533545038211909730}
   - component: {fileID: 8533545038211909731}
+  - component: {fileID: 8533545038211909732}
   m_Layer: 0
   m_Name: InteracteblePrefabTransporter
   m_TagString: Untagged
@@ -6409,8 +6411,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 74455564}
   - {fileID: 8223294395804339844}
+  - {fileID: 74455564}
   - {fileID: 7099660560135426777}
   - {fileID: 5401333538853872203}
   - {fileID: 8097472680706901926}
@@ -7024,13 +7026,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WorldMusic:
     Guid:
-      Data1: 2118140776
-      Data2: 1282228727
-      Data3: 1195838889
-      Data4: -627145941
-    Path: event:/Music/TheGreatBefore
+      Data1: 300441783
+      Data2: 1108901973
+      Data3: -1015827016
+      Data4: -1420579251
+    Path: event:/Music/MusicWorldAmbience
   minDistance: 0
-  maxDistance: 1.4
+  maxDistance: 1
 --- !u!114 &5413168167755286821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7047,27 +7049,14 @@ MonoBehaviour:
   loadSceneWithoutInteraction: 0
   destroyObjOnLoaded: 0
   destroyScriptOnLoaded: 1
-  scriptsTodiable:
-  - {fileID: 5413168167755286821}
-  - {fileID: 5413168167755286809}
-  - {fileID: 8533545038211909731}
+  scriptsTodiable: []
   ParentCollider:
-  - {fileID: 919132147958074596}
-  - {fileID: 919132147534777551}
-  - {fileID: 919132149595539133}
   - {fileID: 919132148121513933}
-  - {fileID: 3886153550537260559}
+  - {fileID: 919132149595539133}
+  - {fileID: 919132147534777551}
+  - {fileID: 919132147958074596}
   getAllColliders: 0
   ColliderChildren:
-  - {fileID: 3469287837605665276}
-  - {fileID: 1994143509}
-  - {fileID: 3469287838138014161}
-  - {fileID: 1874803476302935703}
-  - {fileID: 4549216666564228025}
-  - {fileID: 3469287837117436835}
-  - {fileID: 7981635148072483600}
-  - {fileID: 4247502741451637}
-  - {fileID: 8770766057870180436}
   - {fileID: 1862979466}
   - {fileID: 1147627698}
   - {fileID: 1476538060}
@@ -7092,17 +7081,20 @@ MonoBehaviour:
   - {fileID: 508930324}
   - {fileID: 592655071}
   - {fileID: 520615171}
-  - {fileID: 8533545038211909728}
-  - {fileID: 8533545038211909727}
-  - {fileID: 8533545038211909726}
-  - {fileID: 8533545038211909725}
-  - {fileID: 8533545038211909724}
-  - {fileID: 8533545038211909723}
-  - {fileID: 8533545038211909722}
-  - {fileID: 8533545038211909729}
+  - {fileID: 3469287837117436835}
+  - {fileID: 7981635148072483600}
+  - {fileID: 4247502741451637}
+  - {fileID: 8770766057870180436}
+  - {fileID: 3469287838138014161}
+  - {fileID: 1874803476302935703}
+  - {fileID: 4549216666564228025}
+  - {fileID: 3469287837605665276}
+  - {fileID: 1994143509}
+  - {fileID: 1994143515}
+  - {fileID: 8572855063286943802}
   revealPointManager: {fileID: 0}
-  mps: 0.1
-  maxDiamiter: 1000
+  mps: 1
+  maxDiamiter: 500
 --- !u!1 &5423331420257700170
 GameObject:
   m_ObjectHideFlags: 0
@@ -7962,6 +7954,7 @@ GameObject:
   - component: {fileID: 2047170242897322318}
   - component: {fileID: 8770766057870180438}
   - component: {fileID: 8770766057870180437}
+  - component: {fileID: 8770766057870180439}
   m_Layer: 0
   m_Name: SledgeHammer
   m_TagString: Untagged
@@ -8091,7 +8084,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7437332034538755937}
   m_LocalRotation: {x: 0.000000014901159, y: 0.000000014901159, z: 0.7143104, w: -0.69982904}
-  m_LocalPosition: {x: -0.0019999743, y: 0.93849975, z: 0.010000426}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 0.35000008, y: 0.35000002, z: 0.35}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -8504,7 +8497,7 @@ Transform:
   m_Children:
   - {fileID: 6659802548431759405}
   m_Father: {fileID: 4514212921472263349}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8280471486002805484
 GameObject:
@@ -8835,6 +8828,20 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &8533545038211909732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3886153550537260559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1bad4556947c354faa093951df90196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapSpeed: 5
+  snapDistance: 1
 --- !u!1 &8558240077865537948
 GameObject:
   m_ObjectHideFlags: 0
@@ -9264,12 +9271,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8770766057870180439}
+        m_TargetAssemblyTypeName: MagneticSnapBack, Assembly-CSharp
+        m_MethodName: DisableAndRemove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Released:
     m_PersistentCalls:
       m_Calls: []
   HoverEnter:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8770766057870180439}
+        m_TargetAssemblyTypeName: MagneticSnapBack, Assembly-CSharp
+        m_MethodName: SetOriginalPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   HoverExit:
     m_PersistentCalls:
       m_Calls: []
@@ -9328,9 +9359,7 @@ MonoBehaviour:
   loadSceneWithoutInteraction: 0
   destroyObjOnLoaded: 0
   destroyScriptOnLoaded: 1
-  scriptsTodiable:
-  - {fileID: 8770766057870180437}
-  - {fileID: 8770766057870180438}
+  scriptsTodiable: []
   ParentCollider:
   - {fileID: 919132148121513933}
   - {fileID: 919132147534777551}
@@ -9367,6 +9396,8 @@ MonoBehaviour:
   - {fileID: 4549216666564228025}
   - {fileID: 3469287837605665276}
   - {fileID: 1994143509}
+  - {fileID: 1994143515}
+  - {fileID: 8572855063286943802}
   - {fileID: 3469287837470509209}
   - {fileID: 8533545038211909728}
   - {fileID: 8533545038211909727}
@@ -9377,8 +9408,8 @@ MonoBehaviour:
   - {fileID: 8533545038211909722}
   - {fileID: 8533545038211909729}
   revealPointManager: {fileID: 0}
-  mps: 0.1
-  maxDiamiter: 100
+  mps: 0.5
+  maxDiamiter: 500
 --- !u!114 &8770766057870180438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9400,6 +9431,20 @@ MonoBehaviour:
     Path: event:/Music/TheGreatBefore
   minDistance: 0
   maxDistance: 1.4
+--- !u!114 &8770766057870180439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7437332034538755937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1bad4556947c354faa093951df90196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapSpeed: 5
+  snapDistance: 1
 --- !u!4 &8801735892159917725
 Transform:
   m_ObjectHideFlags: 0
@@ -9652,22 +9697,6 @@ Transform:
   m_Father: {fileID: 3060880768525045202}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9070946508413176593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9070946508413176606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a79e2572f3fac4681bf85f6590457e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offset: {x: 0, y: 1.64, z: 0}
-  Position: {fileID: 0}
-  camera: {fileID: 0}
-  damping: 100
 --- !u!33 &9070946508413176594
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9759,7 +9788,6 @@ GameObject:
   - component: {fileID: 9070946508413176594}
   - component: {fileID: 9070946508413176595}
   - component: {fileID: 9070946508413176604}
-  - component: {fileID: 9070946508413176593}
   m_Layer: 14
   m_Name: Flame
   m_TagString: Untagged

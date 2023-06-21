@@ -999,6 +999,8 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 4a1f17ecd8ea7774f934e71d85a45eba, type: 2}
   - {fileID: 2100000, guid: 31c1aff630b8baa4daf5e84a38694814, type: 2}
   - {fileID: 2100000, guid: 1d19bc43e37229142ad9e85cfd428083, type: 2}
+  - {fileID: 2100000, guid: dcf8d200ec093114eb91d64479d2b4c8, type: 2}
+  - {fileID: 2100000, guid: 25e722c9871bdfa4599ebf886aa6a495, type: 2}
   materialsMusicRoom:
   - {fileID: 2100000, guid: e2f765356ad694547960e99fc3f84b12, type: 2}
   - {fileID: 2100000, guid: 00a40a431d32de845bd2247955333bf1, type: 2}
@@ -1009,7 +1011,13 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 7e3aef3f271386c48ae1d8cde3474763, type: 2}
   - {fileID: 2100000, guid: 955546f5b6ec267468497ccc020d848c, type: 2}
   - {fileID: 2100000, guid: 1d19bc43e37229142ad9e85cfd428083, type: 2}
-  materialsWalkingWorld: []
+  - {fileID: 2100000, guid: b3cbc98aac041c54bb3a81fbdb16dfc2, type: 2}
+  - {fileID: 2100000, guid: f8a40d8cab2f1f548a2e6cd2d966c1f6, type: 2}
+  - {fileID: 2100000, guid: dcf8d200ec093114eb91d64479d2b4c8, type: 2}
+  - {fileID: 2100000, guid: 25e722c9871bdfa4599ebf886aa6a495, type: 2}
+  materialsWalkingWorld:
+  - {fileID: 2100000, guid: b3cbc98aac041c54bb3a81fbdb16dfc2, type: 2}
+  - {fileID: 2100000, guid: f8a40d8cab2f1f548a2e6cd2d966c1f6, type: 2}
   materialsYoga:
   - {fileID: 2100000, guid: e2f765356ad694547960e99fc3f84b12, type: 2}
   - {fileID: 2100000, guid: 00a40a431d32de845bd2247955333bf1, type: 2}
@@ -1051,6 +1059,10 @@ MonoBehaviour:
   - {fileID: 2100000, guid: fb31368d45b0c77478b7dd430d758673, type: 2}
   - {fileID: 2100000, guid: 2048774ac265c9247ab5045ec3edcadd, type: 2}
   - {fileID: 2100000, guid: b5f1ce8985b8583448880d053605c126, type: 2}
+  - {fileID: 2100000, guid: dcf8d200ec093114eb91d64479d2b4c8, type: 2}
+  - {fileID: 2100000, guid: 25e722c9871bdfa4599ebf886aa6a495, type: 2}
+  - {fileID: 2100000, guid: b3cbc98aac041c54bb3a81fbdb16dfc2, type: 2}
+  - {fileID: 2100000, guid: f8a40d8cab2f1f548a2e6cd2d966c1f6, type: 2}
   revealPoint: {fileID: 0}
   revealPointPrefab: {fileID: 0}
   closestRevealPedistal: {fileID: 0}
@@ -13717,7 +13729,7 @@ MonoBehaviour:
   InstantAcceleration: 1
   Acceleration: 15
   Deacceleration: 15
-  MoveSpeed: 5
+  MoveSpeed: 2
   SprintAcceleration: 20
   RunSpeed: 3.5
   Gravity: 5

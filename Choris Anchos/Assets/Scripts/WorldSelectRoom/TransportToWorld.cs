@@ -27,7 +27,7 @@ public class TransportToWorld : MonoBehaviour
     [SerializeField] public RevealPointManager revealPointManager;
     [Tooltip("time it takes to move")]
     [SerializeField] private float mps = 1f; // meter per second expand
-    [SerializeField] private float maxDiamiter = 10;
+    [SerializeField] private float maxDiamiter = 1000;
     private void Start()
     {
         if (RevealPointManager.Instance == null)
@@ -52,18 +52,20 @@ public class TransportToWorld : MonoBehaviour
         //prevent the worldReveal point to switch in the middle of the transition
         if (RevealPointManager.Instance) { RevealPointManager.Instance.closestRevealPedistal.stopEffect = true; }
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(transportToScene, LoadSceneMode.Additive);
+        //Don't let the Scene activate until you allow it to
 
         while (!asyncOperation.isDone)
         {
             yield return null;
         }
-        //Don't let the Scene activate until you allow it to
         asyncOperation.allowSceneActivation = false;
 
         Scene selfScene = gameObject.scene;
         Scene otherScene = SceneManager.GetSceneByName(transportToScene);
         gameObject.transform.SetParent(null, true);
         SceneManager.MoveGameObjectToScene(gameObject, otherScene);
+        RevealPointManager.Instance.GetRevealPoint().transform.SetParent(null, true);
+        SceneManager.MoveGameObjectToScene(RevealPointManager.Instance.GetRevealPoint(), otherScene);
 
         yield return new WaitForSeconds(0.3f);
 
@@ -84,6 +86,12 @@ public class TransportToWorld : MonoBehaviour
             ResetPlayerMessager.ResetPlayer = true;
             yield return new WaitForSeconds(0.3f);
             Destroy(this.gameObject);
+        }
+
+        while (RevealPointManager.Instance.GetRevealRadius() < maxDiamiter * 0.9f)
+        {
+            Debug.Log(maxDiamiter * 0.9f);
+            yield return null;
         }
 
         UnloadAllScenesExcept(transportToScene);

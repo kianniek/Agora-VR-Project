@@ -139,6 +139,84 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6987438515204548999, guid: ada85d01be6fb704f964630fedac183d, type: 3}
+--- !u!1 &29054863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 29054866}
+  - component: {fileID: 29054865}
+  - component: {fileID: 29054864}
+  m_Layer: 0
+  m_Name: AmbienceSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &29054864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29054863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041051ea39b0fd843a9fd0481cc72965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 29054865}
+  playerReference: {fileID: 0}
+  volume: 0
+--- !u!114 &29054865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29054863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2012194236
+      Data2: 1280267618
+      Data3: 378191526
+      Data4: 850698484
+    Path: event:/Music/YogaRoomAmbience
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 9.400001
+--- !u!4 &29054866
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29054863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.28356984, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &39711342
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -364,6 +442,8 @@ MonoBehaviour:
   leftHand: 0
   rightHand: 0
   allowNoHandCollision: 1
+  needsToBeInHand: 0
+  debug: 0
 --- !u!64 &149895948
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -416,7 +496,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251294390}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00003132224}
-  m_LocalPosition: {x: -1.1623268, y: -0.32700014, z: 5.262927}
+  m_LocalPosition: {x: -1.1623268, y: -0.0434303, z: 5.262927}
   m_LocalScale: {x: 0.61, y: 0.61, z: 0.61}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -608,7 +688,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 28c506fcb3bb9cb40b19054668c7e31f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.24356985
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28c506fcb3bb9cb40b19054668c7e31f,
         type: 3}
@@ -1146,7 +1226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576048463}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00003132224}
-  m_LocalPosition: {x: -2.2932987, y: -1.2, z: 4.811857}
+  m_LocalPosition: {x: -2.2932987, y: -0.91643023, z: 4.811857}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2708,7 +2788,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797515928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.28356984, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2729,7 +2809,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doBreating: 1
   intensitySliderRange: {x: -0.5, y: 0.5}
-  intensitySlider: -0.21915422
+  intensitySlider: -0.33619097
   breathingRings: []
   ringMultipliers: []
   breathingLights:
@@ -2739,8 +2819,8 @@ MonoBehaviour:
     lightMultiplier: 0.86
   SavedVaribles: 0
   lightSavedIntencity:
-  - 7.4727435
-  - 7.5706186
+  - 17.985586
+  - 8.7432575
   breathingSpeed: 0.7
 --- !u!114 &797515931
 MonoBehaviour:
@@ -3104,7 +3184,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _version: 2
-  _crossSceneReferences: []
+  _crossSceneReferences:
+  - _sourceObject: {fileID: 29054864}
+    _sourceField: playerReference
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: 81635697f9f63d944825aa063cf1169c
+        name: ScenePlayer
+        _path: Assets/Scenes/ScenePlayer.unity
+      fullPath: /XRRig/PlayerController
+      componentName: 
+      componentIndex: 0
+      editorLocalId: -1592108286
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
   _realSceneRootsForPostBuild: []
   _mergedScenes: []
 --- !u!114 &1367536443
@@ -3893,7 +3999,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983240157}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00003132224}
-  m_LocalPosition: {x: -1.2907431, y: 0.60399985, z: 5.2909184}
+  m_LocalPosition: {x: -1.2907431, y: 0.88756967, z: 5.2909184}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -4390,7 +4496,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2101695296}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00003132224}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.28356984, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5033,7 +5139,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.59802395, b: 0.40055564, a: 1}
-  m_Intensity: 5.7830644
+  m_Intensity: 15.393554
   m_Range: 10
   m_SpotAngle: 45
   m_InnerSpotAngle: 21.80208
@@ -10050,7 +10156,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.602001, b: 0.25773993, a: 1}
-  m_Intensity: 7.382146
+  m_Intensity: 8.454133
   m_Range: 10
   m_SpotAngle: 179
   m_InnerSpotAngle: 179
@@ -11315,7 +11421,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6772804980494059607}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.994, y: 2.049, z: 1.706}
+  m_LocalPosition: {x: -1.994, y: 1.8, z: 1.706}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 1
   m_Children:

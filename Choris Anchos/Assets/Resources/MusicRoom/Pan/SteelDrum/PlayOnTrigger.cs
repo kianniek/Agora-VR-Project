@@ -1,13 +1,23 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using HurricaneVR.Framework.Core;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class PlayOnTrigger : PlayOnCollision
 {
+    [SerializeField] private bool needsToBeInHand;
+    [SerializeField] private bool debug;
     private void OnTriggerEnter(Collider other)
     {
+        if (needsToBeInHand)
+        {
+            HVRGrabbable grabbable = other.GetComponentInParent<HVRGrabbable>();
+            debug = grabbable.IsBeingHeld;
+            // Check if the other object is being held by a hand
+            if (grabbable != null && !grabbable.IsBeingHeld)
+            {
+                // Object is being held by a hand, execute the collision
+                return;
+            }
+        }
         bool canExecuteCollision = false;
         HandPosisionInWorld.Hand handCollided;
         var handPosition = other.GetComponentInParent<HandPosisionInWorld>();
@@ -39,6 +49,6 @@ public class PlayOnTrigger : PlayOnCollision
 
     public override void OnCollisionEnter(Collision collision)
     {
-        
+
     }
 }
