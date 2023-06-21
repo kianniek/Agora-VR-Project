@@ -2728,7 +2728,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doBreating: 1
-  intensitySlider: 0.9389356
+  intensitySliderRange: {x: -0.5, y: 0.5}
+  intensitySlider: -0.21915422
   breathingRings: []
   ringMultipliers: []
   breathingLights:
@@ -2738,8 +2739,8 @@ MonoBehaviour:
     lightMultiplier: 0.86
   SavedVaribles: 0
   lightSavedIntencity:
-  - 0.2335504
-  - 6.763134
+  - 7.4727435
+  - 7.5706186
   breathingSpeed: 0.7
 --- !u!114 &797515931
 MonoBehaviour:
@@ -5032,7 +5033,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.59802395, b: 0.40055564, a: 1}
-  m_Intensity: 7.4727435
+  m_Intensity: 5.7830644
   m_Range: 10
   m_SpotAngle: 45
   m_InnerSpotAngle: 21.80208
@@ -10049,7 +10050,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.602001, b: 0.25773993, a: 1}
-  m_Intensity: 7.5706186
+  m_Intensity: 7.382146
   m_Range: 10
   m_SpotAngle: 179
   m_InnerSpotAngle: 179

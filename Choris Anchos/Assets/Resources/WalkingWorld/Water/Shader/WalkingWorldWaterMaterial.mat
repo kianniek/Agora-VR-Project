@@ -22,34 +22,34 @@ Material:
     m_TexEnvs:
     - _Displace_3D:
         m_Texture: {fileID: 11700000, guid: ede26a347e1c6634d9d6c87e30361481, type: 2}
-        m_Scale: {x: 0.1, y: 0.1}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normals_3D:
         m_Texture: {fileID: 11700000, guid: 15730400ed428da42a95ec30431ce5d4, type: 2}
-        m_Scale: {x: 0.1, y: 0.1}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _WaveMask:
         m_Texture: {fileID: 2800000, guid: 9e4afcd6d6fda81418ccf68f6cded108, type: 3}
-        m_Scale: {x: 0.1, y: 0.1}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _AlphaCutoff: 0.5
-    - _CausticsScale: 1.31
+    - _CausticsScale: 0
     - _Depth: 1
-    - _Distort: 0.095
-    - _EdgePower: 0
-    - _MaskStrength: 1
-    - _NormalPower: 0.714
-    - _Smoothness: 0.633
+    - _Distort: 0.2
+    - _EdgePower: 0.321
+    - _MaskStrength: 0
+    - _NormalPower: 0.432
+    - _Smoothness: 1
     - _TessMax: 25
     - _TessMin: 10
-    - _TessValue: 32
-    - _Tiling: -0.09
+    - _TessValue: 1
+    - _Tiling: -0.3
     - _WaveHeight: 0
-    - _WaveSpeed: 0.4
+    - _WaveSpeed: 0.1
     m_Colors:
-    - _CausticsColour: {r: 0, g: 0.086500466, b: 0.13563336, a: 0}
+    - _CausticsColour: {r: 0.003676507, g: 0.52711535, b: 0.84687346, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SeaColor: {r: 0.07058824, g: 0.74509805, b: 0.97647065, a: 1}
+    - _SeaColor: {r: 0.047058806, g: 0.75294095, b: 0.92941177, a: 1}
   m_BuildTextureStacks: []

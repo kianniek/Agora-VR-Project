@@ -281,7 +281,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &371419148
 GameObject:
@@ -576,7 +576,7 @@ Transform:
   m_Children:
   - {fileID: 1616737509}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &649706092
 GameObject:
@@ -791,6 +791,86 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pitch: 329.63
+--- !u!1 &1379354183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1379354186}
+  - component: {fileID: 1379354185}
+  - component: {fileID: 1379354184}
+  m_Layer: 0
+  m_Name: SoundAmbience
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1379354184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379354183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f18dd4c9cde141884b8feec1d7354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 1379354185}
+  playerReference: {fileID: 0}
+  handpanReference: {fileID: 7509787520868025530}
+  stopPlayingDistances: 0.5
+  volume: 0
+--- !u!114 &1379354185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379354183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 300441783
+      Data2: 1108901973
+      Data3: -1015827016
+      Data4: -1420579251
+    Path: event:/Music/MusicWorldAmbience
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!4 &1379354186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379354183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1425378556
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,37 +1266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneSetupMode: 0
-  _sceneSetup:
-  - scene:
-      editorAssetGUID: 81635697f9f63d944825aa063cf1169c
-      name: ScenePlayer
-      _path: Assets/Scenes/ScenePlayer.unity
-    loadInEditor: 1
-    loadMethod: 1
-  - scene:
-      editorAssetGUID: cea5a204c41fe2e46b076cfd29984ab7
-      name: WorldSelectRoom
-      _path: Assets/Scenes/WorldSelectRoom.unity
-    loadInEditor: 1
-    loadMethod: 1
-  - scene:
-      editorAssetGUID: b794e0ad59117e544ac9bd3e3d4408e8
-      name: SceneWalking
-      _path: Assets/Scenes/SceneWalking.unity
-    loadInEditor: 0
-    loadMethod: 1
-  - scene:
-      editorAssetGUID: e5b05dd1b4784e645ad0a6510db751d0
-      name: SceneWreckRoom
-      _path: Assets/Scenes/SceneWreckRoom.unity
-    loadInEditor: 0
-    loadMethod: 1
-  - scene:
-      editorAssetGUID: e0affc992c1c0bc438d272b7be69136a
-      name: SceneYoga
-      _path: Assets/Scenes/SceneYoga.unity
-    loadInEditor: 0
-    loadMethod: 1
+  _sceneSetup: []
   _isMainScene: 0
   _version: 1
   _thisScenePath: Assets/Scenes/SceneMusic.unity
@@ -1299,6 +1349,32 @@ MonoBehaviour:
         PublicKeyToken=null
       componentIndex: 0
       editorLocalId: 1496103406
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 1379354184}
+    _sourceField: playerReference
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: 81635697f9f63d944825aa063cf1169c
+        name: ScenePlayer
+        _path: Assets/Scenes/ScenePlayer.unity
+      fullPath: /XRRig/PlayerController
+      componentName: 
+      componentIndex: 0
+      editorLocalId: -1592108286
       editorPrefabRelativePath: 
       version: 1
     _data:
@@ -1867,7 +1943,7 @@ Transform:
   - {fileID: 716913009}
   - {fileID: 40750531}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &6380959647966710587
 Transform:
@@ -1942,7 +2018,7 @@ Transform:
   - {fileID: 3443416747007652913}
   - {fileID: 649706093}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -45, y: 0, z: 0}
 --- !u!33 &7199899581869382349
 MeshFilter:

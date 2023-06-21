@@ -91,11 +91,39 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
-  lastModified: 638223604170751142
+  lastModified: 638229416729720823
   FileSizes:
   - Name: Desktop
     Value: 494
   Exists: 1
+--- !u!114 &-7084985326995360305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MusicWorldAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MusicWorldAmbience
+  Guid:
+    Data1: 300441783
+    Data2: 1108901973
+    Data3: -1015827016
+    Data4: -1420579251
+  Banks:
+  - {fileID: -4756535564674837944}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 2115838159191482528}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 640512
 --- !u!114 &-6395466691647844804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,6 +151,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3073
+--- !u!114 &-6393327855812076289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Vases/Vases
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Vases/Vases
+  Guid:
+    Data1: 285016580
+    Data2: 1199622588
+    Data3: 702074512
+    Data4: 990045205
+  Banks:
+  - {fileID: -4756535564674837944}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1941
 --- !u!114 &-6346598733760166030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,6 +292,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3073
+--- !u!114 &-5971338303984032805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Vases/FitrineGlass
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Vases/FitrineGlass
+  Guid:
+    Data1: -1996475797
+    Data2: 1230483924
+    Data3: 1846982788
+    Data4: 2055676260
+  Banks:
+  - {fileID: -4756535564674837944}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4118
 --- !u!114 &-4756535564674837944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,10 +334,10 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638223604172560015
+  lastModified: 638229416731755660
   FileSizes:
   - Name: Desktop
-    Value: 16359776
+    Value: 25282304
   Exists: 1
 --- !u!114 &-4593088260275351962
 MonoBehaviour:
@@ -632,13 +714,17 @@ MonoBehaviour:
   - {fileID: 3601290827796919709}
   - {fileID: -4593088260275351962}
   - {fileID: -8404888245265688646}
+  - {fileID: -6393327855812076289}
+  - {fileID: -5971338303984032805}
+  - {fileID: 2014961113745019381}
+  - {fileID: -7084985326995360305}
   EditorParameters:
   - {fileID: -4534296601087684141}
   MasterBanks:
   - {fileID: -4756535564674837944}
   StringsBanks:
   - {fileID: 6834390697356701667}
-  cacheTime: 638223604173028322
+  cacheTime: 638229416732335664
   cacheVersion: 131601
 --- !u!114 &471663611046041294
 MonoBehaviour:
@@ -772,6 +858,57 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 162792
+--- !u!114 &2014961113745019381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Vases/Glass
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Vases/Glass
+  Guid:
+    Data1: 545888720
+    Data2: 1226320092
+    Data3: 420686724
+    Data4: -252799334
+  Banks:
+  - {fileID: -4756535564674837944}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1071
+--- !u!114 &2115838159191482528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicWorldAmbience/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: 
+  Min: -80
+  Max: 10
+  Default: 0
+  ID:
+    data1: 2391376566
+    data2: 1197272449
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &2808630766248610344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -814,7 +951,7 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/WorldSelect.bank
   Name: WorldSelect
   StudioPath: bank:/WorldSelect
-  lastModified: 638223604173028322
+  lastModified: 638229416732335664
   FileSizes:
   - Name: Desktop
     Value: 3951040
@@ -942,7 +1079,7 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/HandPan.bank
   Name: HandPan
   StudioPath: bank:/HandPan
-  lastModified: 638223604171156119
+  lastModified: 638229416730103979
   FileSizes:
   - Name: Desktop
     Value: 179456
@@ -986,10 +1123,10 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638223604172580832
+  lastModified: 638229416731786382
   FileSizes:
   - Name: Desktop
-    Value: 1594
+    Value: 1812
   Exists: 1
 --- !u!114 &8932479307017839654
 MonoBehaviour:

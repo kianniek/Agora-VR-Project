@@ -13685,7 +13685,7 @@ CharacterController:
   serializedVersion: 2
   m_Height: 1.8
   m_Radius: 0.1
-  m_SlopeLimit: 45
+  m_SlopeLimit: 50
   m_StepOffset: 0.5
   m_SkinWidth: 0.01
   m_MinMoveDistance: 0
@@ -13717,14 +13717,14 @@ MonoBehaviour:
   InstantAcceleration: 1
   Acceleration: 15
   Deacceleration: 15
-  MoveSpeed: 1.5
+  MoveSpeed: 5
   SprintAcceleration: 20
   RunSpeed: 3.5
   Gravity: 5
   MaxFallSpeed: 5
   JumpVelocity: 2
   DoubleClickThreshold: 0.25
-  RotationType: 0
+  RotationType: 1
   SmoothTurnSpeed: 100
   SmoothTurnThreshold: 0.1
   SnapAmount: 45
