@@ -11,6 +11,15 @@ public class WorldRevealURP : MonoBehaviour
     [Tooltip("Controls the radius of the revealed area")]
     [Min(0.0001f)]
     public float revealRadius = 0.001f;
+    private void Start()
+    {
+        revealRadius = 0;
+    }
+    private void Update()
+    {
+        UpdateValues();
+        UpdateTransform();
+    }
 
     /// <summary>
     /// Call this function for updating the shader properties.
@@ -30,11 +39,6 @@ public class WorldRevealURP : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        UpdateValues();
-        UpdateTransform();
-    }
 
     void OnDrawGizmosSelected()
     {

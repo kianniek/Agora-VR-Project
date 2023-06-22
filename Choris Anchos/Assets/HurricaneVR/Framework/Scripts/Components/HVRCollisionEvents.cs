@@ -30,6 +30,8 @@ namespace HurricaneVR.Framework.Components
         
         protected virtual void OnCollisionEnter(Collision other)
         {
+            string s = LayerMask.LayerToName(other.transform.gameObject.layer);
+            Debug.Log("hit by layer: " + s);
             LastImpulse = other.impulse.magnitude;
             LastVelocity = other.relativeVelocity.magnitude;
 

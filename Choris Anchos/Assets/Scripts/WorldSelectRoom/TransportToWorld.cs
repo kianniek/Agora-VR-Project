@@ -69,7 +69,7 @@ public class TransportToWorld : MonoBehaviour
         SceneManager.MoveGameObjectToScene(RevealPointManager.Instance.GetRevealPoint(), otherScene);
 
         RevealPointManager.Instance.GetRevealPoint().transform.SetParent(gameObject.transform, true);
-        yield return new WaitForSeconds(0.3f);
+        //yield return new WaitForSeconds(0.3f);
 
         asyncOperation.allowSceneActivation = true;
         SkyboxManager.Instance.UpdateSkyboxColors(otherScene);
@@ -82,6 +82,7 @@ public class TransportToWorld : MonoBehaviour
         {
             ColliderChildren[i].enabled = false;
         }
+
         //print("Name of Old Scene is: " + selfScene.name);
         if (transportToScene == "WorldSelectRoom" || destroyObjOnLoaded)
         {
