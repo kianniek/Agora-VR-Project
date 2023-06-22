@@ -6,10 +6,11 @@ OcclusionCullingSettings:
   serializedVersion: 2
   m_OcclusionBakeSettings:
     smallestOccluder: 0.1
-    smallestHole: 0.25
+    smallestHole: 0.1
     backfaceThreshold: 50
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: e5b05dd1b4784e645ad0a6510db751d0
+  m_OcclusionCullingData: {fileID: 36300000, guid: a5e8db3bd6fec3a40be370f9b7a97982,
+    type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -136,6 +137,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: greek_vase_01.006_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1174051237237115563, guid: 06f61218c968f35418ee44852f91b8ce,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 1754002334398873708, guid: 06f61218c968f35418ee44852f91b8ce,
         type: 3}
       propertyPath: m_RootOrder
@@ -210,6 +216,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_01.001_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618311152066076129, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2162302652299960780, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
         type: 3}
@@ -290,7 +301,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &91947442
 Transform:
@@ -424,6 +435,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ceramic_urn.002_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1733779291011788493, guid: 98b5ff48ef11bd44c8114137a18f5290,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98b5ff48ef11bd44c8114137a18f5290, type: 3}
 --- !u!4 &123558731 stripped
@@ -443,6 +459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: flower_pot.004_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815674009539538269, guid: a178824248ab5e54c91d174208314b96,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7393439546424385098, guid: a178824248ab5e54c91d174208314b96,
         type: 3}
@@ -525,7 +546,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &142002946
 Transform:
@@ -685,6 +706,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_bowl_01.004_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708157428675503345, guid: f935f85aeeceb9645ad598fa561b0f46,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4632136700207427799, guid: f935f85aeeceb9645ad598fa561b0f46,
         type: 3}
@@ -931,6 +957,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate.004_11
       objectReference: {fileID: 0}
+    - target: {fileID: 9028502804568162967, guid: 9b7d9b0cdc1db6b4c812f6757df011f0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b7d9b0cdc1db6b4c812f6757df011f0, type: 3}
 --- !u!4 &159112642 stripped
@@ -955,7 +986,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &169649257
 Transform:
@@ -1089,6 +1120,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot.018_4
       objectReference: {fileID: 0}
+    - target: {fileID: 5506239473955537114, guid: 097294796815aee4688fcb61070bc027,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 097294796815aee4688fcb61070bc027, type: 3}
 --- !u!4 &187413583 stripped
@@ -1147,7 +1183,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &241534180
 Transform:
@@ -1248,6 +1284,9 @@ Transform:
   - {fileID: 492491507}
   - {fileID: 837535685}
   - {fileID: 1482962420}
+  - {fileID: 1383782062039245094}
+  - {fileID: 7892388959863313392}
+  - {fileID: 5573044252202928461}
   - {fileID: 3159072702959392527}
   - {fileID: 7297879395545598201}
   - {fileID: 2244032329584285015}
@@ -1369,9 +1408,6 @@ Transform:
   - {fileID: 2119224545}
   - {fileID: 3525486485484512755}
   - {fileID: 1662341417}
-  - {fileID: 1383782062039245094}
-  - {fileID: 7892388959863313392}
-  - {fileID: 5573044252202928461}
   - {fileID: 213104240060188591}
   - {fileID: 4571738045136906984}
   - {fileID: 594126874686844880}
@@ -1417,6 +1453,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plate.001_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158522407484236232, guid: ef04385538cc3b94491eb82a3cb3fbf4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2288147527385885274, guid: ef04385538cc3b94491eb82a3cb3fbf4,
         type: 3}
@@ -1499,7 +1540,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &260728883
 Transform:
@@ -1664,7 +1705,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &276091952
 Transform:
@@ -2050,7 +2091,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &308864661
 Transform:
@@ -2128,6 +2169,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_01.001_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618311152066076129, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2162302652299960780, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
         type: 3}
@@ -2208,7 +2254,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &323990579
 Transform:
@@ -2490,6 +2536,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate.004_1
       objectReference: {fileID: 0}
+    - target: {fileID: 9028502804568162967, guid: 9b7d9b0cdc1db6b4c812f6757df011f0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b7d9b0cdc1db6b4c812f6757df011f0, type: 3}
 --- !u!4 &340076456 stripped
@@ -2680,6 +2731,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate.004_13
       objectReference: {fileID: 0}
+    - target: {fileID: 9028502804568162967, guid: 9b7d9b0cdc1db6b4c812f6757df011f0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b7d9b0cdc1db6b4c812f6757df011f0, type: 3}
 --- !u!4 &359848831 stripped
@@ -2699,6 +2755,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_01.001_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618311152066076129, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2162302652299960780, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
         type: 3}
@@ -2774,6 +2835,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_01.002_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187778996763972545, guid: e1e4b92b42899b64db7961aa4f9865b3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8254658926719494449, guid: e1e4b92b42899b64db7961aa4f9865b3,
         type: 3}
@@ -2904,6 +2970,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: flat_bottomed_flask.003_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3186452026252666133, guid: 69b61e2c86355844eb2605676889793b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69b61e2c86355844eb2605676889793b, type: 3}
@@ -3039,6 +3110,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plate.001_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158522407484236232, guid: ef04385538cc3b94491eb82a3cb3fbf4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2288147527385885274, guid: ef04385538cc3b94491eb82a3cb3fbf4,
         type: 3}
@@ -3465,6 +3541,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot.018_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5506239473955537114, guid: 097294796815aee4688fcb61070bc027,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 097294796815aee4688fcb61070bc027, type: 3}
 --- !u!4 &437067608 stripped
@@ -3599,6 +3680,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_01.001_10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618311152066076129, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2162302652299960780, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
         type: 3}
@@ -3845,6 +3931,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot.006_6
       objectReference: {fileID: 0}
+    - target: {fileID: 5134281719704732694, guid: 3e05bc9a7d65d4847beb6d299a7773c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e05bc9a7d65d4847beb6d299a7773c3, type: 3}
 --- !u!4 &459274039 stripped
@@ -3864,6 +3955,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plate.001_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158522407484236232, guid: ef04385538cc3b94491eb82a3cb3fbf4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2288147527385885274, guid: ef04385538cc3b94491eb82a3cb3fbf4,
         type: 3}
@@ -3995,6 +4091,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot.006_8
       objectReference: {fileID: 0}
+    - target: {fileID: 5134281719704732694, guid: 3e05bc9a7d65d4847beb6d299a7773c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e05bc9a7d65d4847beb6d299a7773c3, type: 3}
 --- !u!4 &473827364 stripped
@@ -4069,6 +4170,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plate.004_9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028502804568162967, guid: 9b7d9b0cdc1db6b4c812f6757df011f0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b7d9b0cdc1db6b4c812f6757df011f0, type: 3}
@@ -4145,6 +4251,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bowl_02.013_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5499253233052785382, guid: 52e6c21cc4b1940489e19f39e9bbdfcf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52e6c21cc4b1940489e19f39e9bbdfcf, type: 3}
 --- !u!4 &477161103 stripped
@@ -4164,6 +4275,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Room.033
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927827488342638296, guid: de267bfd3a8fbf44e938369f77718f25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6238788519679991149, guid: de267bfd3a8fbf44e938369f77718f25,
         type: 3}
@@ -4294,6 +4410,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: greek_vase_01.007_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6186765533929494212, guid: ef9cc7810562e3644a369924e2e9e6d1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9cc7810562e3644a369924e2e9e6d1, type: 3}
@@ -4429,6 +4550,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_01.001_12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618311152066076129, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2162302652299960780, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
         type: 3}
@@ -4768,6 +4894,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate.004_10
       objectReference: {fileID: 0}
+    - target: {fileID: 9028502804568162967, guid: 9b7d9b0cdc1db6b4c812f6757df011f0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b7d9b0cdc1db6b4c812f6757df011f0, type: 3}
 --- !u!4 &535593619 stripped
@@ -4843,6 +4974,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: greek_vase_01.007_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6186765533929494212, guid: ef9cc7810562e3644a369924e2e9e6d1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9cc7810562e3644a369924e2e9e6d1, type: 3}
 --- !u!4 &540294763 stripped
@@ -4917,6 +5053,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_02.013_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499253233052785382, guid: 52e6c21cc4b1940489e19f39e9bbdfcf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52e6c21cc4b1940489e19f39e9bbdfcf, type: 3}
@@ -5002,6 +5143,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Room.033_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927827488342638296, guid: de267bfd3a8fbf44e938369f77718f25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6238788519679991149, guid: de267bfd3a8fbf44e938369f77718f25,
         type: 3}
@@ -5248,6 +5394,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate.004_3
       objectReference: {fileID: 0}
+    - target: {fileID: 9028502804568162967, guid: 9b7d9b0cdc1db6b4c812f6757df011f0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b7d9b0cdc1db6b4c812f6757df011f0, type: 3}
 --- !u!4 &606903175 stripped
@@ -5353,6 +5504,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plate.004_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028502804568162967, guid: 9b7d9b0cdc1db6b4c812f6757df011f0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b7d9b0cdc1db6b4c812f6757df011f0, type: 3}
@@ -5495,7 +5651,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &633503075
 Transform:
@@ -5871,6 +6027,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot.018_5
       objectReference: {fileID: 0}
+    - target: {fileID: 5506239473955537114, guid: 097294796815aee4688fcb61070bc027,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 097294796815aee4688fcb61070bc027, type: 3}
 --- !u!4 &653928843 stripped
@@ -5895,7 +6056,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &656707655
 Transform:
@@ -6028,6 +6189,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: flower_pot.018_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5506239473955537114, guid: 097294796815aee4688fcb61070bc027,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 097294796815aee4688fcb61070bc027, type: 3}
@@ -6163,6 +6329,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wine_jug_01.002_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182680234359233555, guid: 9035988ff704f23449cde191dd90338d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6295246589970838930, guid: 9035988ff704f23449cde191dd90338d,
         type: 3}
@@ -6361,6 +6532,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot.006_4
       objectReference: {fileID: 0}
+    - target: {fileID: 5134281719704732694, guid: 3e05bc9a7d65d4847beb6d299a7773c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e05bc9a7d65d4847beb6d299a7773c3, type: 3}
 --- !u!4 &745925057 stripped
@@ -6385,7 +6561,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &753424595
 Transform:
@@ -6634,6 +6810,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot.006_3
       objectReference: {fileID: 0}
+    - target: {fileID: 5134281719704732694, guid: 3e05bc9a7d65d4847beb6d299a7773c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e05bc9a7d65d4847beb6d299a7773c3, type: 3}
 --- !u!4 &793822572 stripped
@@ -6658,7 +6839,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &825477756
 Transform:
@@ -6736,6 +6917,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Room.033
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927827488342638296, guid: de267bfd3a8fbf44e938369f77718f25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6238788519679991149, guid: de267bfd3a8fbf44e938369f77718f25,
         type: 3}
@@ -6933,7 +7119,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &860558497
 Transform:
@@ -7183,6 +7369,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wine_jug_02.002_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2040574254805487339, guid: 87320a42b8927ef40b589d1ba2a20dfc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87320a42b8927ef40b589d1ba2a20dfc, type: 3}
 --- !u!4 &903026175 stripped
@@ -7373,6 +7564,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate.004_7
       objectReference: {fileID: 0}
+    - target: {fileID: 9028502804568162967, guid: 9b7d9b0cdc1db6b4c812f6757df011f0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b7d9b0cdc1db6b4c812f6757df011f0, type: 3}
 --- !u!4 &909791511 stripped
@@ -7512,6 +7708,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_02.013_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499253233052785382, guid: 52e6c21cc4b1940489e19f39e9bbdfcf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52e6c21cc4b1940489e19f39e9bbdfcf, type: 3}
@@ -7654,7 +7855,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &947466000
 Transform:
@@ -8173,6 +8374,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bowl_02.013_3
       objectReference: {fileID: 0}
+    - target: {fileID: 5499253233052785382, guid: 52e6c21cc4b1940489e19f39e9bbdfcf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52e6c21cc4b1940489e19f39e9bbdfcf, type: 3}
 --- !u!4 &951209065 stripped
@@ -8197,7 +8403,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &957733850
 Transform:
@@ -8275,6 +8481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_01.001_11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618311152066076129, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2162302652299960780, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
         type: 3}
@@ -8381,6 +8592,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_01.001_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618311152066076129, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2162302652299960780, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
         type: 3}
@@ -8512,6 +8728,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_vase_01.007_2
       objectReference: {fileID: 0}
+    - target: {fileID: 4238024943988068142, guid: 0cb61d459bf28a442800a83c2f14e8ea,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cb61d459bf28a442800a83c2f14e8ea, type: 3}
 --- !u!4 &977710368 stripped
@@ -8531,6 +8752,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: flat_bottomed_flask.006_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931237588049429843, guid: 41123e12012ef564aafaac83401656fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8951767810440712135, guid: 41123e12012ef564aafaac83401656fe,
         type: 3}
@@ -8606,6 +8832,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_01.002_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187778996763972545, guid: e1e4b92b42899b64db7961aa4f9865b3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8254658926719494449, guid: e1e4b92b42899b64db7961aa4f9865b3,
         type: 3}
@@ -8801,7 +9032,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1024169238
 Transform:
@@ -8934,6 +9165,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: flower_vase_01.007_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238024943988068142, guid: 0cb61d459bf28a442800a83c2f14e8ea,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cb61d459bf28a442800a83c2f14e8ea, type: 3}
@@ -9211,6 +9447,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_vase_01.007_5
       objectReference: {fileID: 0}
+    - target: {fileID: 4238024943988068142, guid: 0cb61d459bf28a442800a83c2f14e8ea,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cb61d459bf28a442800a83c2f14e8ea, type: 3}
 --- !u!4 &1063986843 stripped
@@ -9285,6 +9526,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: flower_pot.006_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5134281719704732694, guid: 3e05bc9a7d65d4847beb6d299a7773c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e05bc9a7d65d4847beb6d299a7773c3, type: 3}
@@ -9361,6 +9607,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot.006_5
       objectReference: {fileID: 0}
+    - target: {fileID: 5134281719704732694, guid: 3e05bc9a7d65d4847beb6d299a7773c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e05bc9a7d65d4847beb6d299a7773c3, type: 3}
 --- !u!4 &1088855792 stripped
@@ -9436,6 +9687,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate.004_4
       objectReference: {fileID: 0}
+    - target: {fileID: 9028502804568162967, guid: 9b7d9b0cdc1db6b4c812f6757df011f0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b7d9b0cdc1db6b4c812f6757df011f0, type: 3}
 --- !u!4 &1090175087 stripped
@@ -9460,7 +9716,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1113867728
 Transform:
@@ -9538,6 +9794,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: greek_vase_01.006_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174051237237115563, guid: 06f61218c968f35418ee44852f91b8ce,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1754002334398873708, guid: 06f61218c968f35418ee44852f91b8ce,
         type: 3}
@@ -9733,7 +9994,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1140028778
 Transform:
@@ -9847,7 +10108,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1153854022
 Transform:
@@ -9930,7 +10191,7 @@ GameObject:
   m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1165770751
 Transform:
@@ -10008,6 +10269,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ceramic_urn.007_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294335812046589030, guid: 305b51e00690afa4fbfa1078b006c34e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4425631237693589090, guid: 305b51e00690afa4fbfa1078b006c34e,
         type: 3}
@@ -10090,7 +10356,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1181292300
 Transform:
@@ -10519,7 +10785,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1189980321
 Transform:
@@ -10597,6 +10863,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roman_pottery_01.002_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983700390087956697, guid: 1546ec84ee8bb564b837932eb5a6c6ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 9056344618419087634, guid: 1546ec84ee8bb564b837932eb5a6c6ac,
         type: 3}
@@ -10776,7 +11047,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1245282405
 Transform:
@@ -10859,7 +11130,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1255529558
 Transform:
@@ -10993,6 +11264,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot.006_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5134281719704732694, guid: 3e05bc9a7d65d4847beb6d299a7773c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e05bc9a7d65d4847beb6d299a7773c3, type: 3}
 --- !u!4 &1263690225 stripped
@@ -11012,6 +11288,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plate.001_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158522407484236232, guid: ef04385538cc3b94491eb82a3cb3fbf4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2288147527385885274, guid: ef04385538cc3b94491eb82a3cb3fbf4,
         type: 3}
@@ -11258,6 +11539,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bowl_02.013_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5499253233052785382, guid: 52e6c21cc4b1940489e19f39e9bbdfcf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52e6c21cc4b1940489e19f39e9bbdfcf, type: 3}
 --- !u!4 &1290781891 stripped
@@ -11308,6 +11594,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ceramic_urn.007_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294335812046589030, guid: 305b51e00690afa4fbfa1078b006c34e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4425631237693589090, guid: 305b51e00690afa4fbfa1078b006c34e,
         type: 3}
@@ -11388,7 +11679,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1298173697
 Transform:
@@ -11522,6 +11813,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate.004_6
       objectReference: {fileID: 0}
+    - target: {fileID: 9028502804568162967, guid: 9b7d9b0cdc1db6b4c812f6757df011f0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b7d9b0cdc1db6b4c812f6757df011f0, type: 3}
 --- !u!4 &1304014162 stripped
@@ -11541,6 +11837,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_01.002_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187778996763972545, guid: e1e4b92b42899b64db7961aa4f9865b3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8254658926719494449, guid: e1e4b92b42899b64db7961aa4f9865b3,
         type: 3}
@@ -11617,6 +11918,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: fruit_bowl_01.004_3
       objectReference: {fileID: 0}
+    - target: {fileID: 3708157428675503345, guid: f935f85aeeceb9645ad598fa561b0f46,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 4632136700207427799, guid: f935f85aeeceb9645ad598fa561b0f46,
         type: 3}
       propertyPath: m_RootOrder
@@ -11691,6 +11997,11 @@ PrefabInstance:
         type: 3}
       propertyPath: revealPointManager
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2102792667722222070, guid: cbf9a70226cc1ee40b81789e84700726,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3459595820790564543, guid: cbf9a70226cc1ee40b81789e84700726,
         type: 3}
@@ -11798,6 +12109,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bowl_01.001_8
       objectReference: {fileID: 0}
+    - target: {fileID: 1618311152066076129, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 2162302652299960780, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
         type: 3}
       propertyPath: m_RootOrder
@@ -11879,7 +12195,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1347155379
 Transform:
@@ -12044,7 +12360,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1364075099
 Transform:
@@ -12272,6 +12588,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roman_pottery_01.002_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8983700390087956697, guid: 1546ec84ee8bb564b837932eb5a6c6ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 9056344618419087634, guid: 1546ec84ee8bb564b837932eb5a6c6ac,
         type: 3}
       propertyPath: m_RootOrder
@@ -12433,6 +12754,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_vase_01.007_6
       objectReference: {fileID: 0}
+    - target: {fileID: 4238024943988068142, guid: 0cb61d459bf28a442800a83c2f14e8ea,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cb61d459bf28a442800a83c2f14e8ea, type: 3}
 --- !u!4 &1409970141 stripped
@@ -12459,7 +12785,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1411616691
 Transform:
@@ -12785,6 +13111,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate.004_12
       objectReference: {fileID: 0}
+    - target: {fileID: 9028502804568162967, guid: 9b7d9b0cdc1db6b4c812f6757df011f0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b7d9b0cdc1db6b4c812f6757df011f0, type: 3}
 --- !u!4 &1475696322 stripped
@@ -12860,6 +13191,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_vase_01.007_7
       objectReference: {fileID: 0}
+    - target: {fileID: 4238024943988068142, guid: 0cb61d459bf28a442800a83c2f14e8ea,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cb61d459bf28a442800a83c2f14e8ea, type: 3}
 --- !u!4 &1481834694 stripped
@@ -12879,6 +13215,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Room.033
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927827488342638296, guid: de267bfd3a8fbf44e938369f77718f25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6238788519679991149, guid: de267bfd3a8fbf44e938369f77718f25,
         type: 3}
@@ -12955,6 +13296,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate.001_7
       objectReference: {fileID: 0}
+    - target: {fileID: 1158522407484236232, guid: ef04385538cc3b94491eb82a3cb3fbf4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 2288147527385885274, guid: ef04385538cc3b94491eb82a3cb3fbf4,
         type: 3}
       propertyPath: m_RootOrder
@@ -13029,6 +13375,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Room.033_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927827488342638296, guid: de267bfd3a8fbf44e938369f77718f25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6238788519679991149, guid: de267bfd3a8fbf44e938369f77718f25,
         type: 3}
@@ -13111,7 +13462,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1518271137
 Transform:
@@ -13387,6 +13738,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot.004_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2815674009539538269, guid: a178824248ab5e54c91d174208314b96,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 7393439546424385098, guid: a178824248ab5e54c91d174208314b96,
         type: 3}
       propertyPath: m_RootOrder
@@ -13516,6 +13872,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: flower_vase_01.007_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238024943988068142, guid: 0cb61d459bf28a442800a83c2f14e8ea,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cb61d459bf28a442800a83c2f14e8ea, type: 3}
@@ -13767,6 +14128,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate.001_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1158522407484236232, guid: ef04385538cc3b94491eb82a3cb3fbf4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 2288147527385885274, guid: ef04385538cc3b94491eb82a3cb3fbf4,
         type: 3}
       propertyPath: m_RootOrder
@@ -13875,6 +14241,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_01.001_9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618311152066076129, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2162302652299960780, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
         type: 3}
@@ -14006,6 +14377,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate.004_8
       objectReference: {fileID: 0}
+    - target: {fileID: 9028502804568162967, guid: 9b7d9b0cdc1db6b4c812f6757df011f0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b7d9b0cdc1db6b4c812f6757df011f0, type: 3}
 --- !u!4 &1635261742 stripped
@@ -14081,6 +14457,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate.004_5
       objectReference: {fileID: 0}
+    - target: {fileID: 9028502804568162967, guid: 9b7d9b0cdc1db6b4c812f6757df011f0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b7d9b0cdc1db6b4c812f6757df011f0, type: 3}
 --- !u!4 &1640642576 stripped
@@ -14100,6 +14481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plate.001_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158522407484236232, guid: ef04385538cc3b94491eb82a3cb3fbf4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2288147527385885274, guid: ef04385538cc3b94491eb82a3cb3fbf4,
         type: 3}
@@ -14231,6 +14617,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot.019_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7531475592831068045, guid: b8beaa912ab7ff443af3bc18e4363ba5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8beaa912ab7ff443af3bc18e4363ba5, type: 3}
 --- !u!4 &1654473771 stripped
@@ -14250,6 +14641,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roman_pottery_01.002_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983700390087956697, guid: 1546ec84ee8bb564b837932eb5a6c6ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 9056344618419087634, guid: 1546ec84ee8bb564b837932eb5a6c6ac,
         type: 3}
@@ -14381,6 +14777,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Antwarp Blue.001_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8217730196558309545, guid: c1b8891ea9832a345963dd97e636a285,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1b8891ea9832a345963dd97e636a285, type: 3}
 --- !u!4 &1662341417 stripped
@@ -14400,6 +14801,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wine_jug_01.002_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182680234359233555, guid: 9035988ff704f23449cde191dd90338d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6295246589970838930, guid: 9035988ff704f23449cde191dd90338d,
         type: 3}
@@ -14646,6 +15052,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot.006_9
       objectReference: {fileID: 0}
+    - target: {fileID: 5134281719704732694, guid: 3e05bc9a7d65d4847beb6d299a7773c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e05bc9a7d65d4847beb6d299a7773c3, type: 3}
 --- !u!4 &1705498811 stripped
@@ -14836,6 +15247,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flat_bottomed_flask.003_2
       objectReference: {fileID: 0}
+    - target: {fileID: 3186452026252666133, guid: 69b61e2c86355844eb2605676889793b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69b61e2c86355844eb2605676889793b, type: 3}
 --- !u!4 &1733857451 stripped
@@ -14925,7 +15341,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1754916148
 Transform:
@@ -15190,7 +15606,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1769921063
 Transform:
@@ -15386,7 +15802,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1798409881
 Transform:
@@ -15520,6 +15936,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot.018_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5506239473955537114, guid: 097294796815aee4688fcb61070bc027,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 097294796815aee4688fcb61070bc027, type: 3}
 --- !u!4 &1833751526 stripped
@@ -15539,6 +15960,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_01.001_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618311152066076129, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2162302652299960780, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
         type: 3}
@@ -15614,6 +16040,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: flower_pot.004_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815674009539538269, guid: a178824248ab5e54c91d174208314b96,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7393439546424385098, guid: a178824248ab5e54c91d174208314b96,
         type: 3}
@@ -15788,6 +16219,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ceramic_urn.008_1
       objectReference: {fileID: 0}
+    - target: {fileID: 7522133765128779079, guid: f82b659691d1af14e9d6c6eedb85ee25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f82b659691d1af14e9d6c6eedb85ee25, type: 3}
 --- !u!4 &1891420068 stripped
@@ -15807,6 +16243,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_bowl_01.004_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708157428675503345, guid: f935f85aeeceb9645ad598fa561b0f46,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4632136700207427799, guid: f935f85aeeceb9645ad598fa561b0f46,
         type: 3}
@@ -15889,7 +16330,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1900515850
 Transform:
@@ -16104,6 +16545,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grenadine Pink.001_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467772793542752100, guid: 742928db90636724696f27d0f2f9da00,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 742928db90636724696f27d0f2f9da00, type: 3}
@@ -16361,7 +16807,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1944577066
 Transform:
@@ -16555,6 +17001,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ceramic_urn.007_3
       objectReference: {fileID: 0}
+    - target: {fileID: 4294335812046589030, guid: 305b51e00690afa4fbfa1078b006c34e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 4425631237693589090, guid: 305b51e00690afa4fbfa1078b006c34e,
         type: 3}
       propertyPath: m_RootOrder
@@ -16684,6 +17135,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: flower_pot.019_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7531475592831068045, guid: b8beaa912ab7ff443af3bc18e4363ba5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8beaa912ab7ff443af3bc18e4363ba5, type: 3}
@@ -16971,6 +17427,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bowl_01.001_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1618311152066076129, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 2162302652299960780, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
         type: 3}
       propertyPath: m_RootOrder
@@ -17161,6 +17622,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bowl_01.001_5
       objectReference: {fileID: 0}
+    - target: {fileID: 1618311152066076129, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 2162302652299960780, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
         type: 3}
       propertyPath: m_RootOrder
@@ -17305,7 +17771,7 @@ GameObject:
   m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &2028825766
 Transform:
@@ -17439,6 +17905,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_vase_01.007_8
       objectReference: {fileID: 0}
+    - target: {fileID: 4238024943988068142, guid: 0cb61d459bf28a442800a83c2f14e8ea,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cb61d459bf28a442800a83c2f14e8ea, type: 3}
 --- !u!4 &2031576016 stripped
@@ -17547,6 +18018,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: flower_pot.006_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5134281719704732694, guid: 3e05bc9a7d65d4847beb6d299a7773c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e05bc9a7d65d4847beb6d299a7773c3, type: 3}
@@ -17744,6 +18220,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: greek_vase_01.002_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8211496571914351853, guid: d25fb50e154873449bd79028e0fd5adb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d25fb50e154873449bd79028e0fd5adb, type: 3}
 --- !u!4 &2054508585 stripped
@@ -17763,6 +18244,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plate.001_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158522407484236232, guid: ef04385538cc3b94491eb82a3cb3fbf4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2288147527385885274, guid: ef04385538cc3b94491eb82a3cb3fbf4,
         type: 3}
@@ -17843,7 +18329,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &2066048799
 Transform:
@@ -17977,6 +18463,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wine_jug_02.002_2
       objectReference: {fileID: 0}
+    - target: {fileID: 2040574254805487339, guid: 87320a42b8927ef40b589d1ba2a20dfc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87320a42b8927ef40b589d1ba2a20dfc, type: 3}
 --- !u!4 &2098085698 stripped
@@ -18052,6 +18543,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_vase_01.007_4
       objectReference: {fileID: 0}
+    - target: {fileID: 4238024943988068142, guid: 0cb61d459bf28a442800a83c2f14e8ea,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cb61d459bf28a442800a83c2f14e8ea, type: 3}
 --- !u!4 &2099258276 stripped
@@ -18076,7 +18572,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &2100697906
 Transform:
@@ -18359,6 +18855,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_vase_01.007_9
       objectReference: {fileID: 0}
+    - target: {fileID: 4238024943988068142, guid: 0cb61d459bf28a442800a83c2f14e8ea,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cb61d459bf28a442800a83c2f14e8ea, type: 3}
 --- !u!4 &2118301967 stripped
@@ -18433,6 +18934,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ceramic_urn.002_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733779291011788493, guid: 98b5ff48ef11bd44c8114137a18f5290,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98b5ff48ef11bd44c8114137a18f5290, type: 3}
@@ -18647,7 +19153,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &90814375497741786
 Transform:
@@ -18758,7 +19264,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!23 &147953439024103377
 MeshRenderer:
@@ -19080,7 +19586,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1001 &245284244593755014
 PrefabInstance:
@@ -19148,6 +19654,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ceramic_urn.008
+      objectReference: {fileID: 0}
+    - target: {fileID: 7522133765128779079, guid: f82b659691d1af14e9d6c6eedb85ee25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f82b659691d1af14e9d6c6eedb85ee25, type: 3}
@@ -19400,7 +19911,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!33 &437780181610694834
 MeshFilter:
@@ -19451,7 +19962,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &450118389432601186
 GameObject:
@@ -19497,7 +20008,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!23 &497851232433083043
 MeshRenderer:
@@ -19718,7 +20229,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!1 &537635645091554102
 GameObject:
@@ -19746,7 +20257,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &540449302951544185
 Transform:
@@ -20236,6 +20747,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: greek_vase_01.002
       objectReference: {fileID: 0}
+    - target: {fileID: 8211496571914351853, guid: d25fb50e154873449bd79028e0fd5adb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d25fb50e154873449bd79028e0fd5adb, type: 3}
 --- !u!23 &614603278317341161
@@ -20370,7 +20886,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!23 &654381518197963088
 MeshRenderer:
@@ -20444,6 +20960,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Room.033
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927827488342638296, guid: de267bfd3a8fbf44e938369f77718f25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6238788519679991149, guid: de267bfd3a8fbf44e938369f77718f25,
         type: 3}
@@ -20681,6 +21202,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: flower_pot.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815674009539538269, guid: a178824248ab5e54c91d174208314b96,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7393439546424385098, guid: a178824248ab5e54c91d174208314b96,
         type: 3}
@@ -21042,7 +21568,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &854537546619900658
 GameObject:
@@ -21062,7 +21588,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &870380848945976237
 Transform:
@@ -21192,7 +21718,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!23 &943190016365257652
 MeshRenderer:
@@ -21311,6 +21837,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot.006
       objectReference: {fileID: 0}
+    - target: {fileID: 5134281719704732694, guid: 3e05bc9a7d65d4847beb6d299a7773c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e05bc9a7d65d4847beb6d299a7773c3, type: 3}
 --- !u!1 &1000069510583150421
@@ -21346,7 +21877,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!23 &1017334765917448925
 MeshRenderer:
@@ -21416,7 +21947,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1034417473828115278 stripped
 Transform:
@@ -21570,7 +22101,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!33 &1119073864300088286
 MeshFilter:
@@ -21621,7 +22152,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1159870893148880774
 Transform:
@@ -21838,7 +22369,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!23 &1237939564599911696
 MeshRenderer:
@@ -21936,7 +22467,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!1 &1299745714985333972
 GameObject:
@@ -21955,7 +22486,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &1314566212501421956 stripped
 Transform:
@@ -22118,7 +22649,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 245437440}
-  m_RootOrder: 127
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1384457191979582616
 GameObject:
@@ -22136,7 +22667,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!33 &1407170333417119908
 MeshFilter:
@@ -22315,7 +22846,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!23 &1486342803533709218
 MeshRenderer:
@@ -22515,7 +23046,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!1 &1598224088009077140
 GameObject:
@@ -22591,7 +23122,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!1 &1634702914239482773
 GameObject:
@@ -22610,7 +23141,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &1637050965686955689
 Transform:
@@ -22736,7 +23267,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &1693644512667354583
 Transform:
@@ -22764,6 +23295,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_01.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187778996763972545, guid: e1e4b92b42899b64db7961aa4f9865b3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8254658926719494449, guid: e1e4b92b42899b64db7961aa4f9865b3,
         type: 3}
@@ -22889,6 +23425,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_vase_01.007
       objectReference: {fileID: 0}
+    - target: {fileID: 4238024943988068142, guid: 0cb61d459bf28a442800a83c2f14e8ea,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cb61d459bf28a442800a83c2f14e8ea, type: 3}
 --- !u!1 &1731104953373181508
@@ -22936,7 +23477,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!1 &1754571439356126940
 GameObject:
@@ -22955,7 +23496,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!23 &1769712664500958950
 MeshRenderer:
@@ -23123,7 +23664,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!33 &1829728687405786027
 MeshFilter:
@@ -23293,7 +23834,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!33 &1921751417089972560
 MeshFilter:
@@ -23322,6 +23863,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wine_jug_01.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182680234359233555, guid: 9035988ff704f23449cde191dd90338d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6295246589970838930, guid: 9035988ff704f23449cde191dd90338d,
         type: 3}
@@ -23398,7 +23944,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!1 &1949849281684169678
 GameObject:
@@ -23418,7 +23964,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!1 &1954420287742042633
 GameObject:
@@ -23437,7 +23983,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!33 &1968858756619756328
 MeshFilter:
@@ -23662,7 +24208,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!1 &2079139731788483269
 GameObject:
@@ -23699,7 +24245,7 @@ GameObject:
   m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &2091974560953757580
 Transform:
@@ -23771,7 +24317,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!1 &2112699009813183954
 GameObject:
@@ -23790,7 +24336,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &2128732051467976633
 Transform:
@@ -23931,7 +24477,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!1 &2213527258420488568
 GameObject:
@@ -24029,7 +24575,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &2280970523422861013
 Transform:
@@ -24167,7 +24713,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!64 &2355508677073389107
 MeshCollider:
@@ -24506,7 +25052,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &2369990287971253015
 Transform:
@@ -24542,7 +25088,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!23 &2426663025328385575
 MeshRenderer:
@@ -24618,7 +25164,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!33 &2446589555302098426
 MeshFilter:
@@ -24774,6 +25320,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_02.013
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499253233052785382, guid: 52e6c21cc4b1940489e19f39e9bbdfcf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52e6c21cc4b1940489e19f39e9bbdfcf, type: 3}
@@ -25202,7 +25753,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!1 &2707390085330549034
 GameObject:
@@ -25222,7 +25773,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!1 &2724051249724029094
 GameObject:
@@ -25240,7 +25791,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &2735315415167500183
 Transform:
@@ -25408,7 +25959,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 126
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &2872710962215065425
 Transform:
@@ -25650,7 +26201,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &2943129322032221486
 GameObject:
@@ -25915,6 +26466,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: greek_vase_01.006
       objectReference: {fileID: 0}
+    - target: {fileID: 1174051237237115563, guid: 06f61218c968f35418ee44852f91b8ce,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 1754002334398873708, guid: 06f61218c968f35418ee44852f91b8ce,
         type: 3}
       propertyPath: m_RootOrder
@@ -26101,7 +26657,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &3103127106538186249
 Transform:
@@ -26144,7 +26700,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!23 &3110618507875425025
 MeshRenderer:
@@ -26244,7 +26800,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &3159072702959392527 stripped
 Transform:
@@ -26364,7 +26920,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!33 &3220148971212162726
 MeshFilter:
@@ -26399,7 +26955,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!23 &3231675420940639626
 MeshRenderer:
@@ -26716,7 +27272,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!33 &3350251741514696061
 MeshFilter:
@@ -26839,7 +27395,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!33 &3411013857361608733
 MeshFilter:
@@ -27331,7 +27887,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &3478950344746306897
 GameObject:
@@ -27350,7 +27906,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!23 &3486942985622244415
 MeshRenderer:
@@ -27698,6 +28254,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: greek_vase_01.007
       objectReference: {fileID: 0}
+    - target: {fileID: 6186765533929494212, guid: ef9cc7810562e3644a369924e2e9e6d1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9cc7810562e3644a369924e2e9e6d1, type: 3}
 --- !u!4 &3567151762882823815
@@ -27756,7 +28317,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!33 &3600515303613929387
 MeshFilter:
@@ -27839,7 +28400,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &3686397231661520973
 Transform:
@@ -27873,7 +28434,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!33 &3712003651053284851
 MeshFilter:
@@ -28165,6 +28726,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flat_bottomed_flask.003
       objectReference: {fileID: 0}
+    - target: {fileID: 3186452026252666133, guid: 69b61e2c86355844eb2605676889793b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69b61e2c86355844eb2605676889793b, type: 3}
 --- !u!33 &3807721151883827482
@@ -28272,6 +28838,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bowl_01.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618311152066076129, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2162302652299960780, guid: 82e3115605a3e3943a6c7cd520d2ac4f,
         type: 3}
@@ -28405,6 +28976,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Antwarp Blue.001
       objectReference: {fileID: 0}
+    - target: {fileID: 8217730196558309545, guid: c1b8891ea9832a345963dd97e636a285,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1b8891ea9832a345963dd97e636a285, type: 3}
 --- !u!33 &3901805609325180553
@@ -28506,7 +29082,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &3946924976604178232
 GameObject:
@@ -28526,7 +29102,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &3951076262559235134
 Transform:
@@ -28602,7 +29178,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!1 &3970343211229302392
 GameObject:
@@ -28630,7 +29206,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!23 &3981480056434423018
 MeshRenderer:
@@ -29003,7 +29579,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &4168218822020297126
 GameObject:
@@ -29031,7 +29607,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &4171265436282031857
 GameObject:
@@ -29059,7 +29635,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!33 &4176148803141245098
 MeshFilter:
@@ -29086,7 +29662,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!23 &4182871211782513242
 MeshRenderer:
@@ -29239,7 +29815,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!33 &4258680688196714086
 MeshFilter:
@@ -29339,7 +29915,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &4312134579976949815
 Transform:
@@ -29487,7 +30063,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &4386838947968806476
 GameObject:
@@ -29527,7 +30103,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!1 &4447511135587623538
 GameObject:
@@ -30319,7 +30895,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!23 &4624166457079048020
 MeshRenderer:
@@ -30699,7 +31275,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &4803421917838813460
 GameObject:
@@ -30718,7 +31294,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &4810255224626687016
 Transform:
@@ -30883,7 +31459,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &4886234585111752667
 GameObject:
@@ -30945,7 +31521,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!23 &4936308735318828902
 MeshRenderer:
@@ -31223,7 +31799,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!33 &5023737659601086849
 MeshFilter:
@@ -31479,7 +32055,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!23 &5163244349203548070
 MeshRenderer:
@@ -31717,7 +32293,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!33 &5250588528051909102
 MeshFilter:
@@ -31810,6 +32386,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ceramic_urn.007
       objectReference: {fileID: 0}
+    - target: {fileID: 4294335812046589030, guid: 305b51e00690afa4fbfa1078b006c34e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 4425631237693589090, guid: 305b51e00690afa4fbfa1078b006c34e,
         type: 3}
       propertyPath: m_RootOrder
@@ -31884,7 +32465,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &5289780914999787200
 Transform:
@@ -32367,7 +32948,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &5317577906564407312
 Transform:
@@ -32537,6 +33118,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot.018
       objectReference: {fileID: 0}
+    - target: {fileID: 5506239473955537114, guid: 097294796815aee4688fcb61070bc027,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 097294796815aee4688fcb61070bc027, type: 3}
 --- !u!23 &5363863829004595979
@@ -32683,7 +33269,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!33 &5404359828262282370
 MeshFilter:
@@ -32816,7 +33402,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &5432016548990080236
 GameObject:
@@ -33216,7 +33802,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &5444335317256879461
 Transform:
@@ -33576,7 +34162,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 245437440}
-  m_RootOrder: 129
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5589052351495927185
 MeshFilter:
@@ -33603,7 +34189,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &5593573550758688479 stripped
 Transform:
@@ -33693,6 +34279,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot.019
       objectReference: {fileID: 0}
+    - target: {fileID: 7531475592831068045, guid: b8beaa912ab7ff443af3bc18e4363ba5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8beaa912ab7ff443af3bc18e4363ba5, type: 3}
 --- !u!1 &5634355428635468888
@@ -33745,7 +34336,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!1 &5681395977773814457
 GameObject:
@@ -34301,7 +34892,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!1 &5824357692845620471
 GameObject:
@@ -34320,7 +34911,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &5830097165993906900
 Transform:
@@ -34589,6 +35180,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grenadine Pink.001
       objectReference: {fileID: 0}
+    - target: {fileID: 4467772793542752100, guid: 742928db90636724696f27d0f2f9da00,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 742928db90636724696f27d0f2f9da00, type: 3}
 --- !u!33 &5873998950521410857
@@ -34639,6 +35235,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roman_pottery_01.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983700390087956697, guid: 1546ec84ee8bb564b837932eb5a6c6ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 9056344618419087634, guid: 1546ec84ee8bb564b837932eb5a6c6ac,
         type: 3}
@@ -34805,7 +35406,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!64 &5980085361565513657
 MeshCollider:
@@ -34876,7 +35477,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!64 &5985675754550446143
 MeshCollider:
@@ -35370,7 +35971,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!64 &6041704254710878597
 MeshCollider:
@@ -35402,7 +36003,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &6057594797856823554
 Transform:
@@ -35437,7 +36038,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!64 &6068662320622865000
 MeshCollider:
@@ -35486,7 +36087,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!33 &6081162454592104334
 MeshFilter:
@@ -35736,7 +36337,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!33 &6267721464510118719
 MeshFilter:
@@ -35929,7 +36530,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!65 &6410854219609266836
 BoxCollider:
@@ -35970,7 +36571,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!23 &6425881113913003683
 MeshRenderer:
@@ -36071,7 +36672,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!23 &6440463159416916729
 MeshRenderer:
@@ -36253,6 +36854,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wine_jug_02.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040574254805487339, guid: 87320a42b8927ef40b589d1ba2a20dfc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87320a42b8927ef40b589d1ba2a20dfc, type: 3}
@@ -36708,6 +37314,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flat_bottomed_flask.002
       objectReference: {fileID: 0}
+    - target: {fileID: 2870174800145827235, guid: 57635d82f83b3c34f8e945375b2c3c84,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 2870174800145827241, guid: 57635d82f83b3c34f8e945375b2c3c84,
         type: 3}
       propertyPath: DestroyedVersion
@@ -36972,6 +37583,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate.001
       objectReference: {fileID: 0}
+    - target: {fileID: 1158522407484236232, guid: ef04385538cc3b94491eb82a3cb3fbf4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 2288147527385885274, guid: ef04385538cc3b94491eb82a3cb3fbf4,
         type: 3}
       propertyPath: m_RootOrder
@@ -37188,7 +37804,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!64 &6706199918130635464
 MeshCollider:
@@ -37824,7 +38440,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!4 &6815111146266997091
 Transform:
@@ -37913,7 +38529,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!23 &6865488014595847225
 MeshRenderer:
@@ -38078,7 +38694,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!33 &6953634488634125713
 MeshFilter:
@@ -38122,7 +38738,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &6965406793445589527
 Transform:
@@ -38613,7 +39229,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!64 &7039388708711614118
 MeshCollider:
@@ -39016,7 +39632,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!54 &7089733609103694116
 Rigidbody:
@@ -39155,7 +39771,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!64 &7105716526522211238
 MeshCollider:
@@ -39245,7 +39861,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &7149049091528325897
 GameObject:
@@ -39417,6 +40033,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chromium Green.001
       objectReference: {fileID: 0}
+    - target: {fileID: 4386255370780248212, guid: d5a0cb8aa4b392f4f8910efc9cbc36c8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 5178161129167428165, guid: d5a0cb8aa4b392f4f8910efc9cbc36c8,
         type: 3}
       propertyPath: m_RootOrder
@@ -39485,6 +40106,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_bowl_01.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708157428675503345, guid: f935f85aeeceb9645ad598fa561b0f46,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4632136700207427799, guid: f935f85aeeceb9645ad598fa561b0f46,
         type: 3}
@@ -39889,7 +40515,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!64 &7288634630407371355
 MeshCollider:
@@ -40500,7 +41126,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!23 &7358540443765571037
 MeshRenderer:
@@ -40711,7 +41337,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!33 &7423022028826890120
 MeshFilter:
@@ -40747,7 +41373,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!64 &7447064209724465924
 MeshCollider:
@@ -41307,7 +41933,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!23 &7536903441766397743
 MeshRenderer:
@@ -41385,7 +42011,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!33 &7540087137787102629
 MeshFilter:
@@ -42079,7 +42705,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &7725574854040103593
 GameObject:
@@ -42160,7 +42786,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!64 &7738626768734476036
 MeshCollider:
@@ -42193,7 +42819,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!65 &7745583368062487020
 BoxCollider:
@@ -42225,7 +42851,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!65 &7746013269613977362
 BoxCollider:
@@ -43057,6 +43683,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ceramic_urn.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1733779291011788493, guid: 98b5ff48ef11bd44c8114137a18f5290,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98b5ff48ef11bd44c8114137a18f5290, type: 3}
 --- !u!4 &7892388959863313392
@@ -43072,7 +43703,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 245437440}
-  m_RootOrder: 128
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &7892388959863313393
 MeshCollider:
@@ -43439,6 +44070,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flat_bottomed_flask.006
       objectReference: {fileID: 0}
+    - target: {fileID: 4931237588049429843, guid: 41123e12012ef564aafaac83401656fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8951767810440712135, guid: 41123e12012ef564aafaac83401656fe,
         type: 3}
       propertyPath: m_RootOrder
@@ -43522,7 +44158,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &7934507500663296038
 GameObject:
@@ -44041,7 +44677,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!64 &7992399732496068006
 MeshCollider:
@@ -44389,7 +45025,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!64 &8004117879444561594
 MeshCollider:
@@ -44820,6 +45456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plate.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028502804568162967, guid: 9b7d9b0cdc1db6b4c812f6757df011f0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b7d9b0cdc1db6b4c812f6757df011f0, type: 3}
@@ -45291,7 +45932,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!64 &8077889106098914492
 MeshCollider:
@@ -45375,7 +46016,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!64 &8141932968559265158
 MeshCollider:
@@ -45927,7 +46568,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!64 &8179474326082653224
 MeshCollider:
@@ -47155,7 +47796,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!64 &8407188373321564455
 MeshCollider:
@@ -47305,7 +47946,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!64 &8487390613911779725
 MeshCollider:
@@ -47646,7 +48287,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!64 &8491676702995761538
 MeshCollider:
@@ -48014,7 +48655,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!64 &8559979958489985922
 MeshCollider:
@@ -48128,7 +48769,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!64 &8612133024569343153
 MeshCollider:
@@ -48976,7 +49617,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!64 &8671063567523760622
 MeshCollider:
@@ -49400,7 +50041,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!64 &8707273952200535225
 MeshCollider:
@@ -49433,7 +50074,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!65 &8715828104044325500
 BoxCollider:
@@ -50695,7 +51336,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!64 &8909848537110947626
 MeshCollider:
@@ -51797,7 +52438,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!64 &9024749165584839149
 MeshCollider:
@@ -52697,7 +53338,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!64 &9085204473080862807
 MeshCollider:
@@ -53286,7 +53927,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 82
   m_IsActive: 1
 --- !u!64 &9196417829890526489
 MeshCollider:

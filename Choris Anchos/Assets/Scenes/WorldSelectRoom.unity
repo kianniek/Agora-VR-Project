@@ -9,7 +9,7 @@ OcclusionCullingSettings:
     smallestHole: 0.25
     backfaceThreshold: 100
   m_SceneGUID: cea5a204c41fe2e46b076cfd29984ab7
-  m_OcclusionCullingData: {fileID: 36300000, guid: 7e60b1242389f2c438f96b04674fcb6f,
+  m_OcclusionCullingData: {fileID: 36300000, guid: a5e8db3bd6fec3a40be370f9b7a97982,
     type: 2}
 --- !u!104 &2
 RenderSettings:
@@ -98,7 +98,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: e949ba1eaebeb8c49aedf5cae9f3a655,
+    type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 4c95e7e9a2beb0b48a5e77c47189f34d,
     type: 2}
 --- !u!196 &4
@@ -1723,7 +1724,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 2147483647
-  m_RenderingLayerMask: 2
+  m_RenderingLayerMask: 3
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
@@ -1765,7 +1766,7 @@ MonoBehaviour:
   m_Version: 1
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 2
+  m_LightLayerMask: 3
   m_CustomShadowLayers: 0
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
@@ -8945,7 +8946,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 68e0d1a4265720540a778782df0814c7, type: 2}
   - {fileID: 2100000, guid: 95ae65d56a50bf54f99e3c57df274216, type: 2}
   - {fileID: 2100000, guid: 72e1e744226870440911e0850454f6db, type: 2}
-  revealRadius: 37.28
+  revealRadius: 0
 --- !u!4 &8632377630273860271
 Transform:
   m_ObjectHideFlags: 0
@@ -8955,7 +8956,7 @@ Transform:
   m_GameObject: {fileID: 8632377630273860265}
   m_LocalRotation: {x: 0.000000014901159, y: 0.000000014901159, z: 0.7143104, w: -0.69982904}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 37.28, y: 37.28, z: 37.28}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 543450653267647495}
