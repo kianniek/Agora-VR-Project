@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.XR;
 using HurricaneVR.Framework.ControllerInput;
+using FMODUnity;
 
 public class Polaroid : MonoBehaviour
 {
@@ -21,42 +22,37 @@ public class Polaroid : MonoBehaviour
     private Camera renderCamera = null;
     private bool isGrabbed = false;
     private bool photoTaken = false;
+    private bool rightTrigger = false;
+    private bool leftTrigger = false;
+    private StudioEventEmitter photoSound;
 
     public TMP_Text frameCount;
 
     private void Awake()
-    {
+    { 
         renderCamera = GetComponentInChildren<Camera>();
     }
 
     private void Start()
     {
+        photoSound = GetComponent<StudioEventEmitter>();
         CreateRenderTexture();
     }
 
     void Update() {
-        bool rightTrigger = playerInputs.RightController.TriggerButtonState.Active;
-        bool leftTrigger = playerInputs.LeftController.TriggerButtonState.Active;
+        rightTrigger = playerInputs.RightController.TriggerButtonState.Active;
+        leftTrigger = playerInputs.LeftController.TriggerButtonState.Active;
 
         frameCount.text = counter.ToString();
 
-        if (leftTrigger)
-            Debug.Log("Left trigger pressed");
-
-        if (rightTrigger)
-            Debug.Log("Right trigger pressed");
-
-        if (isGrabbed)
-            Debug.Log("Polaroid is grabbed");
+        if (!rightTrigger && !leftTrigger)
+            photoTaken = false;
 
         if ((rightTrigger || leftTrigger) && isGrabbed && !photoTaken)
         {
             TakePhoto();
             photoTaken = true;
-        }
-
-        if (!rightTrigger && !leftTrigger)
-            photoTaken = false;
+        } 
     }
 
     public void IsGrabbed(bool grabbed)
@@ -75,18 +71,17 @@ public class Polaroid : MonoBehaviour
 
     public void TakePhoto()
     {
-        Debug.Log(filmCartridge);
         photoCounter();
         if(filmCartridge){
             Photo newPhoto = CreatePhoto();
             SetPhotoImage(newPhoto);
+            photoSound.Play();
         }
     }
 
     private Photo CreatePhoto()
     {
         GameObject photoObject = Instantiate(photoPrefab, spawnLocation.position, spawnLocation.rotation, transform);
-        photoObject.transform.parent = photos.transform;
         photoObject.SetActive(true);
         photoObject.GetComponent<Collider>().enabled = true;
         return photoObject.GetComponent<Photo>();

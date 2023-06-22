@@ -9,6 +9,7 @@ public class Photo : MonoBehaviour
     Color colorEnd = Color.white;
     public float fadeDuration = 1.0f;
     public GameObject polaroid;
+    private Polaroid polaroidScript;
     private bool isGrabbed = false;
     private bool donePrinting = false;
 
@@ -24,6 +25,7 @@ public class Photo : MonoBehaviour
 
     private void Start()
     {
+        polaroidScript = polaroid.GetComponent<Polaroid>();
         StartCoroutine(EjectOverSeconds(1.5f));        
         StartCoroutine(FadeObject());
     }
@@ -32,8 +34,8 @@ public class Photo : MonoBehaviour
     {
         if (!isGrabbed && donePrinting)
         {
-            this.transform.position = polaroid.GetComponent<Polaroid>().photoLocation.transform.position;
-            this.transform.rotation = polaroid.GetComponent<Polaroid>().photoLocation.transform.rotation;
+            this.transform.position = polaroidScript.photoLocation.transform.position;
+            this.transform.rotation = polaroidScript.photoLocation.transform.rotation;
         }
     }
 
@@ -50,7 +52,8 @@ public class Photo : MonoBehaviour
         float elapsedTime = 0;
         while (elapsedTime < seconds)
         {
-            transform.position += transform.forward * Time.deltaTime * 0.15f;
+            transform.position = Vector3.Lerp(polaroidScript.spawnLocation.position, polaroidScript.photoLocation.transform.position, elapsedTime / seconds);
+            this.transform.rotation = polaroidScript.photoLocation.transform.rotation;
             elapsedTime += Time.deltaTime;
 
             yield return null;

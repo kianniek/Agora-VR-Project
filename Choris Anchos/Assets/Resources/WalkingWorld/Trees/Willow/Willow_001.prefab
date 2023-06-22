@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5203131832299201603}
   - component: {fileID: 5116618067087987953}
   - component: {fileID: 401470404889835897}
+  - component: {fileID: 8005875781613250176}
   m_Layer: 0
   m_Name: LOD_3
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8005875781613250176
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3341042678958204779}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 07e1c0fd6b318b840bf32ae8c772c4b8, type: 2}
 --- !u!1 &4016365578685619308
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,15 +148,15 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.49635753
+  - screenRelativeHeight: 0.49777225
     fadeTransitionWidth: 0.4
     renderers:
     - renderer: {fileID: 3282267276757901992}
-  - screenRelativeHeight: 0.24587967
+  - screenRelativeHeight: 0.2037818
     fadeTransitionWidth: 0.4
     renderers:
     - renderer: {fileID: 4566070801387354091}
-  - screenRelativeHeight: 0.09513659
+  - screenRelativeHeight: 0.09755045
     fadeTransitionWidth: 0.4
     renderers:
     - renderer: {fileID: 1865550870059654779}
@@ -162,6 +177,7 @@ GameObject:
   - component: {fileID: 5480451188645256570}
   - component: {fileID: 1865550870059654779}
   - component: {fileID: 7469414396525861843}
+  - component: {fileID: 1539766249335436153}
   m_Layer: 0
   m_Name: LOD_2
   m_TagString: Untagged
@@ -258,6 +274,20 @@ MonoBehaviour:
   sproutSway: 0.69
   trunkBending: 1
   windScale: 1
+--- !u!64 &1539766249335436153
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6442901166921038352}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 5efef005fff69384496e48ede686afbf, type: 2}
 --- !u!1 &7723154840753091222
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,6 +300,7 @@ GameObject:
   - component: {fileID: 6983916028265217449}
   - component: {fileID: 3282267276757901992}
   - component: {fileID: 1120218675092729438}
+  - component: {fileID: 2077304160168576481}
   m_Layer: 0
   m_Name: LOD_0
   m_TagString: Untagged
@@ -366,6 +397,20 @@ MonoBehaviour:
   sproutSway: 0.69
   trunkBending: 1
   windScale: 1
+--- !u!64 &2077304160168576481
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7723154840753091222}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 70ec00cc0bb2b804386220f5947aebcb, type: 2}
 --- !u!1 &7875220685075514910
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +423,7 @@ GameObject:
   - component: {fileID: 332057692962217677}
   - component: {fileID: 4566070801387354091}
   - component: {fileID: 9123969202245170190}
+  - component: {fileID: 6835109750540009528}
   m_Layer: 0
   m_Name: LOD_1
   m_TagString: Untagged
@@ -474,3 +520,17 @@ MonoBehaviour:
   sproutSway: 0.69
   trunkBending: 1
   windScale: 1
+--- !u!64 &6835109750540009528
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875220685075514910}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: b777e0f7ab02bcd499b7174899889348, type: 2}

@@ -128,6 +128,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3073
+--- !u!114 &-6335701745454501780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/RiverSound
+  m_EditorClassIdentifier: 
+  Path: event:/Music/RiverSound
+  Guid:
+    Data1: -1823952146
+    Data2: 1103702153
+    Data3: -237659520
+    Data4: 1043396055
+  Banks:
+  - {fileID: -4756535564674837944}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 200544
 --- !u!114 &-6172339249044611221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,7 +215,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3073
---- !u!114 &-4756535564674837944
+--- !u!114 &-4938888632563329199
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,18 +224,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/PhotoTaken
   m_EditorClassIdentifier: 
-  Path: ../Choris_Anchos_Sound/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638216452470016242
-  FileSizes:
-  - Name: Desktop
-    Value: 2384256
-  Exists: 1
---- !u!114 &-4593088260275351962
+  Path: event:/SFX/PhotoTaken
+  Guid:
+    Data1: 705091643
+    Data2: 1323440211
+    Data3: 1664215998
+    Data4: -2092223849
+  Banks:
+  - {fileID: -4756535564674837944}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1776
+--- !u!114 &-4860438977066673102
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -235,6 +269,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 162792
+--- !u!114 &-4756535564674837944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../Choris_Anchos_Sound/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638230526655996228
+  FileSizes:
+  - Name: Desktop
+    Value: 20329920
+  Exists: 1
 --- !u!114 &-4534296601087684141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,6 +622,7 @@ MonoBehaviour:
   - {fileID: 4591627043512437715}
   - {fileID: -4756535564674837944}
   - {fileID: 2985876070361266388}
+  - {fileID: 7772528804854309451}
   EditorEvents:
   - {fileID: 4059231775381970569}
   - {fileID: -6103017926148881540}
@@ -579,16 +634,19 @@ MonoBehaviour:
   - {fileID: -279138199936919432}
   - {fileID: -2448330441626603214}
   - {fileID: -3012133921386616462}
-  - {fileID: 3601290827796919709}
-  - {fileID: -4593088260275351962}
-  - {fileID: 4252783329865732507}
+  - {fileID: 8357196023524689928}
+  - {fileID: 8081383641180884337}
+  - {fileID: -4860438977066673102}
+  - {fileID: -4938888632563329199}
+  - {fileID: 6152761017939167966}
+  - {fileID: -6335701745454501780}
   EditorParameters:
   - {fileID: -4534296601087684141}
   MasterBanks:
   - {fileID: -4756535564674837944}
   StringsBanks:
   - {fileID: 6834390697356701667}
-  cacheTime: 638216452470050664
+  cacheTime: 638230526656017410
   cacheVersion: 131601
 --- !u!114 &471663611046041294
 MonoBehaviour:
@@ -617,6 +675,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3073
+--- !u!114 &674712795829910896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/YogaRoomAmbience/MinDistance
+  m_EditorClassIdentifier: 
+  Name: MinDistance
+  StudioPath: 
+  Min: 0
+  Max: 100
+  Default: 0.01
+  ID:
+    data1: 2742026993
+    data2: 1155255812
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &833939375544743645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,10 +822,34 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/WorldSelect.bank
   Name: WorldSelect
   StudioPath: bank:/WorldSelect
-  lastModified: 638216447414420459
+  lastModified: 638230520753495592
   FileSizes:
   - Name: Desktop
     Value: 3950912
+  Exists: 1
+--- !u!114 &3031961118708133875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/YogaRoomAmbience/MaxDistance
+  m_EditorClassIdentifier: 
+  Name: MaxDistance
+  StudioPath: 
+  Min: 0
+  Max: 10000
+  Default: 10
+  ID:
+    data1: 3242497829
+    data2: 3669675896
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &3116927442246832407
 MonoBehaviour:
@@ -772,33 +878,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3073
---- !u!114 &3601290827796919709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/TheGreatBefore
-  m_EditorClassIdentifier: 
-  Path: event:/Music/TheGreatBefore
-  Guid:
-    Data1: 2118140776
-    Data2: 1282228727
-    Data3: 1195838889
-    Data4: -627145941
-  Banks:
-  - {fileID: 2985876070361266388}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 199080
 --- !u!114 &3642745152739008579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,33 +932,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3073
---- !u!114 &4252783329865732507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/WalkingWorldAmbience
-  m_EditorClassIdentifier: 
-  Path: event:/Music/WalkingWorldAmbience
-  Guid:
-    Data1: 1770625372
-    Data2: 1207541756
-    Data3: 2003553426
-    Data4: -2082212025
-  Banks:
-  - {fileID: -4756535564674837944}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 196104
 --- !u!114 &4591627043512437715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -895,11 +947,38 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/HandPan.bank
   Name: HandPan
   StudioPath: bank:/HandPan
-  lastModified: 638216447374121225
+  lastModified: 638230520089681224
   FileSizes:
   - Name: Desktop
-    Value: 179168
+    Value: 179456
   Exists: 1
+--- !u!114 &6152761017939167966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/ForestAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/Music/ForestAmbience
+  Guid:
+    Data1: 1420362984
+    Data2: 1195976107
+    Data3: 1464272554
+    Data4: 627828314
+  Banks:
+  - {fileID: -4756535564674837944}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 196104
 --- !u!114 &6834390697356701667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -915,11 +994,87 @@ MonoBehaviour:
   Path: ../Choris_Anchos_Sound/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638216452470050664
+  lastModified: 638230526656017410
   FileSizes:
   - Name: Desktop
-    Value: 1466
+    Value: 1732
   Exists: 1
+--- !u!114 &7772528804854309451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bank A.bank
+  m_EditorClassIdentifier: 
+  Path: ../Choris_Anchos_Sound/Build/Desktop/Bank A.bank
+  Name: Bank A
+  StudioPath: 
+  lastModified: 638230520086236936
+  FileSizes:
+  - Name: Desktop
+    Value: 494
+  Exists: 1
+--- !u!114 &8081383641180884337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/TheGreatBefore
+  m_EditorClassIdentifier: 
+  Path: event:/Music/TheGreatBefore
+  Guid:
+    Data1: 2118140776
+    Data2: 1282228727
+    Data3: 1195838889
+    Data4: -627145941
+  Banks:
+  - {fileID: 2985876070361266388}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 199080
+--- !u!114 &8357196023524689928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/YogaRoomAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/Music/YogaRoomAmbience
+  Guid:
+    Data1: -2012194236
+    Data2: 1280267618
+    Data3: 378191526
+    Data4: 850698484
+  Banks:
+  - {fileID: -4756535564674837944}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3031961118708133875}
+  - {fileID: 674712795829910896}
+  MinDistance: 1
+  MaxDistance: 9.400001
+  Length: 1371600
 --- !u!114 &8932479307017839654
 MonoBehaviour:
   m_ObjectHideFlags: 0
