@@ -694,12 +694,12 @@ GameObject:
   m_Component:
   - component: {fileID: 508930323}
   - component: {fileID: 508930324}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ColliderWall_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &508930323
 Transform:
@@ -739,12 +739,12 @@ GameObject:
   m_Component:
   - component: {fileID: 520615170}
   - component: {fileID: 520615171}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ColliderWall_Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &520615170
 Transform:
@@ -784,12 +784,12 @@ GameObject:
   m_Component:
   - component: {fileID: 592655070}
   - component: {fileID: 592655071}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ColliderWall_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &592655070
 Transform:
@@ -2035,12 +2035,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1577118444}
   - component: {fileID: 1577118445}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ColliderWall_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1577118444
 Transform:
@@ -3213,12 +3213,12 @@ GameObject:
   - component: {fileID: 4480088272433094283}
   - component: {fileID: 5165033016238159607}
   - component: {fileID: 1862979466}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &238344687190286878
 GameObject:
@@ -3296,12 +3296,12 @@ GameObject:
   - component: {fileID: 7112352072341101573}
   - component: {fileID: 5645499917698018575}
   - component: {fileID: 2034843877}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &543450651676284510
 Transform:
@@ -3384,6 +3384,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7817517469481864667}
+  - {fileID: 8632377630273860271}
   m_Father: {fileID: 1246141485}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3415,12 +3416,12 @@ GameObject:
   - component: {fileID: 4091767716516993712}
   - component: {fileID: 8211504928714563260}
   - component: {fileID: 256217338}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Vloer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 127
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &602875526914442409
 Transform:
@@ -3458,7 +3459,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5432255365788430853}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &663582263156462749
 GameObject:
@@ -3631,12 +3632,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450652594730359}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Temple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &919132149166906759
 GameObject:
@@ -3729,12 +3730,12 @@ GameObject:
   - component: {fileID: 6708937603240756272}
   - component: {fileID: 4119872788778851256}
   - component: {fileID: 56917639}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1046434434947444435
 GameObject:
@@ -3923,12 +3924,12 @@ GameObject:
   - component: {fileID: 4968390799723622164}
   - component: {fileID: 7007308846433989745}
   - component: {fileID: 1707012965}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &1624926095739507087
 MeshFilter:
@@ -4273,12 +4274,12 @@ GameObject:
   - component: {fileID: 7582684815381767200}
   - component: {fileID: 6296412606827665927}
   - component: {fileID: 743981206}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1834407913900806838
 Transform:
@@ -4312,12 +4313,12 @@ GameObject:
   - component: {fileID: 622479934926152897}
   - component: {fileID: 7869755643857842598}
   - component: {fileID: 1330413905}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1874803476302935702
 GameObject:
@@ -4436,12 +4437,12 @@ GameObject:
   - component: {fileID: 1011453936993253828}
   - component: {fileID: 1952935972713851289}
   - component: {fileID: 797528289}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1934734488721583653
 GameObject:
@@ -4755,12 +4756,12 @@ GameObject:
   - component: {fileID: 8054480211650433289}
   - component: {fileID: 7821625319769006841}
   - component: {fileID: 1147627698}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2329766503766722965
 Transform:
@@ -4892,7 +4893,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9099698191787617986}
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.858, y: -0.018, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5012,12 +5013,12 @@ GameObject:
   - component: {fileID: 9169327471140276171}
   - component: {fileID: 2223386768418419468}
   - component: {fileID: 1474097895}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &2711567058226726992
 GameObject:
@@ -5412,19 +5413,7 @@ MonoBehaviour:
       m_Calls: []
   Grabbed:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8533545038211909732}
-        m_TargetAssemblyTypeName: MagneticSnapBack, Assembly-CSharp
-        m_MethodName: DisableAndRemove
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   Released:
     m_PersistentCalls:
       m_Calls: []
@@ -5435,18 +5424,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
         m_MethodName: set_isKinematic
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8533545038211909732}
-        m_TargetAssemblyTypeName: MagneticSnapBack, Assembly-CSharp
-        m_MethodName: SetOriginalPosition
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6023,7 +6000,6 @@ GameObject:
   - component: {fileID: 8533545038211909729}
   - component: {fileID: 8533545038211909730}
   - component: {fileID: 8533545038211909731}
-  - component: {fileID: 8533545038211909732}
   m_Layer: 0
   m_Name: InteracteblePrefabTransporter
   m_TagString: Untagged
@@ -6106,12 +6082,12 @@ GameObject:
   - component: {fileID: 3315484132549088825}
   - component: {fileID: 9199284491565987019}
   - component: {fileID: 1583740193}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &4091767716516993712
 MeshFilter:
@@ -6239,12 +6215,12 @@ GameObject:
   - component: {fileID: 1624926095739507087}
   - component: {fileID: 2396902763620915289}
   - component: {fileID: 1633662150}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4245759149656138371
 Transform:
@@ -6289,12 +6265,12 @@ GameObject:
   - component: {fileID: 5509154753757202499}
   - component: {fileID: 8701304827151909651}
   - component: {fileID: 1568364098}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &4347700537593176894
 GameObject:
@@ -6324,12 +6300,12 @@ GameObject:
   - component: {fileID: 2719415826807398566}
   - component: {fileID: 5319154954000332606}
   - component: {fileID: 480502804}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &4424360833688165623
 GameObject:
@@ -6360,12 +6336,12 @@ GameObject:
   - component: {fileID: 7091791169737973383}
   - component: {fileID: 8843044750300751904}
   - component: {fileID: 208185342}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!33 &4480088272433094283
 MeshFilter:
@@ -6448,7 +6424,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5432255365788430853}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &4543394511551236624
 GameObject:
@@ -6496,12 +6472,12 @@ GameObject:
   - component: {fileID: 7199899582032404124}
   - component: {fileID: 7006931446257802913}
   - component: {fileID: 1476538060}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &4549216666564228024
 GameObject:
@@ -6892,12 +6868,12 @@ GameObject:
   - component: {fileID: 2895682183919605469}
   - component: {fileID: 7975098103454613182}
   - component: {fileID: 1847067812}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &5319154954000332606
 MeshRenderer:
@@ -7131,9 +7107,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 654498838830214492}
   - {fileID: 4535791618804249758}
-  - {fileID: 8632377630273860271}
+  - {fileID: 654498838830214492}
   m_Father: {fileID: 7817517469481864667}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 178.827}
@@ -7650,12 +7625,12 @@ GameObject:
   - component: {fileID: 21260932265920770}
   - component: {fileID: 2801880305550816433}
   - component: {fileID: 1566906793}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6795606818123974992
 Transform:
@@ -7954,7 +7929,6 @@ GameObject:
   - component: {fileID: 2047170242897322318}
   - component: {fileID: 8770766057870180438}
   - component: {fileID: 8770766057870180437}
-  - component: {fileID: 8770766057870180439}
   m_Layer: 0
   m_Name: SledgeHammer
   m_TagString: Untagged
@@ -8053,12 +8027,12 @@ GameObject:
   - component: {fileID: 5423984770860694488}
   - component: {fileID: 194214265863694832}
   - component: {fileID: 335691738}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &7752580179340940317
 GameObject:
@@ -8409,12 +8383,12 @@ GameObject:
   - component: {fileID: 4901723980093717669}
   - component: {fileID: 4772943637474246975}
   - component: {fileID: 819425097}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillar.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &8166962150773427740
 MonoBehaviour:
@@ -8828,20 +8802,6 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!114 &8533545038211909732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3886153550537260559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1bad4556947c354faa093951df90196, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapSpeed: 5
-  snapDistance: 1
 --- !u!1 &8558240077865537948
 GameObject:
   m_ObjectHideFlags: 0
@@ -8946,41 +8906,36 @@ MonoBehaviour:
   - {fileID: 2100000, guid: e2f765356ad694547960e99fc3f84b12, type: 2}
   - {fileID: 2100000, guid: 00a40a431d32de845bd2247955333bf1, type: 2}
   - {fileID: 2100000, guid: b6bd17254059f964ab7ad92830393b27, type: 2}
-  - {fileID: 2100000, guid: 7e3aef3f271386c48ae1d8cde3474763, type: 2}
-  - {fileID: 2100000, guid: 1d19bc43e37229142ad9e85cfd428083, type: 2}
   - {fileID: 2100000, guid: ae171bf6d58dae946882d48c69782a9f, type: 2}
-  - {fileID: 2100000, guid: 4fb510665073bc94799514dd0d67bb50, type: 2}
-  - {fileID: 2100000, guid: 6a3c493ec545ce84fa0f2bd528840d34, type: 2}
-  - {fileID: 2100000, guid: d76a973bc4bccdf47a1f8f5156e2c5b5, type: 2}
-  - {fileID: 2100000, guid: bcef299a3e1696048945bbe547a83bab, type: 2}
-  - {fileID: 2100000, guid: b4955f535cdfc37489bacd9277275677, type: 2}
-  - {fileID: 2100000, guid: 12a8522562f1b384caf8764767db2839, type: 2}
-  - {fileID: 2100000, guid: ccda06f3de0eb824c9ed2e8ac146d945, type: 2}
-  - {fileID: 2100000, guid: 2f97a9f3d2f34474192fb9a159e4a933, type: 2}
-  - {fileID: 2100000, guid: fdf792f13ad07cc44a3204dad612d29b, type: 2}
-  - {fileID: 2100000, guid: ca2461dd88b20fc458e2c77327b21268, type: 2}
-  - {fileID: 2100000, guid: 13a7b06ae6d0238498071467299def58, type: 2}
-  - {fileID: 2100000, guid: 16ceec1585f20cf439e23daca06f25d2, type: 2}
-  - {fileID: 2100000, guid: 092a6fff444ed714a9d38654f5174c54, type: 2}
-  - {fileID: 2100000, guid: b6f5475a15ad3c449996eed2cad10470, type: 2}
-  - {fileID: 2100000, guid: c65b519e5c84463438da9ca214e2d85a, type: 2}
-  - {fileID: 2100000, guid: 1a92e7043ed93554fb0572bf547065b0, type: 2}
-  - {fileID: 2100000, guid: 0f8cd4e5e9a79c34eaa6efa79f7e7af6, type: 2}
-  - {fileID: 2100000, guid: d5dec598473f5d843b04439e2d4dc5af, type: 2}
-  - {fileID: 2100000, guid: e92db61afb809ae44bfdc2bd51675e0f, type: 2}
-  - {fileID: 2100000, guid: 63312aefcaf54004fac9672d1e3fad25, type: 2}
-  - {fileID: 2100000, guid: 2d977b60631140646b9a4ca8dfb8278a, type: 2}
-  - {fileID: 2100000, guid: 6095d870f0ae56541816ee274a637444, type: 2}
-  - {fileID: 2100000, guid: ee66999314b2bc54b854166afdc6c22e, type: 2}
-  - {fileID: 2100000, guid: 5a6c9d3062f0be04c9854418f5621443, type: 2}
-  - {fileID: 2100000, guid: 58932c09aa5297a4c844b17722d2d7a4, type: 2}
-  - {fileID: 2100000, guid: 88bd1a52292a83641a42190ef6636306, type: 2}
-  - {fileID: 2100000, guid: 3ba564555eaee7c4f8348dc4432afe8d, type: 2}
-  - {fileID: 2100000, guid: 9dcbc74b9ad92394da5d8fbfc4c2939c, type: 2}
-  - {fileID: 2100000, guid: 595fedd28394560448af42d94e7a9b7f, type: 2}
-  - {fileID: 2100000, guid: 0f1b3222c92eae84db1aa884079928ce, type: 2}
-  revealRadius: 0.01
-  invert: 0
+  - {fileID: 2100000, guid: 1d19bc43e37229142ad9e85cfd428083, type: 2}
+  - {fileID: 2100000, guid: dcf8d200ec093114eb91d64479d2b4c8, type: 2}
+  - {fileID: 2100000, guid: 25e722c9871bdfa4599ebf886aa6a495, type: 2}
+  - {fileID: 2100000, guid: 94fc97f73b5717946a0cf190992f364e, type: 2}
+  - {fileID: 2100000, guid: dbd9e3f4c1fb4b04f92d6f910f080c79, type: 2}
+  - {fileID: 2100000, guid: 3ad3f0d0d89fe9c4f82d54d7ba111733, type: 2}
+  - {fileID: 2100000, guid: 6f5f065a96a27c44daa3e28ef156ae43, type: 2}
+  - {fileID: 2100000, guid: fc714662943abc94bb58aa4133394765, type: 2}
+  - {fileID: 2100000, guid: bdd597ac6dd0aae4a9de9ed7ae9f1806, type: 2}
+  - {fileID: 2100000, guid: 37eb31c215c706348a0c162c01d77439, type: 2}
+  - {fileID: 2100000, guid: fc74aadec1355c34c8d8f2c4b17f9c08, type: 2}
+  - {fileID: 2100000, guid: 931faa2c6790f434da44dc105bdfdb08, type: 2}
+  - {fileID: 2100000, guid: 5e300139f3df33a4b8b3c2d54b432e6d, type: 2}
+  - {fileID: 2100000, guid: d9f57443d4ea16541a6d7d7aaa176211, type: 2}
+  - {fileID: 2100000, guid: 5c1a49957ff9f0847966cb14f0800bdb, type: 2}
+  - {fileID: 2100000, guid: 11e6d6399e37d604e8de0b01bab13530, type: 2}
+  - {fileID: 2100000, guid: 777ddf62ab4a37e49aecf851c0178c45, type: 2}
+  - {fileID: 2100000, guid: c57b1c556d341c6489d2564f84146e49, type: 2}
+  - {fileID: 2100000, guid: 523eeb59f165bb640bd5d95a115570d7, type: 2}
+  - {fileID: 2100000, guid: 97164c5a698ce764ba6cde3a7b3e17b8, type: 2}
+  - {fileID: 2100000, guid: 1403b3ab82efad54994b7d418b61e00d, type: 2}
+  - {fileID: 2100000, guid: 043c739847e4fdd4d83b66ab132eebce, type: 2}
+  - {fileID: 2100000, guid: 2e206b0bdc182c44f8549e88f5825807, type: 2}
+  - {fileID: 2100000, guid: 4ec75a101eb789042bb2f7c861ecfc55, type: 2}
+  - {fileID: 2100000, guid: 88e5b5802917158418a094c5aff7db55, type: 2}
+  - {fileID: 2100000, guid: fdaf97d812815f6448e69d087dde8687, type: 2}
+  - {fileID: 2100000, guid: 4bbaf233760d46a408b743dd649c2d36, type: 2}
+  - {fileID: 2100000, guid: a06baf8d2ff48a142844796da35e144a, type: 2}
+  revealRadius: 66.5
 --- !u!4 &8632377630273860271
 Transform:
   m_ObjectHideFlags: 0
@@ -8988,13 +8943,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8632377630273860265}
-  m_LocalRotation: {x: 0.19606125, y: -0.4599566, z: -0.8426199, w: 0.19997934}
-  m_LocalPosition: {x: 6.4251094, y: -0.044163704, z: 5.685713}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalRotation: {x: 0.000000014901159, y: 0.000000014901159, z: 0.7143104, w: -0.69982904}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 66.5, y: 66.5, z: 66.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 5432255365788430853}
-  m_RootOrder: 2
+  m_Father: {fileID: 543450653267647495}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8637426941132195309
 MonoBehaviour:
@@ -9144,7 +9099,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 10
+  m_RenderingLayerMask: 18
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f8a40d8cab2f1f548a2e6cd2d966c1f6, type: 2}
@@ -9271,36 +9226,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8770766057870180439}
-        m_TargetAssemblyTypeName: MagneticSnapBack, Assembly-CSharp
-        m_MethodName: DisableAndRemove
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   Released:
     m_PersistentCalls:
       m_Calls: []
   HoverEnter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8770766057870180439}
-        m_TargetAssemblyTypeName: MagneticSnapBack, Assembly-CSharp
-        m_MethodName: SetOriginalPosition
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   HoverExit:
     m_PersistentCalls:
       m_Calls: []
@@ -9407,6 +9338,7 @@ MonoBehaviour:
   - {fileID: 8533545038211909723}
   - {fileID: 8533545038211909722}
   - {fileID: 8533545038211909729}
+  - {fileID: 3469287837117436835}
   revealPointManager: {fileID: 0}
   mps: 0.5
   maxDiamiter: 500
@@ -9431,20 +9363,6 @@ MonoBehaviour:
     Path: event:/Music/TheGreatBefore
   minDistance: 0
   maxDistance: 1.4
---- !u!114 &8770766057870180439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7437332034538755937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1bad4556947c354faa093951df90196, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapSpeed: 5
-  snapDistance: 1
 --- !u!4 &8801735892159917725
 Transform:
   m_ObjectHideFlags: 0
@@ -9560,7 +9478,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 10
+  m_RenderingLayerMask: 18
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: b3cbc98aac041c54bb3a81fbdb16dfc2, type: 2}

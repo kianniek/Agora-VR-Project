@@ -9,9 +9,8 @@ public class WorldRevealURP : MonoBehaviour
     [Space(20)]
     [SerializeField]
     [Tooltip("Controls the radius of the revealed area")]
-    [Min(0.01f)]
-    public float revealRadius = 0.01f;
-    public bool invert;
+    [Min(0.0001f)]
+    public float revealRadius = 0.001f;
 
     /// <summary>
     /// Call this function for updating the shader properties.
@@ -20,11 +19,14 @@ public class WorldRevealURP : MonoBehaviour
     {
         for (int i = 0; i < materials.Count; i++)
         {
-            if (materials[i] == null) continue;
+            if (materials[i] == null)
+            {
+                Debug.Log("Skipping material at index: " + i);
+                continue;
+            }
             materials[i].SetVector("_RevealPosition", transform.position);
             materials[i].SetFloat("_Amount", revealRadius);
 
-            //transform.position = new Vector3(transform.position.x,Mathf.Sin(transform.position.y) , transform.position.z);
         }
     }
 
@@ -47,6 +49,6 @@ public class WorldRevealURP : MonoBehaviour
     {
         revealRadius = 0;
     }
-    
+
 }
 

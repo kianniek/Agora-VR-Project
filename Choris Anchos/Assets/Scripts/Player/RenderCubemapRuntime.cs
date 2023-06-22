@@ -32,7 +32,7 @@ public class RenderCubemapRuntime : MonoBehaviour
         }
     }
 
-    void MakeCubemap()
+    public void MakeCubemap()
     {
         // create temporary camera for rendering
         GameObject go = new GameObject("CubemapCamera");

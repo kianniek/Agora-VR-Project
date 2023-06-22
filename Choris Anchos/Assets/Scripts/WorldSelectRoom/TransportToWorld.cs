@@ -64,9 +64,11 @@ public class TransportToWorld : MonoBehaviour
         Scene otherScene = SceneManager.GetSceneByName(transportToScene);
         gameObject.transform.SetParent(null, true);
         SceneManager.MoveGameObjectToScene(gameObject, otherScene);
+
         RevealPointManager.Instance.GetRevealPoint().transform.SetParent(null, true);
         SceneManager.MoveGameObjectToScene(RevealPointManager.Instance.GetRevealPoint(), otherScene);
 
+        RevealPointManager.Instance.GetRevealPoint().transform.SetParent(gameObject.transform, true);
         yield return new WaitForSeconds(0.3f);
 
         asyncOperation.allowSceneActivation = true;
