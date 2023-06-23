@@ -16,7 +16,7 @@ public class StoneBehavior : MonoBehaviour
         childRigidbodies = GetComponentsInChildren<Rigidbody>();
 
         // Adjust rigidbody settings
-        rb.mass = 2f;  // Adjust the mass value to your desired weight (increase it for heavier stones)
+        rb.mass = 2f;  // Adjust the mass value to the desired weight (increase it for heavier stones)
         rb.drag = 0.5f;  // Adjust the drag value to control linear movement damping (decrease it for less air resistance)
         rb.angularDrag = 0.5f;  // Adjust the angular drag value to control rotational movement damping (decrease it for less air resistance)
         rb.useGravity = true;  // Enable gravity for natural falling and interactions
@@ -49,5 +49,4 @@ public class StoneBehavior : MonoBehaviour
             childRb.isKinematic = !enabled;
         }
     }
-
 }
