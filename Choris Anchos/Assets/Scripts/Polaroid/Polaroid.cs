@@ -1,13 +1,13 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using FMODUnity;
+using HurricaneVR.Framework.ControllerInput;
+using HurricaneVR.Framework.Shared;
 using TMPro;
 using UnityEngine;
-using UnityEngine.XR;
-using HurricaneVR.Framework.ControllerInput;
-using FMODUnity;
 
 public class Polaroid : MonoBehaviour
 {
+    [InspectorButton("TakePhoto")]
+    public bool takePhoto;
     public HVRPlayerInputs playerInputs;
 
     public GameObject photoPrefab = null;
@@ -16,7 +16,7 @@ public class Polaroid : MonoBehaviour
     //public GameObject photos;
     public GameObject photoLocation;
     public int counter = 10;
-    
+
     private bool filmCartridge = true;
 
     private Camera renderCamera = null;
@@ -29,7 +29,7 @@ public class Polaroid : MonoBehaviour
     public TMP_Text frameCount;
 
     private void Awake()
-    { 
+    {
         renderCamera = GetComponentInChildren<Camera>();
     }
 
@@ -39,20 +39,23 @@ public class Polaroid : MonoBehaviour
         CreateRenderTexture();
     }
 
-    void Update() {
+    private void Update()
+    {
         rightTrigger = playerInputs.RightController.TriggerButtonState.Active;
         leftTrigger = playerInputs.LeftController.TriggerButtonState.Active;
 
         frameCount.text = counter.ToString();
 
         if (!rightTrigger && !leftTrigger)
+        {
             photoTaken = false;
+        }
 
         if ((rightTrigger || leftTrigger) && isGrabbed && !photoTaken)
         {
             TakePhoto();
             photoTaken = true;
-        } 
+        }
     }
 
     public void IsGrabbed(bool grabbed)
@@ -62,8 +65,10 @@ public class Polaroid : MonoBehaviour
 
     private void CreateRenderTexture()
     {
-        RenderTexture newTexture = new RenderTexture(256, 256, 32, RenderTextureFormat.Default, RenderTextureReadWrite.sRGB);
-        newTexture.antiAliasing = 4;
+        RenderTexture newTexture = new RenderTexture(256, 256, 32, RenderTextureFormat.Default, RenderTextureReadWrite.sRGB)
+        {
+            antiAliasing = 4
+        };
 
         renderCamera.targetTexture = newTexture;
         screenRenderer.material.mainTexture = newTexture;
@@ -72,7 +77,8 @@ public class Polaroid : MonoBehaviour
     public void TakePhoto()
     {
         photoCounter();
-        if(filmCartridge){
+        if (filmCartridge)
+        {
             Photo newPhoto = CreatePhoto();
             SetPhotoImage(newPhoto);
             photoSound.Play();
@@ -84,7 +90,6 @@ public class Polaroid : MonoBehaviour
         GameObject photoObject = Instantiate(photoPrefab, spawnLocation.position, spawnLocation.rotation, transform);
         photoObject.GetComponent<Photo>().polaroid = this.gameObject;
         photoObject.SetActive(true);
-        photoObject.GetComponent<Collider>().enabled = true;
         return photoObject.GetComponent<Photo>();
     }
 
@@ -106,11 +111,13 @@ public class Polaroid : MonoBehaviour
         return photo;
     }
 
-    public void photoCounter(){
+    public void photoCounter()
+    {
         counter--;
         Debug.Log(counter);
 
-        if(counter < 0){
+        if (counter < 0)
+        {
             filmCartridge = false;
             counter = 0;
         }
