@@ -54,13 +54,13 @@ public class PlayPanOnMesh : MonoBehaviour
             Plane plane = new Plane(handpanRotation.up, handpanRotation.position);
 
             // Get the collision point
-            Vector3 point = notePositions[i].position;
+            Vector3 point = notePositions[i].localPosition;
 
             // Project the collision point onto the plane
             Vector3 projectedPoint = PlaneMath.ProjectPointOnPlane(point, plane);
 
             // Set the sound position to the projected point on the plane
-            notePositions[i].position = point = PlaneMath.PointCirleToPointPlane(handpanRotation.position, projectedPoint);
+            notePositions[i].localPosition = point = PlaneMath.PointCirleToPointPlane(handpanRotation.localPosition, projectedPoint);
             notePositionsProjected[i] = notePositions[i];
             // Draw a debug marker at the projected point if debug mode is enabled
             DebugModeVisual(point, Color.red);
@@ -96,7 +96,7 @@ public class PlayPanOnMesh : MonoBehaviour
         canPlay = false;
 
         // Create a plane with dimensions width=1 and height=1
-        Plane plane = new Plane(handpanRotation.up, handpanRotation.position);
+        Plane plane = new Plane(handpanRotation.up, handpanRotation.localPosition);
 
         // Get the collision point
         Vector3 point = collision.GetContact(0).point;

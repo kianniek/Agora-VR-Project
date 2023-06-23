@@ -9,7 +9,7 @@ public class Polaroid : MonoBehaviour
     [InspectorButton("TakePhoto")]
     public bool takePhoto;
     public HVRPlayerInputs playerInputs;
-
+    public GameObject photosParent;
     public GameObject photoPrefab = null;
     public MeshRenderer screenRenderer = null;
     public Transform spawnLocation = null;
@@ -87,7 +87,8 @@ public class Polaroid : MonoBehaviour
 
     private Photo CreatePhoto()
     {
-        GameObject photoObject = Instantiate(photoPrefab, spawnLocation.position, spawnLocation.rotation, transform);
+        photosParent = GameObject.Find("Photos");
+        GameObject photoObject = Instantiate(photoPrefab, spawnLocation.position, spawnLocation.rotation, photosParent.transform);
         photoObject.GetComponent<Photo>().polaroid = this.gameObject;
         photoObject.SetActive(true);
         return photoObject.GetComponent<Photo>();

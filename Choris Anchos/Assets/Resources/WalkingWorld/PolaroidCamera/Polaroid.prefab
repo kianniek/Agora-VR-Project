@@ -836,14 +836,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac16585001e32f48ab35c68358cb1a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  takePhoto: 0
   playerInputs: {fileID: 0}
-  photoPrefab: {fileID: 0}
-  screenRenderer: {fileID: 0}
-  spawnLocation: {fileID: 0}
-  photos: {fileID: 0}
-  photoLocation: {fileID: 0}
+  photosParent: {fileID: 0}
+  photoPrefab: {fileID: 4123955308768439628, guid: c7059b05b093e794ea65a1a376541145,
+    type: 3}
+  screenRenderer: {fileID: 3111589578905930187}
+  spawnLocation: {fileID: 3111589578793968926}
+  photoLocation: {fileID: 7927454095141236010}
   counter: 10
-  frameCount: {fileID: 0}
+  frameCount: {fileID: 3111589577457613304}
 --- !u!114 &4227157317932486865
 MonoBehaviour:
   m_ObjectHideFlags: 0
