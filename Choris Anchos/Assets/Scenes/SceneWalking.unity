@@ -2608,10 +2608,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1420362984
-      Data2: 1195976107
-      Data3: 1464272554
-      Data4: 627828314
+      Data1: -1928622699
+      Data2: 1224555995
+      Data3: -140023147
+      Data4: -1626564293
     Path: event:/Music/ForestAmbience
   Event: 
   PlayEvent: 1
@@ -3645,10 +3645,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1823952146
-      Data2: 1103702153
-      Data3: -237659520
-      Data4: 1043396055
+      Data1: 829262281
+      Data2: 1167961034
+      Data3: 1413136819
+      Data4: 1238016948
     Path: event:/Music/RiverSound
   Event: 
   PlayEvent: 1
@@ -3658,8 +3658,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 20
-  OverrideMaxDistance: 40
+  OverrideMinDistance: 18.19136
+  OverrideMaxDistance: 34.72168
 --- !u!1 &91260653 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000014029068524, guid: d7ba4fe833670a140b9b6085652f0e26,
@@ -15826,10 +15826,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1823952146
-      Data2: 1103702153
-      Data3: -237659520
-      Data4: 1043396055
+      Data1: 829262281
+      Data2: 1167961034
+      Data3: 1413136819
+      Data4: 1238016948
     Path: event:/Music/RiverSound
   Event: 
   PlayEvent: 1
@@ -15839,8 +15839,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 20
-  OverrideMaxDistance: 40
+  OverrideMinDistance: 6.7728863
+  OverrideMaxDistance: 22.04
 --- !u!1001 &400196459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16508,33 +16508,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _version: 2
   _crossSceneReferences:
-  - _sourceObject: {fileID: 6100715380236610149}
-    _sourceField: playerInputs
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: 81635697f9f63d944825aa063cf1169c
-        name: ScenePlayer
-        _path: Assets/Scenes/ScenePlayer.unity
-      fullPath: /XRRig/PlayerController
-      componentName: HurricaneVR.Framework.ControllerInput.HVRPlayerInputs, HurricaneVR.Framework,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      componentIndex: 0
-      editorLocalId: -1156658695
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
   - _sourceObject: {fileID: 1011422013}
     _sourceField: player
     DEPRECATED_fromObject:
@@ -22675,10 +22648,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1823952146
-      Data2: 1103702153
-      Data3: -237659520
-      Data4: 1043396055
+      Data1: 829262281
+      Data2: 1167961034
+      Data3: 1413136819
+      Data4: 1238016948
     Path: event:/Music/RiverSound
   Event: 
   PlayEvent: 1
@@ -22688,8 +22661,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 20
-  OverrideMaxDistance: 40
+  OverrideMinDistance: 9.304149
+  OverrideMaxDistance: 22.04
 --- !u!1 &693136139
 GameObject:
   m_ObjectHideFlags: 0
@@ -27966,10 +27939,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1823952146
-      Data2: 1103702153
-      Data3: -237659520
-      Data4: 1043396055
+      Data1: 829262281
+      Data2: 1167961034
+      Data3: 1413136819
+      Data4: 1238016948
     Path: event:/Music/RiverSound
   Event: 
   PlayEvent: 1
@@ -27979,8 +27952,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 20
-  OverrideMaxDistance: 40
+  OverrideMinDistance: 15.59
+  OverrideMaxDistance: 22.04
 --- !u!1 &852656329
 GameObject:
   m_ObjectHideFlags: 0
@@ -32011,10 +31984,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1823952146
-      Data2: 1103702153
-      Data3: -237659520
-      Data4: 1043396055
+      Data1: 829262281
+      Data2: 1167961034
+      Data3: 1413136819
+      Data4: 1238016948
     Path: event:/Music/RiverSound
   Event: 
   PlayEvent: 1
@@ -32024,8 +31997,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 20
-  OverrideMaxDistance: 40
+  OverrideMinDistance: 11.51639
+  OverrideMaxDistance: 22.04
 --- !u!1 &1000181796 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000014029068524, guid: d7ba4fe833670a140b9b6085652f0e26,
@@ -40051,7 +40024,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4715123305429116907}
   - {fileID: 236049201255321872}
   - {fileID: 1621438817}
   m_Father: {fileID: 0}
@@ -41899,19 +41871,19 @@ Terrain:
   m_Enabled: 1
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: 4876ca5b575b06240b5338ebdbf9d0bb, type: 2}
-  m_TreeDistance: 660
+  m_TreeDistance: 277
   m_TreeBillboardDistance: 55
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 167
-  m_DetailObjectDensity: 1
+  m_DetailObjectDistance: 23
+  m_DetailObjectDensity: 0.114
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 1
   m_DrawHeightmap: 1
   m_DrawInstanced: 1
-  m_DrawTreesAndFoliage: 1
+  m_DrawTreesAndFoliage: 0
   m_StaticShadowCaster: 0
   m_ReflectionProbeUsage: 1
   m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
@@ -55352,7 +55324,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746186550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0224, y: 0.2055, z: 0.035}
+  m_LocalPosition: {x: -0.084, y: 0.144, z: 0.031}
   m_LocalScale: {x: 1.1679, y: 1.1679, z: 1.1679}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55374,10 +55346,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1823952146
-      Data2: 1103702153
-      Data3: -237659520
-      Data4: 1043396055
+      Data1: 829262281
+      Data2: 1167961034
+      Data3: 1413136819
+      Data4: 1238016948
     Path: event:/Music/RiverSound
   Event: 
   PlayEvent: 1
@@ -55387,8 +55359,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 20
-  OverrideMaxDistance: 40
+  OverrideMinDistance: 18.902527
+  OverrideMaxDistance: 36.23658
 --- !u!1 &1749699674
 GameObject:
   m_ObjectHideFlags: 0
@@ -57536,10 +57508,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1823952146
-      Data2: 1103702153
-      Data3: -237659520
-      Data4: 1043396055
+      Data1: 829262281
+      Data2: 1167961034
+      Data3: 1413136819
+      Data4: 1238016948
     Path: event:/Music/RiverSound
   Event: 
   PlayEvent: 1
@@ -57549,8 +57521,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 20
-  OverrideMaxDistance: 40
+  OverrideMinDistance: 4.5483427
+  OverrideMaxDistance: 22.04
 --- !u!1 &1823033693
 GameObject:
   m_ObjectHideFlags: 0
@@ -62341,10 +62313,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1823952146
-      Data2: 1103702153
-      Data3: -237659520
-      Data4: 1043396055
+      Data1: 829262281
+      Data2: 1167961034
+      Data3: 1413136819
+      Data4: 1238016948
     Path: event:/Music/RiverSound
   Event: 
   PlayEvent: 1
@@ -62354,8 +62326,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 20
-  OverrideMaxDistance: 40
+  OverrideMinDistance: 15.59
+  OverrideMaxDistance: 30.819626
 --- !u!1 &2014582655 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000012523636006, guid: d7ba4fe833670a140b9b6085652f0e26,
@@ -65587,12 +65559,6 @@ Transform:
   m_Father: {fileID: 1544907080}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -77.425, z: 0}
---- !u!54 &695791753784625927 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 7468106822876295600, guid: 28c988861d40d634095fcd2c9201b785,
-    type: 3}
-  m_PrefabInstance: {fileID: 7927454095438052023}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &703507823485208949
 Transform:
   m_ObjectHideFlags: 0
@@ -66450,6 +66416,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1185675977}
     m_Modifications:
+    - target: {fileID: 1305555979800284261, guid: 42a1cf983c1db2e47bf59396d3686ff1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1305555980082525644, guid: 42a1cf983c1db2e47bf59396d3686ff1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1305555981442409266, guid: 42a1cf983c1db2e47bf59396d3686ff1,
         type: 3}
       propertyPath: m_RootOrder
@@ -69836,7 +69812,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Grabbed.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 695791753784625927}
+      objectReference: {fileID: 0}
     - target: {fileID: 679282121347614239, guid: e6af5423612efa64cbcb004a33bf6c12,
         type: 3}
       propertyPath: Grabbed.m_PersistentCalls.m_Calls.Array.data[3].m_Target
@@ -73218,12 +73194,6 @@ LODGroup:
     renderers:
     - renderer: {fileID: 6875786139593936909}
   m_Enabled: 1
---- !u!4 &4715123305429116907 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3417250071015087452, guid: 28c988861d40d634095fcd2c9201b785,
-    type: 3}
-  m_PrefabInstance: {fileID: 7927454095438052023}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &4791685428242058991
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -74460,7 +74430,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 7927454095438052023}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5342583102490606929}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ac16585001e32f48ab35c68358cb1a8, type: 3}

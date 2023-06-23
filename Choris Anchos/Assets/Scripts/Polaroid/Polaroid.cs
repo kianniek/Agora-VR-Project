@@ -13,7 +13,7 @@ public class Polaroid : MonoBehaviour
     public GameObject photoPrefab = null;
     public MeshRenderer screenRenderer = null;
     public Transform spawnLocation = null;
-    public GameObject photos;
+    //public GameObject photos;
     public GameObject photoLocation;
     public int counter = 10;
     
@@ -82,6 +82,7 @@ public class Polaroid : MonoBehaviour
     private Photo CreatePhoto()
     {
         GameObject photoObject = Instantiate(photoPrefab, spawnLocation.position, spawnLocation.rotation, transform);
+        photoObject.GetComponent<Photo>().polaroid = this.gameObject;
         photoObject.SetActive(true);
         photoObject.GetComponent<Collider>().enabled = true;
         return photoObject.GetComponent<Photo>();

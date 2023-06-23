@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.49296752, g: 0.58169115, b: 0.6818212, a: 1}
+  m_IndirectSpecularColor: {r: 0.49295884, g: 0.58169645, b: 0.6818142, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412002756}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 322a2151ab13f054d914bcc60d6ed71e, type: 3}
   m_Name: 
@@ -268,7 +268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &448634623
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1034,6 +1034,13 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 68e0d1a4265720540a778782df0814c7, type: 2}
   - {fileID: 2100000, guid: 95ae65d56a50bf54f99e3c57df274216, type: 2}
   - {fileID: 2100000, guid: 72e1e744226870440911e0850454f6db, type: 2}
+  - {fileID: 2100000, guid: 0d3dbff2218d7f242a38b678522dc75e, type: 2}
+  - {fileID: 2100000, guid: 641ddd5d0f82b5d419882490eacd35eb, type: 2}
+  - {fileID: 2100000, guid: 0e54ff12ff2d7a24584ebeb872ce15ef, type: 2}
+  - {fileID: 2100000, guid: ce0e0d17d8a5dee4e82cb249bf3fb5ea, type: 2}
+  - {fileID: 2100000, guid: 287682d29bc64544db64fef1601532a9, type: 2}
+  - {fileID: 2100000, guid: 168238397216b944f8a7a90c43bc6180, type: 2}
+  - {fileID: 2100000, guid: a31f2b179737f3d43a532bdc6ec83bd7, type: 2}
   materialsMusicRoom:
   - {fileID: 2100000, guid: e2f765356ad694547960e99fc3f84b12, type: 2}
   - {fileID: 2100000, guid: 00a40a431d32de845bd2247955333bf1, type: 2}
@@ -1048,9 +1055,20 @@ MonoBehaviour:
   - {fileID: 2100000, guid: f8a40d8cab2f1f548a2e6cd2d966c1f6, type: 2}
   - {fileID: 2100000, guid: dcf8d200ec093114eb91d64479d2b4c8, type: 2}
   - {fileID: 2100000, guid: 25e722c9871bdfa4599ebf886aa6a495, type: 2}
+  - {fileID: 2100000, guid: 0d3dbff2218d7f242a38b678522dc75e, type: 2}
+  - {fileID: 2100000, guid: 641ddd5d0f82b5d419882490eacd35eb, type: 2}
+  - {fileID: 2100000, guid: 0e54ff12ff2d7a24584ebeb872ce15ef, type: 2}
+  - {fileID: 2100000, guid: ce0e0d17d8a5dee4e82cb249bf3fb5ea, type: 2}
+  - {fileID: 2100000, guid: 287682d29bc64544db64fef1601532a9, type: 2}
+  - {fileID: 2100000, guid: 168238397216b944f8a7a90c43bc6180, type: 2}
+  - {fileID: 2100000, guid: a31f2b179737f3d43a532bdc6ec83bd7, type: 2}
   materialsWalkingWorld:
   - {fileID: 2100000, guid: b3cbc98aac041c54bb3a81fbdb16dfc2, type: 2}
   - {fileID: 2100000, guid: f8a40d8cab2f1f548a2e6cd2d966c1f6, type: 2}
+  - {fileID: 2100000, guid: e2f765356ad694547960e99fc3f84b12, type: 2}
+  - {fileID: 2100000, guid: 00a40a431d32de845bd2247955333bf1, type: 2}
+  - {fileID: 2100000, guid: b6bd17254059f964ab7ad92830393b27, type: 2}
+  - {fileID: 2100000, guid: ae171bf6d58dae946882d48c69782a9f, type: 2}
   materialsYoga:
   - {fileID: 2100000, guid: e2f765356ad694547960e99fc3f84b12, type: 2}
   - {fileID: 2100000, guid: 00a40a431d32de845bd2247955333bf1, type: 2}
@@ -1096,6 +1114,13 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 25e722c9871bdfa4599ebf886aa6a495, type: 2}
   - {fileID: 2100000, guid: b3cbc98aac041c54bb3a81fbdb16dfc2, type: 2}
   - {fileID: 2100000, guid: f8a40d8cab2f1f548a2e6cd2d966c1f6, type: 2}
+  - {fileID: 2100000, guid: 0d3dbff2218d7f242a38b678522dc75e, type: 2}
+  - {fileID: 2100000, guid: 641ddd5d0f82b5d419882490eacd35eb, type: 2}
+  - {fileID: 2100000, guid: 0e54ff12ff2d7a24584ebeb872ce15ef, type: 2}
+  - {fileID: 2100000, guid: ce0e0d17d8a5dee4e82cb249bf3fb5ea, type: 2}
+  - {fileID: 2100000, guid: 287682d29bc64544db64fef1601532a9, type: 2}
+  - {fileID: 2100000, guid: 168238397216b944f8a7a90c43bc6180, type: 2}
+  - {fileID: 2100000, guid: a31f2b179737f3d43a532bdc6ec83bd7, type: 2}
   revealPoint: {fileID: 0}
   revealPointPrefab: {fileID: 0}
   closestRevealPedistal: {fileID: 0}

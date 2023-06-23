@@ -26,7 +26,7 @@ public class Photo : MonoBehaviour
     private void Start()
     {
         polaroidScript = polaroid.GetComponent<Polaroid>();
-        StartCoroutine(EjectOverSeconds(1.5f));        
+        StartCoroutine(EjectOverSeconds(1.5f));
         StartCoroutine(FadeObject());
     }
 
@@ -34,14 +34,14 @@ public class Photo : MonoBehaviour
     {
         if (!isGrabbed && donePrinting)
         {
-            this.transform.position = polaroidScript.photoLocation.transform.position;
-            this.transform.rotation = polaroidScript.photoLocation.transform.rotation;
+            transform.position = polaroidScript.photoLocation.transform.position;
+            transform.rotation = polaroidScript.photoLocation.transform.rotation;
         }
     }
 
     public void IsGrabbed(bool grabbed)
     {
-        this.isGrabbed = grabbed;
+        isGrabbed = grabbed;
     }
 
     public IEnumerator EjectOverSeconds(float seconds)
@@ -53,7 +53,7 @@ public class Photo : MonoBehaviour
         while (elapsedTime < seconds)
         {
             transform.position = Vector3.Lerp(polaroidScript.spawnLocation.position, polaroidScript.photoLocation.transform.position, elapsedTime / seconds);
-            this.transform.rotation = polaroidScript.photoLocation.transform.rotation;
+            transform.rotation = polaroidScript.photoLocation.transform.rotation;
             elapsedTime += Time.deltaTime;
 
             yield return null;
