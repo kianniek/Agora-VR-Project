@@ -54,13 +54,13 @@ public class PlayPanOnMesh : MonoBehaviour
             Plane plane = new Plane(handpanRotation.up, handpanRotation.position);
 
             // Get the collision point
-            Vector3 point = notePositions[i].localPosition;
+            Vector3 point = notePositions[i].position;
 
             // Project the collision point onto the plane
             Vector3 projectedPoint = PlaneMath.ProjectPointOnPlane(point, plane);
 
             // Set the sound position to the projected point on the plane
-            notePositions[i].localPosition = point = PlaneMath.PointCirleToPointPlane(handpanRotation.localPosition, projectedPoint);
+            notePositions[i].position = point = PlaneMath.PointCirleToPointPlane(handpanRotation.position, projectedPoint);
             notePositionsProjected[i] = notePositions[i];
             // Draw a debug marker at the projected point if debug mode is enabled
             DebugModeVisual(point, Color.red);
@@ -96,7 +96,7 @@ public class PlayPanOnMesh : MonoBehaviour
         canPlay = false;
 
         // Create a plane with dimensions width=1 and height=1
-        Plane plane = new Plane(handpanRotation.up, handpanRotation.localPosition);
+        Plane plane = new Plane(handpanRotation.up, handpanRotation.position);
 
         // Get the collision point
         Vector3 point = collision.GetContact(0).point;
@@ -133,7 +133,7 @@ public class PlayPanOnMesh : MonoBehaviour
 
     IEnumerator WaitBeforeNextHit()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(delay);
         canPlay = true;
     }
 
@@ -164,7 +164,7 @@ public class PlayPanOnMesh : MonoBehaviour
     }
     private float CalculatePitchFromCollision(Vector3 point)
     {
-        point = PlaneMath.PointCirleToPointPlane(handpanRotation.position, point);
+        point = PlaneMath.PointCirleToPointPlane(Vector3.zero, point);
         Debug.Log(point);
         DebugModeVisual(point, Color.gray);
 

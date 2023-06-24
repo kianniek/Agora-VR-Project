@@ -10,15 +10,14 @@ Material:
   m_Name: globe
   m_Shader: {fileID: -6465566751694194690, guid: a397e90dbdb15254a9c9364df80c72e1,
     type: 3}
-  m_ValidKeywords:
-  - _ALPHATEST_ON
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
   m_CustomRenderQueue: 2451
   stringTagMap:
-    RenderType: TransparentCutout
+    RenderType: Opaque
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -29,6 +28,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cubemap:
+        m_Texture: {fileID: 8900000, guid: 8b90d78c073716448b5448d7c163fa9e, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CubemapAsset_4c6145c12c7f43d6b0b7cdaeb1230120_Out_0:
@@ -88,7 +91,7 @@ Material:
     - BottemSmooth: 0
     - TopSmooth: 0
     - _AO: 1
-    - _AlphaClip: 1
+    - _AlphaClip: 0
     - _Blend: 0
     - _BlendOp: 0
     - _BumpScale: 1

@@ -5,9 +5,11 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class ShaderInverter : MonoBehaviour
 {
+
     [SerializeField] bool _defaultValue;
 
     [SerializeField] bool invert;
+    [SerializeField] bool turnback;
 
     [SerializeField] List<Material> RevealShaderMaterials;
 
@@ -19,6 +21,11 @@ public class ShaderInverter : MonoBehaviour
         {
             Switch();
             invert = false;
+        }
+
+        if (turnback)
+        {
+            SwitchBack();
         }
     }
 
@@ -46,5 +53,21 @@ public class ShaderInverter : MonoBehaviour
             //transform.position = new Vector3(transform.position.x,Mathf.Sin(transform.position.y) , transform.position.z);
         }
     }
+    void SwitchBack()
+    {
+        Shader litShader = Shader.Find("Universal Render Pipeline/Lit");
+
+        if (litShader == null)
+        {
+            Debug.LogError("Shader not found. Make sure it's included in your build.");
+            return;
+        }
+
+        for (int i = 0; i < RevealShaderMaterials.Count; i++)
+        {
+            RevealShaderMaterials[i].shader = litShader;
+        }
+    }
+
 #endif
 }

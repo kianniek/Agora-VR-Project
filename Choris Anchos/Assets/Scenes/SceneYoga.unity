@@ -97,8 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000006, guid: cea9b8d8ec986604281f47dd7d7f252a,
-    type: 2}
+  m_LightingDataAsset: {fileID: 0}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 4c95e7e9a2beb0b48a5e77c47189f34d,
     type: 2}
 --- !u!196 &4
@@ -210,7 +209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29054863}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.28356984, z: 0}
+  m_LocalPosition: {x: -3695.778, y: 0.28356984, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -496,7 +495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251294390}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00003132224}
-  m_LocalPosition: {x: -1.1623268, y: -0.0434303, z: 5.262927}
+  m_LocalPosition: {x: -3696.9404, y: -0.0434303, z: 5.262927}
   m_LocalScale: {x: 0.61, y: 0.61, z: 0.61}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -683,7 +682,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 28c506fcb3bb9cb40b19054668c7e31f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.222
+      value: -3697
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28c506fcb3bb9cb40b19054668c7e31f,
         type: 3}
@@ -791,6 +790,37 @@ MonoBehaviour:
   animationStates:
   - YogaSimple_1Char00|BowDown
   - YogaSimple_1Char00|PrayPose
+  sound: {fileID: 423305016}
+--- !u!114 &423305016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423305013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1528699305
+      Data2: 1236690034
+      Data3: 1514554759
+      Data4: -1826042459
+    Path: event:/SFX/Ding
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!64 &429451999
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1226,7 +1256,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576048463}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00003132224}
-  m_LocalPosition: {x: -2.2932987, y: -0.91643023, z: 4.811857}
+  m_LocalPosition: {x: -3698.0713, y: -0.91643023, z: 4.811857}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2788,7 +2818,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797515928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.28356984, z: 0}
+  m_LocalPosition: {x: -3695.778, y: 0.28356984, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2802,14 +2832,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797515928}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b9c3768f672d9c489f48881cf183bdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doBreating: 1
+  doBreating: 0
   intensitySliderRange: {x: -0.5, y: 0.5}
-  intensitySlider: -0.33619097
+  intensitySlider: 0.01
   breathingRings: []
   ringMultipliers: []
   breathingLights:
@@ -2819,8 +2849,8 @@ MonoBehaviour:
     lightMultiplier: 0.86
   SavedVaribles: 0
   lightSavedIntencity:
-  - 17.985586
-  - 8.7432575
+  - 16.773422
+  - 8.608048
   breathingSpeed: 0.7
 --- !u!114 &797515931
 MonoBehaviour:
@@ -3238,7 +3268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367536441}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3695.778, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3999,7 +4029,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983240157}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00003132224}
-  m_LocalPosition: {x: -1.2907431, y: 0.88756967, z: 5.2909184}
+  m_LocalPosition: {x: -3697.0688, y: 0.88756967, z: 5.2909184}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -4496,7 +4526,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2101695296}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00003132224}
-  m_LocalPosition: {x: 0, y: 0.28356984, z: 0}
+  m_LocalPosition: {x: -3695.778, y: 0.28356984, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5139,7 +5169,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.59802395, b: 0.40055564, a: 1}
-  m_Intensity: 15.393554
+  m_Intensity: 19.891302
   m_Range: 10
   m_SpotAngle: 45
   m_InnerSpotAngle: 21.80208
@@ -10156,7 +10186,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.602001, b: 0.25773993, a: 1}
-  m_Intensity: 8.454133
+  m_Intensity: 8.955828
   m_Range: 10
   m_SpotAngle: 179
   m_InnerSpotAngle: 179

@@ -98,8 +98,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000004, guid: 1e55e391dde3cb34b9847d87385a5d21,
-    type: 2}
+  m_LightingDataAsset: {fileID: 0}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 4c95e7e9a2beb0b48a5e77c47189f34d,
     type: 2}
 --- !u!196 &4
@@ -3993,7 +3992,7 @@ Terrain:
   m_ScaleInLightmap: 0.032
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
-  m_RenderingLayerMask: 9
+  m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
 --- !u!4 &112306830
 Transform:
@@ -6918,7 +6917,7 @@ Terrain:
   m_ScaleInLightmap: 0.032
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
-  m_RenderingLayerMask: 9
+  m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
 --- !u!4 &178991726
 Transform:
@@ -12030,7 +12029,7 @@ Terrain:
   m_ScaleInLightmap: 0.032
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
-  m_RenderingLayerMask: 9
+  m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
 --- !u!4 &320299488
 Transform:
@@ -16487,7 +16486,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430664202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2090.8557, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -24598,7 +24597,7 @@ MonoBehaviour:
   m_Version: 1
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 8
+  m_LightLayerMask: 200
   m_CustomShadowLayers: 0
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
@@ -24615,7 +24614,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 5.28
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -24653,12 +24652,12 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingLayerMask: 8
+  m_RenderingLayerMask: 200
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
+  m_ColorTemperature: 8151
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -24673,7 +24672,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737193159}
   m_LocalRotation: {x: 0.71633124, y: -0.17362657, z: 0.19194035, w: 0.6479834}
-  m_LocalPosition: {x: -3.522667, y: 375.5335, z: 15.673589}
+  m_LocalPosition: {x: 2087.333, y: 375.5335, z: 15.673589}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28417,7 +28416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902160490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1443964, y: 7.138272, z: -0.91803503}
+  m_LocalPosition: {x: 2092, y: 7.138272, z: -0.91803503}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -31174,7 +31173,7 @@ Terrain:
   m_ScaleInLightmap: 0.032
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
-  m_RenderingLayerMask: 8
+  m_RenderingLayerMask: 9
   m_AllowAutoConnect: 1
 --- !u!4 &985499438
 Transform:
@@ -32123,7 +32122,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011422010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.3, z: -12.24}
+  m_LocalPosition: {x: 2090.8557, y: 6.3, z: -12.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -32152,51 +32151,51 @@ MonoBehaviour:
   playerSize: 1
   playerInteractionRange: 10
   objectList:
+  - {fileID: 1561387984}
+  - {fileID: 175206656}
+  - {fileID: 1245374522}
+  - {fileID: 143548053}
+  - {fileID: 905078361}
+  - {fileID: 778593781}
+  - {fileID: 479957512}
+  - {fileID: 1701634620}
+  - {fileID: 655403911}
+  - {fileID: 1236237793}
+  - {fileID: 314430372}
+  - {fileID: 65692813}
+  - {fileID: 757469744}
+  - {fileID: 320427611}
+  - {fileID: 1772030771}
+  - {fileID: 238265089}
+  - {fileID: 246538912}
+  - {fileID: 274545281}
+  - {fileID: 1369252504}
+  - {fileID: 364299560}
+  - {fileID: 223332139}
+  - {fileID: 1558687288}
+  - {fileID: 1489793029}
+  - {fileID: 968609994}
+  - {fileID: 1676636614}
+  - {fileID: 1099007704}
+  - {fileID: 1779764158}
+  - {fileID: 985689865}
+  - {fileID: 611910816}
+  - {fileID: 349377690}
+  - {fileID: 1914790492}
+  - {fileID: 47561523}
+  - {fileID: 2074039776}
+  - {fileID: 1135507093}
+  - {fileID: 19199454}
+  - {fileID: 358855255}
+  - {fileID: 1367955833}
+  - {fileID: 130500853}
   - {fileID: 2051256662}
-  - {fileID: 1989826905}
   - {fileID: 1580679056}
   - {fileID: 1677278693}
   - {fileID: 440526595}
-  - {fileID: 130500853}
-  - {fileID: 1367955833}
-  - {fileID: 1350465867}
+  - {fileID: 1989826905}
   - {fileID: 1833157688}
-  - {fileID: 246538912}
-  - {fileID: 1772030771}
-  - {fileID: 274545281}
-  - {fileID: 238265089}
-  - {fileID: 757469744}
-  - {fileID: 314430372}
-  - {fileID: 320427611}
-  - {fileID: 65692813}
-  - {fileID: 1236237793}
-  - {fileID: 19199454}
-  - {fileID: 1135507093}
-  - {fileID: 2074039776}
-  - {fileID: 1914790492}
-  - {fileID: 611910816}
-  - {fileID: 358855255}
-  - {fileID: 985689865}
-  - {fileID: 47561523}
-  - {fileID: 349377690}
-  - {fileID: 1701634620}
-  - {fileID: 655403911}
-  - {fileID: 479957512}
-  - {fileID: 778593781}
-  - {fileID: 905078361}
-  - {fileID: 143548053}
-  - {fileID: 175206656}
-  - {fileID: 1245374522}
-  - {fileID: 1561387984}
-  - {fileID: 1099007704}
-  - {fileID: 1676636614}
-  - {fileID: 968609994}
-  - {fileID: 1558687288}
-  - {fileID: 364299560}
-  - {fileID: 1779764158}
-  - {fileID: 1369252504}
-  - {fileID: 1489793029}
-  - {fileID: 223332139}
+  - {fileID: 1350465867}
   amountOfRenderedObjects: 8
   index: 0
 --- !u!1 &1015177588
@@ -40020,7 +40019,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286270108}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -49.927044, y: -16.568281, z: -4.5496345}
+  m_LocalPosition: {x: 2040.9287, y: -16.568281, z: -4.5496345}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -41871,19 +41870,19 @@ Terrain:
   m_Enabled: 1
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: 4876ca5b575b06240b5338ebdbf9d0bb, type: 2}
-  m_TreeDistance: 277
-  m_TreeBillboardDistance: 55
-  m_TreeCrossFadeLength: 5
-  m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 23
-  m_DetailObjectDensity: 0.114
-  m_HeightmapPixelError: 5
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 2000
+  m_TreeCrossFadeLength: 200
+  m_TreeMaximumFullLODCount: 10000
+  m_DetailObjectDistance: 250
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 7
   m_SplatMapDistance: 1000
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 1
   m_DrawHeightmap: 1
   m_DrawInstanced: 1
-  m_DrawTreesAndFoliage: 0
+  m_DrawTreesAndFoliage: 1
   m_StaticShadowCaster: 0
   m_ReflectionProbeUsage: 1
   m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
@@ -41891,9 +41890,9 @@ Terrain:
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
 --- !u!1 &1347094751
 GameObject:
@@ -55195,7 +55194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714961100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.017242, y: 34.188274, z: -21.54}
+  m_LocalPosition: {x: 2073.8384, y: 34.188274, z: -21.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -61263,7 +61262,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963756203}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.552209, y: 0.69853973, z: 8.015961}
+  m_LocalPosition: {x: 2091.408, y: 0.69853973, z: 8.015961}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -65319,7 +65318,7 @@ Terrain:
   m_ScaleInLightmap: 0.032
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
-  m_RenderingLayerMask: 9
+  m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
 --- !u!4 &2104903157
 Transform:

@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 
 public class AnimationManagerYogaRoom : MonoBehaviour
@@ -11,6 +12,8 @@ public class AnimationManagerYogaRoom : MonoBehaviour
     private int[] animationIndices;
     private int currentAnimationIndex = -1;
     private bool isPlaying = false;
+
+    public StudioEventEmitter sound;
 
     private int defaultStateHash;
 
@@ -57,6 +60,7 @@ public class AnimationManagerYogaRoom : MonoBehaviour
         int nextAnimationIndex = animationIndices[currentAnimationIndex];
         animator.SetInteger("RandomPose", nextAnimationIndex);
         animator.SetTrigger("Play");
+        sound.Play();
 
         isPlaying = true;
         Debug.Log("Playing animation at index: " + nextAnimationIndex);
