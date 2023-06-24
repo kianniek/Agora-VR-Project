@@ -1,4 +1,5 @@
 ﻿using HurricaneVR.Framework.Shared;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -62,13 +63,7 @@ public class TransportToWorld : MonoBehaviour
 
         Scene selfScene = gameObject.scene;
         Scene otherScene = SceneManager.GetSceneByName(transportToScene);
-        gameObject.transform.SetParent(null, true);
-        SceneManager.MoveGameObjectToScene(gameObject, otherScene);
 
-        RevealPointManager.Instance.GetRevealPoint().transform.SetParent(null, true);
-        SceneManager.MoveGameObjectToScene(RevealPointManager.Instance.GetRevealPoint(), otherScene);
-
-        RevealPointManager.Instance.GetRevealPoint().transform.SetParent(gameObject.transform, true);
         //yield return new WaitForSeconds(0.3f);
 
         asyncOperation.allowSceneActivation = true;
@@ -80,8 +75,39 @@ public class TransportToWorld : MonoBehaviour
 
         for (int i = 0; i < ColliderChildren.Length; i++)
         {
-            ColliderChildren[i].enabled = false;
+            if (ColliderChildren[i] != null)
+            {
+                ColliderChildren[i].enabled = false;
+            }
         }
+
+        if (maxDiamiter < 10)
+        {
+            while (RevealPointManager.Instance.GetRevealRadius() < maxDiamiter * 0.9f)
+            {
+                Debug.Log(maxDiamiter * 0.9f);
+                yield return null;
+            }
+        }
+        else
+        {
+            while (RevealPointManager.Instance.GetRevealRadius() > maxDiamiter + 0.9f)
+            {
+                Debug.Log(maxDiamiter * 0.9f);
+                yield return null;
+            }
+        }
+
+
+        gameObject.transform.SetParent(null, true);
+        SceneManager.MoveGameObjectToScene(gameObject, otherScene);
+
+        RevealPointManager.Instance.GetRevealPoint().transform.SetParent(null, true);
+        SceneManager.MoveGameObjectToScene(RevealPointManager.Instance.GetRevealPoint(), otherScene);
+
+        RevealPointManager.Instance.GetRevealPoint().transform.SetParent(gameObject.transform, true);
+
+        UnloadAllScenesExcept(transportToScene);
 
         //print("Name of Old Scene is: " + selfScene.name);
         if (transportToScene == "WorldSelectRoom" || destroyObjOnLoaded)
@@ -90,15 +116,6 @@ public class TransportToWorld : MonoBehaviour
             yield return new WaitForSeconds(0.3f);
             Destroy(this.gameObject);
         }
-
-        while (RevealPointManager.Instance.GetRevealRadius() < maxDiamiter * 0.9f)
-        {
-            Debug.Log(maxDiamiter * 0.9f);
-            yield return null;
-        }
-
-        UnloadAllScenesExcept(transportToScene);
-
 
         if (destroyScriptOnLoaded)
         {

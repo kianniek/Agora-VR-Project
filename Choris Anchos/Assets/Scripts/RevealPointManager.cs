@@ -24,6 +24,7 @@ public class RevealPointManager : MonoBehaviour
     [SerializeField] WorldRevealURP revealPoint;
     [SerializeField] GameObject revealPointPrefab;
     public ObjectSelectVisualizer closestRevealPedistal;
+    TransportToWorld transportToWorld;
 
     private void Awake()
     {
@@ -53,40 +54,43 @@ public class RevealPointManager : MonoBehaviour
         revealPoint.gameObject.transform.SetParent(GetChildByDepth(closestRevealPedistal.closestPillars.transform, 1), false);
         revealPoint.gameObject.transform.localPosition = Vector3.zero;
 
-        TransportToWorld transportToWorld = GetChildByDepth(closestRevealPedistal.closestPillars.transform, 1).GetComponent<TransportToWorld>();
+        transportToWorld = closestRevealPedistal.closestPillars.transform.GetComponentInChildren<TransportToWorld>();
 
-        switch (transportToWorld.transportToScene)
+        if (transportToWorld != null)
         {
-            case WreckroomSceneName:
-                revealPoint.materials.Clear();
-                for (int i = 0; i < materialsWreckroom.Length; i++)
-                {
-                    revealPoint.materials.Add(materialsWreckroom[i]);
-                }
-                break;
-            case MusicRoomSceneName:
-                revealPoint.materials.Clear();
-                for (int i = 0; i < materialsMusicRoom.Length; i++)
-                {
-                    revealPoint.materials.Add(materialsMusicRoom[i]);
-                }
-                break;
-            case WalkingWorldSceneName:
-                revealPoint.materials.Clear();
-                for (int i = 0; i < materialsWalkingWorld.Length; i++)
-                {
-                    revealPoint.materials.Add(materialsWalkingWorld[i]);
-                }
-                break;
-            case YogaSceneName:
-                revealPoint.materials.Clear();
-                for (int i = 0; i < materialsYoga.Length; i++)
-                {
-                    revealPoint.materials.Add(materialsYoga[i]);
-                }
-                break;
-            default:
-                break;
+            switch (transportToWorld.transportToScene)
+            {
+                case WreckroomSceneName:
+                    revealPoint.materials.Clear();
+                    for (int i = 0; i < materialsWreckroom.Length; i++)
+                    {
+                        revealPoint.materials.Add(materialsWreckroom[i]);
+                    }
+                    break;
+                case MusicRoomSceneName:
+                    revealPoint.materials.Clear();
+                    for (int i = 0; i < materialsMusicRoom.Length; i++)
+                    {
+                        revealPoint.materials.Add(materialsMusicRoom[i]);
+                    }
+                    break;
+                case WalkingWorldSceneName:
+                    revealPoint.materials.Clear();
+                    for (int i = 0; i < materialsWalkingWorld.Length; i++)
+                    {
+                        revealPoint.materials.Add(materialsWalkingWorld[i]);
+                    }
+                    break;
+                case YogaSceneName:
+                    revealPoint.materials.Clear();
+                    for (int i = 0; i < materialsYoga.Length; i++)
+                    {
+                        revealPoint.materials.Add(materialsYoga[i]);
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
     }
     public void ExpandShaderStart(float maxDiamiter, float mps)
@@ -94,27 +98,35 @@ public class RevealPointManager : MonoBehaviour
         print("ExpandStart");
         StartCoroutine(ExpandShader(maxDiamiter, mps));
     }
+    public void ExpandShaderStop()
+    {
+        print("ExpandStart");
+        StopAllCoroutines();
+    }
     IEnumerator ExpandShader(float maxDiamiter, float mps)
     {
+        print("start setting the revealPoint.revealRadius to " + maxDiamiter);
 
         // initialize timer
         float timer = 0f;
-        print("1 " + revealPoint.revealRadius);
-        while (timer < (maxDiamiter * mps))
+        while (timer < 10 && revealPoint.revealRadius != maxDiamiter)
         {
             // increase timer
             timer += Time.deltaTime;
 
             // calculate the percentage of time elapsed
-            float percentageComplete = timer / (maxDiamiter / mps);
+            float percentageComplete = timer / 5;
+
+
             //animCurve = AnimationCurve.EaseInOut(0.0f, 0.0f, 1.0f, 1.0f);
             // move the object based on percentage complete
             revealPoint.revealRadius = Mathf.Lerp(revealPoint.revealRadius, maxDiamiter, percentageComplete);
+            
             // wait for the next frame
             yield return null;
         }
+        print("Done setting the revealPoint.revealRadius to " + maxDiamiter);
         revealPoint.revealRadius = maxDiamiter;
-        ///yield return true;
     }
     public Transform GetChildByDepth(Transform parent, int childDown)
     {

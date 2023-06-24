@@ -144,7 +144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &40750531
 Transform:
   m_ObjectHideFlags: 0
@@ -2641,6 +2641,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6234885844991274606}
     m_Modifications:
+    - target: {fileID: 2102792667722222068, guid: cbf9a70226cc1ee40b81789e84700726,
+        type: 3}
+      propertyPath: mps
+      value: 100000
+      objectReference: {fileID: 0}
     - target: {fileID: 2102792667722222068, guid: cbf9a70226cc1ee40b81789e84700726,
         type: 3}
       propertyPath: revealPointManager
