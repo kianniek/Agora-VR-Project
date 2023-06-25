@@ -795,6 +795,33 @@ MonoBehaviour:
       version: 1
     _data:
       data: []
+  - _sourceObject: {fileID: 2083395987}
+    _sourceField: revealPointManager
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: 81635697f9f63d944825aa063cf1169c
+        name: ScenePlayer
+        _path: Assets/Scenes/ScenePlayer.unity
+      fullPath: /Managers/RevealPointManager
+      componentName: RevealPointManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      componentIndex: 0
+      editorLocalId: 1496103406
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
   - _sourceObject: {fileID: 1994143507}
     _sourceField: revealPointManager
     DEPRECATED_fromObject:
@@ -850,33 +877,6 @@ MonoBehaviour:
     _data:
       data: []
   - _sourceObject: {fileID: 41469040}
-    _sourceField: revealPointManager
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: 81635697f9f63d944825aa063cf1169c
-        name: ScenePlayer
-        _path: Assets/Scenes/ScenePlayer.unity
-      fullPath: /Managers/RevealPointManager
-      componentName: RevealPointManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      componentIndex: 0
-      editorLocalId: 1496103406
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
-  - _sourceObject: {fileID: 2083395987}
     _sourceField: revealPointManager
     DEPRECATED_fromObject:
       scene:
@@ -3219,7 +3219,7 @@ MonoBehaviour:
   - {fileID: 1994143509}
   - {fileID: 1994143515}
   - {fileID: 8572855063286943802}
-  instantTransition: 0
+  instantTransition: 1
   revealPointManager: {fileID: 0}
   mps: 0.1
   maxDiamiter: 50
@@ -7167,7 +7167,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfa1266406a02f4ba543b1ce45eb910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  materials: []
+  materials:
+  - {fileID: 2100000, guid: e2f765356ad694547960e99fc3f84b12, type: 2}
+  - {fileID: 2100000, guid: 00a40a431d32de845bd2247955333bf1, type: 2}
+  - {fileID: 2100000, guid: b6bd17254059f964ab7ad92830393b27, type: 2}
+  - {fileID: 2100000, guid: ae171bf6d58dae946882d48c69782a9f, type: 2}
+  - {fileID: 2100000, guid: 1d19bc43e37229142ad9e85cfd428083, type: 2}
+  - {fileID: 2100000, guid: dcf8d200ec093114eb91d64479d2b4c8, type: 2}
+  - {fileID: 2100000, guid: 25e722c9871bdfa4599ebf886aa6a495, type: 2}
+  - {fileID: 2100000, guid: 94fc97f73b5717946a0cf190992f364e, type: 2}
+  - {fileID: 2100000, guid: dbd9e3f4c1fb4b04f92d6f910f080c79, type: 2}
+  - {fileID: 2100000, guid: 3ad3f0d0d89fe9c4f82d54d7ba111733, type: 2}
+  - {fileID: 2100000, guid: 6f5f065a96a27c44daa3e28ef156ae43, type: 2}
+  - {fileID: 2100000, guid: fc714662943abc94bb58aa4133394765, type: 2}
+  - {fileID: 2100000, guid: bdd597ac6dd0aae4a9de9ed7ae9f1806, type: 2}
+  - {fileID: 2100000, guid: 37eb31c215c706348a0c162c01d77439, type: 2}
+  - {fileID: 2100000, guid: fc74aadec1355c34c8d8f2c4b17f9c08, type: 2}
+  - {fileID: 2100000, guid: 931faa2c6790f434da44dc105bdfdb08, type: 2}
+  - {fileID: 2100000, guid: 5e300139f3df33a4b8b3c2d54b432e6d, type: 2}
+  - {fileID: 2100000, guid: d9f57443d4ea16541a6d7d7aaa176211, type: 2}
+  - {fileID: 2100000, guid: 5c1a49957ff9f0847966cb14f0800bdb, type: 2}
+  - {fileID: 2100000, guid: 11e6d6399e37d604e8de0b01bab13530, type: 2}
+  - {fileID: 2100000, guid: 777ddf62ab4a37e49aecf851c0178c45, type: 2}
+  - {fileID: 2100000, guid: c57b1c556d341c6489d2564f84146e49, type: 2}
+  - {fileID: 2100000, guid: 523eeb59f165bb640bd5d95a115570d7, type: 2}
+  - {fileID: 2100000, guid: 97164c5a698ce764ba6cde3a7b3e17b8, type: 2}
+  - {fileID: 2100000, guid: 1403b3ab82efad54994b7d418b61e00d, type: 2}
+  - {fileID: 2100000, guid: 043c739847e4fdd4d83b66ab132eebce, type: 2}
+  - {fileID: 2100000, guid: 2e206b0bdc182c44f8549e88f5825807, type: 2}
+  - {fileID: 2100000, guid: 4ec75a101eb789042bb2f7c861ecfc55, type: 2}
+  - {fileID: 2100000, guid: 88e5b5802917158418a094c5aff7db55, type: 2}
+  - {fileID: 2100000, guid: fdaf97d812815f6448e69d087dde8687, type: 2}
+  - {fileID: 2100000, guid: 4bbaf233760d46a408b743dd649c2d36, type: 2}
+  - {fileID: 2100000, guid: a06baf8d2ff48a142844796da35e144a, type: 2}
+  - {fileID: 2100000, guid: 2cc21db74bd0dbd429a024deaf06372b, type: 2}
+  - {fileID: 2100000, guid: 9248fe122f9ffab429be174ce4919499, type: 2}
+  - {fileID: 2100000, guid: ecc4066b51a6f094cb995adc36b50576, type: 2}
+  - {fileID: 2100000, guid: 466664ce058acfe40abfacfb538f8129, type: 2}
+  - {fileID: 2100000, guid: 0b0e7cd007d156741aa8d0766b27f1b1, type: 2}
+  - {fileID: 2100000, guid: b7246ed91c7cce34f85691522e4f9929, type: 2}
+  - {fileID: 2100000, guid: 2952146e5ca49984fb49cc447a885ff8, type: 2}
+  - {fileID: 2100000, guid: 68e0d1a4265720540a778782df0814c7, type: 2}
+  - {fileID: 2100000, guid: 95ae65d56a50bf54f99e3c57df274216, type: 2}
+  - {fileID: 2100000, guid: 72e1e744226870440911e0850454f6db, type: 2}
+  - {fileID: 2100000, guid: 0d3dbff2218d7f242a38b678522dc75e, type: 2}
+  - {fileID: 2100000, guid: 641ddd5d0f82b5d419882490eacd35eb, type: 2}
+  - {fileID: 2100000, guid: 0e54ff12ff2d7a24584ebeb872ce15ef, type: 2}
+  - {fileID: 2100000, guid: ce0e0d17d8a5dee4e82cb249bf3fb5ea, type: 2}
+  - {fileID: 2100000, guid: 287682d29bc64544db64fef1601532a9, type: 2}
+  - {fileID: 2100000, guid: 168238397216b944f8a7a90c43bc6180, type: 2}
+  - {fileID: 2100000, guid: a31f2b179737f3d43a532bdc6ec83bd7, type: 2}
   revealRadius: 0
 --- !u!4 &8632377630273860271
 Transform:
@@ -7464,10 +7513,58 @@ MonoBehaviour:
       m_Calls: []
   Socketed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2645284220894617911}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_useGravity
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2645284220894617911}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   UnSocketed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2645284220894617911}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_useGravity
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2645284220894617911}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   GrabPointsMeta: []
   Grabbers: []
   HandGrabbers: []
