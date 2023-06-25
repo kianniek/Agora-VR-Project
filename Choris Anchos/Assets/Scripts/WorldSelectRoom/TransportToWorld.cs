@@ -23,7 +23,7 @@ public class TransportToWorld : MonoBehaviour
     [InspectorButton("GetAllChildrenCollidersFromParent", 250)]
     public bool getAllColliders;
     [SerializeField] private Collider[] ColliderChildren;
-
+    [SerializeField] bool instantTransition = false;
     [Header("Shader Handler")]
     [SerializeField] public RevealPointManager revealPointManager;
     [Tooltip("time it takes to move")]
@@ -50,79 +50,110 @@ public class TransportToWorld : MonoBehaviour
 
     private IEnumerator SceneSwitch()
     {
-        //prevent the worldReveal point to switch in the middle of the transition
-        if (RevealPointManager.Instance) { RevealPointManager.Instance.closestRevealPedistal.stopEffect = true; }
-        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(transportToScene, LoadSceneMode.Additive);
-        //Don't let the Scene activate until you allow it to
-
-        while (!asyncOperation.isDone)
+        if (instantTransition)
         {
-            yield return null;
-        }
-        asyncOperation.allowSceneActivation = false;
+            AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(transportToScene, LoadSceneMode.Additive);
+            //Don't let the Scene activate until you allow it to
 
-        Scene selfScene = gameObject.scene;
-        Scene otherScene = SceneManager.GetSceneByName(transportToScene);
-
-        //yield return new WaitForSeconds(0.3f);
-
-        asyncOperation.allowSceneActivation = true;
-        SkyboxManager.Instance.UpdateSkyboxColors(otherScene);
-        RevealPointManager.Instance.StopAllCoroutines();
-        RevealPointManager.Instance.ExpandShaderStart(maxDiamiter, mps);
-
-        if (RevealPointManager.Instance) { RevealPointManager.Instance.closestRevealPedistal.stopEffect = false; }
-
-        for (int i = 0; i < ColliderChildren.Length; i++)
-        {
-            if (ColliderChildren[i] != null)
+            while (!asyncOperation.isDone)
             {
-                ColliderChildren[i].enabled = false;
-            }
-        }
-
-        if (maxDiamiter < 10)
-        {
-            while (RevealPointManager.Instance.GetRevealRadius() < maxDiamiter * 0.9f)
-            {
-                Debug.Log(maxDiamiter * 0.9f);
                 yield return null;
             }
+            asyncOperation.allowSceneActivation = false;
+
+            Scene selfScene = gameObject.scene;
+            Scene otherScene = SceneManager.GetSceneByName(transportToScene);
+
+            //yield return new WaitForSeconds(0.3f);
+
+            asyncOperation.allowSceneActivation = true;
+
+            for (int i = 0; i < ColliderChildren.Length; i++)
+            {
+                if (ColliderChildren[i] != null)
+                {
+                    ColliderChildren[i].enabled = false;
+                }
+            }
+
+            UnloadAllScenesExcept(transportToScene);
         }
         else
         {
-            while (RevealPointManager.Instance.GetRevealRadius() > maxDiamiter + 0.9f)
+            //prevent the worldReveal point to switch in the middle of the transition
+            if (RevealPointManager.Instance) { RevealPointManager.Instance.closestRevealPedistal.stopEffect = true; }
+            AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(transportToScene, LoadSceneMode.Additive);
+            //Don't let the Scene activate until you allow it to
+
+            while (!asyncOperation.isDone)
             {
-                Debug.Log(maxDiamiter * 0.9f);
                 yield return null;
             }
-        }
+            asyncOperation.allowSceneActivation = false;
 
+            Scene selfScene = gameObject.scene;
+            Scene otherScene = SceneManager.GetSceneByName(transportToScene);
 
-        gameObject.transform.SetParent(null, true);
-        SceneManager.MoveGameObjectToScene(gameObject, otherScene);
+            //yield return new WaitForSeconds(0.3f);
 
-        RevealPointManager.Instance.GetRevealPoint().transform.SetParent(null, true);
-        SceneManager.MoveGameObjectToScene(RevealPointManager.Instance.GetRevealPoint(), otherScene);
+            asyncOperation.allowSceneActivation = true;
+            SkyboxManager.Instance.UpdateSkyboxColors(otherScene);
+            RevealPointManager.Instance.StopAllCoroutines();
+            RevealPointManager.Instance.ExpandShaderStart(maxDiamiter, mps);
 
-        RevealPointManager.Instance.GetRevealPoint().transform.SetParent(gameObject.transform, true);
+            if (RevealPointManager.Instance) { RevealPointManager.Instance.closestRevealPedistal.stopEffect = false; }
 
-        UnloadAllScenesExcept(transportToScene);
-
-        //print("Name of Old Scene is: " + selfScene.name);
-        if (transportToScene == "WorldSelectRoom" || destroyObjOnLoaded)
-        {
-            ResetPlayerMessager.ResetPlayer = true;
-            yield return new WaitForSeconds(0.3f);
-            Destroy(this.gameObject);
-        }
-
-        if (destroyScriptOnLoaded)
-        {
-            yield return new WaitForSeconds(0.3f);
-            foreach (MonoBehaviour script in scriptsTodiable)
+            for (int i = 0; i < ColliderChildren.Length; i++)
             {
-                Destroy(script);
+                if (ColliderChildren[i] != null)
+                {
+                    ColliderChildren[i].enabled = false;
+                }
+            }
+
+            if (maxDiamiter < 10)
+            {
+                while (RevealPointManager.Instance.GetRevealRadius() < maxDiamiter * 0.9f)
+                {
+                    Debug.Log(maxDiamiter * 0.9f);
+                    yield return null;
+                }
+            }
+            else
+            {
+                while (RevealPointManager.Instance.GetRevealRadius() > maxDiamiter + 0.9f)
+                {
+                    Debug.Log(maxDiamiter * 0.9f);
+                    yield return null;
+                }
+            }
+
+
+            gameObject.transform.SetParent(null, true);
+            SceneManager.MoveGameObjectToScene(gameObject, otherScene);
+
+            RevealPointManager.Instance.GetRevealPoint().transform.SetParent(null, true);
+            SceneManager.MoveGameObjectToScene(RevealPointManager.Instance.GetRevealPoint(), otherScene);
+
+            RevealPointManager.Instance.GetRevealPoint().transform.SetParent(gameObject.transform, true);
+
+            UnloadAllScenesExcept(transportToScene);
+
+            //print("Name of Old Scene is: " + selfScene.name);
+            if (transportToScene == "WorldSelectRoom" || destroyObjOnLoaded)
+            {
+                ResetPlayerMessager.ResetPlayer = true;
+                yield return new WaitForSeconds(0.3f);
+                Destroy(this.gameObject);
+            }
+
+            if (destroyScriptOnLoaded)
+            {
+                yield return new WaitForSeconds(0.3f);
+                foreach (MonoBehaviour script in scriptsTodiable)
+                {
+                    Destroy(script);
+                }
             }
         }
     }
