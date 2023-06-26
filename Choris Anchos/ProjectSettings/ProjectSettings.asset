@@ -21,7 +21,7 @@ PlayerSettings:
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 0.5
   m_SplashScreenAnimation: 2
-  m_SplashScreenLogoStyle: 1
+  m_SplashScreenLogoStyle: 0
   m_SplashScreenDrawMode: 1
   m_SplashScreenBackgroundAnimationZoom: 1
   m_SplashScreenLogoAnimationZoom: 0
@@ -43,9 +43,9 @@ PlayerSettings:
   - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
     duration: 2
   - logo: {fileID: 21300000, guid: f5a57375c9cd8f64296ccce13e2349d2, type: 3}
-    duration: 2
-  - logo: {fileID: 21300000, guid: 74a9d3e1aa8dc414eb4cbf410a705cbd, type: 3}
     duration: 5
+  - logo: {fileID: 21300000, guid: 74a9d3e1aa8dc414eb4cbf410a705cbd, type: 3}
+    duration: 10
   m_VirtualRealitySplashScreen: {fileID: 2800000, guid: 30ebcf47fd33c374481872125e277d32,
     type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
@@ -142,9 +142,7 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.9
-  preloadedAssets:
-  - {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
-  - {fileID: -8196854396901781169, guid: 1a4c68ca72a83449f938d669337cb305, type: 2}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1

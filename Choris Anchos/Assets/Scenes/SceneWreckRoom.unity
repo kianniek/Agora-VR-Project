@@ -4766,34 +4766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _version: 2
-  _crossSceneReferences:
-  - _sourceObject: {fileID: 1324886762}
-    _sourceField: revealPointManager
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: 81635697f9f63d944825aa063cf1169c
-        name: ScenePlayer
-        _path: Assets/Scenes/ScenePlayer.unity
-      fullPath: /Managers/RevealPointManager
-      componentName: RevealPointManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      componentIndex: 0
-      editorLocalId: 1496103406
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
+  _crossSceneReferences: []
   _realSceneRootsForPostBuild: []
   _mergedScenes: []
 --- !u!114 &535155729
@@ -12086,18 +12059,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbf9a70226cc1ee40b81789e84700726, type: 3}
---- !u!114 &1324886762 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2102792667722222068, guid: cbf9a70226cc1ee40b81789e84700726,
-    type: 3}
-  m_PrefabInstance: {fileID: 1324886761}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dc49fb1222a458419846414f4f14de5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1343635761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34555,7 +34516,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: 1155475587722039879, guid: 1b59addec1275194eb9bb5ec80eef540, type: 3}
 --- !u!114 &5795732073737016844
@@ -46342,7 +46303,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 0
   m_Mesh: {fileID: -2035068574203303680, guid: 1b59addec1275194eb9bb5ec80eef540, type: 3}
 --- !u!114 &8142223876961158500

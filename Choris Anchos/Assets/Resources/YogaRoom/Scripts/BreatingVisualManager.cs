@@ -20,7 +20,7 @@ public class BreatingVisualManager : MonoBehaviour
 
     public Transform[] breathingRings; // Array of breathing ring objects
     public float[] ringMultipliers;    // Array of multipliers for the breathing rings
-    private readonly Vector3[] ringSavedScale;   // Array of multipliers for the lights
+    public Vector3[] ringSavedScale;   // Array of multipliers for the lights
 
 
     public LightMod[] breathingLights;    // Array of light objects for breathing visualization
@@ -30,21 +30,8 @@ public class BreatingVisualManager : MonoBehaviour
 
     private void Start()
     {
-        lightSavedIntencity = new List<float>();
         // Set the default intensity value
         intensitySlider = 0.5f;
-
-        // Update the breathing rings
-        for (int i = 0; i < breathingRings.Length; i++)
-        {
-            ringSavedScale[i] = breathingRings[i].localScale;
-        }
-
-        // Update the breathing lights
-        for (int i = 0; i < breathingLights.Length; i++)
-        {
-            lightSavedIntencity.Add(breathingLights[i].breathingLight.intensity);
-        }
     }
 
     private void Update()
@@ -58,8 +45,8 @@ public class BreatingVisualManager : MonoBehaviour
             {
                 if (breathingRings.Length > 0)
                 {
-                    Vector3 currentIntensity = ringSavedScale[i] + Vector3.one * intensitySlider;
-                    breathingRings[i].localScale = currentIntensity * ringMultipliers[i];
+                    Vector3 currentIntensity = ringSavedScale[i] + Vector3.one * (intensitySlider * ringMultipliers[i]);
+                    breathingRings[i].localScale = currentIntensity;
                 }
             }
 

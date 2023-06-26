@@ -15,7 +15,9 @@ public class Polaroid : MonoBehaviour
     public Transform spawnLocation = null;
     //public GameObject photos;
     public GameObject photoLocation;
-    public int counter = 10;
+    public int counter = 15;
+    private int counterStart;
+    public bool autoRefillCartridge;
 
     private bool filmCartridge = true;
 
@@ -35,6 +37,7 @@ public class Polaroid : MonoBehaviour
 
     private void Start()
     {
+        counterStart = counter;
         photoSound = GetComponent<StudioEventEmitter>();
         CreateRenderTexture();
     }
@@ -88,6 +91,10 @@ public class Polaroid : MonoBehaviour
     private Photo CreatePhoto()
     {
         photosParent = GameObject.Find("Photos");
+        if (photosParent.transform.childCount > 0)
+        {
+            photosParent.transform.DetachChildren();
+        }
         GameObject photoObject = Instantiate(photoPrefab, spawnLocation.position, spawnLocation.rotation, photosParent.transform);
         photoObject.GetComponent<Photo>().polaroid = this.gameObject;
         photoObject.SetActive(true);
@@ -119,8 +126,17 @@ public class Polaroid : MonoBehaviour
 
         if (counter < 0)
         {
-            filmCartridge = false;
-            counter = 0;
+            if (autoRefillCartridge)
+            {
+                counter = counterStart;
+                filmCartridge = true;
+            }
+            else
+            {
+                filmCartridge = false;
+                counter = 0;
+            }
+
         }
     }
 }

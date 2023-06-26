@@ -7,6 +7,7 @@ public class PlayOnTrigger : PlayOnCollision
     [SerializeField] private bool debug;
     private void OnTriggerEnter(Collider other)
     {
+        print(other.name);
         if (needsToBeInHand)
         {
             HVRGrabbable grabbable = other.GetComponentInParent<HVRGrabbable>();

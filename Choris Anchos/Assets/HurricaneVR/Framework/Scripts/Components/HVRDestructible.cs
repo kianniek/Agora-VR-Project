@@ -32,6 +32,11 @@ namespace HurricaneVR.Framework.Components
             {
                 var destroyed = Instantiate(DestroyedVersion, transform.position, transform.rotation);
 
+                foreach(var meshRenderer in destroyed.GetComponentsInChildren<MeshRenderer>())
+                {
+                    meshRenderer.material = GetComponent<MeshRenderer>().material;
+                }
+
                 foreach (var rigidBody in destroyed.GetComponentsInChildren<Rigidbody>())
                 {
                     var v = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f));

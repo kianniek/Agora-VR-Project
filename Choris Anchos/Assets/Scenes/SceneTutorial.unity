@@ -2927,81 +2927,6 @@ Transform:
   m_Father: {fileID: 4105032655559944675}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 174.41, z: -0.138}
---- !u!1001 &1704016450
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 4105032654831721027}
-    m_Modifications:
-    - target: {fileID: 3459595820790564543, guid: cbf9a70226cc1ee40b81789e84700726,
-        type: 3}
-      propertyPath: m_Name
-      value: InteracteblePrefabTransportBack
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271986116343995397, guid: cbf9a70226cc1ee40b81789e84700726,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271986116343995397, guid: cbf9a70226cc1ee40b81789e84700726,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271986116343995397, guid: cbf9a70226cc1ee40b81789e84700726,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271986116343995397, guid: cbf9a70226cc1ee40b81789e84700726,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271986116343995397, guid: cbf9a70226cc1ee40b81789e84700726,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271986116343995397, guid: cbf9a70226cc1ee40b81789e84700726,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271986116343995397, guid: cbf9a70226cc1ee40b81789e84700726,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271986116343995397, guid: cbf9a70226cc1ee40b81789e84700726,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271986116343995397, guid: cbf9a70226cc1ee40b81789e84700726,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271986116343995397, guid: cbf9a70226cc1ee40b81789e84700726,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271986116343995397, guid: cbf9a70226cc1ee40b81789e84700726,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cbf9a70226cc1ee40b81789e84700726, type: 3}
---- !u!4 &1704016451 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4271986116343995397, guid: cbf9a70226cc1ee40b81789e84700726,
-    type: 3}
-  m_PrefabInstance: {fileID: 1704016450}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1760272008
 GameObject:
   m_ObjectHideFlags: 0
@@ -3177,7 +3102,7 @@ MonoBehaviour:
   index: 1
   change: 0
   time: 1
-  tempTime: 0.1130233
+  tempTime: 0
 --- !u!114 &1808671792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5736,7 +5661,7 @@ MonoBehaviour:
   ColliderChildren: []
   instantTransition: 0
   revealPointManager: {fileID: 0}
-  mps: 0.1
+  speed: 1
   maxDiamiter: 1000
 --- !u!114 &4105032653893322236
 MonoBehaviour:
@@ -6453,7 +6378,7 @@ MonoBehaviour:
   ColliderChildren: []
   instantTransition: 0
   revealPointManager: {fileID: 0}
-  mps: 0.1
+  speed: 1
   maxDiamiter: 1000
 --- !u!114 &4105032653925161457
 MonoBehaviour:
@@ -8319,7 +8244,7 @@ MonoBehaviour:
   ColliderChildren: []
   instantTransition: 0
   revealPointManager: {fileID: 0}
-  mps: 0.1
+  speed: 1
   maxDiamiter: 1000
 --- !u!1 &4105032654049552215
 GameObject:
@@ -9110,7 +9035,7 @@ MonoBehaviour:
   index: 0
   change: 0
   time: 1
-  tempTime: 0.1130233
+  tempTime: 0
 --- !u!1 &4105032654104101909
 GameObject:
   m_ObjectHideFlags: 0
@@ -12702,7 +12627,7 @@ MonoBehaviour:
   index: 0
   change: 0
   time: 1
-  tempTime: 0.1130233
+  tempTime: 0
 --- !u!1 &4105032654498207255
 GameObject:
   m_ObjectHideFlags: 0
@@ -15584,7 +15509,7 @@ MonoBehaviour:
   ColliderChildren: []
   instantTransition: 0
   revealPointManager: {fileID: 0}
-  mps: 0.1
+  speed: 1
   maxDiamiter: 1000
 --- !u!114 &4105032654769234467
 MonoBehaviour:
@@ -16098,7 +16023,7 @@ MonoBehaviour:
   index: 0
   change: 0
   time: 1
-  tempTime: 0.1130233
+  tempTime: 0
 --- !u!114 &4105032654788549525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16935,8 +16860,7 @@ Transform:
   m_LocalPosition: {x: -0.13199937, y: 0.31000054, z: 0.16699983}
   m_LocalScale: {x: 0.57345426, y: 0.57345414, z: 0.57345474}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1704016451}
+  m_Children: []
   m_Father: {fileID: 4105032655505953200}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20367,7 +20291,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4711208715938537054, guid: f8659b483e42d8e49b40857e9134e89b, type: 3}
 --- !u!33 &4105032655155449338
@@ -21812,7 +21736,7 @@ MonoBehaviour:
   index: 0
   change: 0
   time: 1
-  tempTime: 0.1130233
+  tempTime: 0
 --- !u!4 &4105032655244649060
 Transform:
   m_ObjectHideFlags: 0

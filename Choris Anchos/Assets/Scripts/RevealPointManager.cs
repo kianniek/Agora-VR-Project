@@ -93,29 +93,29 @@ public class RevealPointManager : MonoBehaviour
             }
         }
     }
-    public void ExpandShaderStart(float maxDiamiter, float mps)
+    public void ExpandShaderStart(float maxDiamiter, float speed)
     {
         print("ExpandStart");
-        StartCoroutine(ExpandShader(maxDiamiter, mps));
+        StartCoroutine(ExpandShader(maxDiamiter, speed));
     }
     public void ExpandShaderStop()
     {
         print("ExpandStart");
         StopAllCoroutines();
     }
-    IEnumerator ExpandShader(float maxDiamiter, float mps)
+    IEnumerator ExpandShader(float maxDiamiter, float speed)
     {
         print("start setting the revealPoint.revealRadius to " + maxDiamiter);
 
         // initialize timer
         float timer = 0f;
-        while (timer < 10 && revealPoint.revealRadius != maxDiamiter)
+        while (timer < speed && revealPoint.revealRadius != maxDiamiter)
         {
             // increase timer
             timer += Time.deltaTime;
 
             // calculate the percentage of time elapsed
-            float percentageComplete = timer / 5;
+            float percentageComplete = timer / speed;
 
 
             //animCurve = AnimationCurve.EaseInOut(0.0f, 0.0f, 1.0f, 1.0f);

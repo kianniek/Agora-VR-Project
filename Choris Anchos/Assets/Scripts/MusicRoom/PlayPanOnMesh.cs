@@ -3,6 +3,7 @@ using HurricaneVR.Framework.Shared;
 using System.Collections;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class PlayPanOnMesh : MonoBehaviour
 {
@@ -37,6 +38,8 @@ public class PlayPanOnMesh : MonoBehaviour
 
     private bool canPlay = true;
     private bool upDownSwitch;
+
+    private float targetHeightTerrain;
 
     // Called when the script instance is being loaded
     private void Awake()
@@ -109,6 +112,7 @@ public class PlayPanOnMesh : MonoBehaviour
 
         // Play the sound with the calculated pitch
         Debug.Log("Playing Handpan on frequency " + pitch);
+        AudioManager.instance.masterVolume = collision.relativeVelocity.magnitude;
         AudioManager.instance.PlayOneShot3D(note, transform.position, pitch);
 
         if (sphereScanInstantiatorScript)
@@ -122,21 +126,27 @@ public class PlayPanOnMesh : MonoBehaviour
 
             int _switch = upDownSwitch ? Random.Range(1, 5) : 1;
             float targetHeight = Mathf.Abs(pitch) * _switch;
-            raiseMeshManager.raiseAmount = targetHeight;
+            targetHeightTerrain = targetHeight;
+            //raiseMeshManager.raiseAmount = targetHeight;
             //StopCoroutine(LerpHeightBegin(targetHeight));
             //timeElapsed = 0;
             //StartCoroutine(LerpHeightBegin(targetHeight));
         }
-
+        AudioManager.instance.masterVolume = 1;
         StartCoroutine(WaitBeforeNextHit());
     }
-
+    public void Update()
+    {
+        //if (Mathf.Abs(raiseMeshManager.raiseAmount - targetHeightTerrain) > 1)
+        {
+            raiseMeshManager.raiseAmount = Mathf.Lerp(raiseMeshManager.raiseAmount, targetHeightTerrain, 0.5f);
+        }
+    }
     IEnumerator WaitBeforeNextHit()
     {
         yield return new WaitForSeconds(0.5f);
         canPlay = true;
     }
-
     IEnumerator LerpHeightBegin(float targetHeight)
     {
         while (raiseMeshManager.raiseAmount != targetHeight)
@@ -150,7 +160,6 @@ public class PlayPanOnMesh : MonoBehaviour
         StopCoroutine(LerpHeightEnd());
         StartCoroutine(LerpHeightEnd());
     }
-
     IEnumerator LerpHeightEnd()
     {
         while (raiseMeshManager.raiseAmount != 1)
@@ -211,8 +220,6 @@ public class PlayPanOnMesh : MonoBehaviour
         float pitchOffset = Mathf.Log(combinedPitch / PITCH_C4, 2f) + _pitchOffset;
         return pitchOffset;
     }
-
-
     void DebugModeVisual(Vector3 point, UnityEngine.Color color)
     {
         if (!_debugMode) { return; }
@@ -229,7 +236,6 @@ public class PlayPanOnMesh : MonoBehaviour
         prim.transform.localScale = Vector3.one / 50;
         Destroy(prim.GetComponent<Collider>());
     }
-
     void DebugModeAudio()
     {
         float pitch = Mathf.Log(1 / PITCH_C4, 2f) + _pitchOffset;

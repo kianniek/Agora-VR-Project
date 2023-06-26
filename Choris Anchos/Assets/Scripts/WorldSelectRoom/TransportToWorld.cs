@@ -27,7 +27,7 @@ public class TransportToWorld : MonoBehaviour
     [Header("Shader Handler")]
     [SerializeField] public RevealPointManager revealPointManager;
     [Tooltip("time it takes to move")]
-    [SerializeField] private float mps = 1f; // meter per second expand
+    [SerializeField] private float speed = 1f; // meter per second expand
     [SerializeField] private float maxDiamiter = 1000;
     private void Start()
     {
@@ -99,7 +99,7 @@ public class TransportToWorld : MonoBehaviour
             asyncOperation.allowSceneActivation = true;
             SkyboxManager.Instance.UpdateSkyboxColors(otherScene);
             RevealPointManager.Instance.StopAllCoroutines();
-            RevealPointManager.Instance.ExpandShaderStart(maxDiamiter, mps);
+            RevealPointManager.Instance.ExpandShaderStart(maxDiamiter, speed);
 
             if (RevealPointManager.Instance) { RevealPointManager.Instance.closestRevealPedistal.stopEffect = false; }
 

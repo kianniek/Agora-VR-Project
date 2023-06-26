@@ -25,7 +25,7 @@ public class AnimationManagerYogaRoom : MonoBehaviour
             animationIndices[i] = i;
         }
 
-        defaultStateHash = Animator.StringToHash("Default State");
+        defaultStateHash = Animator.StringToHash("YogaSimple_1Char00|RestPose");
     }
 
     private void OnEnable()
@@ -35,11 +35,10 @@ public class AnimationManagerYogaRoom : MonoBehaviour
 
     private void Update()
     {
-        
         if (playSequence && !isPlaying)
         {
+            Debug.Log("Play Animation");
             PlayNextAnimation();
-            playSequence = false;
         }
     }
 
@@ -79,7 +78,7 @@ public class AnimationManagerYogaRoom : MonoBehaviour
         }
 
         isPlaying = false;
-
+        playSequence = false;
         // Remove the last played animation index from the available indices
         int lastPlayedIndex = animationIndices[currentAnimationIndex];
         int[] remainingIndices = new int[animationCount - currentAnimationIndex - 1];

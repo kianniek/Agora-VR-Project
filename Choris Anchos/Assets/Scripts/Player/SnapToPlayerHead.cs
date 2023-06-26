@@ -10,6 +10,7 @@ public class SnapToPlayerHead : MonoBehaviour
     [SerializeField] bool transitionOnSnap = true;
     [SerializeField] TransportToWorld transportToWorld;
     [SerializeField] Material TransporterMaterial;
+    [SerializeField] float maxGrowthScale = 3;
 
     public enum ZTestValue
     {
@@ -53,7 +54,7 @@ public class SnapToPlayerHead : MonoBehaviour
         {
             SetDepthTest(zTestValue);
             transform.position = Vector3.Lerp(transform.position, other.transform.position, 0.1f);
-            transform.localScale += Vector3.one;
+            transform.localScale = new Vector3(Mathf.Clamp(transform.localScale.x, 0, maxGrowthScale), Mathf.Clamp(transform.localScale.y, 0, maxGrowthScale), Mathf.Clamp(transform.localScale.z, 0, maxGrowthScale));
         }
     }
     private void OnCollisionStay(Collision collision)
@@ -63,6 +64,7 @@ public class SnapToPlayerHead : MonoBehaviour
             SetDepthTest(zTestValue);
             transform.position = Vector3.Lerp(transform.position, collision.transform.position, 0.1f);
             transform.localScale += Vector3.one;
+            transform.localScale = new Vector3(Mathf.Clamp(transform.localScale.x, 0, maxGrowthScale), Mathf.Clamp(transform.localScale.y, 0, maxGrowthScale), Mathf.Clamp(transform.localScale.z, 0, maxGrowthScale));
         }
     }
 
