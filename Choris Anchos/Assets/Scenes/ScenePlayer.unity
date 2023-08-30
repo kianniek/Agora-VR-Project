@@ -249,7 +249,6 @@ MonoBehaviour:
   SceneToLoadOnStart: WorldSelectRoom
   objectsToDiableAfterLoad:
   - {fileID: 448634622}
-  - {fileID: 412002756}
 --- !u!1 &448634622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,13 +1148,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 68e0d1a4265720540a778782df0814c7, type: 2}
   - {fileID: 2100000, guid: 95ae65d56a50bf54f99e3c57df274216, type: 2}
   - {fileID: 2100000, guid: 72e1e744226870440911e0850454f6db, type: 2}
-  - {fileID: 2100000, guid: 0d3dbff2218d7f242a38b678522dc75e, type: 2}
-  - {fileID: 2100000, guid: 641ddd5d0f82b5d419882490eacd35eb, type: 2}
-  - {fileID: 2100000, guid: 0e54ff12ff2d7a24584ebeb872ce15ef, type: 2}
-  - {fileID: 2100000, guid: ce0e0d17d8a5dee4e82cb249bf3fb5ea, type: 2}
-  - {fileID: 2100000, guid: 287682d29bc64544db64fef1601532a9, type: 2}
-  - {fileID: 2100000, guid: 168238397216b944f8a7a90c43bc6180, type: 2}
-  - {fileID: 2100000, guid: a31f2b179737f3d43a532bdc6ec83bd7, type: 2}
   materialsMusicRoom:
   - {fileID: 2100000, guid: e2f765356ad694547960e99fc3f84b12, type: 2}
   - {fileID: 2100000, guid: 00a40a431d32de845bd2247955333bf1, type: 2}
@@ -1166,17 +1158,8 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 7e3aef3f271386c48ae1d8cde3474763, type: 2}
   - {fileID: 2100000, guid: 955546f5b6ec267468497ccc020d848c, type: 2}
   - {fileID: 2100000, guid: 1d19bc43e37229142ad9e85cfd428083, type: 2}
-  - {fileID: 2100000, guid: b3cbc98aac041c54bb3a81fbdb16dfc2, type: 2}
-  - {fileID: 2100000, guid: f8a40d8cab2f1f548a2e6cd2d966c1f6, type: 2}
   - {fileID: 2100000, guid: dcf8d200ec093114eb91d64479d2b4c8, type: 2}
   - {fileID: 2100000, guid: 25e722c9871bdfa4599ebf886aa6a495, type: 2}
-  - {fileID: 2100000, guid: 0d3dbff2218d7f242a38b678522dc75e, type: 2}
-  - {fileID: 2100000, guid: 641ddd5d0f82b5d419882490eacd35eb, type: 2}
-  - {fileID: 2100000, guid: 0e54ff12ff2d7a24584ebeb872ce15ef, type: 2}
-  - {fileID: 2100000, guid: ce0e0d17d8a5dee4e82cb249bf3fb5ea, type: 2}
-  - {fileID: 2100000, guid: 287682d29bc64544db64fef1601532a9, type: 2}
-  - {fileID: 2100000, guid: 168238397216b944f8a7a90c43bc6180, type: 2}
-  - {fileID: 2100000, guid: a31f2b179737f3d43a532bdc6ec83bd7, type: 2}
   materialsWalkingWorld:
   - {fileID: 2100000, guid: e2f765356ad694547960e99fc3f84b12, type: 2}
   - {fileID: 2100000, guid: 00a40a431d32de845bd2247955333bf1, type: 2}
@@ -1225,15 +1208,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b5f1ce8985b8583448880d053605c126, type: 2}
   - {fileID: 2100000, guid: dcf8d200ec093114eb91d64479d2b4c8, type: 2}
   - {fileID: 2100000, guid: 25e722c9871bdfa4599ebf886aa6a495, type: 2}
-  - {fileID: 2100000, guid: b3cbc98aac041c54bb3a81fbdb16dfc2, type: 2}
-  - {fileID: 2100000, guid: f8a40d8cab2f1f548a2e6cd2d966c1f6, type: 2}
-  - {fileID: 2100000, guid: 0d3dbff2218d7f242a38b678522dc75e, type: 2}
-  - {fileID: 2100000, guid: 641ddd5d0f82b5d419882490eacd35eb, type: 2}
-  - {fileID: 2100000, guid: 0e54ff12ff2d7a24584ebeb872ce15ef, type: 2}
-  - {fileID: 2100000, guid: ce0e0d17d8a5dee4e82cb249bf3fb5ea, type: 2}
-  - {fileID: 2100000, guid: 287682d29bc64544db64fef1601532a9, type: 2}
-  - {fileID: 2100000, guid: 168238397216b944f8a7a90c43bc6180, type: 2}
-  - {fileID: 2100000, guid: a31f2b179737f3d43a532bdc6ec83bd7, type: 2}
   - {fileID: 2100000, guid: 0878894fff437744a9b6121e25317a82, type: 2}
   revealPoint: {fileID: 0}
   revealPointPrefab: {fileID: 0}
@@ -1355,7 +1329,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985284728}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c547f0dd2d845b44bb67da15843514a7, type: 3}
   m_Name: 

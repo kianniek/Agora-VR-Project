@@ -4,6 +4,7 @@ using UnityEngine;
 
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 #endif
 
 namespace HurricaneVR.Framework.ControllerInput
@@ -67,7 +68,7 @@ namespace HurricaneVR.Framework.ControllerInput
         public HVRHandSide TeleportHandSide = HVRHandSide.Right;
         public bool SwapMovementAxis;
 
-
+        private float timer;
         [Header("Debugging")]
         public bool UseWASD;
 
@@ -88,6 +89,7 @@ namespace HurricaneVR.Framework.ControllerInput
         {
             UpdateInput();
             AfterInputUpdate();
+            ResetGameState();
         }
 
         protected virtual void OnEnable()
@@ -191,7 +193,7 @@ namespace HurricaneVR.Framework.ControllerInput
         {
             left = false;
             right = false;
-            
+
             if (!CanDistanceGrab)
             {
                 return;
@@ -218,14 +220,14 @@ namespace HurricaneVR.Framework.ControllerInput
                 right = RightController.GripButtonState.JustActivated || RightTriggerGrabState.JustActivated;
             }
 
-           
+
         }
 
         protected virtual void GetForceGrabActive(out bool left, out bool right)
         {
             left = false;
             right = false;
-            
+
             if (!CanDistanceGrab)
             {
                 return;
@@ -247,7 +249,41 @@ namespace HurricaneVR.Framework.ControllerInput
                 right = RightTriggerGrabState.Active;
             }
 
-          
+
+        }
+        void ResetGameState()
+        {
+            if (LeftTriggerGrabState.Active && RightTriggerGrabState.Active)
+            {
+                timer += Time.deltaTime;
+
+                if (timer > 10)
+                {
+                    StartCoroutine(LoadFirstSceneAsync());
+                    timer = 0;
+                }
+            }
+            else
+            {
+                timer = 0;
+            }
+        }
+
+        private System.Collections.IEnumerator LoadFirstSceneAsync()
+        {
+            // Unload all currently loaded scenes except the first scene
+            for (int i = 1; i < SceneManager.sceneCount; i++)
+            {
+                AsyncOperation unloadOperation = SceneManager.UnloadSceneAsync(SceneManager.GetSceneAt(i));
+                yield return unloadOperation;
+            }
+
+            // Load the first scene in the build index
+            AsyncOperation loadOperation = SceneManager.LoadSceneAsync(0, LoadSceneMode.Single);
+            yield return loadOperation;
+
+            // Scene loaded, perform any necessary initialization
+            Debug.Log("First scene loaded");
         }
 
         public bool GetForceGrabActivated(HVRHandSide side)

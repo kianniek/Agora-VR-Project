@@ -1931,6 +1931,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
         type: 3}
+      propertyPath: Collided.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
+        type: 3}
       propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -1948,6 +1953,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Grabbed.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
+        type: 3}
+      propertyPath: Collided.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
         type: 3}
@@ -1971,6 +1981,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
         type: 3}
+      propertyPath: Collided.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1926230150}
+    - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
+        type: 3}
       propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1926230150}
@@ -1991,6 +2006,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
         type: 3}
+      propertyPath: Collided.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
+        type: 3}
       propertyPath: Grabbed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadScene
       objectReference: {fileID: 0}
@@ -2003,6 +2023,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Grabbed.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
+        type: 3}
+      propertyPath: Collided.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_isKinematic
       objectReference: {fileID: 0}
     - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
         type: 3}
@@ -2031,8 +2056,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
         type: 3}
+      propertyPath: Collided.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Rigidbody, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
+        type: 3}
       propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UnityEngine.Rigidbody, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
+        type: 3}
+      propertyPath: Collided.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
         type: 3}
@@ -2052,6 +2087,11 @@ PrefabInstance:
     - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
         type: 3}
       propertyPath: Grabbed.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
+        type: 3}
+      propertyPath: Collided.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4227157317932486868, guid: 21ef5e676a8433e46b2b7485f724b31e,
@@ -2113,6 +2153,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RenderingLayerMask
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468106822876295600, guid: 21ef5e676a8433e46b2b7485f724b31e,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7634775366114789968, guid: 21ef5e676a8433e46b2b7485f724b31e,
         type: 3}
@@ -6831,7 +6876,7 @@ Rigidbody:
   m_GameObject: {fileID: 3886153550537260559}
   serializedVersion: 2
   m_Mass: 3.5
-  m_Drag: 0.1
+  m_Drag: 10
   m_AngularDrag: 0.1
   m_UseGravity: 0
   m_IsKinematic: 1

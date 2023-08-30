@@ -100,7 +100,7 @@ public class RevealPointManager : MonoBehaviour
     }
     public void ExpandShaderStop()
     {
-        print("ExpandStart");
+        print("ExpandStop");
         StopAllCoroutines();
     }
     IEnumerator ExpandShader(float maxDiamiter, float speed)

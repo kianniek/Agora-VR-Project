@@ -1,31 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    AsyncOperation async;
+    private AsyncOperation async;
     public string SceneToLoadOnStart;
 
-    [SerializeField] GameObject[] objectsToDiableAfterLoad;
+    [SerializeField] private GameObject[] objectsToDiableAfterLoad;
 
     private void Start()
     {
+        print("test");
         if (!SceneManager.GetSceneByName(SceneToLoadOnStart).isLoaded)
         {
             async = SceneManager.LoadSceneAsync(SceneToLoadOnStart, LoadSceneMode.Additive);
             print(string.Format("loading {0}...", SceneToLoadOnStart));
         }
-        else
-        {
-            foreach (GameObject item in objectsToDiableAfterLoad)
-            {
-                item.SetActive(false);
-            }
-            Destroy(gameObject);
-        }
-        
     }
 
 
@@ -40,7 +30,6 @@ public class SceneLoader : MonoBehaviour
                 {
                     item.SetActive(false);
                 }
-                Destroy(gameObject);
             }
         }
     }
