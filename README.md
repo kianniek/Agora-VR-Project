@@ -13,12 +13,3 @@
 </p>
 
 This VR application, **Chorís Ánchos**, is designed as a relaxation and meditation tool for students and teachers at Xplore - Angora High School. It provides users with a selection of immersive virtual worlds, each crafted to promote relaxation and stress relief. The environments are thoughtfully designed to help users unwind, offering a calming experience ideal for taking a break from the demands of school life. This application aims to be a therapeutic escape, allowing both students and teachers to de-stress and rejuvenate through soothing, virtual landscapes.
-
-### Project Information
-
-- **Timeline:** Thematic Semester - Virtual Reality
-- **Engine:** Unity
-- **Languages:** C#, HLSL, GLSL, Compute Shaders
-- **Programs Used:** Adobe Photoshop, Blender, Unity XR Toolkit
-- **Team Size:** 4
-- **Role:** Developer, Designer
